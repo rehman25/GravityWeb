@@ -1,0 +1,17 @@
+
+.aboutupper {
+  background-image:url("../../../public/images/inner-banner.png");
+  background-color: rgb(54, 54, 54);
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+}
+
+.upperdigitalChange {
+  color: rgb(227, 32, 74);
+}
+
+
