@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+h1,h2,h3,h4,h5,h6,span,p,a{
+    font-family: "Monctserrat", sans-serif;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+button{
+    font-family: "Monctserrat", sans-serif;
+    border: none;
+}
