@@ -3,7 +3,9 @@ import Header from '../component/Header/component'
 
 const page = () => {
   return (
-    <div>paffffe</div>
+    <>
+    <Header/>
+    </>
   )
 }
 
