@@ -338,6 +338,7 @@
     width: 100%;
     /* background-color: #fff; */
     height: 50vh; 
+    position: absolute;
     padding: 0;
     margin: 0;
     margin-top: 50px;
@@ -374,7 +375,7 @@
 .dropList a:hover{
  background-color: #e3204a;
   border-radius: 20px;
-  padding: 15px;
+  
 }
 /* @keyframes shutter-in-top {
 			
@@ -393,15 +394,24 @@
 .Down{
     z-index: 99999;
     margin: 0;
-    padding: 0;
+    /* padding: 0; */
 
 }    
+
 .RowTabs{
         display: flex;
     align-items: center;
     padding: 20px;
     border-bottom: 1px solid white;
 
+}
+
+.ContentRow {
+    display: flex;
+    padding: 15px;
+}
+.ContentCol{
+    display: flex;
 }
 .TabHead{
     color: #fff;
@@ -414,7 +424,6 @@
 .TabContent{
     display: flex;
     /* padding: 5px; */
-    justify-content: center;
     align-items: center;
     padding: 0 5px;
 }
@@ -423,8 +432,11 @@
     text-decoration: none;
     padding: 1px;
     margin-left: 5px;
-    font-size: 12px;
+    font-size: 10px;
 
+}
+.TabContent a:hover{
+    border-bottom: 2px solid #fff;
 }
 .ImageDiv{
     background-color: #fff;
@@ -450,8 +462,9 @@
         display: block !important;
         display: flex !important;
         z-index: 99 !important;
-  
-        
+    }
+    .servicesTable{
+        display: none;
     }
 
 }
