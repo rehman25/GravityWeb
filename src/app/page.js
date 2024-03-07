@@ -12,13 +12,13 @@ import { CiLinkedin } from "react-icons/ci";
 import { FaYoutube } from "react-icons/fa6";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-
-
+import Header from './component/Header/component'
 
 const page = () => {
-  const [isActive,setActive] = useState("Web_Dev")
+  const [isActive, setActive] = useState("Web_Dev")
   return (
     <>
+      <Header />
       <section>
         <div className={`${style.heroSection} container-fluid`}>
           <div className="row mt-5" style={{ width: "100%" }}>
@@ -54,34 +54,33 @@ const page = () => {
         </div>
       </section>
 
-      <section className={`${style.homeTabmainBox}`} 
-      id={`${
-        isActive == "Web_Dev" ? style.webDevBg :
-        isActive == "Mobile_Application" ? style.mobileBg :
-        isActive == "Digital_Marketing" ? style.digiBg :
-        isActive == "Digital_Branding" ? style.Digital_BranBg :
-        isActive == "Ecommerce_Web" ? style.Ecommerce_WebBg : 
-        isActive == "UI/UX" ? style.UIUXbg :
-        isActive == "Video_Animation" ? style.Video_Animationbg :
-        isActive == "IT_Resource" ? style.IT_ResourceBg : ""
-      }`}
-        
+      <section className={`${style.homeTabmainBox}`}
+        id={`${isActive == "Web_Dev" ? style.webDevBg :
+            isActive == "Mobile_Application" ? style.mobileBg :
+              isActive == "Digital_Marketing" ? style.digiBg :
+                isActive == "Digital_Branding" ? style.Digital_BranBg :
+                  isActive == "Ecommerce_Web" ? style.Ecommerce_WebBg :
+                    isActive == "UI/UX" ? style.UIUXbg :
+                      isActive == "Video_Animation" ? style.Video_Animationbg :
+                        isActive == "IT_Resource" ? style.IT_ResourceBg : ""
+          }`}
+
       >
         <div className="container-fluid">
           <div className="row">
             <div className="col-lg-12">
               <div className={`${style.homeTabs} hometabsSection`}>
-                <Text text="Services" animation="fade-right"/>
-                <Tabs style={{marginTop: "40px"}}>
+                <Text text="Services" animation="fade-right" />
+                <Tabs style={{ marginTop: "40px" }}>
                   <TabList>
-                    <Tab onClick={() => {setActive("Web_Dev")}}>Web Development</Tab>
-                    <Tab onClick={() => {setActive("Mobile_Application")}}>Mobile Application Development</Tab>
-                    <Tab onClick={() => {setActive("Digital_Marketing")}}>Digital Marketing</Tab>
-                    <Tab onClick={() => {setActive("Digital_Branding")}}>Digital Branding & Communication</Tab>
-                    <Tab onClick={() => {setActive("Ecommerce_Web")}}>Ecommerce Web Development</Tab>
-                    <Tab onClick={() => {setActive("UI/UX")}}>UI/UX Design</Tab>
-                    <Tab onClick={() => {setActive("Video_Animation")}}>Video Animation</Tab>
-                    <Tab onClick={() => {setActive("IT_Resource")}}>IT Resource Outsourcing</Tab>
+                    <Tab onClick={() => { setActive("Web_Dev") }}>Web Development</Tab>
+                    <Tab onClick={() => { setActive("Mobile_Application") }}>Mobile Application Development</Tab>
+                    <Tab onClick={() => { setActive("Digital_Marketing") }}>Digital Marketing</Tab>
+                    <Tab onClick={() => { setActive("Digital_Branding") }}>Digital Branding & Communication</Tab>
+                    <Tab onClick={() => { setActive("Ecommerce_Web") }}>Ecommerce Web Development</Tab>
+                    <Tab onClick={() => { setActive("UI/UX") }}>UI/UX Design</Tab>
+                    <Tab onClick={() => { setActive("Video_Animation") }}>Video Animation</Tab>
+                    <Tab onClick={() => { setActive("IT_Resource") }}>IT Resource Outsourcing</Tab>
                   </TabList>
                   <>
                     <TabPanel>
@@ -94,6 +93,7 @@ const page = () => {
           </div>
         </div>
       </section>
+
     </>
   )
 }
