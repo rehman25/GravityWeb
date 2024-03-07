@@ -8,14 +8,19 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { RiWhatsappFill } from "react-icons/ri";
 import { ImCross } from "react-icons/im";
 import { AiOutlineMenu } from "react-icons/ai";
+import { FaPlus } from "react-icons/fa6";
+import { HiOutlineMenuAlt4 } from "react-icons/hi";
+import WordPress from '../../assets/images/headerTabs/wordpress.png'
+
+
 
 
 
 
 const page = () => {
   const [iscontactForm, setContactForm] = useState(false);
-  const [isMenu , setMenu] = useState(false);
-  const [isTabs , setTabs] = useState(false);
+  const [isMenu, setMenu] = useState(false);
+  const [isTabs, setTabs] = useState(false);
   const handleContactForm = () => {
     setContactForm(!iscontactForm);
   }
@@ -46,7 +51,7 @@ const page = () => {
           <ul className={Style.HeaderUl}>
             <li><a href="">HOME</a></li>
             <li><a href="">ABOUT</a></li>
-            <li><a href="" onMouseEnter={onHover} onMouseLeave={offHover}>SERVICES</a></li>
+            <li><a href="" onMouseEnter={onHover} >SERVICES</a></li>
             <li><a href="">CASE STUDIES</a></li>
             <li><a href="">BLOG</a></li>
           </ul>
@@ -70,14 +75,23 @@ const page = () => {
             <Image src={Brandlogo} className={Style.brandImage} />
           </div>
         </div>
-        <div className={`col-9 ${Style.ResponsiveMENU}`}>
+        <div className={`col-6 ${Style.ResponsiveMENU}`}>
           <ul className={Style.HeaderUl}>
-    
+
           </ul>
         </div>
-        <div className={`col-1 ${Style.Expert}`}>
-          <div className={Style.ExpertBtn} >
-            {isMenu ? <ImCross className={Style.CrossIcon} onClick={handleMenu} /> : <AiOutlineMenu onClick={handleMenu} />  }
+        <div className={`col-4 ${Style.Expert}`}>
+          <div className={Style.ExpertBtn} onClick={handleContactForm}>
+            <span>Speak to an Expert</span>
+          </div>
+          <div className={Style.ExpertWhatsapp}>
+            <RiWhatsappFill />
+          </div>
+          <div className={Style.ExpertPhone}>
+            <FaPhoneAlt />
+          </div>
+          <div className={Style.ExpertBtn2} >
+            {isMenu ? <ImCross className={Style.ManuIcon2} onClick={handleMenu} /> : <HiOutlineMenuAlt4 onClick={handleMenu} className={Style.ManuIcon} />}
           </div>
         </div>
       </div>
@@ -96,7 +110,7 @@ const page = () => {
               <form action="">
                 <div className="row">
                   <div className={`col-4 ${Style.InputBox}`}>
-                     <label htmlFor=""> Full Name*</label>
+                    <label htmlFor=""> Full Name*</label>
                     <input type="text" name="name" id="" className={Style.ContactInput} />
                   </div>
                   <div className={`col-4 ${Style.InputBox}`}>
@@ -128,19 +142,19 @@ const page = () => {
                       <option value="">Budget</option>
                       <option value="">0-3000 AED</option>
                       <option value="">3000-6000 AED</option>
-                      <option value="">6000-9000 AED</option>   
+                      <option value="">6000-9000 AED</option>
                     </select>
-                   
+
                   </div>
                 </div>
                 <div className="row mt-4">
-                   <div className="col-12">
+                  <div className="col-12">
                     <textarea name="" id="" cols="118" rows="15" className={Style.ContactInput} placeholder='Message' />
                   </div>
                 </div>
                 <div className="row mt-4">
                   <div className="col-12">
-                     <button className={Style.submitbtn}>Submit</button>
+                    <button className={Style.submitbtn}>Submit</button>
                   </div>
                 </div>
               </form>
@@ -148,35 +162,92 @@ const page = () => {
           </div>
         </div> : ""
       }
-      {isMenu? 
-        <div className={`${'row'} ${Style.FormRow}`}>
-          <div className={`col-12 ${Style.contactForm}`}>
+      {isMenu ?
+        <div className={`${'row'} ${Style.MenuRow}`}>
+          <div className={`col-12 ${Style.MenuList}`}>
             <div className={`col-12 ${Style.Cross}`}>
-              <span className={Style.CrosDiv} onClick={handleMenu}>
-                <ImCross className={Style.CrossIcon} />
-              </span>
+
             </div>
-            <div className={`col-12 ${Style.contactForm}`}>
-               <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-               </ul>          
+            <div className={`col-12 ${Style.MenuListing}`}>
+              <ul className={Style.listing}>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li className={Style.listTabv}><a href="">SERVICES</a> <FaPlus /></li>
+                <li><a href="">CASE STUDIES</a></li>
+                <li><a href="">BLOG</a></li>
+              </ul>
             </div>
           </div>
-        </div> 
-        
-        :""}
-        {
-          isTabs ? 
-          <div className={`row ${Style.servicesTable}`}>
-            <div className="col-md-4"></div>
-            <div className="col-md-8"></div>
-          </div> :""
-        }
-      
+        </div>
+
+        : ""}
+      {
+        isTabs ?
+          <div className={`row ${Style.servicesTable}`} onMouseEnter={onHover}>
+            <div className={`col-md-4 ${Style.Tabs}`} >
+              <ul>
+                <li className={Style.dropList}><a href="">WEB DEVELOPMENT</a></li>
+                <li className={Style.dropList}><a href="">MOBILE APPLICATION DEVELOPMENT</a></li>
+                <li className={Style.dropList}><a href="">DIGITAL MARKETING</a></li>
+                <li className={Style.dropList}><a href="">UI/UX</a></li>
+                <li className={Style.dropList}><a href="">E-COMMERCE WEB DEVELOPMENT</a></li>
+                <li className={Style.dropList}><a href="">DIGITAL BRANDING & COMMUNICATION</a></li>
+              </ul>
+            </div>
+            <div className={`col-md-8 ${Style.Down}`}>
+
+              <div className={Style.RowTabs}>
+                <span className={Style.TabHead}>
+                  WEB DEVELOPMENT
+                </span>
+              </div>
+               <div className="row mt-3">
+                 <div className={`col-4 ${Style.TabContent}`}>
+                   <div className={Style.ImageDiv}>
+                   <Image src={WordPress} className={Style.WordPress} />
+                   </div>
+                   <a href=''>WORD PRESS DEVELOPMENT</a>
+                 </div>
+                <div className={`col-4 ${Style.TabContent}`}>
+                  <div className={Style.ImageDiv}>
+                    <Image src={WordPress} className={Style.WordPress} />
+                  </div>
+                  <a href=''>WORD PRESS DEVELOPMENT</a>
+                </div>
+                <div className={`col-4 ${Style.TabContent}`}>
+                  <div className={Style.ImageDiv}>
+                    <Image src={WordPress} className={Style.WordPress} />
+                  </div>
+                  <a href=''>WORD PRESS DEVELOPMENT</a>
+                </div>
+               </div>
+              <div className="row mt-3">
+                <div className={`col-4 ${Style.TabContent}`}>
+                  <div className={Style.ImageDiv}>
+                    <Image src={WordPress} className={Style.WordPress} />
+                  </div>
+                  <a href=''>WORD PRESS DEVELOPMENT</a>
+                </div>
+                <div className={`col-4 ${Style.TabContent}`}>
+                  <div className={Style.ImageDiv}>
+                    <Image src={WordPress} className={Style.WordPress} />
+                  </div>
+                  <a href=''>WORD PRESS DEVELOPMENT</a>
+                </div>
+                <div className={`col-4 ${Style.TabContent}`}>
+                  <div className={Style.ImageDiv}>
+                    <Image src={WordPress} className={Style.WordPress} />
+                  </div>
+                  <a href=''>WORD PRESS DEVELOPMENT</a>
+                </div>
+              </div>
+              <div>
+
+              </div>
+            </div>
+          </div> : ""
+      }
+
 
     </div>
   )

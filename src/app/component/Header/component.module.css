@@ -1,18 +1,23 @@
 
 
 .Container{
-    background-color :rgba(8, 8, 8, 0.219);
+    /* background-color :rgba(8, 8, 8, 0.219); */
+    background-color: transparent !important;;
     overflow: clip;
 }
 .row{
-    position: sticky;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
 }
 
 .Container::before{
     content: "";
     position: absolute;
     top: 0;
-    background: url(../../../../public/Images/inner-banner.svg) no-repeat;
+    /* background: url(../../../../public/Images/inner-banner.svg) no-repeat; */
     width: 100%;
     height: 100%;
     z-index: 0;
@@ -91,6 +96,16 @@
     align-items: center;
     cursor: pointer;
 }
+
+.ExpertBtn2{
+     height: 100%;
+    padding: 15px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    z-index: 999;
+}
 .ExpertBtn:hover{
     background-color: #e3204a;
     color: white;
@@ -162,6 +177,65 @@
     padding: 0px;
     background:rgba(17, 17, 17, 0.808);
     opacity: 1px;
+    z-index: 9999;
+}
+
+.MenuRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* left:500; */
+    left: 0;
+    bottom:0;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    background:rgba(17, 17, 17, 0.808);
+    opacity: 1px;
+    z-index: 9999;
+}
+
+.MenuList{
+     width: 30%;
+    height: 100vh;
+    background-color: #fff;
+    padding: 25px;
+    overflow: hidden;
+}
+
+.listing{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+
+    /* border-bottom: 1px solid black; */
+}
+.MenuListing{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.listing li{
+    list-style: none;
+    border-bottom: 1px solid black;
+}
+.listing li a{
+    text-decoration: none !important;
+    font-size: 12px;
+    color: #000000;
+    font-weight: 700;
+    padding: 10px 0px;
+}
+
+.listTabv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .contactForm{
@@ -191,6 +265,22 @@
 
 .CrossIcon{
     color: white;
+}
+.ManuIcon{
+ color: #e3204a;
+    font-size: 28px;
+    font-size: 900;
+}
+.ManuIcon2{
+     color: #e3204a;
+    font-size: 28px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999!important;
+    font-size: 900;
+
 }
 .ContactInput{
     height: 40px;
@@ -232,6 +322,12 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    margin: 0;
 
 }
 
@@ -240,13 +336,47 @@
 .servicesTable{
     /* display: none;        */
     width: 100%;
-    background-color: #fff;
+    /* background-color: #fff; */
     height: 50vh; 
     padding: 0;
     margin: 0;
-    animation: shutter-in-top 1s linear 0s 1 normal none;
+    margin-top: 50px;
+    /* animation: shutter-in-top 1s linear 0s 1 normal none; */
+    background-color: #671aa3;
+    z-index: 9999 !important;
 }
-@keyframes shutter-in-top {
+.Tabs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid white;
+    z-index: 9999;
+}
+
+.dropList{
+  /* padding: 5px; */
+  list-style: none !important;
+  cursor: pointer;
+  margin-top: 5px;
+}
+ .dropList:hover{
+ 
+ }
+
+.dropList a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+     padding: 5px 10px;
+}
+.dropList a:hover{
+ background-color: #e3204a;
+  border-radius: 20px;
+  padding: 15px;
+}
+/* @keyframes shutter-in-top {
 			
 		0% {
 			transform:rotateX(-100deg);
@@ -258,8 +388,60 @@
 			transform-origin:top;
 			opacity:1;
 		}
-	}
+	} */
 
+.Down{
+    z-index: 99999;
+    margin: 0;
+    padding: 0;
+
+}    
+.RowTabs{
+        display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid white;
+
+}
+.TabHead{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    
+}
+
+.TabContent{
+    display: flex;
+    /* padding: 5px; */
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px;
+}
+.TabContent a{
+    color: #fff;
+    text-decoration: none;
+    padding: 1px;
+    margin-left: 5px;
+    font-size: 12px;
+
+}
+.ImageDiv{
+    background-color: #fff;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    border-radius: 6px;
+    width: 20px;
+    display: flex;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.WordPress{
+    width: 15px;
+    height: 15px;
+}
 @media only screen and (max-width: 992px) {
     .row{
         display: none !important;
