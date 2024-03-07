@@ -2,7 +2,6 @@
 
 .Container{
     background-color :rgba(8, 8, 8, 0.219);
-    height: 100vh;
     overflow: clip;
 }
 .row{

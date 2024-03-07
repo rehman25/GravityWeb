@@ -1,9 +1,30 @@
 import React from 'react'
+import Aboutbanner from './components/Aboutbanner';
+import Bannerdown from './components/Bannerdown';
+import AboutCarts from './components/AboutCarts';
 
-const page = () => {
+const Page = () => {
   return (
-    <div>page</div>
-  )
+    <>
+      <Aboutbanner/>
+      <Bannerdown/>
+      <AboutCarts/>
+    </>
+  );
 }
 
-export default page
+export default Page;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
