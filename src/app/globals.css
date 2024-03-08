@@ -1,3 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 body{
     overflow-x: clip;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p,
+li,
+ul,
+a {
+    font-family: "Monctserrat", sans-serif;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+a{
+    text-decoration: none !important;
+}
+button {
+    font-family: "Monctserrat", sans-serif;
+    border: none;
+    cursor: pointer;
+}
+
+svg {
+    cursor: pointer;
+}
+
+span {
+    cursor: pointer;
+}
+
+/* HOME TABS SOME STYLE ================================= */
+.hometabsSection .react-tabs {
+    display: flex;
+}
+
+.hometabsSection .react-tabs .react-tabs__tab-list {
+    display: flex;
+    flex-direction: column;
+    border-bottom: none;
+    border-left: 1px solid white;
+    padding-left: 20px;
+    height: 230px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 75px 10px;
+}
+
+.hometabsSection .react-tabs .react-tabs__tab-list::-webkit-scrollbar {
+    width: 0;
+}
+
+.hometabsSection .react-tabs .react-tabs__tab-list::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.hometabsSection .react-tabs .react-tabs__tab-list::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+.hometabsSection .react-tabs .react-tabs__tab-list .react-tabs__tab--selected {
+    background: transparent;
+    border-color: transparent;
+    color: white !important;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 0;
+    border: 0;
+    outline: none;
+}
+.hometabsSection .react-tabs .react-tabs__tab-panel--selected {
+    width: 55%;
+}
+
+.hometabsSection .react-tabs .react-tabs__tab-list .react-tabs__tab{
+    font-weight: 600;
+    font-size: 18px;
+    color: #c7c0c096;
+}
+.hometabsSection .react-tabs .react-tabs__tab-list .react-tabs__tab:focus:after {
+    background: transparent;
+}
+
+.slick-slide:focus{
+    outline: none;
 }

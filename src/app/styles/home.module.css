@@ -1,0 +1,152 @@
+.heroSection {
+    background-image: url(../assets/images/banner/her.jpg) !important;
+    background-size: cover !important;
+    height: 700px;
+    width: 100%;
+    background-blend-mode: overlay !important;
+    background: #000000bd;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroRightSide {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.heroRightSide span {
+    color: white;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+.heroRightSide span.heroHeadOne {
+    background: linear-gradient(200deg, #6c06ec, #e3204a 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: gradientAnimation 5s linear infinite;
+}
+
+.heroRightSide span.heroHeadTwo {}
+
+.heroLeftSide {
+    padding-left: 100px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.5;
+    color: white;
+}
+
+.heroSectionIcons {
+    position: absolute;
+    left: 10px;
+    top: 0;
+}
+
+.heroSectionIcons ul {
+    line-height: 40px;
+}
+
+.heroSectionIcons ul span {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    z-index: 1;
+    margin: 0 0 1.25em 0;
+    overflow: hidden;
+    transition: .4s;
+    font-size: 12px;
+    padding: 5px 5px;
+}
+.heroSectionIcons ul span:hover{
+    transition: .4s;
+    background: white;
+}
+.heroSectionIcons ul span svg {
+    color: white;
+    width: 100%;
+    height: 100%;
+    transition: .4s;
+}
+.heroSectionIcons ul span:hover svg{
+    color: black;
+}
+
+
+/* TABS =========================== */
+.homeTabmainBox{
+    padding: 40px 80px;
+}
+
+#webDevBg{
+    background-image: url(../assets/images/tabs/webdevelopment-bg.webp);
+    transition: 1s;
+}
+#mobileBg{
+    background-image: url(../assets/images/tabs/mobile-application-bg.webp);
+    transition: 1s;
+}
+#digiBg{
+    background-image: url(../assets/images/tabs/digital-marketing-bg.webp);
+    transition: 1s;
+}
+#Digital_BranBg{
+    background-image: url(../assets/images/tabs/digital-branding-bg.webp);
+    transition: 1s;
+}
+#Ecommerce_WebBg{
+    background-image: url(../assets/images/tabs/ecommerce-development-bg.webp);
+    transition: 1s;
+}
+#UIUXbg{
+    background-image: url(../assets/images/tabs/ui-ux-design-bg.webp);
+    transition: 1s;
+}
+#Video_Animationbg{
+    background-image: url(../assets/images/tabs/video-animation-bg.webp);
+    transition: 1s;
+}
+#IT_ResourceBg{
+    background-image: url(../assets/images/tabs/it-resource-bg.webp);
+    transition: 1s;
+}
+
+.homeTabs .TabListBox{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+.homeTabs .TabPanel .TabImage{
+    height: 100%;
+    width: 100%;
+    display: block;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+.homeTabs .TabPanel p{
+    font-size: .7em;
+    color: #fff;
+    font-weight: 300;
+}
+.homeTabs .TabPanel .service_item__list_wrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.homeTabs .TabPanel .service_item__list_wrapper li{
+    width: 33.33%;
+    color: white;
+}
+.homeTabs .TabPanel .service_item__list_wrapper li a{
+    color: rgba(255, 255, 255, .5);
+    font-size: .6em;
+    transition: .25s ease-in-out;
+}

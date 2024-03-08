@@ -1,0 +1,23 @@
+.button{
+    background: transparent;
+    color: white;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+}
+
+.button svg{
+    margin-left: 10px;
+    border-radius: 100%;
+    font-size: 35px;
+    background: #e3204a;
+    transition: .4s;
+    padding: 10px 12px;
+}
+.button svg:hover{
+    transition: .4s;
+    background: white;
+    color: #e3204a;
+    transform: rotate(30deg);
+}
