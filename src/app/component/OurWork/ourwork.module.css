@@ -1,0 +1,42 @@
+.our__work__section{
+    background: #363636;
+    /* padding: 40px 80px; */
+}
+
+.ourWork__Box{
+    padding: 0 10px;
+}
+.ourWork__Box .work__Img{
+    height: 290px;
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(1);
+    transition: .4s;
+}
+.ourWork__Box .work__Logo{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(1);
+    transition: .4s;
+}
+.ourWork__Box p{
+    color: #8d8d8d;
+    font-size: .9em;
+}
+.ourWork__Box:hover .work__Img{
+    filter: grayscale(0);
+    transition: .4s;
+}
+.ourWork__Box:hover .work__Logo{
+    filter: grayscale(0);
+    transition: .4s;
+}
+.ourWork__Box #show__Btn{
+    opacity: 0;
+    transition: .4s;
+}
+.ourWork__Box:hover #show__Btn{
+    opacity: 1;
+    transition: .4s;
+}

@@ -4,11 +4,12 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 
 
 const Button = ({
-    text
+    text,
+    id
 }) => {
     return (
         <>
-            <button className={`${style.button}`}>{text} <FaLongArrowAltRight /> </button>
+            <button className={`${style.button}`} id={id}>{text} <FaLongArrowAltRight /> </button>
         </>
     )
 }

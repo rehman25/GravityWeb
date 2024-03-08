@@ -16,7 +16,9 @@ a {
     margin: 0;
     display: block;
 }
-
+a{
+    text-decoration: none !important;
+}
 button {
     font-family: "Monctserrat", sans-serif;
     border: none;
@@ -70,12 +72,19 @@ span {
     border: 0;
     outline: none;
 }
+.hometabsSection .react-tabs .react-tabs__tab-panel--selected {
+    width: 55%;
+}
 
 .hometabsSection .react-tabs .react-tabs__tab-list .react-tabs__tab{
     font-weight: 600;
     font-size: 18px;
-    color: gray;
+    color: #c7c0c096;
 }
 .hometabsSection .react-tabs .react-tabs__tab-list .react-tabs__tab:focus:after {
     background: transparent;
+}
+
+.slick-slide:focus{
+    outline: none;
 }

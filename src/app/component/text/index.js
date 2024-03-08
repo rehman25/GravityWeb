@@ -6,11 +6,11 @@ import 'aos/dist/aos.css';
 
 const Text = ({
     text,
-    animation
+    animation,
 }) => {
     useEffect(() => {
         AOS.init({
-              duration: 3000
+              duration: 1000
         });
     }, []);
     return (
