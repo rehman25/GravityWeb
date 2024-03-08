@@ -4,60 +4,49 @@ import styles from '../../styles/about.module.css';
 const AboutSlider = () => {
     return (
         <section>
-            <div className={`${styles.AboutsliderSection} container-fluid`}>
-                <div className="row d-flex ">
-                    <div className={`col-lg-2 col-md-2 col-sm-2 ${styles.card}`}>
-                        <div className={`${styles.card1}`}>
-                            <h4> Creative </h4>
+            <div className={`${styles.AboutsliderSection} container-fluid mt-5`}>
+                <div className="row d-flex mt-5 px-5 ">
+                    <div className={`col-lg-2 col-md-2 col-sm-2 `}>
+                        <div className={`col-6 ${styles.card}`}>
+                            <div >
+                                <h4> Creativity </h4>
+                            </div>
+                        </div>
+                        <div className={`col-6 mt-1 ${styles.card}`}>
+                            <div >
+                                <h4> Design </h4>
+                            </div>
                         </div>
                     </div>
-                    <div className={`col-lg-2 col-md-2 col-sm-2 ${styles.card}`}>
-                        <div className={`${styles.card3}`}>
-                            <h4> TechnicalDelivery </h4>
+                    <div className={`col-lg-2 col-md-2 col-sm-2 `}>
+                        <div className={`col-6 ${styles.card}`}>
+                            <div >
+                                <h4> Consultancy </h4>
+                            </div>
+                        </div>
+                        <div className={`col-6 mt-1 ${styles.card}`}>
+                            <div >
+                                {/* <h4> Technology </h4> */}
+                            </div>
                         </div>
                     </div>
-                    <div className={`col-lg-2 col-md-2 col-sm-2 ${styles.card}`}>
-                        <div className={`${styles.card5}`}>
-                            <h4> Marketing </h4>
+                    {/* <div className={`col-lg-2 col-md-2 col-sm-2 `}>
+                        <div className={`col-6 ${styles.card}`}>
+                            <div >
+                                <h4> Technical Delivery </h4>
+                            </div>
                         </div>
-                    </div>
-                    <div className={`col-lg-2 col-md-2 col-sm-2 ${styles.card}`}>
-                        <div className={`${styles.card7}`}>
-                            <h4> Technology </h4>
+                        <div className={`col-6 mt-1 ${styles.card}`}>
+                            <div >
+                                <h4> Development </h4>
+                            </div>
                         </div>
-                    </div>
-                    <div className={`col-lg-2 col-md-2 col-sm-2 ${styles.card}`}>
-                        <div className={`${styles.card8}`}>
-                            <h4> Management </h4>
+                    </div> */}
+                    {/* <div className={'col-lg-12 col-md-12 col-sm-12'}>
+                        <div>
+                            <h4> Strategy </h4>
                         </div>
-                    </div>
-                </div>
-                <div className="row d-flex ">
-                    <div className={`col-lg-2 col-md-2 col-sm-2 ${styles.card}`}>
-                        <div className={`${styles.card9}`}>
-                            <h4> New Card 1 </h4>
-                        </div>
-                    </div>
-                    <div className={`col-lg-2 col-md-2 col-sm-2 ${styles.card}`}>
-                        <div className={`${styles.card10}`}>
-                            <h4> New Card 2 </h4>
-                        </div>
-                    </div>
-                    <div className={`col-lg-2 col-md-2 col-sm-2 ${styles.card}`}>
-                        <div className={`${styles.card11}`}>
-                            <h4> New Card 3 </h4>
-                        </div>
-                    </div>
-                    <div className={`col-lg-2 col-md-2 col-sm-2 ${styles.card}`}>
-                        <div className={`${styles.card12}`}>
-                            <h4> New Card 4 </h4>
-                        </div>
-                    </div>
-                    <div className={`col-lg-2 col-md-2 col-sm-2 ${styles.card}`}>
-                        <div className={`${styles.card13}`}>
-                            <h4> New Card 5 </h4>
-                        </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>

@@ -21,7 +21,7 @@ const Aboutbanner = () => {
                 </h1>
               </div>
             </div>
-            <div className="col-md-6 mb-4 px-5 mt-5">
+            <div className="col-md-6 mb-4 px-5 ">
               <div className={`${style.bannertextrightside}`}>
                 <p>
                   Digital Gravity is an accomplished digital transformation
