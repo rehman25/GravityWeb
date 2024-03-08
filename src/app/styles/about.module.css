@@ -1,121 +1,49 @@
+/* styles/about.module.css */
 
-/* About banner Styling  */
-
-.banneraboutsection {
-  background-image: url("../assets/images/banner/inner-banner.svg");
-  background-color: rgb(54, 54, 54);
-  height: 55vh;
-  padding: 20px;
-  color: rgb(255, 255, 255);
-  font-weight: 500;
+.marquee_content {
+    white-space: nowrap;
+    animation: marquee 40s linear infinite;
+    display: flex;
+}
+  
+.marquee_content div {
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 8px;
+    margin-top: 15px;
+    height: 82px;
+    padding: 0 20px;
+}
+.marquee_content div img{
+    object-fit: contain ;
 }
 
-.bannertexth6 {
-  margin: 25px 35px;
+@keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+}
+/* Media queries for responsive design */
+@media (max-width: 992px) {
+    .marquee_content div {
+        height: 60px; /* Decrease height for medium-sized screens */
+        padding: 0 10px; /* Adjust padding for smaller screens */
+    }
 }
 
-.bannertexth1 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  text-transform: capitalize;
-  font-size: 40px;
-}
-
-.bannertextspan {
-  color: rgb(227, 32, 74);
-}
-
-.bannertexth1::after {
-  content: "Digital Change";
-  color: rgb(219, 33, 73);
-  margin-left: 10px;
-}
-
-.bordertext {
-  position: absolute;
-  top: 125px;
-  left: 10px;
-  width: 20px;
-  height: 2px;
-  background-color: #ccc;
-  margin-left: 50px;
-}
-
-.bannertextrightside{
-  font-size: 16px;
-  line-height: 1.5;
-  margin: 0px 50px;
-  font-weight: 400;
-  color: #ffff;
-}
-
-/* --------------------------------------------------------------- */
-
-
-/* banner down styling */
-
-.bannerContainer {
-  display: flex;
-  overflow-x: hidden;
-}
-
-.bannerdownimg {
-  width: 700px;
-  height: 280px;
-}
-
-.headingContainer {
-  white-space: nowrap;
-  margin: 50px 0px;
-}
-
-.heading {
-  display: inline-block;
-  color: transparent;
-  margin-right: 20px;
-  font-size: 75px;
-  font-weight: bolder;
-  -webkit-text-stroke: 1px #e3204a;
-  text-shadow: 0 0 0 0;
-}
-
-/* -------------------------------------------------------------------------- */
-
-.AboutCarts {
-  padding: 50px;
-}
-
-.LeftCart {
-  background-color: rgb(230, 230, 230);
-  padding: 20px;
-  border-radius: 5px;
-}
-
-.LeftCart h3 {
-  color: rgb(28, 28, 28);
-  font-size: 30px;
-  font-weight: bold;
-  text-align: left;
-  margin: 10px 50px;
-}
-
-.LeftCart p {
-  text-align: left;
-  margin: 0px 50px;
-}
-
-.cart {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  margin-bottom: 20px;
-  margin-top: 10px;
-}
-
-.cart h2 {
-  color: #333;
-}
-
-.cart p {
-  color: #666;
+@media (max-width: 768px) {
+    .marquee_content div {
+        height: 60px; /* Decrease height for small screens */
+        padding: 0 10px;
+    }
+   
+    .container {
+        max-width: 100%; /* Ensure container doesn't overflow */
+    }
 }
