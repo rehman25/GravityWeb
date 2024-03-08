@@ -1,9 +1,14 @@
 import React from 'react'
+import About_subheading from '../about/components/about_subheading'
+
 
 const page = () => {
   return (
-    <div>page</div>
+    <>
+    <About_subheading/>,
+    </>
+
   )
 }
 
-export default page
+export default page 

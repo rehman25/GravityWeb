@@ -1,0 +1,49 @@
+/* styles/about.module.css */
+
+.marquee_content {
+    white-space: nowrap;
+    animation: marquee 40s linear infinite;
+    display: flex;
+}
+  
+.marquee_content div {
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 8px;
+    margin-top: 15px;
+    height: 82px;
+    padding: 0 20px;
+}
+.marquee_content div img{
+    object-fit: contain ;
+}
+
+@keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+}
+/* Media queries for responsive design */
+@media (max-width: 992px) {
+    .marquee_content div {
+        height: 60px; /* Decrease height for medium-sized screens */
+        padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .marquee_content div {
+        height: 60px; /* Decrease height for small screens */
+        padding: 0 10px;
+    }
+   
+    .container {
+        max-width: 100%; /* Ensure container doesn't overflow */
+    }
+}
