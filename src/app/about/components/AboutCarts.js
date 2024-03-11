@@ -9,7 +9,7 @@ const AboutCarts = () => {
     return (
         <>
             <section>
-                <div className={`${style.AboutCarts}`}>
+                <div className={`${style.AboutCarts} container-fluid`}>
                     <div className="row mt-5">
                         <div className='col-lg-6 col-md-6 col-sm-6 mt-5 p-0'>
                             <div className={`${style.LeftCart}`}>

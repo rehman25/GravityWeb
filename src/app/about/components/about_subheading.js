@@ -51,7 +51,7 @@ import fourtyfive from "../../assets/images/svg-icons/technology-icon-23.svg";
 const About_subheading = () => {
   return (
     <>
-      <section style={{overflowX: "clip"}}>
+      <section style={{overflowX: "clip",marginTop: "50px"}}>
         <div className="bg-black text-white py-5">
           <div className="container">
             <div className="row">
