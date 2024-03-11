@@ -1,24 +1,25 @@
-.Container{
-    height: 70vh;
-    overflow: clip;
-}
+
 
 .leftContainer{
-   height: 100vh;
+   height: 90vh;
    background-color: #e3204a;
    display: flex;
    justify-content: center;
    flex-direction: column;
-   padding: 50px;
+   align-items: center;
+   /* padding: 50px; */
 }
 .rightContainer{
-    height: 100vh;
+    height: 90vh;
     background-color: #363636;
+    display: flex;
+   /* justify-content: center; */
+   align-items: center;
+   /* padding: 50px; */
 }
 .heading{
     position: absolute;
-     left: 300px;
-     right: 100px;
+     left: 250px;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px #b9b9ba;
     text-transform: capitalize;
@@ -27,7 +28,7 @@
     font-family: sans-serif;
     font-weight: 700;
     z-index: 1;
-    padding: 30px;
+    padding: 20px;
 }
 
 .letsbuild{
@@ -73,4 +74,53 @@
     margin: 0px 5px;
     font-size: 14px;
     margin-top: 10px;
+}
+.LinkHeading{
+    border-left: 2px solid white;
+    padding: 5px;
+    color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+
+}
+
+.ulFooter li a{
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  padding: 5px;
+}
+
+@media screen and (max-width:992px) {
+    .row1{
+        display: flex;
+        flex-direction: column;
+    }
+    .leftContainer{
+        background-color: #363636;
+    }
+    .heading{
+        font-size: 2.5em;
+        left: 200px;
+    }
+    .leftContainer{
+       height: 60vh;
+       align-items: flex-start;
+       padding: 30px;
+    }
+    .rightContainer{
+        height: 40vh;
+        justify-content: space-around;
+    }
+    .letsbuild{
+        color: white;
+        margin: 0px;
+        font-size: 1em;
+        }
+    .something{
+        font-size: 1.5em;
+        color: white;
+        font-weight: 600;
+        margin: 0px;
+    }   
 }
