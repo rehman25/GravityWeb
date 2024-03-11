@@ -9,7 +9,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    /* width: 100%; */
     z-index: 9999;
 }
 
@@ -87,6 +87,14 @@
         height: 50px;
 
 
+}
+
+.ExpertResponsive{
+     display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0px;
+        height: 50px;
 }
 .ExpertBtn{
     height: 100%;
@@ -178,7 +186,22 @@
     background:rgba(17, 17, 17, 0.808);
     opacity: 1px;
     z-index: 9999;
+    animation: shutter-in-left 1s ease-in 0s 1 normal none;
 }
+
+@keyframes shutter-in-left {
+			
+		0% {
+			transform:rotateY(100deg);
+			transform-origin:left;
+			opacity:0;
+		}
+		100% {
+			transform:rotateY(0);
+			transform-origin:left;
+			opacity:1;
+		}
+	}
 
 .MenuRow{
     display: flex;
@@ -197,14 +220,30 @@
     background:rgba(17, 17, 17, 0.808);
     opacity: 1px;
     z-index: 9999;
+    animation: shutter-in-right 1s ease 0s 1 normal none;
 }
 
+@keyframes shutter-in-right {
+			
+		0% {
+			transform:rotateY(-100deg);
+			transform-origin:right;
+			opacity:0;
+		}
+		100% {
+			transform:rotateY(0);
+			transform-origin:right;
+			opacity:1;
+		}
+	}
+
 .MenuList{
-     width: 30%;
+     width: 40%;
     height: 100vh;
     background-color: #fff;
     padding: 25px;
-    overflow: hidden;
+    /* overflow: hidden; */
+    overflow-y: scroll;
 }
 
 .listing{
@@ -220,16 +259,19 @@
 
 }
 
+
+
 .listing li{
     list-style: none;
     border-bottom: 1px solid black;
 }
 .listing li a{
-    text-decoration: none !important;
-    font-size: 12px;
-    color: #000000;
-    font-weight: 700;
-    padding: 10px 0px;
+    padding: 0.75em 1em;
+    color: #000;
+    font-size: 0.775em;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-decoration: none;
 }
 
 .listTabv{
@@ -274,10 +316,6 @@
 .ManuIcon2{
      color: #e3204a;
     font-size: 28px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
     z-index: 9999!important;
     font-size: 900;
 
@@ -325,7 +363,7 @@
      position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    /* width: 100%; */
     z-index: 9999;
     margin: 0;
 
@@ -342,10 +380,25 @@
     padding: 0;
     margin: 0;
     margin-top: 50px;
-    /* animation: shutter-in-top 1s linear 0s 1 normal none; */
+    animation: shutter-in-top 1s ease 0s 1 normal none;
     background-color: #671aa3;
     z-index: 9999 !important;
 }
+
+@keyframes shutter-in-top {
+			
+		0% {
+			transform:rotateX(-100deg);
+			transform-origin:top;
+			opacity:0;
+		}
+		100% {
+			transform:rotateX(0deg);
+			transform-origin:top;
+			opacity:1;
+		}
+	}
+
 .Tabs{
     display: flex;
     flex-direction: column;
@@ -454,6 +507,10 @@
     width: 15px;
     height: 15px;
 }
+
+.Arcadian{
+    background-color: transparent;
+}
 @media only screen and (max-width: 992px) {
     .row{
         display: none !important;
@@ -467,4 +524,8 @@
         display: none;
     }
 
+}
+
+@media screen and (max-width: 768px){
+    
 }

@@ -44,6 +44,12 @@ import Bcard from '../../assets/images/headerTabs/BUSINESS-CARD.svg'
 import Corporate from '../../assets/images/headerTabs/CORPORATE-IDENTITY.svg'
 import packaging from '../../assets/images/headerTabs/PACKAGING.svg'
 import LogoD from '../../assets/images/headerTabs/LOGO.svg'
+import { MdKeyboardArrowDown } from "react-icons/md";
+import { FaMinus } from "react-icons/fa6";
+import { color } from 'framer-motion';
+import { MdKeyboardArrowUp } from "react-icons/md";
+
+
 
 const page = () => {
   const [iscontactForm, setContactForm] = useState(false);
@@ -54,7 +60,7 @@ const page = () => {
   const [MobileDev, setMobileDev] = useState(false)
   const [Design, setDesign] = useState(false)
   const [Marketing, setMarketing] = useState(false)
-  const [Ecommerce , setEcommerce] = useState(false)
+  const [Ecommerce, setEcommerce] = useState(false)
   const [Branding, setBranding] = useState(false)
 
   const handleContactForm = () => {
@@ -75,13 +81,13 @@ const page = () => {
 
 
   }
- const handleMobileDev = () => {
-   setMobileDev(true);
-   setWebDev(false);
-   setBranding(false);
-   setDesign(false);
-   setMarketing(false);
-   setEcommerce(false);
+  const handleMobileDev = () => {
+    setMobileDev(true);
+    setWebDev(false);
+    setBranding(false);
+    setDesign(false);
+    setMarketing(false);
+    setEcommerce(false);
   }
 
   const handleDesign = () => {
@@ -101,7 +107,7 @@ const page = () => {
     setEcommerce(false);
     setMobileDev(false);
   }
-  
+
   const HandleMarketing = () => {
     setMarketing(true);
     setWebDev(false);
@@ -130,10 +136,85 @@ const page = () => {
   }
 
 
+  const [isCollapsed, setCollapsed] = useState(true);
+  const [isInnerCollapsed, setInnerCollapsed] = useState(true);
+  const [isMobileCollapsed, setMobileCollapsed] = useState(true);
+  const [isDigitalCollapsed, setDigitalCollapsed] = useState(true);
+  const [isUxCollapsed, setUxCollapsed] = useState(true);
+  const [isEcommerceWebCollapsed, setEcommerceWebCollapsed] = useState(true);
+  const [isBrandingCollapsed, setBrandingCollapsed] = useState(true);
+  const [isVedioCollapsed, setVedioCollapsed] = useState(true)
+  const [isResourceCollapsed , setResourceCollapsed] = useState(true)
 
+  const handleToggle = () => {
+    setCollapsed(!isCollapsed);
+  };
+
+  const handleInnerToggle = () => {
+    setInnerCollapsed(!isInnerCollapsed);
+    
+  };
+
+  const handleMobileToggle = () => {
+    setMobileCollapsed(!isMobileCollapsed);
+  };
+
+  const handleDigitalToggle = () => {
+    setDigitalCollapsed(!isDigitalCollapsed);
+  };
+
+  const HandleUxToggle = () => {
+    setUxCollapsed(!isUxCollapsed);
+  }
+
+  const HandleEcommerceToggle = () => {
+    setEcommerceWebCollapsed(!isEcommerceWebCollapsed);
+  }
+
+  const HandleBrandingToggle = () => {
+    setBrandingCollapsed(!isBrandingCollapsed);
+  }
+  const HandleVedioToggle = () => {
+    setVedioCollapsed(!isVedioCollapsed);
+  }
+  const HandleResourceToggle = () => {
+    setResourceCollapsed(!isResourceCollapsed);
+  }
+
+  const textStyle = {
+    color: isCollapsed ? 'black' : 'red',
+  };
+  const ActiveInnerWeb ={
+    color: isInnerCollapsed ? 'black' : 'red',
+  }
+  const ActiveMobile = {
+    color: isMobileCollapsed ? 'black' : 'red',
+  }
+
+  const ActiveDigital = {
+    color: isDigitalCollapsed ? 'black' : 'red',
+  }
+  
+  const ActiveUX = {
+    color: isUxCollapsed ? 'black' : 'red',
+  }
+  const ActiveEcommerce = {
+    color: isEcommerceWebCollapsed ? 'black' : 'red',
+  }
+
+  const ActiveBranding = {
+    color: isBrandingCollapsed ? 'black' : 'red',
+  }
+
+  const ActiveVedio = {
+    color: isVedioCollapsed ? 'black' : 'red',
+  }
+  const ActiveResource = {
+    color: isResourceCollapsed ? 'black' : 'red',
+  }
   return (
 
-    <div className={`container-fluid p-0 ${Style.Container}`}>
+    <div className={`container-fluid p-0 ${Style.Container}`} onMouseLeave={offHover}>
       <div className={`${'row'} ${Style.row}`}>
         <div className={`col-lg-2 ${Style.logoCont}`}>
           <div className={Style.logo}>
@@ -173,8 +254,8 @@ const page = () => {
 
           </ul>
         </div>
-        <div className={`col-4 ${Style.Expert}`}>
-          <div className={Style.ExpertBtn} onClick={handleContactForm}>
+        <div className={`col-4 ${Style.ExpertResponsive}`}>
+          {/*  <div className={Style.ExpertBtn} onClick={handleContactForm}>
             <span>Speak to an Expert</span>
           </div>
           <div className={Style.ExpertWhatsapp}>
@@ -182,7 +263,7 @@ const page = () => {
           </div>
           <div className={Style.ExpertPhone}>
             <FaPhoneAlt />
-          </div>
+          </div> */}
           <div className={Style.ExpertBtn2} >
             {isMenu ? <ImCross className={Style.ManuIcon2} onClick={handleMenu} /> : <HiOutlineMenuAlt4 onClick={handleMenu} className={Style.ManuIcon} />}
           </div>
@@ -259,13 +340,124 @@ const page = () => {
         <div className={`${'row'} ${Style.MenuRow}`}>
           <div className={`col-12 ${Style.MenuList}`}>
             <div className={`col-12 ${Style.Cross}`}>
-
+              <div className={Style.ExpertBtn2} >
+                {isMenu ? <ImCross className={Style.ManuIcon2} onClick={handleMenu} /> : <HiOutlineMenuAlt4 onClick={handleMenu} className={Style.ManuIcon} />}
+              </div>
             </div>
             <div className={`col-12 ${Style.MenuListing}`}>
               <ul className={Style.listing}>
                 <li><a href="">HOME</a></li>
                 <li><a href="">ABOUT</a></li>
-                <li className={Style.listTabv}><a href="">SERVICES</a> <FaPlus /></li>
+                <li className={Style.listTabv}><a href="" style={textStyle}>SERVICES</a><button type="button" className={Style.Arcadian} onClick={handleToggle}> {isCollapsed  ? <FaPlus /> :<FaMinus />} </button></li>
+                <div className={`collapse ${isCollapsed ? '' : 'show'}`}>
+                  <ul className={Style.listing}>
+                    <li className={Style.listTabv}><a href="" style={ActiveInnerWeb}>WEB DEVELOPMENT</a><button type="button" className={Style.Arcadian} onClick={handleInnerToggle}> {isInnerCollapsed ? <MdKeyboardArrowDown /> : <MdKeyboardArrowUp />} </button></li>
+                    <div className={`collapse ${isInnerCollapsed ? '' : 'show'}`}>
+                      <ul className={Style.listing}>
+                        <li className={Style.listTabv}><a href="">WordPress Development</a></li>
+                        <li className={Style.listTabv}><a href="">Php Development</a></li>
+                        <li className={Style.listTabv}><a href="">CMS Development</a></li>
+                        <li className={Style.listTabv}><a href="">Laravel Development</a></li>
+                        <li className={Style.listTabv}><a href="">Website Maintaince Services</a></li>
+                        <li className={Style.listTabv}><a href="">Whatsapp Integration</a></li>
+                      </ul>
+                    </div>
+                    <li className={Style.listTabv}><a href="" style={ActiveMobile}>MOBILE APPLICATION DEVELOPMENT</a><button type="button" className={Style.Arcadian} onClick={handleMobileToggle}> {isMobileCollapsed ? <MdKeyboardArrowDown /> : <MdKeyboardArrowUp />} </button></li>
+                    <div className={`collapse ${isMobileCollapsed ? '' : 'show'}`}>
+                      <ul className={Style.listing}>
+                        <li className={Style.listTabv}><a href="">Hybrid Apps</a></li>
+                        <li className={Style.listTabv}><a href="">Android App Development</a></li>
+                        <li className={Style.listTabv}><a href="">IOS App Development</a></li>
+                        <li className={Style.listTabv}><a href="">React Native Apps</a></li>
+                        <li className={Style.listTabv}><a href="">Flutter Apps</a></li>
+                        <li className={Style.listTabv}><a href="">Progressive Web Apps</a></li>
+                        <li className={Style.listTabv}><a href="">VIDEO ANIMATION</a></li>
+                        <li className={Style.listTabv}><a href="">IT RESOURCE</a></li>
+                      </ul>
+                    </div>
+                    <li className={Style.listTabv}><a href="" style={ActiveDigital}>DIGITAL MARKETING</a><button type="button" className={Style.Arcadian} onClick={handleDigitalToggle}> {isDigitalCollapsed ? <MdKeyboardArrowDown /> : <MdKeyboardArrowUp />} </button></li>
+                    <div className={`collapse ${isDigitalCollapsed ? '' : 'show'}`}>
+                      <ul className={Style.listing}>
+                        <li className={Style.listTabv}><a href="">Search Engine Optimization(SEO) </a></li>
+                        <li className={Style.listTabv}><a href="">Social Media Marketing (SMM)</a></li>
+                        <li className={Style.listTabv}><a href="">Paid Media Marketing(PMM)</a></li>
+                        <li className={Style.listTabv}><a href="">Email Marketing</a></li>
+                        <li className={Style.listTabv}><a href="">Influencer Marketing</a></li>
+                        <li className={Style.listTabv}><a href="">App Store Optimization(ASO)</a></li>
+                      </ul>
+                    </div>
+                    <li className={Style.listTabv}><a href="" style={ActiveUX}>UI/UX DESIGN</a><button type="button" className={Style.Arcadian} onClick={HandleUxToggle}> {isUxCollapsed ? <MdKeyboardArrowDown /> : <MdKeyboardArrowUp />}</button></li>
+                    <div className={`collapse ${isUxCollapsed ? '' : 'show'}`}>
+                      <ul className={Style.listing}>
+                        <li className={Style.listTabv}><a href="">PSD To Responsive HTML </a></li>
+                        <li className={Style.listTabv}><a href="">UX Design Workshop</a></li>
+                        <li className={Style.listTabv}><a href="">Responsive Web Design</a></li>
+                        <li className={Style.listTabv}><a href="">UX Design</a></li>
+                        <li className={Style.listTabv}><a href="">Landing Page Design</a></li>
+                        <li className={Style.listTabv}><a href="">UX Audit</a></li>
+                        <li className={Style.listTabv}><a href="">Graphic Design</a></li>
+                      </ul>
+                    </div>
+                    <li className={Style.listTabv}><a href="" style={ActiveEcommerce}>E-COMMERCE WEB DEVELOPMENT</a><button type="button" className={Style.Arcadian} onClick={HandleEcommerceToggle}> {isEcommerceWebCollapsed? <MdKeyboardArrowDown /> : <MdKeyboardArrowUp />} </button></li>
+                    <div className={`collapse ${isEcommerceWebCollapsed ? '' : 'show'}`}>
+                      <ul className={Style.listing}>
+                        <li className={Style.listTabv}><a href="">Woo Commerce Development </a></li>
+                        <li className={Style.listTabv}><a href="">Mirakl Development</a></li>
+                        <li className={Style.listTabv}><a href="">Magento Ecommerce Development</a></li>
+                        <li className={Style.listTabv}><a href="">Big Commerce Development</a></li>
+                        <li className={Style.listTabv}><a href="">Shopify Ecommerce Development</a></li>
+                        <li className={Style.listTabv}><a href="">Shopify Plus Ecommerce Development</a></li>
+                      </ul>
+                    </div>
+                    <li className={Style.listTabv}><a href="" style={ActiveBranding}>DIGITAL BRANDING & COMMUNICATION</a><button type="button" className={Style.Arcadian} onClick={HandleBrandingToggle}> {isBrandingCollapsed ? <MdKeyboardArrowDown /> : <MdKeyboardArrowUp />} </button></li>
+                    <div className={`collapse ${isBrandingCollapsed ? '' : 'show'}`}>
+                      <ul className={Style.listing}>
+                        <li className={Style.listTabv}><a href="">Company Profile & Broucher Design </a></li>
+                        <li className={Style.listTabv}><a href="">Business Card Design</a></li>
+                        <li className={Style.listTabv}><a href="">Corporate Identity Design</a></li>
+                        <li className={Style.listTabv}><a href="">Packaging Designs</a></li>
+                        <li className={Style.listTabv}><a href="">Logo Design</a></li>
+                        <li className={Style.listTabv}><a href="">DIGITAL BRANDING & COMMUNICATION</a></li>
+                        <li className={Style.listTabv}><a href="">VIDEO ANIMATION</a></li>
+                        <li className={Style.listTabv}><a href="">IT RESOURCE</a></li>
+                      </ul>
+                    </div>
+                    <li className={Style.listTabv}><a href="" style={ActiveVedio}>VIDEO ANIMATION</a><button type="button" className={Style.Arcadian} onClick={HandleVedioToggle}> {isVedioCollapsed? <MdKeyboardArrowDown /> : <MdKeyboardArrowUp />} </button></li>
+                    <div className={`collapse ${isVedioCollapsed ? '' : 'show'}`}>
+                      <ul className={Style.listing}>
+                        <li className={Style.listTabv}><a href="">Explainer Video Production </a></li>
+                        <li className={Style.listTabv}><a href="">Product Demo Animation</a></li>
+                        <li className={Style.listTabv}><a href="">Video Game Trailer</a></li>
+                        <li className={Style.listTabv}><a href="">3D Architectual Walkthroughs</a></li>
+                        <li className={Style.listTabv}><a href="">Medical Animation Studio</a></li>
+                        <li className={Style.listTabv}><a href="">Character Animation Video</a></li>
+                        <li className={Style.listTabv}><a href="">Whiteboard Animation Video</a></li>
+                      </ul>
+                    </div>
+                    <li className={Style.listTabv}><a href="" style={ActiveResource}>IT RESOURCE</a><button type="button" className={Style.Arcadian} onClick={HandleResourceToggle}> {isResourceCollapsed ? <MdKeyboardArrowDown /> : <MdKeyboardArrowUp /> }</button></li>
+                    <div className={`collapse ${isResourceCollapsed ? '' : 'show'}`}>
+                      <ul className={Style.listing}>
+                        <li className={Style.listTabv}><a href="">Hire Mobile App Developer </a></li>
+                        <li className={Style.listTabv}><a href="">Hire Scrums Master in Dubai</a></li>
+                        <li className={Style.listTabv}><a href="">Hire Aws Resources In Dubai</a></li>
+                        <li className={Style.listTabv}><a href="">Hire QA Resources In Dubai</a></li>
+                        <li className={Style.listTabv}><a href="">Hire Nodejs Developer In Dubai</a></li>
+                        <li className={Style.listTabv}><a href="">Hire Azure Developer In Dubai</a></li>
+                        <li className={Style.listTabv}><a href="">Hire Reactjs Developer In Dubai</a></li>
+                        <li className={Style.listTabv}><a href="">Hire React Native Developer In Dubai</a></li>
+                        <li className={Style.listTabv}><a href="">Hire Sharepoint Developer In Dubai</a></li>
+                        <li className={Style.listTabv}><a href="">Hire Dynamics 365 Developer In Dubai</a></li>
+                        <li className={Style.listTabv}><a href="">Hire Project Managers In Dubai</a></li>
+                        <li className={Style.listTabv}><a href="">Hire Dot Net Developer In Dubai</a></li>
+                        <li className={Style.listTabv}><a href="">Hire RPA In Dubai</a></li>
+                        <li className={Style.listTabv}><a href="">3D Google Maps Integration</a></li>
+                        <li className={Style.listTabv}><a href="">MarTech Consulting</a></li>
+                        <li className={Style.listTabv}><a href="">Digital Cloud Transformation</a></li>
+
+                      </ul>
+                    </div>
+                   </ul>
+                </div>
                 <li><a href="">CASE STUDIES</a></li>
                 <li><a href="">BLOG</a></li>
               </ul>
@@ -288,8 +480,8 @@ const page = () => {
               </ul>
             </div>
             <div className={`col-md-8 ${Style.Down}`}>
-              {WebDev ? 
-                  <>
+              {WebDev ?
+                <>
                   <div className={Style.RowTabs}>
                     <span className={Style.TabHead}>
                       WEB DEVELOPMENT
@@ -297,47 +489,47 @@ const page = () => {
                   </div>
                   <div className={`row ${Style.ContentRow}`}>
                     <div className={`col-12 mt-3 ${Style.ContentCol}`}>
-                    <div className={`col-4 ${Style.TabContent}`}>
-                      <div className={Style.ImageDiv}>
-                        <Image src={WordPress} className={Style.WordPress} />
+                      <div className={`col-4 ${Style.TabContent}`}>
+                        <div className={Style.ImageDiv}>
+                          <Image src={WordPress} className={Style.WordPress} />
+                        </div>
+                        <a href=''>WORD PRESS DEVELOPMENT</a>
                       </div>
-                      <a href=''>WORD PRESS DEVELOPMENT</a>
-                    </div>
-                    <div className={`col-4 ${Style.TabContent}`}>
-                      <div className={Style.ImageDiv}>
+                      <div className={`col-4 ${Style.TabContent}`}>
+                        <div className={Style.ImageDiv}>
                           <Image src={PHp} className={Style.WordPress} />
+                        </div>
+                        <a href=''>PHP DEVELOPMENT</a>
                       </div>
-                      <a href=''>PHP DEVELOPMENT</a>
-                    </div>
-                    <div className={`col-4 ${Style.TabContent}`}>
-                      <div className={Style.ImageDiv}>
-                        <Image src={CMS} className={Style.WordPress} />
+                      <div className={`col-4 ${Style.TabContent}`}>
+                        <div className={Style.ImageDiv}>
+                          <Image src={CMS} className={Style.WordPress} />
+                        </div>
+                        <a href=''>CMS DEVELOPMENT</a>
                       </div>
-                      <a href=''>CMS DEVELOPMENT</a>
                     </div>
-                  </div>
                     <div className={`col-12 mt-3 ${Style.ContentCol}`}>
-                    <div className={`col-4 ${Style.TabContent}`}>
-                      <div className={Style.ImageDiv}>
-                        <Image src={Laravel} className={Style.WordPress} />
+                      <div className={`col-4 ${Style.TabContent}`}>
+                        <div className={Style.ImageDiv}>
+                          <Image src={Laravel} className={Style.WordPress} />
+                        </div>
+                        <a href=''>LARAVEL DEVELOPMENT</a>
                       </div>
-                      <a href=''>LARAVEL DEVELOPMENT</a>
-                    </div>
-                    <div className={`col-4 ${Style.TabContent}`}>
-                      <div className={Style.ImageDiv}>
+                      <div className={`col-4 ${Style.TabContent}`}>
+                        <div className={Style.ImageDiv}>
                           <Image src={System} className={Style.WordPress} />
+                        </div>
+                        <a href=''>WEBSITE MAINTENANCE SERVICES</a>
                       </div>
-                      <a href=''>WEBSITE MAINTENANCE SERVICES</a>
-                    </div>
-                    <div className={`col-4 ${Style.TabContent}`}>
-                      <div className={Style.ImageDiv}>
+                      <div className={`col-4 ${Style.TabContent}`}>
+                        <div className={Style.ImageDiv}>
                           <Image src={System} className={Style.WordPress} />
+                        </div>
+                        <a href=''>WORD PRESS DEVELOPMENT</a>
                       </div>
-                      <a href=''>WORD PRESS DEVELOPMENT</a>
                     </div>
                   </div>
-                  </div>
-                   </>:""}
+                </> : ""}
               {MobileDev ?
                 <>
                   <div className={Style.RowTabs}>
@@ -387,7 +579,7 @@ const page = () => {
                       </div>
                     </div>
                   </div>
-                  </> : ""}
+                </> : ""}
               {Design ?
                 <>
                   <div className={Style.RowTabs}>
@@ -445,12 +637,12 @@ const page = () => {
                       </div>
                     </div>
                   </div>
-                   </> : ""}
+                </> : ""}
               {Marketing ?
                 <>
                   <div className={Style.RowTabs}>
                     <span className={Style.TabHead}>
-                     DIGITAL MARKETING
+                      DIGITAL MARKETING
                     </span>
                   </div>
                   <div className={`row ${Style.ContentRow}`}>
@@ -495,7 +687,7 @@ const page = () => {
                       </div>
                     </div>
                   </div>
-                  </> : ""}
+                </> : ""}
               {Ecommerce ?
                 <>
                   <div className={Style.RowTabs}>
@@ -545,12 +737,12 @@ const page = () => {
                       </div>
                     </div>
                   </div>
-                   </> : ""}
+                </> : ""}
               {Branding ?
                 <>
                   <div className={Style.RowTabs}>
                     <span className={Style.TabHead}>
-                     DIGITAL BRANDING & COMMUNICATION
+                      DIGITAL BRANDING & COMMUNICATION
                     </span>
                   </div>
                   <div className={`row ${Style.ContentRow}`}>
@@ -587,12 +779,12 @@ const page = () => {
                         </div>
                         <a href=''>LOGO DESIGN</a>
                       </div>
-                     
+
                     </div>
                   </div>
-                   </> : ""}
-              
-              
+                </> : ""}
+
+
 
               <div>
 

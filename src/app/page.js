@@ -24,8 +24,7 @@ import UIUXImg from './assets/images/UI-UX-Design/ui-ux-design.webp'
 import VideoImg from './assets/images/video-animation/video-animation.webp'
 import IT_ResourcesImg from './assets/images/IT-Resources/it-resource.webp'
 import Branding from './component/Branding/index';
-
-
+import Footer from './component/Footer/component'
 
 const page = () => {
   const [isActive, setActive] = useState("Web_Dev")
@@ -498,6 +497,7 @@ const page = () => {
       </section>
       <OurWork />
       <Branding />
+      <Footer />
     </>
   )
 }
