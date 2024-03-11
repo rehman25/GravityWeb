@@ -93,3 +93,17 @@ span {
 .slick-slide:focus{
     outline: none;
 }
+/* ========================= BRANDING */
+.branding .slick-dots{
+    display: flex !important;
+    justify-content: center;
+}
+.branding .slick-dots li button{
+    width: 130px;
+    background: rgb(219, 216, 216);
+    height: 4px;
+    color: transparent;
+}
+.branding .slick-dots li.slick-active button{
+    background: #e3204a;
+}

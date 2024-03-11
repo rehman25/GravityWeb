@@ -7,6 +7,7 @@ import 'aos/dist/aos.css';
 const Text = ({
     text,
     animation,
+    className
 }) => {
     useEffect(() => {
         AOS.init({
@@ -15,7 +16,7 @@ const Text = ({
     }, []);
     return (
         <>
-            <h5 className={`${style.h5}`} data-aos={animation} >{text}</h5>
+            <h5 className={`${style.h5} ${className}`} data-aos={animation} >{text}</h5>
         </>
     )
 }

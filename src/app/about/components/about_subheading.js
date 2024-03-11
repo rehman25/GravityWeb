@@ -52,7 +52,7 @@ const About_subheading = () => {
   return (
     <>
       <section style={{overflowX: "clip"}}>
-        <div className="bg-black text-white py-5 w-100">
+        <div className="bg-black text-white py-5">
           <div className="container">
             <div className="row">
               <div className="col-lg-12">

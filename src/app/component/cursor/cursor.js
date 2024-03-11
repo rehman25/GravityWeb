@@ -16,10 +16,12 @@ const cursor = () => {
                 outerAlpha={0}
                 outerStyle={{
                     border: '1px solid #e3204a96',
-                    mixBlendMode: 'exclusion'
+                    mixBlendMode: 'exclusion',
+                    zIndex: 9999
                 }}
                 innerStyle={{
-                    backgroundColor: '#E3204A'
+                    backgroundColor: '#E3204A',
+                    zIndex: 9999
                 }}
             />
         </>

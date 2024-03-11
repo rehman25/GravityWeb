@@ -23,6 +23,7 @@ import EcommerceImg from './assets/images/Ecommerce/ecommerce-development.webp'
 import UIUXImg from './assets/images/UI-UX-Design/ui-ux-design.webp'
 import VideoImg from './assets/images/video-animation/video-animation.webp'
 import IT_ResourcesImg from './assets/images/IT-Resources/it-resource.webp'
+import Branding from './component/Branding/index';
 
 
 
@@ -30,6 +31,7 @@ const page = () => {
   const [isActive, setActive] = useState("Web_Dev")
   return (
     <>
+      <Cursor />
       <Header />
       <section>
         <div className={`${style.heroSection} container-fluid`}>
@@ -83,6 +85,11 @@ const page = () => {
               <div className={`${style.homeTabs} hometabsSection`}>
                 <Tabs style={{ width: "100%" }}>
                   <div className={`${style.TabListBox}`}>
+                    <div className={`${style.mouseBox}`}>
+                      <div className={`${style.mouse}`}></div>
+                      <h6></h6>
+                      <span>Scroll</span>
+                    </div>
                     <Text text="Services" animation="fade-right" />
                     <TabList id={`${style.TabList}`}>
                       <Tab onClick={() => { setActive("Web_Dev") }}>Web Development</Tab>
@@ -490,7 +497,7 @@ const page = () => {
         </div>
       </section>
       <OurWork />
-      <Cursor />
+      <Branding />
     </>
   )
 }

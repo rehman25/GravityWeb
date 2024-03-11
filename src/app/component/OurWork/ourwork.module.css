@@ -1,10 +1,10 @@
 .our__work__section{
     background: #363636;
-    /* padding: 40px 80px; */
+    padding: 50px 0;
 }
 
 .ourWork__Box{
-    padding: 0 10px;
+    padding: 0 15px;
 }
 .ourWork__Box .work__Img{
     height: 290px;

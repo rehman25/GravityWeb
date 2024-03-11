@@ -1,0 +1,73 @@
+
+
+@font-face {
+    font-family: 'light';
+    src: url('../../assets/fonts/Montserrat-Light.ttf') format('truetype');
+}
+
+.slider__section{
+    background: #f8f8f8;
+    padding: 50px 0;
+}
+.slider__section h5{
+    color: #363636;
+    font-size: 2em;
+    font-family: "light", sans-serif;
+}
+.slider__section h5 span{
+    font-family: "light", sans-serif;
+    font-weight: 600;
+    color: #e3204a;
+}
+
+.demo__slider{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.demo__slider div{
+    width: 100%;
+    display: flex;
+}
+.demo__slider div .img__mask{
+    width: 100%;
+}
+.demo__slider div .img__mask img{
+    width: 100%;
+    height: auto;
+    filter: grayscale(1);
+    transition: .4s;
+}
+.demo__slider div .img__mask:hover img{
+    filter: grayscale(0);
+    transition: .4s;
+}
+
+.slider__section .info__hand{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slider__section .info__hand img{
+    height: 15px;
+    width: 15px;
+    animation: moveLeftToRight 2s linear infinite; /* Adjust duration and timing function as needed */
+}
+.slider__section .info__hand span{
+    margin-top: 10px;
+    font-size: 0.75em;
+    color: gray;
+}
+
+@keyframes moveLeftToRight {
+    0% {
+      transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(1%);
+    }
+    100% {
+      transform: translateX(200%);
+    }
+  }
+  
