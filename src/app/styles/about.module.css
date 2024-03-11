@@ -105,22 +105,15 @@
 /* Carts Section */
 
 .AboutCarts {
-  /* overflow-x: hidden; */
-  /* overflow: clip; */
   overflow-x: clip;
   padding: 0;
   margin: 0;
-
-  /* margin-top: 25px; */
 }
 
 .LeftCart {
   background-color: rgb(229,229,229);
   padding: 30px 40px;
-  
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  /* margin-bottom: 10px; */
-  /* width: 660px; */
   height: 280px;
   display: flex;
   align-items: center;
