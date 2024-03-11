@@ -93,3 +93,13 @@ span {
 .slick-slide:focus{
     outline: none;
 }
+
+
+/* EXPERTISE GLOBAL CSS ================== */
+.Expertise___bg .react-tabs__tab--selected{
+    background: #d40834;
+}
+
+.Expertise___bg .react-tabs__tab-panel--selected{
+    width: 45%;
+}

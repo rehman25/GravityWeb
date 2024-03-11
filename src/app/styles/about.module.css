@@ -1,49 +1,234 @@
-/* styles/about.module.css */
+/* About banner Styling  */
+
+.banneraboutsection {
+  background-image: url("../assets/images/banner/inner-banner.svg");
+  background-color: rgb(54, 54, 54);
+  height: 55vh;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+}
+
+.bannertexth6 {
+  margin: 25px 35px;
+}
+
+.bannertexth1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 40px;
+}
+
+.bannertextspan {
+  color: rgb(227, 32, 74);
+}
+
+.bannertexth1::after {
+  content: "Digital Change";
+  color: rgb(219, 33, 73);
+  margin-left: 10px;
+}
+
+.bordertext {
+  position: absolute;
+  top: 125px;
+  left: 10px;
+  width: 20px;
+  height: 2px;
+  background-color: #ccc;
+  margin-left: 50px;
+}
+
+.bannertextrightside {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0px 50px;
+  font-weight: 400;
+  color: #ffff;
+}
+
+/* --------------------------------------------------------------- */
+
+
+/* banner down styling */
+
+.bannerContainer {
+  display: flex;
+  overflow-x: hidden;
+}
+
+.bannerdownimg {
+  width: 700px;
+  height: 280px;
+}
+
+.headingContainer {
+  white-space: nowrap;
+  margin: 50px 0px;
+}
+
+.heading {
+  display: inline-block;
+  color: transparent;
+  margin-right: 20px;
+  font-size: 75px;
+  font-weight: bolder;
+  -webkit-text-stroke: 1px #e3204a;
+  text-shadow: 0 0 0 0;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.AboutCarts {
+  padding: 50px;
+}
+
+.LeftCart {
+  background-color: rgb(230, 230, 230);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.LeftCart h3 {
+  color: rgb(28, 28, 28);
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+  margin: 10px 50px;
+}
+
+.LeftCart p {
+  text-align: left;
+  margin: 0px 50px;
+}
+
+.cart {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.cart h2 {
+  color: #333;
+}
+
+.cart p {
+  color: #666;
+}
 
 .marquee_content {
-    white-space: nowrap;
-    animation: marquee 40s linear infinite;
-    display: flex;
-}
-  
-.marquee_content div {
-    background-color: white;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 8px;
-    margin-top: 15px;
-    height: 82px;
-    padding: 0 20px;
-}
-.marquee_content div img{
-    object-fit: contain ;
+  white-space: nowrap;
+  animation: marquee 40s linear infinite;
+  display: flex;
 }
 
-@keyframes marquee {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
+.marquee_content div {
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 8px;
+  margin-top: 15px;
+  height: 82px;
+  padding: 0 20px;
 }
+
+.marquee_content div img {
+  object-fit: contain;
+}
+
+/* EXPERTISE ========================== */
+.Expertise___bg {
+  background: #e3204a;
+  height: 1000px;
+}
+
+.Expertise___bg .Expertise___tabs__box {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row-reverse;
+
+}
+.Expertise___tabs__box #Expertise___tabs__list {
+  width: 55%;
+  border-bottom: none;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.Expertise___tabs__box #Expertise___tabs__list img{
+  width: 55px !important;
+  height: 55px;
+}
+
+.Expertise___tabs__box #Expertise___tabs__list li {
+  padding: 40px 20px;
+  /* border-radius: 10px; */
+  /* margin: 25px 0; */
+  
+}
+.Expertise___tabs__box #Expertise___tabs__list li span {
+  color: white;
+  margin-top: 20px;
+  text-align: left
+text-decoration= none solid rgb(255, 255, 255)
+}
+.Expertise__TabPanel{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 130px;
+}
+.Expertise__TabPanel img {
+  height: 240px;
+  width: 240px;
+  /* filter: brightness(0) saturate(100%) invert(12%) sepia(100%) saturate(4673%) hue-rotate(341deg) brightness(86%) contrast(101%); */
+  filter: brightness(0) saturate(100%) invert(14%) sepia(46%) saturate(5733%) hue-rotate(355deg) brightness(97%) contrast(127%);
+}
+.Expertise__TabPanel p{
+  padding: 15px 45px;
+  color: #fff;
+  margin-top: 10px;
+}
+
+
 /* Media queries for responsive design */
 @media (max-width: 992px) {
-    .marquee_content div {
-        height: 60px; /* Decrease height for medium-sized screens */
-        padding: 0 10px; /* Adjust padding for smaller screens */
-    }
+  .marquee_content div {
+    height: 60px;
+    /* Decrease height for medium-sized screens */
+    padding: 0 10px;
+    /* Adjust padding for smaller screens */
+  }
 }
 
 @media (max-width: 768px) {
-    .marquee_content div {
-        height: 60px; /* Decrease height for small screens */
-        padding: 0 10px;
-    }
-   
-    .container {
-        max-width: 100%; /* Ensure container doesn't overflow */
-    }
+  .marquee_content div {
+    height: 60px;
+    /* Decrease height for small screens */
+    padding: 0 10px;
+  }
+
+  .container {
+    max-width: 100%;
+    /* Ensure container doesn't overflow */
+  }
+}
+
+/* ===================================================== */
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
 }
