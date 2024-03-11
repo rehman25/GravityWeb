@@ -1,0 +1,76 @@
+.Container{
+    height: 70vh;
+    overflow: clip;
+}
+
+.leftContainer{
+   height: 100vh;
+   background-color: #e3204a;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   padding: 50px;
+}
+.rightContainer{
+    height: 100vh;
+    background-color: #363636;
+}
+.heading{
+    position: absolute;
+     left: 300px;
+     right: 100px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #b9b9ba;
+    text-transform: capitalize;
+    word-break: break-word;
+    font-size: 4.7em;
+    font-family: sans-serif;
+    font-weight: 700;
+    z-index: 1;
+    padding: 30px;
+}
+
+.letsbuild{
+    color: white;
+    margin: 0px;
+}
+.something{
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+}
+.footerPara{
+    margin: 0px;
+    padding: 0px;
+    font-size: 10px;
+    color: white;
+}
+.innnerRow{
+    display: flex;
+    flex-direction: row;
+}
+.DashContainer{
+    width: 10%;
+}
+.address{
+    color: white;
+    margin: 0px;
+    font-size: 10px;
+    
+}
+.dash{
+    color: white !important;
+     font-weight: 700;
+     margin-left: 10px;
+     margin: 0px;
+}
+
+.addressContainer{
+    width: 50%;
+    margin-top: 10px;
+}
+.FooterIcon{
+    margin: 0px 5px;
+    font-size: 14px;
+    margin-top: 10px;
+}

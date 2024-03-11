@@ -13,6 +13,7 @@ import { FaYoutube } from "react-icons/fa6";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import Header from './component/Header/component'
+import Footer from './component/Footer/component'
 
 const page = () => {
   const [isActive, setActive] = useState("Web_Dev")
@@ -93,6 +94,7 @@ const page = () => {
           </div>
         </div>
       </section>
+      <Footer />
 
     </>
   )
