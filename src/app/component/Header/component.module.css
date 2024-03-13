@@ -13,15 +13,13 @@
     z-index: 9999;
 }
 
-.Container::before{
+/* .Container::before{
     content: "";
     position: absolute;
     top: 0;
-    /* background: url(../../../../public/Images/inner-banner.svg) no-repeat; */
     width: 100%;
     height: 100%;
-    z-index: 0;
-}
+} */
 .logoCont{
     padding: 0px;
     height: 50px;
