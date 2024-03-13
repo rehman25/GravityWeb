@@ -1,0 +1,22 @@
+
+/*  Careers Banner Section  */
+
+.careersbannertext{
+    background-image: url("../assets/images/careersbanner.jpg");
+    height: 150px;
+    background-size: cover;
+} 
+
+.careersbannertext h4{
+    text-align: center;
+    padding: 50px;
+    font-size: 25px;
+    color: #FFFFFA;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+}
+
+.careersbannertext span {
+    background-color: #363636;
+}
+
