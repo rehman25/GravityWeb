@@ -13,7 +13,7 @@ const component = () => {
                 <div className="container-fliud">
                     <div className="row justify-content-between">
                         <Text text="FAQ" animation="fade-right" />
-                        <div className="col-md-2 p-0">
+                        <div className="col-md-2 p-0 mt-2">
                             <div className={`${style.box}`}>
                                 <h5>1</h5>
                                 <span>I need web design services for my enterprise website. Can you help? </span>
@@ -31,7 +31,7 @@ const component = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-2 p-0">
+                        <div className="col-md-2 p-0 mt-2">
                             <div className={`${style.box}`}>
                                 <h5>2</h5>
                                 <span>How much does it cost to hire web designer in Dubai? </span>
@@ -48,7 +48,7 @@ const component = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-2 p-0">
+                        <div className="col-md-2 p-0 mt-2">
                             <div className={`${style.box}`}>
                                 <h5>3</h5>
                                 <span>How can I choose a great web design agency in Dubai?</span>
@@ -64,7 +64,7 @@ const component = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-2 p-0">
+                        <div className="col-md-2 p-0 mt-2">
                             <div className={`${style.box}`}>
                                 <h5>4</h5>
                                 <span>Is responsive web design important? </span>
@@ -82,7 +82,7 @@ const component = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-2 p-0">
+                        <div className="col-md-2 p-0 mt-2">
                             <div className={`${style.box}`}>
                                 <h5>5</h5>
                                 <span>

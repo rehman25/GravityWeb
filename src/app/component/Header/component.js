@@ -223,11 +223,11 @@ const page = () => {
         </div>
         <div className={`col-lg-8 ${Style.MENU}`}>
           <ul className={Style.HeaderUl}>
-            <li><a href="">HOME</a></li>
-            <li><a href="">ABOUT</a></li>
-            <li><a href="" onMouseEnter={onHover} >SERVICES</a></li>
-            <li><a href="/CaseStudies">CASE STUDIES</a></li>
-            <li><a href="">BLOG</a></li>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/about">ABOUT</a></li>
+            <li><a href="/services" onMouseEnter={onHover}>SERVICES</a></li>
+            <li><a href="/caseStudies">CASE STUDIES</a></li>
+            <li><a href="/blog">BLOG</a></li>
           </ul>
         </div>
         <div className={`col-lg-2 ${Style.Expert}`}>

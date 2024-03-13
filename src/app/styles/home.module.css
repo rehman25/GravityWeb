@@ -30,15 +30,14 @@
     -webkit-text-fill-color: transparent;
     -webkit-animation: gradientAnimation 5s linear infinite;
 }
-
-.heroRightSide span.heroHeadTwo {}
-
-.heroLeftSide {
+.heroLeftSide{
     padding-left: 100px;
+}
+.heroLeftSide p{
     font-weight: 400;
     color: #fff;
     line-height: 1.5;
-    color: white;
+    font-size: 0.85em;
 }
 
 .heroSectionIcons {
@@ -178,7 +177,6 @@
     height: 100%;
     width: 100%;
     display: block;
-    -o-object-fit: contain;
     object-fit: contain;
 }
 
@@ -212,5 +210,59 @@
     }
     100% {
         transform: translateY(850%);
+    }
+}
+
+@media screen and (max-width:992px){
+    .heroRightSide span {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .homeTabs .TabListBox {
+        width: auto;
+    }
+    .homeTabs .TabPanel .TabImage {
+        height: auto;
+        width: auto;
+    }
+}
+
+@media screen and (max-width:768px){
+    .heroRightSide {
+        align-items: center;
+    }
+    .heroRightSide span {
+        text-align: center;
+    }
+    .heroSectionIcons{
+        display: none;
+    }
+    .heroLeftSide{
+        padding-left: 0;
+    }
+    .homeTabmainBox {
+        padding: 40px 20px;
+    }
+}
+
+@media screen and (max-width:680px){
+    .homeTabs .TabPanel .TabImage {
+        width: 100%;
+    }
+    .homeTabs .TabPanel .service_item__list_wrapper {
+        margin: 0;
+        padding: 0;
+    }
+    .homeTabs .TabPanel .service_item__list_wrapper li {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:480px){
+    .heroSection{
+        height: 500px;
+    }
+    .heroRightSide span{
+        font-size: 30px;
     }
 }

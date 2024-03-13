@@ -26,36 +26,35 @@ const component = () => {
                     </div>
                 </div>
                 <div className={`row mt-3 ${styles.socialrow}`}>
-                    <div className={`col-lg-6 ${styles.Youtube}`}>
-                        <FaYoutube className={styles.YoutubeIcon} />
+                    <div className={`col-lg-6 ${styles.Youtube} ${styles.bgBox}`}>
+                        <FaYoutube className={styles.icon} />
                     </div>
-                    <div className={`col-lg-2 ${styles.facebook}`}>
-                        <FaFacebookF className={styles.YoutubeIcon} />
+                    <div className={`col-lg-2 ${styles.facebook} ${styles.bgBox} `}>
+                        <FaFacebookF className={styles.icon} />
                     </div>
-                    <div className={`col-lg-2 ${styles.facebook2}`}>
-                        <FaFacebookF className={styles.YoutubeIcon} />
+                    <div className={`col-lg-2 ${styles.facebook2} ${styles.bgBox}`}>
+                        <FaFacebookF className={styles.icon} />
                     </div>
-                    <div className={`col-lg-2 ${styles.instagram}`}>
-                        <FaInstagram className={styles.YoutubeIcon} />
+                    <div className={`col-lg-2 ${styles.instagram} ${styles.bgBox}`}>
+                        <FaInstagram className={styles.icon} />
                     </div>
-
-                    <div className={`col-lg-2 ${styles.twitter}`}>
-                        <FaXTwitter className={styles.YoutubeIcon} />
+                    <div className={`col-lg-2 ${styles.twitter} ${styles.bgBox}`}>
+                        <FaXTwitter className={styles.icon} />
                     </div>
-                    <div className={`col-lg-2 ${styles.instagram2}`}>
-                        <FaInstagram className={styles.YoutubeIcon} />
+                    <div className={`col-lg-2 ${styles.instagram2} ${styles.bgBox}`}>
+                        <FaInstagram className={styles.icon} />
                     </div>
-                    <div className={`col-lg-2 ${styles.facebook3}`}>
-                        <FaFacebookF className={styles.YoutubeIcon} />
+                    <div className={`col-lg-2 ${styles.facebook3} ${styles.bgBox}`}>
+                        <FaFacebookF className={styles.icon} />
                     </div>
-                    <div className={`col-lg-2 ${styles.instagram3}`}>
-                        <FaInstagram className={styles.YoutubeIcon} />
+                    <div className={`col-lg-2 ${styles.instagram3} ${styles.bgBox}`}>
+                        <FaInstagram className={styles.icon} />
                     </div>
-                    <div className={`col-lg-2 ${styles.facebook4}`}>
-                        <FaInstagram className={styles.YoutubeIcon} />
+                    <div className={`col-lg-2 ${styles.facebook4} ${styles.bgBox}`}>
+                        <FaInstagram className={styles.icon} />
                     </div>
-                    <div className={`col-lg-2 ${styles.instagram}`}>
-                        <FaInstagram className={styles.YoutubeIcon} />
+                    <div className={`col-lg-2 ${styles.instagram} ${styles.bgBox}`}>
+                        <FaInstagram className={styles.icon} />
                     </div>
                 </div>
             </div>

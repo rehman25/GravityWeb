@@ -36,8 +36,8 @@ const page = () => {
         </div>
         <div className={`col-lg-6 ${styles.rightContainer}`}>
           <div>
-          <ul className={styles.ulFooter}>
-          <span className={styles.LinkHeading}>Overview</span>
+            <ul className={styles.ulFooter}>
+              <span className={styles.LinkHeading}>Overview</span>
               <li><a href="">About us</a></li>
               <li><a href="">Service</a> </li>
               <li><a href="">Case Studies</a> </li>

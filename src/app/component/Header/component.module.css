@@ -1,9 +1,8 @@
 
 
 .Container{
-    /* background-color :rgba(8, 8, 8, 0.219); */
     background-color: transparent !important;;
-    overflow: clip;
+    overflow-x: clip;
 }
 .row{
     position: fixed;

@@ -70,4 +70,10 @@
       transform: translateX(200%);
     }
   }
+
+  @media screen and (max-width:992px){
+    .slider__section{
+        display: none;
+    }
+  }
   
