@@ -1,4 +1,255 @@
+/* ABOUT Banner Section  */
 
+.banneraboutsection {
+  background-image: url("../assets/images/banner/inner-banner.svg");
+  background-color: rgb(54, 54, 54);
+  padding: 30px;
+  color: rgb(255, 255, 255);
+}
+
+.bannertextleftside {
+  position: relative;
+  margin: 50px 50px;
+}
+
+.borderdesign {
+  position: absolute;
+  left: 3px;
+  top: 5%;
+  transform: translateY(-50%);
+  height: 1px;
+  width: 20px;
+  background-color: rgb(255, 255, 255);
+}
+
+.bannertextleftside h6 {
+  color: rgb(232, 232, 232);
+  font-size: 14px;
+  margin: 25px 35px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.bannertextleftside h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.leftextdisplaycenter {
+  display: inline;
+  font-weight: 600;
+  color: rgb(227, 32, 74);
+  font-family: "Montserrat", sans-serif;
+}
+
+.bannertextrightside {
+  margin-top: 50px;
+  padding: 50px;
+  font-size: 16px;
+}
+
+.banneraboutsection .bannertextrightside span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+
+
+/* ========================================================= */
+
+/* Banner Down Section */
+
+.bannerdownsection {
+  display: flex;
+  overflow-x: hidden;
+}
+
+.bannerdownimg {
+  width: 100%;
+  height: 100%
+}
+
+.headingContainer {
+  display: flex;
+  align-items: center; 
+  white-space: nowrap;
+  margin: 50px 0px;
+}
+
+.heading {
+  color: transparent;
+  margin-right: 20px;
+  font-size: 75px;
+  font-weight: bolder;
+  -webkit-text-stroke: 1px #e3204a;
+  text-shadow: 0 0 0 0;
+}
+
+.marqueeContent {
+  overflow: hidden;
+}
+
+.marqueeContent h1 {
+  display: inline-block;
+  animation: marquee 10s linear infinite; 
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+
+/* ========================================================= */
+
+/* Carts Section */
+
+.AboutCarts {
+  /* overflow-x: hidden; */
+  /* overflow: clip; */
+  overflow-x: clip;
+  padding: 0;
+  margin: 0;
+
+  /* margin-top: 25px; */
+}
+
+.LeftCart {
+  background-color: rgb(229,229,229);
+  padding: 30px 40px;
+  
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* margin-bottom: 10px; */
+  /* width: 660px; */
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.LeftCart h3 {
+  color: rgb(28, 28, 28);
+  font-size: 26px;
+  font-weight: bold;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+}
+
+.LeftCart p {
+  text-align: left;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  padding: 5px;
+}
+
+.cartItem {
+  background-color: #f5f5f5;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cartBox {
+  padding: 20px;
+  width: 100%;
+}
+
+.cartBox1 {
+  background-color: rgb(250,250,250);
+  padding: 35px;
+}
+
+.cartBox2 {
+  background-color: rgb(222,31,73);
+  padding: 20px;
+  position: relative; 
+}
+
+.cartBox2 .cartImage1{
+  position: relative; 
+  bottom: -60px; 
+  left: 0px; 
+}
+
+.cartBox3 {
+  background-color: rgb(75,75,75);
+  padding: 10px;
+  position: relative; 
+}
+
+.cartBox3 .cartImage2 {
+  position: relative;
+  top: -50px; 
+  left: 5px; 
+}
+
+.cartBox4 {
+  background-color: rgb(231,231,231);
+  padding: 20px;
+  position: relative; 
+}
+
+.cartTitle {
+  font-size: 20px;
+  font-weight: bolder;
+  color: rgb(227, 32, 74);
+  font-family: "Montserrat", sans-serif;
+}
+
+.cartDescription {
+  color: #666;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.cartImage1,
+.cartImage2 {
+  width: 100%;
+  height: auto;
+}
+
+/* ----------------------------------------------------------------- */
+
+
+/* MASONRY LAYOUT CSS ============================ */
+
+.grid__wrapper{
+  animation: duplicateItem 50s infinite linear;
+}
+@keyframes duplicateItem {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.grid__wrapper .twoBox{
+  position: relative;
+}
+.grid__wrapper .twoBox div{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 180px;
+  margin-top: 21px;
+  padding: 15px;
+}
+.grid__wrapper .twoBox span{
+  font-size: 1em;
+  font-weight: 600;
+}
+.grid__wrapper .twoBox img{
+  object-fit: cover;
+    width: 157px;
+    height: 157px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
+
+/* ------------------------------------- */
 /* About banner Styling  */
 
 .banneraboutsection {
@@ -41,7 +292,7 @@
   margin-left: 50px;
 }
 
-.bannertextrightside{
+.bannertextrightside {
   font-size: 16px;
   line-height: 1.5;
   margin: 0px 50px;
@@ -81,9 +332,9 @@
 
 /* -------------------------------------------------------------------------- */
 
-.AboutCarts {
+/* .AboutCarts {
   padding: 50px;
-}
+} */
 
 .LeftCart {
   background-color: rgb(230, 230, 230);
@@ -118,4 +369,118 @@
 
 .cart p {
   color: #666;
+}
+
+.marquee_content {
+  white-space: nowrap;
+  animation: marquee 40s linear infinite;
+  display: flex;
+}
+
+.marquee_content div {
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 8px;
+  margin-top: 15px;
+  height: 82px;
+  padding: 0 20px;
+}
+
+.marquee_content div img {
+  object-fit: contain;
+}
+
+/* EXPERTISE ========================== */
+.Expertise___bg {
+  background: #e3204a;
+  height: 1000px;
+}
+
+.Expertise___bg .Expertise___tabs__box {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row-reverse;
+
+}
+.Expertise___tabs__box #Expertise___tabs__list {
+  width: 55%;
+  border-bottom: none;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.Expertise___tabs__box #Expertise___tabs__list img{
+  width: 55px !important;
+  height: 55px;
+}
+
+.Expertise___tabs__box #Expertise___tabs__list li {
+  padding: 40px 20px;
+  /* border-radius: 10px; */
+  /* margin: 25px 0; */
+  
+}
+.Expertise___tabs__box #Expertise___tabs__list li span {
+  color: white;
+  margin-top: 20px;
+  text-align: left
+text-decoration= none solid rgb(255, 255, 255)
+}
+.Expertise__TabPanel{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 130px;
+}
+.Expertise__TabPanel img {
+  height: 240px;
+  width: 240px;
+  /* filter: brightness(0) saturate(100%) invert(12%) sepia(100%) saturate(4673%) hue-rotate(341deg) brightness(86%) contrast(101%); */
+  filter: brightness(0) saturate(100%) invert(14%) sepia(46%) saturate(5733%) hue-rotate(355deg) brightness(97%) contrast(127%);
+}
+.Expertise__TabPanel p{
+  padding: 15px 45px;
+  color: #fff;
+  margin-top: 10px;
+}
+
+
+/* Media queries for responsive design */
+@media (max-width: 992px) {
+  .marquee_content div {
+    height: 60px;
+    /* Decrease height for medium-sized screens */
+    padding: 0 10px;
+    /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .marquee_content div {
+    height: 60px;
+    /* Decrease height for small screens */
+    padding: 0 10px;
+  }
+
+  .container {
+    max-width: 100%;
+    /* Ensure container doesn't overflow */
+  }
+}
+
+/* ===================================================== */
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
 }

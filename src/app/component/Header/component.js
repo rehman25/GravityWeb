@@ -226,7 +226,7 @@ const page = () => {
             <li><a href="">HOME</a></li>
             <li><a href="">ABOUT</a></li>
             <li><a href="" onMouseEnter={onHover} >SERVICES</a></li>
-            <li><a href="">CASE STUDIES</a></li>
+            <li><a href="/CaseStudies">CASE STUDIES</a></li>
             <li><a href="">BLOG</a></li>
           </ul>
         </div>

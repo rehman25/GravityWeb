@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
+body{
+    overflow-x: clip;
+}
 h1,
 h2,
 h3,
@@ -18,7 +21,9 @@ a {
     margin: 0;
     display: block;
 }
-
+a{
+    text-decoration: none !important;
+}
 button {
     font-family: "Monctserrat", sans-serif;
     border: none;
@@ -72,12 +77,42 @@ span {
     border: 0;
     outline: none;
 }
+.hometabsSection .react-tabs .react-tabs__tab-panel--selected {
+    width: 55%;
+}
 
 .hometabsSection .react-tabs .react-tabs__tab-list .react-tabs__tab{
     font-weight: 600;
     font-size: 18px;
-    color: gray;
+    color: #c7c0c096;
 }
 .hometabsSection .react-tabs .react-tabs__tab-list .react-tabs__tab:focus:after {
     background: transparent;
+}
+
+.slick-slide:focus{
+    outline: none;
+}
+/* ========================= BRANDING */
+.branding .slick-dots{
+    display: flex !important;
+    justify-content: center;
+}
+.branding .slick-dots li button{
+    width: 130px;
+    background: rgb(219, 216, 216);
+    height: 4px;
+    color: transparent;
+}
+.branding .slick-dots li.slick-active button{
+    background: #e3204a;
+}
+
+/* EXPERTISE GLOBAL CSS ================== */
+.Expertise___bg .react-tabs__tab--selected{
+    background: #d40834;
+}
+
+.Expertise___bg .react-tabs__tab-panel--selected{
+    width: 45%;
 }

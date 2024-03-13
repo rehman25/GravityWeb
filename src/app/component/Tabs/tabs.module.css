@@ -1,0 +1,34 @@
+.tabsbtn{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+} 
+
+.tabsbtn button{
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 25px;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.tabsbtn button:hover{
+    background-color: #e3204a;
+    color: white;
+}
+
+.container{
+    z-index: 99;
+}
+
+.casestudyAll{
+    background-image: url('../../assets/images/casestudytabs/highlight2.webp');
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+}
+
