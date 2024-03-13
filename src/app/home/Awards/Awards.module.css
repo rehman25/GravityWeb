@@ -8,13 +8,6 @@
     background-size: cover;
     background-position: center;
 }
-
-.heading{
-   /* display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center; */
-}
 .Text{
    -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px #fff;
