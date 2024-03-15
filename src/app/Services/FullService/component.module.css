@@ -5,6 +5,7 @@
 
 .row{
     display: flex;
+    padding: 20px;
 }
 
 .heading{
@@ -39,6 +40,8 @@
     align-items: center;
 
 }
+
+
 
 .imgdivres{
     background-color: #c61a3c;
@@ -82,8 +85,20 @@ color: #363636;
 }
 .box:hover{
         background-color: white;
-    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    box-shadow: 0px 10px 15px -3px rgba(112, 112, 112, 0.1);
+    animation: shadow-drop-center 1s ease 0s 1 normal none;
+
 }
+
+@keyframes shadow-drop-center {
+			
+		0% {
+			box-shadow:0 0 0 0 transparent;
+		}
+		100% {
+			box-shadow:0 0 20px 0 rgba(0,0,0,.35);
+		}
+	}
 
 @media screen and (max-width:992px) {
     .imgdiv{

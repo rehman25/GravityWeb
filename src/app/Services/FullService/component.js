@@ -29,21 +29,32 @@ const component = () => {
         </div>
         <div className="col-lg-9">
           <div className="row">
-            <div className={`col-lg-4 col-md-4 ${style.box}`}>
+            <div className={`col-lg-4 col-md-4 ${style.box}`} onMouseEnter={handleArrow} onMouseLeave={handleArrow}>
               <div className={style.card}>
-                <div className={style.imgdiv}>
-                  <Image src={WebD} className={style.Image} />
-                </div>
+               {isArrow ?
+                  <div className={style.imgdivres}>
+                    <Image src={WebD} className={style.Image} />
+                  </div>
+                  : <div className={style.imgdiv}>
+                    <Image src={WebD} className={style.Image} />
+                  </div>
+              }
+               
                 <div className={style.cardcontent}>
                   <span>Web Development</span>
                   <p>Desktop &amp; Mobile websites done right by professional web development experts.</p>
                 </div>
-                {isArrow ? <div className={style.Arrow}>
+                  <div className={style.Arrow}>
                   <IoMdArrowForward />
-                </div> :""}
+                </div>
                 
               </div>
             </div>
+           
+
+
+
+
             <div className={`col-lg-4 col-md-4  ${style.box}`}>
               <div className={style.card}>
                 <div className={style.imgdiv}>
