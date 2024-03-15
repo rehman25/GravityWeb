@@ -27,8 +27,8 @@ import Branding from './component/Branding/index';
 import FAQ from './component/FAQ/component'
 import Footer from './component/Footer/component'
 import Worth__Read from './component/Work-Read/index'
-import Award from './home/Awards/components'
-import Social from './home/SocialJoin/component'
+import Award from './component/Awards/components'
+import Social from './component/SocialJoin/component'
 
 const page = () => {
   const [isActive, setActive] = useState("Web_Dev")

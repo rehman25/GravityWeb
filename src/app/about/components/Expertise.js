@@ -27,9 +27,9 @@ function Expertise() {
   return (
     <>
       <section className={`${styles.Expertise___bg}  Expertise___bg mt-5`}>
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12">
+        <div className="container p-0">
+          <div className="row p-0">
+            <div className="col-lg-12 p-0">
               <div>
                 <Text text="Expertise" animation={"fade-right"} />
                 <Tabs className={`${styles.Expertise___tabs__box} mt-5`}>
@@ -38,7 +38,6 @@ function Expertise() {
                       <Image
                         src={one} // Path to your image file in the public directory
                         alt="Example Image"
-                   
                       />
                       <span>
                         Data & Analytics <br /> Solutions
@@ -49,56 +48,56 @@ function Expertise() {
                         src={two} // Path to your image file in the public directory
                         alt="Example Image"
                       />
-                      <span>Digital Marketing</span>
+                      <span>Digital<br /> Marketing</span>
                     </Tab>
                     <Tab className={"col-lg-4"}>
                       <Image
                         src={three} // Path to your image file in the public directory
                         alt="Example Image"
                       />
-                      <span>Creative Designing</span>
+                      <span>Creative <br /> Designing</span>
                     </Tab>
                     <Tab className={"col-lg-4"}>
                       <Image
                         src={four} // Path to your image file in the public directory
                         alt="Example Image"
                       />
-                      <span>Web Design & Development</span>
+                      <span>Web Design <br /> & Development</span>
                     </Tab>
                     <Tab className={"col-lg-4"}>
                       <Image
                         src={five} // Path to your image file in the public directory
                         alt="Example Image"
                       />
-                      <span>Digital Commerce</span>
+                      <span>Digital <br /> Commerce</span>
                     </Tab>
                     <Tab className={"col-lg-4"}>
                       <Image
                         src={six} // Path to your image file in the public directory
                         alt="Example Image"
                       />
-                      <span>Cyber Security Services</span>
+                      <span>Cyber Security <br /> Services</span>
                     </Tab>
                     <Tab className={"col-lg-4"}>
                       <Image
                         src={seven} // Path to your image file in the public directory
                         alt="Example Image"
                       />
-                      <span>Application Development</span>
+                      <span>Application <br /> Development</span>
                     </Tab>
                     <Tab className={"col-lg-4"}>
                       <Image
                         src={eight} // Path to your image file in the public directory
                         alt="Example Image"
                       />
-                      <span>Quality Engineering & Testing</span>
+                      <span>Quality Engineering <br /> & Testing</span>
                     </Tab>
                     <Tab className={"col-lg-4"}>
                       <Image
                         src={nine} // Path to your image file in the public directory
                         alt="Example Image"
                       />
-                      <span>Resource Outsourcing</span>
+                      <span>Resource <br /> Outsourcing</span>
                     </Tab>
                   </TabList>
                   <>

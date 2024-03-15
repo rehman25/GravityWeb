@@ -53,67 +53,6 @@
   font-weight: 300;
 }
 
-
-@media screen and (max-width: 1220px) {
-
-  .bannertextleftside {
-    margin: 45px 30px;
-  }
-
-  .bannertextleftside h6 {
-    font-size: 12px;
-    margin: 25px 35px;
-  }
-
-  .bannertextleftside h1 {
-    font-size: 30px;
-  }
-
-  .bannertextrightside {
-    margin-top: 30px;
-    padding: 50px;
-    font-size: 14px;
-  }
-
-}
-
-@media screen and (max-width: 1096px) {
-  .bannertextleftside {
-    margin: 40px 35px;
-  }
-
-  .bannertextleftside h6 {
-    font-size: 10px;
-    margin: 15px 25px;
-  }
-
-  .bannertextleftside h1 {
-    font-size: 26px;
-  }
-
-  .borderdesign {
-    width: 15px;
-  }
-
-  .bannertextrightside {
-    margin-top: 15px;
-    padding: 40px;
-    font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 992px) {
-
-  .bannertex {
-    flex-direction: column;
-  }
-
-  
-}
-
-
-
-
 /* ========================================================= */
 
 /* Banner Down Section */
@@ -125,7 +64,7 @@
 
 .bannerdownimg {
   width: 100%;
-  height: 100%
+  height: 100%;
 }
 
 .headingContainer {
@@ -272,7 +211,7 @@
 /* MASONRY LAYOUT CSS Section ============================ */
 
 .grid__wrapper {
-  animation: duplicateItem 50s infinite linear;
+  animation: duplicateItem 5s infinite linear;
 }
 
 @keyframes duplicateItem {
@@ -343,7 +282,6 @@
 /* EXPERTISE ========================== */
 .Expertise___bg {
   background: #e3204a;
-  height: 1000px;
 }
 
 .Expertise___bg .Expertise___tabs__box {
@@ -370,15 +308,11 @@
 
 .Expertise___tabs__box #Expertise___tabs__list li {
   padding: 40px 20px;
-  /* border-radius: 10px; */
-  /* margin: 25px 0; */
-
 }
 
 .Expertise___tabs__box #Expertise___tabs__list li span {
   color: white;
   margin-top: 20px;
-  text-align: left text-decoration=none solid rgb(255, 255, 255)
 }
 
 .Expertise__TabPanel {
@@ -392,7 +326,6 @@
 .Expertise__TabPanel img {
   height: 240px;
   width: 240px;
-  /* filter: brightness(0) saturate(100%) invert(12%) sepia(100%) saturate(4673%) hue-rotate(341deg) brightness(86%) contrast(101%); */
   filter: brightness(0) saturate(100%) invert(14%) sepia(46%) saturate(5733%) hue-rotate(355deg) brightness(97%) contrast(127%);
 }
 
@@ -402,29 +335,119 @@
   margin-top: 10px;
 }
 
-
-/* Media queries for responsive design */
+/* ================================== */
 @media (max-width: 992px) {
   .marquee_content div {
     height: 60px;
-    /* Decrease height for medium-sized screens */
     padding: 0 10px;
-    /* Adjust padding for smaller screens */
   }
+
+  .Expertise___bg .Expertise___tabs__box {
+    flex-direction: column;
+  }
+
+  .Expertise___tabs__box #Expertise___tabs__list {
+    width: 100%;
+  }
+
+  .Expertise___tabs__box #Expertise___tabs__list li {
+    padding: 10px;
+    width: 215px;
+    display: flex;
+    align-items: center;
+  }
+
+  .Expertise___tabs__box #Expertise___tabs__list img {
+    width: 37px !important;
+    height: 37px;
+  }
+
+  .Expertise___tabs__box #Expertise___tabs__list li span {
+    margin-top: 0px;
+    padding-left: 10px;
+  }
+
+  .Expertise__TabPanel {
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .Expertise__TabPanel img {
+    height: 150px;
+    width: 150px;
+  }
+
 }
 
 @media (max-width: 768px) {
+  .bannertextleftside {
+    margin: 0px 50px;
+  }
+
+  .bannertextrightside {
+    margin-top: 0px;
+    padding: 20px 50px;
+  }
+
   .marquee_content div {
     height: 60px;
-    /* Decrease height for small screens */
     padding: 0 10px;
+  }
+
+  .rows {
+    flex-direction: column-reverse;
   }
 
   .container {
     max-width: 100%;
-    /* Ensure container doesn't overflow */
+  }
+
+  .bannerdownimg {
+    height: 250px;
+    object-fit: cover;
   }
 }
+
+@media screen and (max-width:567px) {
+  .cartBox2 .cartImage1 {
+    bottom: 0;
+  }
+
+  .cartBox3 .cartImage2 {
+    top: 0;
+  }
+  .Expertise__TabPanel img {
+    display: none;
+  }
+
+  .Expertise___bg {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .bannertextleftside {
+    font-size: 22px;
+  }
+
+  .bannertextleftside h1 {
+    font-size: 22px;
+  }
+
+  .bannertextrightside span {
+    font-size: 12px;
+  }
+
+  .bannertextleftside {
+    margin: 0px 20px;
+  }
+
+  .bannertextrightside {
+    margin-top: 0px;
+    padding: 20px 20px;
+  }
+}
+
 
 /* ===================================================== */
 @keyframes marquee {

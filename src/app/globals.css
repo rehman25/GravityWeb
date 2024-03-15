@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-body{
+body,section{
     overflow-x: clip;
 }
 h1,
@@ -94,23 +94,7 @@ span {
     outline: none;
 }
 
-@media screen and (max-width:992px){
-    .hometabsSection .react-tabs {
-        flex-direction: column;
-    }
-    .hometabsSection .react-tabs .react-tabs__tab-list {
-        flex-direction: row;
-        border-left: none;
-        padding-left: 0;
-        height: auto;
-        overflow-x: unset;
-        padding: 0;
-        white-space: nowrap;
-    }
-    .hometabsSection .react-tabs .react-tabs__tab-panel--selected {
-        width: auto;
-    }
-}
+
 /* ========================= BRANDING */
 .branding .slick-dots{
     display: flex !important;
@@ -133,4 +117,25 @@ span {
 
 .Expertise___bg .react-tabs__tab-panel--selected{
     width: 45%;
+}
+
+@media screen and (max-width:992px){
+    .hometabsSection .react-tabs {
+        flex-direction: column;
+    }
+    .hometabsSection .react-tabs .react-tabs__tab-list {
+        flex-direction: row;
+        border-left: none;
+        padding-left: 0;
+        height: auto;
+        overflow-x: unset;
+        padding: 0;
+        white-space: nowrap;
+    }
+    .hometabsSection .react-tabs .react-tabs__tab-panel--selected {
+        width: auto;
+    }
+    .Expertise___bg .react-tabs__tab-panel--selected{
+        width: 100%;
+    }
 }

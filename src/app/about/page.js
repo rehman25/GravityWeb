@@ -7,6 +7,9 @@ import AboutSlider from './components/AboutSlider';
 import Expertise from "../about/components/Expertise";
 import Cursor from "../component/cursor/cursor";
 import Header from "../component/Header/component"
+import Worth__Read from '../component/Work-Read/index'
+import Social from '../component/SocialJoin/component'
+import Footer from '../component/Footer/component'
 
 const Page = () => {
   return (
@@ -19,6 +22,9 @@ const Page = () => {
       <About_subheading />
       <AboutSlider/>
       <Expertise />
+      <Worth__Read />
+      <Social />
+      <Footer />
     </>
   );
 };

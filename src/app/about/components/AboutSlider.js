@@ -15,10 +15,10 @@ import Management from '../../assets/images/Slider/Management.png'
 
 const AboutSlider = () => {
     return (
-        <section>
+        <section style={{width: '100%'}}>
             <div className={`${styles.grid__wrapper} container-fluid`}>
-                <div className='row mt-5'>
-                    <div className='col-3'>
+                <div className='row mt-5' style={{flexWrap: "nowrap"}}>
+                    <div style={{width: "250px"}}>
                         <div className={`${styles.twoBox}`}>
                             <div style={{background: "#ffe0d0"}}>
                                 <span>Creativity</span>
@@ -30,7 +30,7 @@ const AboutSlider = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='col-2'>
+                    <div style={{width: "240px"}}>
                         <div className={`${styles.twoBox}`}>
                             <div style={{background: "#FCFBFE"}}>
                                 <span>Consultancy</span>
@@ -42,7 +42,7 @@ const AboutSlider = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='col-2'>
+                    <div style={{width: "240px"}}>
                         <div className={`${styles.twoBox}`}>
                             <div style={{background: "#ffe0d0",height: "220px"}}>
                                 <span>Technical Delivery</span>
@@ -54,7 +54,7 @@ const AboutSlider = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='col-3'>
+                    <div style={{width: "350px"}}>
                         <div className={`${styles.twoBox}`}>
                             <div style={{background: "#FFDDE4",height: "381px"}}>
                                 <span>Strategy</span>
@@ -62,7 +62,7 @@ const AboutSlider = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='col-2'>
+                    <div style={{width: "260px"}}>
                         <div className={`${styles.twoBox}`}>
                             <div style={{background: "#FFE0D0",height: "220px"}}>
                                 <span>Marketing</span>
