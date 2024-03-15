@@ -225,7 +225,8 @@ const page = () => {
           <ul className={Style.HeaderUl}>
             <li><a href="">HOME</a></li>
             <li><a href="">ABOUT</a></li>
-            <li><a href="" onMouseEnter={onHover} >SERVICES</a></li>
+            <li><a href="/Services" onMouseEnter={onHover} >SERVICES</a></li>
+            <li><a href="" >CAREER</a></li>
             <li><a href="/CaseStudies">CASE STUDIES</a></li>
             <li><a href="">BLOG</a></li>
           </ul>

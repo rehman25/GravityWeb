@@ -19,7 +19,7 @@ const page = () => {
                     <div className={`"row mt-5" ${styles.header}`}>
                         <div className={`col-lg-6 ${styles.left}`}>
                             <div className={`${styles.heroLeftSide}`}>
-                                <p>__   Digital Marketing Agency In Dubai</p>
+                                <p> <span>__ </span>&nbsp;&nbsp;&nbsp;Digital Marketing Agency In Dubai</p>
                                 <h2> We <span>Inspire & Innovate Brands</span>For The Digital Future</h2>
                             </div>
                         </div>

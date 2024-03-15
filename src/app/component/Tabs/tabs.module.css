@@ -6,13 +6,18 @@
 
 .tabsbtn button{
     padding: 10px 20px;
-    margin: 10px;
+    margin: 0px 10px;
     border-radius: 25px;
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 1px;
-}
+    font-family: "Montserrat", sans-serif;
 
+}
+.btnsActive{
+    background: #e3204a;
+    color: white;
+}
 .tabsbtn button:hover{
     background-color: #e3204a;
     color: white;
@@ -22,13 +27,158 @@
     z-index: 99;
 }
 
+.casesrow{
+    display: flex;
+    justify-content: space-around;
+}
+.imgdiv{
+ /* position: relative;
+ left: 0; */
+ overflow: hidden;
+
+}
 .casestudyAll{
-    background-image: url('../../assets/images/casestudytabs/highlight2.webp');
     width: 100%;
-    height: 200px;
+    height: 80vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 20px;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
+
+.casestudyAll:hover{
+   -webkit-transform: scale(1.1);
+	transform: scale(1.1); 
+}
+.conceptexecute{
+     width: 100%;
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.casedetail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.casename{
+    display: flex;
+    flex-direction: column;
+
+}
+.casename p{
+    margin: 0px;
+    font-family: "Montserrat", sans-serif;
+
+}
+.caseHeading{
+    font-size: 10px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.casepara{
+    font-size: 12px;
+    font-weight: 400;
+    color: gray;
+}
+
+.caseLink{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.caseLinkhover{
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.caseLinkhover p{
+       font-size: 12px;
+    padding: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0; 
+    color: #e3204a;
+    font-family: "Montserrat", sans-serif;
+  
+    animation: focus-in-contract 1s ease 0s 1 alternate none;
+}
+@keyframes focus-in-contract {
+			
+		0% {
+			letter-spacing:1px;
+			opacity:0;
+		}
+		100% {
+			filter:blur(0);
+			opacity:1;
+		}
+	}
+
+.caseLink p{
+       font-size: 12px;
+    padding: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0; 
+
+}
+.CaseIConHover{
+     background: #fff;
+    padding:  5px;
+    height: 40px;
+    width: 40px;
+    border-radius: 57%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e3204a;
+    margin-left: 10px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+.arrowDownIcon{
+    color: #e3204a;
+}
+.CaseICon{
+    background: #e3204a;
+    padding:  5px;
+    height: 40px;
+    width: 40px;
+    border-radius: 57%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-left: 10px;
+}
+.concepthead{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #b9b9ba;
+    text-transform: capitalize;
+    word-break: break-word;
+    text-align: center;
+    font-size: 5em;
+    font-family: sans-serif;
+    font-weight: 700;
+    z-index: 1;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #e3204a;
+}
+
+
+
 
