@@ -1,13 +1,12 @@
-
 /*  Careers Banner Section  */
 
-.careersbannertext{
+.careersbannertext {
     background-image: url("../assets/images/careersbanner.jpg");
     height: 150px;
     background-size: cover;
-} 
+}
 
-.careersbannertext h4{
+.careersbannertext h4 {
     text-align: center;
     padding: 50px;
     font-size: 25px;
@@ -16,7 +15,432 @@
     font-family: "Montserrat", sans-serif;
 }
 
-.careersbannertext span {
+.specialWord {
+    display: inline;
+    font-size: 25px;
+    color: #FFFFFA;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+    padding: 3px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.specialWord::after {
+    content: '';
+    position: absolute;
+    bottom: -1px; 
+    left: 0;
+    width: 100%;
+    height: 3px; 
+    background-color: white; 
+    animation: borderAnimation 1s infinite alternate; 
+}
+
+@keyframes borderAnimation {
+    from {
+        opacity: 0; 
+    }
+    to {
+        opacity: 1; 
+    }
+}
+
+.specialWord:hover::before {
+    width: 0;
+}
+
+.specialWord::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #363636;
+    z-index: -1;
+    transition: width .5s ease-in-out;
+}
+
+/* ========================================================= */
+
+/* CurrentOpenings Section */
+
+.mainhead {
+    font-size: 25px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+}
+
+.description {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: #949494;
+}
+
+.applicationInfo {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #707070;
+    margin: 10px 0px;
+}
+
+.email {
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #707070;
+}
+
+.email::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 2px;
+    background-color: transparent; 
+    transition: background-color 1s ease; 
+}
+    
+.email:hover::after {
+    background-color: #363636; 
+}
+
+.openingscard {
+    border: 1px solid #B2B2B2;
+}
+
+.openingscardTitle {
+    color: #363636;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+}
+
+.openingscardDescription {
+    font-size: 12px;
+    color: #363636;
+    font-family: "Montserrat", sans-serif;
+}
+
+.applyButton {
+    color: #363636;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    outline: none;
+    position: relative;
+}
+
+.applyButton:hover::after {
+    transition: height 1s;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+    height: 2px;
+    cursor: pointer;
     background-color: #363636;
 }
+
+/* ========================================================= */
+
+/* OurCulture Section */
+
+.col-6 {
+    padding: 0px;
+}
+
+.row h1 {
+    font-size: 2rem;
+}
+
+.row h2 {
+    font-size: 1.5rem;
+}
+
+.leftourculture {
+    background-color: #D93B5D;
+    height: 765px;
+}
+
+.leftourculture h1 {
+    color: transparent;
+    margin: 0px 25px;
+    padding: 25px;
+    font-size: 80px;
+    font-weight: bolder;
+    -webkit-text-stroke: 1px #C09BA4;
+    text-shadow: 0 0 0 0;
+}
+
+.leftourculture h2 {
+    text-align: center;
+    padding: 30px;
+    color: #FFFEFF;
+    font-size: 45px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+}
+
+.card {
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+}
+
+.imageColumn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.imageRow {
+    margin-bottom: 20px;
+}
+
+@keyframes fadeRightAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fadeRight {
+    animation: fadeRightAnimation 2s ease-in-out;
+}
+
+/* ========================================================= */
+
+
+/* Employees_say Section */
+
+.Employeessaysectionleft {
+    padding: 25px;
+}
+
+
+.Employeessaysectionleft h4{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    color: #363636;
+}
+
+.Employeessaysectionleft span {
+    color: #E3204A;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.EmployeesProgressImage {
+    width: 600px;
+    height: 300px;
+    margin-top: 20px;
+}
+
+.Employeeone {
+    display: flex  !important;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Employeeone img {
+    height: auto; 
+    width: 35%;
+    object-fit: contain;
+}
+
+.Employeesdata > div {
+    text-align: center;
+}
+
+.Employeeone h6 {
+    margin-top: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.Employeeone span {
+    display: block;
+    margin-bottom: 12px;
+    font-family: "Montserrat", sans-serif;
+    font-family: 14px;
+}
+
+
+.Employeeone p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+}
+
+
+/* ========================================================= */
+
+@media only screen and (max-width: 1326px) {
+    .specialWord {
+        font-size: 20px;
+        padding: 2px;
+    }
+
+    .careersbannertext h4 {
+        padding: 40px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .specialWord {
+        font-size: 18px;
+        padding: 1px;
+    }
+
+    .careersbannertext h4 {
+        padding: 30px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .specialWord {
+        font-size: 16px;
+        padding: 1px;
+    }
+
+    .careersbannertext h4 {
+        padding: 20px;
+    }
+
+    /* Additional adjustments for elements other than .careersbannertext h4 */
+
+    .mainhead {
+        font-size: 20px;
+    }
+
+    .description,
+    .applicationInfo,
+    .email,
+    .openingscardTitle,
+    .Employeessaysectionleft h4,
+    .Employeessaysectionleft span,
+    .Employeeone h6,
+    .Employeeone span,
+    .Employeeone p {
+        font-size: 12px;
+    }
+
+    .openingscardDescription {
+        font-size: 10px;
+    }
+
+    .leftourculture {
+        height: auto;
+    }
+
+    .leftourculture h1 {
+        font-size: 50px;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .leftourculture h2 {
+        font-size: 30px;
+        padding: 20px;
+    }
+
+    .EmployeesProgressImage {
+        max-width: 100%;
+    }
+
+    .Employeeone img {
+        max-width: 50%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .specialWord {
+        font-size: 14px;
+        padding: 1px;
+    }
+
+    .careersbannertext h4 {
+        padding: 10px;
+    }
+
+    .row h1 {
+        font-size: 1.5rem;
+    }
+
+    .row h2 {
+        font-size: 1.25rem;
+    }
+
+    .leftourculture h1 {
+        font-size: 40px;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .leftourculture h2 {
+        font-size: 24px;
+        padding: 15px;
+    }
+
+    .Employeessaysectionleft h4,
+    .Employeessaysectionleft span {
+        font-size: 16px;
+    }
+
+    .Employeeone img {
+        max-width: 70%;
+    }
+
+    .Employeeone h6 {
+        font-size: 12px;
+    }
+
+    .Employeeone span {
+        font-size: 10px;
+    }
+
+    .Employeeone p {
+        font-size: 8px;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    .specialWord {
+        font-size: 12px;
+        padding: 1px;
+    }
+
+    .careersbannertext h4 {
+        padding: 5px;
+    }
+}
+
+
 
