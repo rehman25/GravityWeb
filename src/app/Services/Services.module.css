@@ -87,6 +87,8 @@
   /* height: 90vh; */
   width: 90%;
   padding: 30px;
+  margin-top: 42px;
+
 
 
 
@@ -162,4 +164,8 @@
     font-weight: 600;
     font-size: 16px;
      font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (max-width: 992px) {
+    
 }

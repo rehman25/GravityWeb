@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import styles from './Services.module.css'
 import { BsInstagram } from "react-icons/bs";
@@ -7,11 +8,14 @@ import Header from '../component/Header/component'
 import Footer from '../component/Footer/component'
 import { FaArrowRight } from "react-icons/fa6";
 import FullService from './FullService/component';
+import Cursor from '../component/cursor/cursor';
 
 
 const page = () => {
+
     return (
         <>
+            <Cursor />
             <Header />
             <div className={`container-fluid ${styles.headerContainer}`}>
                 <div className="container">

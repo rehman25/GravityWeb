@@ -5,6 +5,7 @@
 
 .row{
     display: flex;
+    padding: 20px;
 }
 
 .heading{
@@ -38,9 +39,18 @@
     justify-content: center;
     align-items: center;
 
-    
+}
 
 
+
+.imgdivres{
+    background-color: #c61a3c;
+      border-radius: 50%;
+    width: 4vw;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Image{
@@ -65,14 +75,48 @@ color: #363636;
     margin: 0 0 1em 0;
 }
 
-.card:hover{
-    background-color: white;
-    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+/* .card:hover{
+
+} */
+
+.box{
+    /* width: 33%; */
+    
+}
+.box:hover{
+        background-color: white;
+    box-shadow: 0px 10px 15px -3px rgba(112, 112, 112, 0.1);
+    animation: shadow-drop-center 1s ease 0s 1 normal none;
+
 }
 
+@keyframes shadow-drop-center {
+			
+		0% {
+			box-shadow:0 0 0 0 transparent;
+		}
+		100% {
+			box-shadow:0 0 20px 0 rgba(0,0,0,.35);
+		}
+	}
 
 @media screen and (max-width:992px) {
-    .component_imgdiv{
-        width: 5vw;
+    .imgdiv{
+        width: 6vw;
+        height: 11vh;
+    }
+}
+
+@media screen and (max-width:786px) {
+    .imgdiv{
+        width: 7vw;
+        height: 11vh;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .imgdiv{
+        width: 8vw;
+        height: 11vh;
     }
 }

@@ -1,4 +1,5 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 import style from './component.module.css'
 import Image from 'next/image'
 import WebD from '../../assets/images/service/web-development.svg'
@@ -15,6 +16,11 @@ import It from "../../assets/images/service/resource-outsourcing.svg"
 
 
 const component = () => {
+  const [isArrow, setArrow] = useState(false)
+
+  const handleArrow = () => {
+    setArrow(!isArrow)
+  }
   return (
     <div className={`container ${style.container}`}>
       <div className={`row ${style.row}`}>
@@ -22,22 +28,34 @@ const component = () => {
           <h2 className={style.heading}>A FULL-Service <span>Create Digital <br /> Agency</span> </h2>
         </div>
         <div className="col-lg-9">
-           <div className="row">
-            <div className="col-lg-4 col-md-4 col-sm-4">
+          <div className="row">
+            <div className={`col-lg-4 col-md-4 ${style.box}`} onMouseEnter={handleArrow} onMouseLeave={handleArrow}>
               <div className={style.card}>
-                  <div className={style.imgdiv}>
-                      <Image src={WebD} className={style.Image} />
-                  </div> 
-                  <div className={style.cardcontent}>
-                     <span>Web Development</span>
-                     <p>Desktop &amp; Mobile websites done right by professional web development experts.</p>
-                  </div> 
+               {isArrow ?
+                  <div className={style.imgdivres}>
+                    <Image src={WebD} className={style.Image} />
+                  </div>
+                  : <div className={style.imgdiv}>
+                    <Image src={WebD} className={style.Image} />
+                  </div>
+              }
+               
+                <div className={style.cardcontent}>
+                  <span>Web Development</span>
+                  <p>Desktop &amp; Mobile websites done right by professional web development experts.</p>
+                </div>
                   <div className={style.Arrow}>
-                     <IoMdArrowForward />
-                  </div> 
-               </div>
-             </div>
-            <div className="col-lg-4 col-md-4 col-sm-4">
+                  <IoMdArrowForward />
+                </div>
+                
+              </div>
+            </div>
+           
+
+
+
+
+            <div className={`col-lg-4 col-md-4  ${style.box}`}>
               <div className={style.card}>
                 <div className={style.imgdiv}>
                   <Image src={Mobileapp} className={style.Image} />
@@ -51,7 +69,7 @@ const component = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-4 col-sm-4">
+            <div className={`col-lg-4 col-md-4  ${style.box}`}>
               <div className={style.card}>
                 <div className={style.imgdiv}>
                   <Image src={Digital} className={style.Image} />
@@ -65,7 +83,10 @@ const component = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-4 col-sm-4">
+          </div>
+          <div className="row">
+
+            <div className={`col-lg-4 col-md-4  ${style.box}`}>
               <div className={style.card}>
                 <div className={style.imgdiv}>
                   <Image src={Uiux} className={style.Image} />
@@ -79,7 +100,7 @@ const component = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-4 col-sm-4">
+            <div className={`col-lg-4 col-md-4  ${style.box}`}>
               <div className={style.card}>
                 <div className={style.imgdiv}>
                   <Image src={Eco} className={style.Image} />
@@ -93,7 +114,7 @@ const component = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-4 col-sm-4">
+            <div className={`col-lg-4 col-md-4  ${style.box}`}>
               <div className={style.card}>
                 <div className={style.imgdiv}>
                   <Image src={Branding} className={style.Image} />
@@ -107,7 +128,9 @@ const component = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-4 col-sm-4">
+          </div>
+          <div className="row">
+            <div className={`col-lg-4 col-md-4  ${style.box}`}>
               <div className={style.card}>
                 <div className={style.imgdiv}>
                   <Image src={Video} className={style.Image} />
@@ -121,7 +144,7 @@ const component = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-4 col-sm-4">
+            <div className={`col-lg-4 col-md-4  ${style.box}`}>
               <div className={style.card}>
                 <div className={style.imgdiv}>
                   <Image src={It} className={style.Image} />
@@ -135,8 +158,9 @@ const component = () => {
                 </div>
               </div>
             </div>
-          
-           </div>
+          </div>
+
+
         </div>
       </div>
     </div>
