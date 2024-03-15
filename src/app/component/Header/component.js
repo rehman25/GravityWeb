@@ -78,9 +78,8 @@ const page = () => {
     setMarketing(false);
     setEcommerce(false);
     setMobileDev(false);
-
-
   }
+
   const handleMobileDev = () => {
     setMobileDev(true);
     setWebDev(false);
@@ -116,6 +115,7 @@ const page = () => {
     setEcommerce(false);
     setMobileDev(false);
   }
+
   const HandleEcommerce = () => {
     setEcommerce(true);
     setWebDev(false);
@@ -124,8 +124,6 @@ const page = () => {
     setMarketing(false);
     setMobileDev(false);
   }
-
-
 
   const onHover = () => {
     setTabs(true);

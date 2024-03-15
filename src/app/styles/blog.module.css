@@ -1,0 +1,113 @@
+.bannersection {
+    background-image: url("../assets/images/banner/inner-banner.svg");
+    background-color: rgb(54, 54, 54);
+    padding: 5px;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+  }
+  
+  .bannertextleftside {
+    position: relative;
+    margin: 50px 50px;
+  }
+  
+  .borderdesign {
+    position: absolute;
+    left: 3px;
+    top: 5%;
+    transform: translateY(-50%);
+    height: 1px;
+    width: 20px;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .bannertextleftside h6 {
+    color: rgb(232, 232, 232);
+    font-size: 14px;
+    margin: 25px 35px;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .bannertextleftside h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  
+  .leftextdisplaycenter {
+    display: inline;
+    font-weight: 600;
+    color: rgb(227, 32, 74);
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .bannertextrightside {
+    margin-top: 50px;
+    padding: 50px;
+    font-size: 16px;
+  }
+  
+  .banneraboutsection .bannertextrightside span {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+  }
+  
+  #TabList{
+    display: flex;
+    justify-content: space-between
+  }
+  #TabList li{
+    background: #f2f2f2;
+    padding: 10px 37px;
+    border-radius: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-size: .85em;
+  }
+  .blogTabBox{
+    box-shadow: 1px 5px 10px gray;
+    margin: 25px;
+  }
+  .blogTabBox img{
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .blogTabBox .blogTabsDesBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .blogTabBox .blogTabsDesBox h6{
+    font-weight: 600;
+    font-size: .95em;
+  }
+  .blogTabBox .blogTabsDesBox span{
+    font-weight: 600;
+    font-size: .85em;
+  }
+  .blogTabBox .overFlow{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: .80em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    padding: 6px 9px;
+  }
+  .blogTabBox p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: .80em;
+    font-family: "Montserrat", sans-serif;
+    padding: 0px 7px 20px 10px;
+  }
+
+  .TabPanel{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
