@@ -55,7 +55,6 @@ const page = () => {
   const [iscontactForm, setContactForm] = useState(false);
   const [isMenu, setMenu] = useState(false);
   const [isTabs, setTabs] = useState(false);
-  // const [isWordPress, setWordpress] = useState(false)
   const [WebDev, setWebDev] = useState(true)
   const [MobileDev, setMobileDev] = useState(false)
   const [Design, setDesign] = useState(false)

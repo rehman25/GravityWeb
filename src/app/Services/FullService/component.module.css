@@ -38,9 +38,16 @@
     justify-content: center;
     align-items: center;
 
-    
+}
 
-
+.imgdivres{
+    background-color: #c61a3c;
+      border-radius: 50%;
+    width: 4vw;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Image{
@@ -65,14 +72,36 @@ color: #363636;
     margin: 0 0 1em 0;
 }
 
-.card:hover{
-    background-color: white;
+/* .card:hover{
+
+} */
+
+.box{
+    /* width: 33%; */
+    
+}
+.box:hover{
+        background-color: white;
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 
-
 @media screen and (max-width:992px) {
-    .component_imgdiv{
-        width: 5vw;
+    .imgdiv{
+        width: 6vw;
+        height: 11vh;
+    }
+}
+
+@media screen and (max-width:786px) {
+    .imgdiv{
+        width: 7vw;
+        height: 11vh;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .imgdiv{
+        width: 8vw;
+        height: 11vh;
     }
 }

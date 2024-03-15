@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import styles from './Services.module.css'
 import { BsInstagram } from "react-icons/bs";
@@ -10,6 +11,7 @@ import FullService from './FullService/component';
 
 
 const page = () => {
+
     return (
         <>
             <Header />
