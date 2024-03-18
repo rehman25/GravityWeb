@@ -17,10 +17,68 @@ import It from "../../assets/images/service/resource-outsourcing.svg"
 
 const component = () => {
   const [isArrow, setArrow] = useState(false)
+  const [isMobile, setMobile] = useState(false)
+  const [isDigital, setDigital] = useState(false)
+  const [isUiux, setUiux] = useState(false)
+  const [isEco, setEco] = useState(false)
+  const [isBranding, setBranding] = useState(false)
+  const [isVideo, setVideo] = useState(false)
+  const [isIt, setIt] = useState(false)
+ 
 
   const handleArrow = () => {
-    setArrow(!isArrow)
+    setArrow(true)
   }
+  const LehandleArrow = () => {
+    setArrow(false)
+  }
+
+  
+  const handleMobile = () => {
+    setMobile(true)
+  } 
+
+  const LehandleMobile = () => {
+    setMobile(false)
+  }
+
+  const handleDigital = () => {
+    setDigital(true)
+  }
+  const LehandleDigital = () => {
+    setDigital(false)
+  }
+  const handleUiux = () => {
+    setUiux(true)
+  }
+  const LehandleUiux = () => {
+    setUiux(false)
+  }
+  const handleEco = () => {
+    setEco(true)
+  }
+  const LehandleEco = () => {
+    setEco(false)
+  }
+  const handleBranding = () => {
+    setBranding(true)
+  }
+  const LehandleBranding = () => {
+    setBranding(false)
+  }
+  const handleVideo = () => {
+    setVideo(true)
+  }
+  const LehandleVideo = () => {
+    setVideo(false)
+  }
+  const handleIt = () => {
+    setIt(true)
+  }
+  const LehandleIt = () => {
+    setIt(false)
+  }
+  
   return (
     <div className={`container ${style.container}`}>
       <div className={`row ${style.row}`}>
@@ -29,7 +87,7 @@ const component = () => {
         </div>
         <div className="col-lg-9">
           <div className="row">
-            <div className={`col-lg-4 col-md-4 ${style.box}`} onMouseEnter={handleArrow} onMouseLeave={handleArrow}>
+            <div className={`col-lg-4 col-md-4 ${style.box}`} onMouseEnter={handleArrow} onMouseLeave={LehandleArrow}>
               <div className={style.card}>
                {isArrow ?
                   <div className={style.imgdivres}>
@@ -44,9 +102,10 @@ const component = () => {
                   <span>Web Development</span>
                   <p>Desktop &amp; Mobile websites done right by professional web development experts.</p>
                 </div>
-                  <div className={style.Arrow}>
-                  <IoMdArrowForward />
-                </div>
+                {isArrow ? <div className={style.Arrow}>
+                  <IoMdArrowForward className={style.arrowIcon} />
+                </div> :""}
+                  
                 
               </div>
             </div>
@@ -55,107 +114,122 @@ const component = () => {
 
 
 
-            <div className={`col-lg-4 col-md-4  ${style.box}`}>
+            <div className={`col-lg-4 col-md-4  ${style.box}`} onMouseEnter={handleMobile} onMouseLeave={LehandleMobile}>
               <div className={style.card}>
-                <div className={style.imgdiv}>
+                {isMobile ? <div className={style.imgdivres}>
                   <Image src={Mobileapp} className={style.Image} />
-                </div>
+                </div> : <div className={style.imgdiv}>
+                  <Image src={Mobileapp} className={style.Image} />
+                </div>}
+               
                 <div className={style.cardcontent}>
                   <span>Mobile Application</span>
                   <p>High performance mobile apps for your business.</p>
                 </div>
-                <div className={style.Arrow}>
-                  <IoMdArrowForward />
-                </div>
+                {isMobile ? <div className={style.Arrow}>
+                  <IoMdArrowForward className={style.arrowIcon} />
+                </div> : ""}
               </div>
             </div>
-            <div className={`col-lg-4 col-md-4  ${style.box}`}>
+            <div className={`col-lg-4 col-md-4  ${style.box}`} onMouseEnter={handleDigital} onMouseLeave={LehandleDigital}>
               <div className={style.card}>
-                <div className={style.imgdiv}>
+                {isDigital ? <div className={style.imgdivres}>
                   <Image src={Digital} className={style.Image} />
-                </div>
+                </div> : <div className={style.imgdiv}>
+                  <Image src={Digital} className={style.Image} />
+                </div>}
                 <div className={style.cardcontent}>
                   <span>Digital Marketing</span>
                   <p>Strategies to boost your conversions &amp; ROI done by gurus.</p>
                 </div>
-                <div className={style.Arrow}>
-                  <IoMdArrowForward />
-                </div>
+                {isDigital ? <div className={style.Arrow}>
+                  <IoMdArrowForward className={style.arrowIcon} />
+                </div> : ""}
               </div>
             </div>
           </div>
           <div className="row">
 
-            <div className={`col-lg-4 col-md-4  ${style.box}`}>
+            <div className={`col-lg-4 col-md-4  ${style.box}`} onMouseEnter={handleUiux} onMouseLeave={LehandleUiux}>
               <div className={style.card}>
-                <div className={style.imgdiv}>
+                {isUiux ? <div className={style.imgdivres}>
                   <Image src={Uiux} className={style.Image} />
-                </div>
+                </div> : <div className={style.imgdiv}>
+                  <Image src={Uiux} className={style.Image} />
+                </div>}
                 <div className={style.cardcontent}>
                   <span>UX/UI Design</span>
                   <p>Great user experience, with responsive web design</p>
                 </div>
-                <div className={style.Arrow}>
-                  <IoMdArrowForward />
-                </div>
+                {isUiux ? <div className={style.Arrow}>
+                  <IoMdArrowForward className={style.arrowIcon} />
+                </div> : ""}
               </div>
             </div>
-            <div className={`col-lg-4 col-md-4  ${style.box}`}>
+            <div className={`col-lg-4 col-md-4  ${style.box}`} onMouseEnter={handleEco} onMouseLeave={LehandleEco}>
               <div className={style.card}>
-                <div className={style.imgdiv}>
+                {isEco ? <div className={style.imgdivres}>
                   <Image src={Eco} className={style.Image} />
-                </div>
+                </div> : <div className={style.imgdiv}>
+                  <Image src={Eco} className={style.Image} />
+                </div>}
                 <div className={style.cardcontent}>
                   <span>E-Commerce Solution</span>
                   <p>Ecommerce: We create awesome online stores for simple, better and convenient shopping. Greater ecommerce experience, every time!</p>
                 </div>
-                <div className={style.Arrow}>
-                  <IoMdArrowForward />
-                </div>
+                {isEco ? <div className={style.Arrow}>
+                  <IoMdArrowForward className={style.arrowIcon} />
+                </div> : ""}
               </div>
             </div>
-            <div className={`col-lg-4 col-md-4  ${style.box}`}>
+            <div className={`col-lg-4 col-md-4  ${style.box}`} onMouseEnter={handleBranding} onMouseLeave={LehandleBranding}>
               <div className={style.card}>
-                <div className={style.imgdiv}>
+                {isBranding ? <div className={style.imgdivres}>
                   <Image src={Branding} className={style.Image} />
-                </div>
+                </div> : <div className={style.imgdiv}>
+                  <Image src={Branding} className={style.Image} />
+                </div>}
                 <div className={style.cardcontent}>
                   <span>Branding & Communication</span>
                   <p>We cover the entire spectrum of digital marketing, including, designing your company logo.</p>
                 </div>
-                <div className={style.Arrow}>
-                  <IoMdArrowForward />
-                </div>
+                {isBranding ? <div className={style.Arrow}>
+                  <IoMdArrowForward className={style.arrowIcon} />
+                </div> : ""}
               </div>
             </div>
           </div>
           <div className="row">
-            <div className={`col-lg-4 col-md-4  ${style.box}`}>
+            <div className={`col-lg-4 col-md-4  ${style.box}`} onMouseEnter={handleVideo} onMouseLeave={LehandleVideo}>
               <div className={style.card}>
-                <div className={style.imgdiv}>
+                {isVideo ? <div className={style.imgdivres}>
                   <Image src={Video} className={style.Image} />
-                </div>
+                </div> : <div className={style.imgdiv}>
+                  <Image src={Video} className={style.Image} />
+                </div>}
                 <div className={style.cardcontent}>
                   <span>Video Animation</span>
                   <p>Video Animation: Giving Your World a Better, More Inspirational Look. Tell Amazing Stories with Our Video Animation. </p>
                 </div>
-                <div className={style.Arrow}>
-                  <IoMdArrowForward />
-                </div>
+                {isVideo ? <div className={style.Arrow}>
+                  <IoMdArrowForward className={style.arrowIcon} />
+                </div> : ""}
               </div>
             </div>
-            <div className={`col-lg-4 col-md-4  ${style.box}`}>
+            <div className={`col-lg-4 col-md-4  ${style.box}`} onMouseEnter={handleIt} onMouseLeave={LehandleIt}>
               <div className={style.card}>
-                <div className={style.imgdiv}>
+                {isIt ? <div className={style.imgdivres}>
                   <Image src={It} className={style.Image} />
-                </div>
+                </div> : <div className={style.imgdiv}>
+                  <Image src={It} className={style.Image} />
+                </div>}
                 <div className={style.cardcontent}>
                   <span>IT Resource Outsourcing</span>
                   <p>Resource Outsourcing: We Empower Your Business &amp; Boost Competitiveness with Valuable Skillset &amp; the Right Talent.</p>
                 </div>
-                <div className={style.Arrow}>
-                  <IoMdArrowForward />
-                </div>
+                {isIt ? <div className={style.Arrow}>
+                  <IoMdArrowForward className={style.arrowIcon} />
+                </div> : ""}
               </div>
             </div>
           </div>

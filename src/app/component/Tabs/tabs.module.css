@@ -2,14 +2,15 @@
     display: flex;
     justify-content: center;
     padding: 20px;
+    flex-wrap: wrap;
 } 
 
 .tabsbtn button{
     padding: 10px 20px;
-    margin: 0px 10px;
+    margin: 5px 10px;
     border-radius: 25px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: 1px;
     font-family: "Montserrat", sans-serif;
 
