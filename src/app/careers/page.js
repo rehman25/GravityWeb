@@ -6,7 +6,7 @@ import Header from "../component/Header/component"
 import CurrentOpenings from './components/CurrentOpenings';
 import Employeessay from './components/Employeessay';
 import OurCulture from './components/OurCulture';
-
+import Footer from '../component/Footer/component'
 
 const Page = () => {
   return (
@@ -18,6 +18,7 @@ const Page = () => {
       <CurrentOpenings />
       <OurCulture />
       <Employeessay/> 
+      <Footer />
     </>
   );
 };
