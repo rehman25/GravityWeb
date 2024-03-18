@@ -22,6 +22,7 @@
     font-size: 60px;
     font-weight: 600;
     line-height: 50px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .heroRightSide span.heroHeadOne {
@@ -38,6 +39,7 @@
     color: #fff;
     line-height: 1.5;
     font-size: 0.85em;
+    font-family: "Montserrat", sans-serif;
 }
 
 .heroSectionIcons {
@@ -63,6 +65,7 @@
     transition: .4s;
     font-size: 12px;
     padding: 5px 5px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .heroSectionIcons ul span:hover {
@@ -159,6 +162,7 @@
     margin: 0.75em 0 0 0;
     opacity: .4;
     color: gray;
+    font-family: "Montserrat", sans-serif;
 }
 
 .mouseBox h6 {
@@ -171,6 +175,7 @@
     left: 45%;
     animation: moveTopToBottom 2s linear infinite;
     opacity: .8;
+    font-family: "Montserrat", sans-serif;
 }
 
 .homeTabs .TabPanel .TabImage {
@@ -184,6 +189,7 @@
     font-size: .7em;
     color: #fff;
     font-weight: 300;
+    font-family: "Montserrat", sans-serif;
 }
 
 .homeTabs .TabPanel .service_item__list_wrapper {
@@ -200,6 +206,7 @@
 .homeTabs .TabPanel .service_item__list_wrapper li a {
     color: rgba(255, 255, 255, .5);
     font-size: .6em;
+    font-family: "Montserrat", sans-serif;
     transition: .25s ease-in-out;
 }
 

@@ -50,7 +50,7 @@ const page = () => {
           <div>
             <ul className={styles.ulFooter}>
               <span className={styles.LinkHeading}>Web Solutions</span>
-              <li><a href="">Web Development</a></li>
+              <li><a href="/webdev">Web Development</a></li>
               <li><a href="">UI/UX Design</a> </li>
               <li><a href="">Digital Marketing Services</a> </li>
               <li><a href="">Branding & Comunication</a></li>
