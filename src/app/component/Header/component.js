@@ -55,7 +55,6 @@ const page = () => {
   const [iscontactForm, setContactForm] = useState(false);
   const [isMenu, setMenu] = useState(false);
   const [isTabs, setTabs] = useState(false);
-  // const [isWordPress, setWordpress] = useState(false)
   const [WebDev, setWebDev] = useState(true)
   const [MobileDev, setMobileDev] = useState(false)
   const [Design, setDesign] = useState(false)
@@ -78,9 +77,8 @@ const page = () => {
     setMarketing(false);
     setEcommerce(false);
     setMobileDev(false);
-
-
   }
+
   const handleMobileDev = () => {
     setMobileDev(true);
     setWebDev(false);
@@ -116,6 +114,7 @@ const page = () => {
     setEcommerce(false);
     setMobileDev(false);
   }
+
   const HandleEcommerce = () => {
     setEcommerce(true);
     setWebDev(false);
@@ -124,8 +123,6 @@ const page = () => {
     setMarketing(false);
     setMobileDev(false);
   }
-
-
 
   const onHover = () => {
     setTabs(true);
@@ -225,8 +222,8 @@ const page = () => {
           <ul className={Style.HeaderUl}>
             <li><a href="/">HOME</a></li>
             <li><a href="/about">ABOUT</a></li>
-            <li><a href="/services" onMouseEnter={onHover}>SERVICES</a></li>
-            <li><a href="/caseStudies">CASE STUDIES</a></li>
+            <li><a href="/Services" onMouseEnter={onHover}>SERVICES</a></li>
+            <li><a href="/CaseStudies">CASE STUDIES</a></li>
             <li><a href="/careers">CAREERS</a></li>
             <li><a href="/blog">BLOG</a></li>
           </ul>

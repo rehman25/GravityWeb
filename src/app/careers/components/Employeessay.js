@@ -18,14 +18,14 @@ function Employeessay() {
         <>
             <section className={`${styles.Employeessaysection}`}>
                 <div className="container-fluid">
-                    <div className="row mt-5 p-5">
-                        <div className="col-8">
+                    <div className="row">
+                        <div className="col-lg-8">
                             <div className={`${styles.Employeessaysectionleft}`}>
                                 <h4>What Our Happy <span> Employees Say</span></h4>
                                 <Image src={EmployeeProgress} alt="Employee" className={`${styles.EmployeesProgressImage}`} />
                             </div>
                         </div>
-                        <div className="col-4 mt-5">
+                        <div className="col-lg-4 mt-5">
                             <Emp />
                         </div>
                     </div>
