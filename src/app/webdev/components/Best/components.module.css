@@ -1,0 +1,12 @@
+.row{
+ padding: 30px 0px;
+}
+
+.container{
+    height: 100vh;
+}
+.heading{
+    font-size: 1.89em;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+}

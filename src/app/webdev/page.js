@@ -8,6 +8,7 @@ import { BsInstagram } from "react-icons/bs";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa6";
+import Best from './components/Best/components'
 
 const page = () => {
   return (
@@ -76,6 +77,7 @@ const page = () => {
                   </div>
               </div>
           </div>
+        <Best />
         <Footer />
       </>
       
