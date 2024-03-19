@@ -11,7 +11,7 @@ import FullService from './FullService/component';
 import Cursor from '../component/cursor/cursor';
 
 
-const page = () => {
+const Page = () => {
 
     return (
         <>
@@ -72,4 +72,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page

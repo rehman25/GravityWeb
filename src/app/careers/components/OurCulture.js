@@ -14,7 +14,7 @@ const OurCulture = () => {
                 <div className="col-lg-5 p-0">
                     <div className={`${styles.leftourculture}`}>
                     <Text text="Our Culture" animation="fade-right" />
-                        <h2>OPPORTUNITIES <br /> DON'T HAPPEN, <br /> YOU CREATE THEM</h2>
+                        <h2>OPPORTUNITIES <br /> {`DON'T`} HAPPEN, <br /> YOU CREATE THEM</h2>
                     </div>
                 </div>
                 <div className="col-lg-7 p-0">

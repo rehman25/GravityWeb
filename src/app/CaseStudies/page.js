@@ -8,7 +8,7 @@ import Footer from '../component/Footer/component'
 import Tabs from '../component/Tabs/component'
 
 
-const page = () => {
+const Page = () => {
 
     return (
         <>
@@ -38,4 +38,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page

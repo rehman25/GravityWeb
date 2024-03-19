@@ -5,7 +5,7 @@ import Header from '../component/Header/component'
 import Banner from './components/Banner'
 import Tabsss from './components/Tabsss'
 
-const page = () => {
+const Page = () => {
     return (
         <>
             <Cursor />
@@ -16,4 +16,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
