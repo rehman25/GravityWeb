@@ -1,0 +1,80 @@
+/* Terms & Condition Banner Section  */
+
+.termsconditionbanner {
+  background-image: url("../assets/images/banner/inner-banner.svg");
+  background-color: rgb(54, 54, 54);
+  padding: 5px;
+  color: rgb(255, 255, 255);
+}
+
+.termsconditionbannertextleftside {
+  position: relative;
+  margin: 30px 35px;
+}
+
+.leftborderdesign {
+  position: absolute;
+  left: 3px;
+  top: 3%;
+  transform: translateY(-50%);
+  height: 1px;
+  width: 20px;
+  background-color: rgb(255, 255, 255);
+}
+
+.termsconditionbannertextleftside h6 {
+  color: rgb(232, 232, 232);
+  font-size: 12px;
+  margin: 20px 35px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.termsconditionbannertextleftside h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 30px;
+}
+
+.leftextdisplaycenter {
+  display: inline;
+  font-weight: 700;
+  color: rgb(227, 32, 74);
+  font-family: "Montserrat", sans-serif;
+}
+
+.termconbannrightside {
+  margin-top: 50px;
+  padding: 50px;
+  font-size: 16px;
+  text-align: justify; /* Align text to the right */
+}
+
+.termconbannrightside span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  display: inline-block; /* Display as inline-block */
+}
+
+/* ========================================================= */
+
+/* Terms & Condition Content Section  */
+
+.TermsConditionContent {
+  padding-left: 50px;
+  margin: 20px 30px;
+}
+
+.TermsConditionheading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 15px;
+}
+
+.TermsConditionpara {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+}
+
+/* ========================================================= */
