@@ -1,0 +1,75 @@
+/* Privacy Policy Banner Section  */
+
+.PrivacyPolicyBanner {
+    background-image: url("../assets/images/banner/inner-banner.svg");
+    background-color: rgb(54, 54, 54);
+    padding: 5px;
+    color: rgb(255, 255, 255);
+}
+
+.PrivacyPolicyBannertextleftside {
+    position: relative;
+    margin: 30px 40px;
+}
+
+.leftborderdesign {
+    position: absolute;
+    left: 3px;
+    top: 12%;
+    transform: translateY(-50%);
+    height: 1px;
+    width: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.PrivacyPolicyBannertextleftside h6 {
+    color: rgb(232, 232, 232);
+    font-size: 12px;
+    margin: 20px 35px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.PrivacyPolicyBannertextleftside h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 30px;
+}
+
+.PrivacyPolicyBannertextleftside {
+    font-weight: 700;
+    color: rgb(255, 255, 255);  
+    font-family: "Montserrat", sans-serif;
+}
+
+.PrivacyPolicyBannertextrightside {
+    font-size: 16px;
+}
+
+.PrivacyPolicyBanner .PrivacyPolicyBannertextrightside span {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+}
+
+/* ========================================================= */
+
+/* Privacy Policy Content Section  */
+
+.PrivacyPolicyContent {
+    padding-left: 50px;
+    margin: 30px 30px;
+}
+
+.PrivacyPolicyContentheading {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+.PrivacyPolicyContentpara {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+}
+
+/* ========================================================= */
