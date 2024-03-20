@@ -474,6 +474,33 @@ text-decoration= none solid rgb(255, 255, 255)
   }
 }
 
+
+/* Media Queries for Expertise__TabPanel */
+@media screen and (min-width: 576px) {
+  .Expertise___bg {
+    min-height: 500px; /* Adjust min-height for smaller screens */
+    padding: 50px 40px; /* Adjust padding */
+  }
+
+  .Expertise___tabs__box #Expertise___tabs__list li {
+    padding: 30px; /* Adjust padding */
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Expertise___bg {
+    min-height: 600px; /* Adjust min-height for medium-sized screens */
+    padding: 100px 60px; /* Adjust padding */
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .Expertise___bg {
+    min-height: 700px; /* Adjust min-height for large screens */
+    padding: 150px 80px; /* Adjust padding */
+  }
+}
+
 /* ===================================================== */
 @keyframes marquee {
   0% {
