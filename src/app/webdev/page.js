@@ -1,11 +1,13 @@
 'use Client'
 import Workslidercomponent from './components/Workslidercomponent'
 import styles from "./webdev.module.css";
-import Header from "../component/Header/component";
-import Cursor from "../component/cursor/cursor";
-import Footer from "../component/Footer/component";
 import FAQ from "./components/FAQ/component";
 import WorkRead from "./components/Work-Read/index";
+import Header from '../component/Header/component'
+import Cursor from '../component/cursor/cursor'
+import Testimonials from '../component/Testimonials/index'
+import Expansion from '../component/Expansion/component'
+import InnerFooter from '../component/InnerFooter/component'
 import { BsInstagram } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa6";
@@ -71,6 +73,12 @@ const Page = () => {
                                                 id="exampleInputEmail1"
                                                 aria-describedby="emailHelp"
                                             />
+                                            <label htmlFor="" className={styles.label}>Your Name*</label>
+                                            <input type="text" className={` ${styles.Input}`} id="exampleInputEmail1" aria-describedby="emailHelp" />
+                                        </div>
+                                        <div className={styles.Formgroup}>
+                                            <label htmlFor="" className={styles.label}>Your Email*</label>
+                                            <input type="text" className={` ${styles.Input}`} id="exampleInputEmail1" aria-describedby="emailHelp" />
                                         </div>
                                     </div>
                                     <div className={`row ${styles.row}`}>
@@ -89,6 +97,11 @@ const Page = () => {
                                             <label htmlFor="" className={styles.label}>
                                                 Phone Number
                                             </label>
+                                            <label htmlFor="" className={styles.label}>Phone Number*</label>
+                                            <input type="text" className={` ${styles.Input}`} id="exampleInputEmail1" aria-describedby="emailHelp" />
+                                        </div>
+                                        <div className={styles.Formgroup}>
+                                            <label htmlFor="" className={styles.label}>Phone Number</label>
                                             <select name="" id="" className={` ${styles.Input}`}>
                                                 <option value="">0 - 3000 AED</option>
                                                 <option value="">3000 AED - 6000 AED</option>
@@ -126,9 +139,11 @@ const Page = () => {
                 </div>
             </div>
             <Workslidercomponent />
+            <Testimonials />
             <FAQ />
             <WorkRead />
-            <section className={`'container' ${styles.Container}`}>
+            <Expansion/>
+            <section className={`container ${styles.Container}`}>
                 <div className="container-fliud">
                     <div className={`row ${styles.row}`}>
                         <div className={`col-lg-6 ${styles.leftContainer}`}>
@@ -199,7 +214,7 @@ const Page = () => {
                     </div>
                 </div>
             </section>
-            <Footer />
+            <InnerFooter />
         </>
 
 

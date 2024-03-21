@@ -1,19 +1,19 @@
 import React from 'react';
-import TermsConditionBanner from '../terms&condition/components/TermsConditionBanner'; 
-import TermsConditionContent from '../terms&condition/components/TermsConditionContent'; 
+import TermsConditionBanner from './components/TermsConditionBanner'
 import Cursor from "../component/cursor/cursor";
 import Header from "../component/Header/component";
 import Footer from '../component/Footer/component';
+import TermsConditionContent from './components/TermsConditionContent';
 
 const Page = () => {
   return (
     <>
       <Cursor />
       <Header />
-      <TermsConditionBanner /> 
-      <TermsConditionContent/>
+      <TermsConditionBanner />
+      <TermsConditionContent />
       <Footer />
-    </>
+    </> 
   );
 };
 

@@ -26,22 +26,14 @@
 
 .leftside {
     display: flex;
-    /* height: 100vh; */
     align-items: center;
-    /* justify-content: center; */
     z-index: 99;
-    /* padding: 25px; */
-
 }
-
-
 .divline {
     border-bottom: 2px solid #fff;
     width: 35px;
     position: relative;
     margin: 5px 5px;
-
-
 }
 
 .HeadIcon {
@@ -50,7 +42,6 @@
 }
 
 .divtext {
-    /* position: relative; */
     color: #fff;
     font-size: 12px;
     font-weight: 400;
@@ -69,15 +60,12 @@
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-
     z-index: 1;
 }
 
 .headingpara {
-
     display: flex;
     padding: 15px 0px;
-    /* align-items: center; */
 }
 
 .pdash {
@@ -93,7 +81,6 @@
     text-transform: capitalize;
     color: #fff;
     font-family: "Montserrat", sans-serif;
-    /* font-weight: 00; */
 }
 
 .Heading {
@@ -107,8 +94,6 @@
 }
 
 .Rightside {
-    /* height: 100vh; */
-
     z-index: 9999;
     display: flex;
     align-items: center;
@@ -118,22 +103,10 @@
 
 .FormContainer {
     background: #fff;
-    /* height: 90vh; */
     width: 80%;
     padding: 30px;
     margin-top: 42px;
-
-
-
-
 }
-
-
-.ContactForm {
-    /* padding: 10px; */
-
-}
-
 .ContactForm h3 {
     font-weight: 500;
     font-family: "Montserrat", sans-serif;
@@ -143,18 +116,9 @@
     font-weight: 700;
 }
 
-/* .ContactForm p{
-        font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    margin: 0 0 1.5em 0;
-    color: #000000;
-    line-height: 1.5;
-    font-size: 14px;
-} */
 
 .Input {
     border: none;
-    /* border-bottom: 1px solid rgba(121, 121, 121, .2); */
     background-color: #dee2e6;
     outline: none;
     font-size: 14px;
@@ -165,24 +129,20 @@
 
 .Input:focus {
     border: 2px solid #c61a3c;
-
 }
 
 
 .textarea {
     border: none;
-    /* border-bottom: 1px solid rgba(121, 121, 121, .2); */
     background-color: #dee2e6;
     outline: none;
     font-size: 14px;
     color: rgba(77, 75, 75, 0.993);
     font-family: "Montserrat", sans-serif;
-    /* height: 33px; */
 }
 
 .textarea:focus {
     border: 2px solid #c61a3c;
-
 }
 
 .Input option {
@@ -194,7 +154,6 @@
 .Formgroup {
     display: flex;
     flex-direction: column;
-    /* margin-top: 15px; */
     padding: 10px;
     width: 50%;
 }
@@ -202,14 +161,11 @@
 .Formgrouptextarea {
     display: flex;
     flex-direction: column;
-    /* margin-top: 15px; */
-
 }
 
 .row {
     display: flex;
     flex-direction: row;
-
 }
 
 .label {
@@ -242,7 +198,6 @@
     font-style: normal;
     font-weight: 500;
     font-size: .567em;
-    /* line-height: 142%; */
     color: #363636;
     margin-bottom: 0;
     font-family: "Montserrat", sans-serif;
@@ -415,6 +370,58 @@
     padding: 5px;
 }
 
+
+.Input1{
+    border: none;
+     background-color:rgba(77, 75, 75, 0.993);
+    outline: none;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.993);
+    font-family: "Montserrat", sans-serif;
+    height: 33px;
+}
+
+.Input1:focus{
+  border: 2px solid #c61a3c;
+}
+
+
+.textarea:focus{
+  border: 2px solid #c61a3c;
+}
+
+.Formgroup1{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 50%;
+}
+.Formgrouptextarea1{
+      display: flex;
+    flex-direction: column;
+}
+
+.row1{
+    display: flex;
+    flex-direction: row;
+}
+.label1{
+    font-size: 13px;
+    color:  #dee2e6;
+    font-family: "Montserrat", sans-serif;
+}
+.sendtext1{
+    font-weight: 600;
+    font-size: 25px;
+     font-family: "Montserrat", sans-serif;
+     color:  #dee2e6;
+
+}
+.button1{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
 @media screen and (max-width:992px) {
     .heading {
         left: 0px;
@@ -441,65 +448,4 @@
         flex-direction: column;
         align-items: flex-start;
     }
-}
-/* Footer contact area */
-.Input1{
-    border: none;
-     /* border-bottom: 1px solid rgba(121, 121, 121, .2); */
-     background-color:rgba(77, 75, 75, 0.993);
-    outline: none;
-    font-size: 15px;
-    color: rgba(255, 255, 255, 0.993);
-    font-family: "Montserrat", sans-serif;
-    height: 33px;
-}
-
-.Input1:focus{
-  border: 2px solid #c61a3c;
-
-}
-
-
-
-
-.textarea:focus{
-  border: 2px solid #c61a3c;
-
-}
-
-.Formgroup1{
-    display: flex;
-    flex-direction: column;
-    /* margin-top: 15px; */
-    padding: 10px;
-    width: 50%;
-}
-.Formgrouptextarea1{
-      display: flex;
-    flex-direction: column;
-    /* margin-top: 15px; */
- 
-}
-
-.row1{
-    display: flex;
-    flex-direction: row;
-  
-}
-.label1{
-    font-size: 13px;
-    color:  #dee2e6;
-    font-family: "Montserrat", sans-serif;
-}
-.sendtext1{
-    font-weight: 600;
-    font-size: 25px;
-     font-family: "Montserrat", sans-serif;
-     color:  #dee2e6;
-
-}
-.button1{
-    display: flex;
-    align-items: center;
-    margin-top: 30px;
 }
