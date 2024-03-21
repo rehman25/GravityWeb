@@ -3,6 +3,7 @@ import React from 'react'
 import styles from './webdev.module.css'
 import Header from '../component/Header/component'
 import Cursor from '../component/cursor/cursor'
+import Workslidercomponent from './components/Workslidercomponent'
 import Footer from '../component/Footer/component'
 import { BsInstagram } from "react-icons/bs";
 import { FaXTwitter } from "react-icons/fa6";
@@ -76,6 +77,7 @@ const Page = () => {
                   </div>
               </div>
           </div>
+          <Workslidercomponent />
         <Footer />
       </>
       
