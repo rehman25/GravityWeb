@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 import { CiCirclePlus } from "react-icons/ci";
-import Text from '../text'
+import Text from '../../../component/text/index'
 import style from './faq.module.css'
 
 
