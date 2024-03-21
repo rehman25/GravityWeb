@@ -92,7 +92,7 @@ const Page = () => {
             <FAQ />
             <WorkRead />
             <Expansion />
-            <section>
+            <section className={`${styles.bottomSection}`}>
                 <div className="container-fliud">
                     <div className={`row ${styles.row}`}>
                         <div className={`col-lg-6 ${styles.leftContainer}`}>
@@ -124,10 +124,10 @@ const Page = () => {
                             </div>
                         </div>
                         <div className={`col-lg-6 ${styles.rightContainer}`}>
-                            <h1 className={styles.letsbuild}>
+                            <h1 className={styles.letsbuild1}>
                                 Subscribe To Our
                                 <br />
-                                <p className={styles.something}>Newsletter</p>
+                                <p className={styles.something1}>Newsletter</p>
                             </h1>
                             <div className={`row ${styles.row1}`}>
                                 <div className={styles.Formgroup1}>
