@@ -92,7 +92,7 @@ const Page = () => {
             <FAQ />
             <WorkRead />
             <Expansion />
-            <section className={`'container' ${styles.Container}`}>
+            <section>
                 <div className="container-fliud">
                     <div className={`row ${styles.row}`}>
                         <div className={`col-lg-6 ${styles.leftContainer}`}>
