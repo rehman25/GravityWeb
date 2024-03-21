@@ -1,0 +1,84 @@
+/* Testimonials Header section */
+
+.testimonialheader h1 {
+    text-align: center;
+    font-size: 4.063rem;
+    color: transparent;
+    font-weight: bolder;
+    -webkit-text-stroke: 1px #e3204a;
+    text-shadow: 0 0 0 0;
+}
+
+.testimonialheader p {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    text-transform: capitalize;
+}
+
+.testimonialheadersub {
+    display: inline;
+    font-size: 30px;
+    color:  rgb(227, 32, 74);
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* ================================================================================== */
+
+/* Testimonials Cards section */
+
+.TestimonialCards {
+    background-color: rgb(237, 238, 243);
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px 18px;
+    height: 650px;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Content h4{
+    color: rgb(228, 52, 90);
+    margin-bottom: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.Content span {
+    color: #666;
+    font-size: 12px;
+    line-height: 1.6;
+    font-family: "Montserrat", sans-serif;
+}
+
+.Content h6 {
+    margin-top: 40px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.Content p {
+    color: #333;
+    font-family: "Montserrat", sans-serif;
+}
+
+.ratings h6 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.ratings p {
+    font-family: "Montserrat", sans-serif;
+}
+
+.ratings svg {
+    font-size: 18px;
+    color: rgb(227, 32, 74);
+}
+
+/* ================================================================================== */

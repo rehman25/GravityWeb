@@ -1,0 +1,55 @@
+/* Inner Footer Section */
+
+.InnerFooterSection {
+    background-color: #363636;
+    padding: 50px 0 10px 0;
+}
+
+.Innerfooter {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.address {
+    color: white;
+    margin: 0px;
+    font-size: 10px;
+
+}
+
+.dash {
+    color: white !important;
+    font-weight: 700;
+    margin-left: 10px;
+    margin: 0px;
+}
+
+.FooterIcon {
+    margin: 0px 5px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.LinkHeading {
+    border-left: 2px solid white;
+    padding: 5px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+
+}
+
+.ulFooter li a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.3s; 
+}
+
+.ulFooter li a:hover {
+    border-bottom-color: white; 
+}
+
+/* ========================================================== */

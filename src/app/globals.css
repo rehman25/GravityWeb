@@ -154,7 +154,10 @@ span {
 .blogTabs .react-tabs .react-tabs__tab-list .react-tabs__tab {
     border: none !important;
 }
-
+/* TETSIMONIALS SLIDER MARGIN AS GLOBAL CLASS */
+.testimonials .slick-slide {
+    margin: 0 20px; /* Adjust margins as needed */
+}
 /* ==================================================== */
 @media screen and (max-width:992px){
     .hometabsSection .react-tabs {
