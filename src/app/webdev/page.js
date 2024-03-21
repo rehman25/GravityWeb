@@ -9,8 +9,9 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa6";
 import Best from './components/Best/components'
+import Slider from './components/Slider/Components'
 
-const page = () => {
+const Page = () => {
   return (
         <>
         <Cursor />
@@ -78,6 +79,7 @@ const page = () => {
               </div>
           </div>
         <Best />
+        <Slider />
         <Footer />
       </>
       
@@ -85,5 +87,5 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
 

@@ -18,14 +18,14 @@ function Employeessay() {
         <>
             <section className={`${styles.Employeessaysection}`}>
                 <div className="container-fluid">
-                    <div className="row mt-5 p-5">
-                        <div className="col-8">
+                    <div className="row">
+                        <div className="col-lg-8">
                             <div className={`${styles.Employeessaysectionleft}`}>
                                 <h4>What Our Happy <span> Employees Say</span></h4>
                                 <Image src={EmployeeProgress} alt="Employee" className={`${styles.EmployeesProgressImage}`} />
                             </div>
                         </div>
-                        <div className="col-4 mt-5">
+                        <div className="col-lg-4 mt-5">
                             <Emp />
                         </div>
                     </div>
@@ -60,28 +60,24 @@ class Emp extends Component {
                         <Image src={Employeeone} alt="Employee" />
                         <h6>Azhar Ali</h6>
                         <span>Mobile App Lead</span>
-                        "
                         <p>The Best Place to grow and learn with fun-working environment, i must say this is my dream place to work</p>
                     </div>
                     <div className={`${styles.Employeeone}`}>
                         <Image src={Employeetwo} alt="Employee" />
                         <h6>Ali Abbas</h6>
                         <span>UI/UX Designer</span>
-                        "
                         <p>The Best Place to grow and learn with fun-working environment, i must say this is my dream place to work</p>
                     </div>
                     <div className={`${styles.Employeeone}`}>
                         <Image src={Employeethree} alt="Employee" />
                         <h6>Syed Saad Fareed</h6>
                         <span>UI/UX Designer</span>
-                        "
                         <p>The Best Place to grow and learn with fun-working environment, i must say this is my dream place to work</p>
                     </div>
                     <div className={`${styles.Employeeone}`}>
                         <Image src={EmployeeFour} alt="Employee" />
                         <h6>Abdullah</h6>
                         <span>Graphics Designer</span>
-                        "
                         <p>The Best Place to grow and learn with fun-working environment, i must say this is my dream place to work</p>
                     </div>
                 </Slider>

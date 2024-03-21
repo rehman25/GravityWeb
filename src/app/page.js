@@ -30,7 +30,7 @@ import Worth__Read from './component/Work-Read/index'
 import Award from './component/Awards/components'
 import Social from './component/SocialJoin/component'
 
-const page = () => {
+const Page = () => {
   const [isActive, setActive] = useState("Web_Dev")
   return (
     <>
@@ -510,4 +510,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

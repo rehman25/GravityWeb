@@ -15,7 +15,7 @@ import It from "../../assets/images/service/resource-outsourcing.svg"
 
 
 
-const component = () => {
+const Component = () => {
   const [isArrow, setArrow] = useState(false)
   const [isMobile, setMobile] = useState(false)
   const [isDigital, setDigital] = useState(false)
@@ -91,10 +91,10 @@ const component = () => {
               <div className={style.card}>
                {isArrow ?
                   <div className={style.imgdivres}>
-                    <Image src={WebD} className={style.Image} />
+                    <Image alt="Example" src={WebD} className={style.Image} />
                   </div>
                   : <div className={style.imgdiv}>
-                    <Image src={WebD} className={style.Image} />
+                    <Image alt="Example" src={WebD} className={style.Image} />
                   </div>
               }
                
@@ -117,9 +117,9 @@ const component = () => {
             <div className={`col-lg-4 col-md-4  ${style.box}`} onMouseEnter={handleMobile} onMouseLeave={LehandleMobile}>
               <div className={style.card}>
                 {isMobile ? <div className={style.imgdivres}>
-                  <Image src={Mobileapp} className={style.Image} />
+                  <Image alt="Example" src={Mobileapp} className={style.Image} />
                 </div> : <div className={style.imgdiv}>
-                  <Image src={Mobileapp} className={style.Image} />
+                  <Image alt="Example" src={Mobileapp} className={style.Image} />
                 </div>}
                
                 <div className={style.cardcontent}>
@@ -134,9 +134,9 @@ const component = () => {
             <div className={`col-lg-4 col-md-4  ${style.box}`} onMouseEnter={handleDigital} onMouseLeave={LehandleDigital}>
               <div className={style.card}>
                 {isDigital ? <div className={style.imgdivres}>
-                  <Image src={Digital} className={style.Image} />
+                  <Image alt="Example" src={Digital} className={style.Image} />
                 </div> : <div className={style.imgdiv}>
-                  <Image src={Digital} className={style.Image} />
+                  <Image alt="Example" src={Digital} className={style.Image} />
                 </div>}
                 <div className={style.cardcontent}>
                   <span>Digital Marketing</span>
@@ -153,9 +153,9 @@ const component = () => {
             <div className={`col-lg-4 col-md-4  ${style.box}`} onMouseEnter={handleUiux} onMouseLeave={LehandleUiux}>
               <div className={style.card}>
                 {isUiux ? <div className={style.imgdivres}>
-                  <Image src={Uiux} className={style.Image} />
+                  <Image alt="Example" src={Uiux} className={style.Image} />
                 </div> : <div className={style.imgdiv}>
-                  <Image src={Uiux} className={style.Image} />
+                  <Image alt="Example" src={Uiux} className={style.Image} />
                 </div>}
                 <div className={style.cardcontent}>
                   <span>UX/UI Design</span>
@@ -169,9 +169,9 @@ const component = () => {
             <div className={`col-lg-4 col-md-4  ${style.box}`} onMouseEnter={handleEco} onMouseLeave={LehandleEco}>
               <div className={style.card}>
                 {isEco ? <div className={style.imgdivres}>
-                  <Image src={Eco} className={style.Image} />
+                  <Image alt="Example" src={Eco} className={style.Image} />
                 </div> : <div className={style.imgdiv}>
-                  <Image src={Eco} className={style.Image} />
+                  <Image alt="Example" src={Eco} className={style.Image} />
                 </div>}
                 <div className={style.cardcontent}>
                   <span>E-Commerce Solution</span>
@@ -185,9 +185,9 @@ const component = () => {
             <div className={`col-lg-4 col-md-4  ${style.box}`} onMouseEnter={handleBranding} onMouseLeave={LehandleBranding}>
               <div className={style.card}>
                 {isBranding ? <div className={style.imgdivres}>
-                  <Image src={Branding} className={style.Image} />
+                  <Image alt="Example" src={Branding} className={style.Image} />
                 </div> : <div className={style.imgdiv}>
-                  <Image src={Branding} className={style.Image} />
+                  <Image alt="Example" src={Branding} className={style.Image} />
                 </div>}
                 <div className={style.cardcontent}>
                   <span>Branding & Communication</span>
@@ -203,9 +203,9 @@ const component = () => {
             <div className={`col-lg-4 col-md-4  ${style.box}`} onMouseEnter={handleVideo} onMouseLeave={LehandleVideo}>
               <div className={style.card}>
                 {isVideo ? <div className={style.imgdivres}>
-                  <Image src={Video} className={style.Image} />
+                  <Image alt="Example" src={Video} className={style.Image} />
                 </div> : <div className={style.imgdiv}>
-                  <Image src={Video} className={style.Image} />
+                  <Image alt="Example" src={Video} className={style.Image} />
                 </div>}
                 <div className={style.cardcontent}>
                   <span>Video Animation</span>
@@ -219,9 +219,9 @@ const component = () => {
             <div className={`col-lg-4 col-md-4  ${style.box}`} onMouseEnter={handleIt} onMouseLeave={LehandleIt}>
               <div className={style.card}>
                 {isIt ? <div className={style.imgdivres}>
-                  <Image src={It} className={style.Image} />
+                  <Image alt="Example" src={It} className={style.Image} />
                 </div> : <div className={style.imgdiv}>
-                  <Image src={It} className={style.Image} />
+                  <Image alt="Example" src={It} className={style.Image} />
                 </div>}
                 <div className={style.cardcontent}>
                   <span>IT Resource Outsourcing</span>
@@ -241,4 +241,4 @@ const component = () => {
   )
 }
 
-export default component
+export default Component

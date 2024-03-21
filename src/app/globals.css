@@ -119,26 +119,6 @@ span {
     width: 45%;
 }
 
-@media screen and (max-width:992px){
-    .hometabsSection .react-tabs {
-        flex-direction: column;
-    }
-    .hometabsSection .react-tabs .react-tabs__tab-list {
-        flex-direction: row;
-        border-left: none;
-        padding-left: 0;
-        height: auto;
-        overflow-x: unset;
-        padding: 0;
-        white-space: nowrap;
-    }
-    .hometabsSection .react-tabs .react-tabs__tab-panel--selected {
-        width: auto;
-    }
-    .Expertise___bg .react-tabs__tab-panel--selected{
-        width: 100%;
-    }
-}
 /* EMP SLIDER CSS ========================== */
 .Employees__slider .slick-prev{
     position: absolute;
@@ -165,4 +145,34 @@ span {
 .Employees__slider .slick-next:hover {
     background-color: red;
     color: white;
+}
+
+/* BLOG TABS CSS =============================== */
+.blogTabs .react-tabs .react-tabs__tab-list {
+    border: none;
+}
+.blogTabs .react-tabs .react-tabs__tab-list .react-tabs__tab {
+    border: none !important;
+}
+
+/* ==================================================== */
+@media screen and (max-width:992px){
+    .hometabsSection .react-tabs {
+        flex-direction: column;
+    }
+    .hometabsSection .react-tabs .react-tabs__tab-list {
+        flex-direction: row;
+        border-left: none;
+        padding-left: 0;
+        height: auto;
+        overflow-x: unset;
+        padding: 0;
+        white-space: nowrap;
+    }
+    .hometabsSection .react-tabs .react-tabs__tab-panel--selected {
+        width: auto;
+    }
+    .Expertise___bg .react-tabs__tab-panel--selected{
+        width: 100%;
+    }
 }
