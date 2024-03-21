@@ -57,9 +57,28 @@ class Work extends Component {
             slidesToShow: 4,
             slidesToScroll: 1,
             lazyLoad: true,
-            // centerMode: true,
             arrows: false,
             className: "",
+            responsive: [
+                {
+                  breakpoint: 1024,
+                  settings: {
+                    slidesToShow: 3,
+                  }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                      slidesToShow: 2,
+                    }
+                  },
+                  {
+                    breakpoint: 480,
+                    settings: {
+                      slidesToShow: 1,
+                    }
+                  },
+            ]
         };
         return (
             <div>

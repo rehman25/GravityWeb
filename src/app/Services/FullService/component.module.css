@@ -1,0 +1,120 @@
+.container{
+    /* padding: 30px; */
+    margin-top: 50px;
+}
+
+.row{
+    display: flex;
+    padding: 20px;
+}
+
+.heading{
+    color: #363636;
+    font-weight: 600;
+    letter-spacing: -.035em;
+    text-transform: capitalize;
+    line-height: 1.22;
+    animation: 0.5s ease-out 0s 1 normal forwards running anim;
+}
+
+.heading span{
+    color: #c61a3c;
+       font-weight: 600;
+    letter-spacing: -.035em;
+    text-transform: capitalize;
+    line-height: 1.22;
+    animation: 0.5s ease-out 0s 1 normal forwards running anim;
+}
+
+.card{
+    padding: 20px;
+}
+.imgdiv{
+     padding: 20px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    background-color: #7776763f;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.arrowIcon{
+    color:#c61a3c ;
+}
+
+.imgdivres{
+     padding: 20px;
+
+    background-color: #c61a3c;
+      border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Image{
+    width: 25px;
+}
+.cardcontent{
+    margin-top: 10px;
+}
+.cardcontent span{
+color: #363636;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -.04em;
+    line-height: 1.22;
+     font-family: "Montserrat", sans-serif;
+    margin: 0 0 1em 0;
+}
+.cardcontent p{
+    color: #363636;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0 0 1em 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* .card:hover{
+
+} */
+
+.box{
+    /* width: 33%; */
+        height: 279px;
+
+    
+}
+.box:hover{
+        background-color: white;
+    box-shadow: 0px 10px 15px -3px rgba(112, 112, 112, 0.1);
+    animation: shadow-drop-center 1s ease 0s 1 normal none;
+
+}
+
+@keyframes shadow-drop-center {
+			
+		0% {
+			box-shadow:0 0 0 0 transparent;
+		}
+		100% {
+			box-shadow:0 0 20px 0 rgba(0,0,0,.35);
+		}
+	}
+
+@media screen and (max-width:992px) {
+    
+}
+
+@media screen and (max-width:786px) {
+    
+}
+
+@media screen and (max-width:500px) {
+    
+}

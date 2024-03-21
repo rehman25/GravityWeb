@@ -22,6 +22,7 @@
     font-size: 60px;
     font-weight: 600;
     line-height: 50px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .heroRightSide span.heroHeadOne {
@@ -30,15 +31,15 @@
     -webkit-text-fill-color: transparent;
     -webkit-animation: gradientAnimation 5s linear infinite;
 }
-
-.heroRightSide span.heroHeadTwo {}
-
-.heroLeftSide {
+.heroLeftSide{
     padding-left: 100px;
+}
+.heroLeftSide p{
     font-weight: 400;
     color: #fff;
     line-height: 1.5;
-    color: white;
+    font-size: 0.85em;
+    font-family: "Montserrat", sans-serif;
 }
 
 .heroSectionIcons {
@@ -64,6 +65,7 @@
     transition: .4s;
     font-size: 12px;
     padding: 5px 5px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .heroSectionIcons ul span:hover {
@@ -160,6 +162,7 @@
     margin: 0.75em 0 0 0;
     opacity: .4;
     color: gray;
+    font-family: "Montserrat", sans-serif;
 }
 
 .mouseBox h6 {
@@ -172,13 +175,13 @@
     left: 45%;
     animation: moveTopToBottom 2s linear infinite;
     opacity: .8;
+    font-family: "Montserrat", sans-serif;
 }
 
 .homeTabs .TabPanel .TabImage {
     height: 100%;
     width: 100%;
     display: block;
-    -o-object-fit: contain;
     object-fit: contain;
 }
 
@@ -186,6 +189,7 @@
     font-size: .7em;
     color: #fff;
     font-weight: 300;
+    font-family: "Montserrat", sans-serif;
 }
 
 .homeTabs .TabPanel .service_item__list_wrapper {
@@ -202,6 +206,7 @@
 .homeTabs .TabPanel .service_item__list_wrapper li a {
     color: rgba(255, 255, 255, .5);
     font-size: .6em;
+    font-family: "Montserrat", sans-serif;
     transition: .25s ease-in-out;
 }
 
@@ -212,5 +217,59 @@
     }
     100% {
         transform: translateY(850%);
+    }
+}
+
+@media screen and (max-width:992px){
+    .heroRightSide span {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .homeTabs .TabListBox {
+        width: auto;
+    }
+    .homeTabs .TabPanel .TabImage {
+        height: auto;
+        width: auto;
+    }
+}
+
+@media screen and (max-width:768px){
+    .heroRightSide {
+        align-items: center;
+    }
+    .heroRightSide span {
+        text-align: center;
+    }
+    .heroSectionIcons{
+        display: none;
+    }
+    .heroLeftSide{
+        padding-left: 0;
+    }
+    .homeTabmainBox {
+        padding: 40px 20px;
+    }
+}
+
+@media screen and (max-width:680px){
+    .homeTabs .TabPanel .TabImage {
+        width: 100%;
+    }
+    .homeTabs .TabPanel .service_item__list_wrapper {
+        margin: 0;
+        padding: 0;
+    }
+    .homeTabs .TabPanel .service_item__list_wrapper li {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:480px){
+    .heroSection{
+        height: 500px;
+    }
+    .heroRightSide span{
+        font-size: 30px;
     }
 }

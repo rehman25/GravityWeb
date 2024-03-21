@@ -24,9 +24,13 @@ import UIUXImg from './assets/images/UI-UX-Design/ui-ux-design.webp'
 import VideoImg from './assets/images/video-animation/video-animation.webp'
 import IT_ResourcesImg from './assets/images/IT-Resources/it-resource.webp'
 import Branding from './component/Branding/index';
+import FAQ from './component/FAQ/component'
 import Footer from './component/Footer/component'
+import Worth__Read from './component/Work-Read/index'
+import Award from './component/Awards/components'
+import Social from './component/SocialJoin/component'
 
-const page = () => {
+const Page = () => {
   const [isActive, setActive] = useState("Web_Dev")
   return (
     <>
@@ -497,9 +501,13 @@ const page = () => {
       </section>
       <OurWork />
       <Branding />
+      <Award />
+      <FAQ />
+      <Worth__Read />
+      <Social />
       <Footer />
     </>
   )
 }
 
-export default page
+export default Page

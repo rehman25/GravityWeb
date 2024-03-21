@@ -7,15 +7,15 @@ const Bannerdown = () => {
   return (
     <section>
       <div className={`${styles.bannerdownsection}`}>
-        <div className="row">
-          <div className='col-lg-6 col-sm-6'>
+        <div className={`${styles.rows} row`}>
+          <div className='col-md-6'>
             <div className={`${styles.imageleft}`}>
               <Image src={bannerdownimg} alt="Banner" className={`${styles.bannerdownimg}`} />
             </div>
           </div>
-          <div className='col-lg-6 col-sm-6'>
+          <div className='col-md-6'>
             <div className={`${styles.textright}`}>
-              <div className={`${styles.headingContainer} ${styles.marqueeContent}`}> 
+              <div className={`${styles.headingContainer} ${styles.marqueeContent}`}>
                 <h1 className={`${styles.heading}`}>Concept.</h1>
                 <h1 className={`${styles.heading}`}>Strategy.</h1>
                 <h1 className={`${styles.heading}`}>Execute.</h1>

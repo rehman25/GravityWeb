@@ -1,6 +1,5 @@
 'use client'
 import React, { Component, useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Image from 'next/image';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";

@@ -17,11 +17,11 @@ const cursor = () => {
                 outerStyle={{
                     border: '1px solid #e3204a96',
                     mixBlendMode: 'exclusion',
-                    zIndex: 9999
+                    zIndex: 999999999
                 }}
                 innerStyle={{
                     backgroundColor: '#E3204A',
-                    zIndex: 9999
+                    zIndex: 999999999
                 }}
             />
         </>

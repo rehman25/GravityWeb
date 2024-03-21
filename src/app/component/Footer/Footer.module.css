@@ -1,24 +1,22 @@
-.Container{
-    height: 70vh;
-    overflow: clip;
+.leftContainer {
+    background-color: #e3204a;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 150px 0 10px 0;
 }
 
-.leftContainer{
-   height: 100vh;
-   background-color: #e3204a;
-   display: flex;
-   justify-content: center;
-   flex-direction: column;
-   padding: 50px;
-}
-.rightContainer{
-    height: 100vh;
+.rightContainer {
     background-color: #363636;
+    display: flex;
+    align-items: center;
+    padding: 150px 0 10px 0;
 }
-.heading{
+
+.heading {
     position: absolute;
-     left: 300px;
-     right: 100px;
+    left: 250px;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px #b9b9ba;
     text-transform: capitalize;
@@ -27,50 +25,101 @@
     font-family: sans-serif;
     font-weight: 700;
     z-index: 1;
-    padding: 30px;
+    padding: 20px;
 }
 
-.letsbuild{
+.letsbuild {
     color: white;
     margin: 0px;
 }
-.something{
+
+.something {
     font-size: 2rem;
     color: white;
     font-weight: 600;
 }
-.footerPara{
+
+.footerPara {
     margin: 0px;
     padding: 0px;
     font-size: 10px;
     color: white;
 }
-.innnerRow{
+
+.innnerRow {
     display: flex;
     flex-direction: row;
 }
-.DashContainer{
+
+.DashContainer {
     width: 10%;
 }
-.address{
+
+.address {
     color: white;
     margin: 0px;
     font-size: 10px;
-    
-}
-.dash{
-    color: white !important;
-     font-weight: 700;
-     margin-left: 10px;
-     margin: 0px;
+
 }
 
-.addressContainer{
+.dash {
+    color: white !important;
+    font-weight: 700;
+    margin-left: 10px;
+    margin: 0px;
+}
+
+.addressContainer {
     width: 50%;
     margin-top: 10px;
 }
-.FooterIcon{
+
+.FooterIcon {
     margin: 0px 5px;
     font-size: 14px;
     margin-top: 10px;
+}
+
+.LinkHeading {
+    border-left: 2px solid white;
+    padding: 5px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+
+}
+
+.ulFooter li a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    padding: 5px;
+}
+
+@media screen and (max-width:992px) {
+    .heading {
+        left: 0px;
+    }
+    .leftContainer {
+        align-items: unset;
+        padding: 150px 0 10px 40px;
+    }
+    .rightContainer {
+        padding: 50px 0 10px 0;
+    }
+}
+
+@media screen and (max-width:768px){
+    .heading {
+        text-align: center;
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width:380px){
+    .rightContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
