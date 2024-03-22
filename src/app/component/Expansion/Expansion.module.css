@@ -15,6 +15,13 @@
     padding: 20px;
 }
 
+.Expansionheadersub {
+    display: inline;
+    color:  rgb(227, 32, 74);
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+}
+
 .Expansionsectionleft img {
     width: 100%;
     height: auto;
@@ -25,9 +32,9 @@
     display: flex;
 }
 
-.USAIH5,
-.UAEIH5,
-.PAKISTANIH5 {
+    .USAIH5,
+    .UAEIH5,
+    .PAKISTANIH5 {
     flex: 1;
     font-family: "Montserrat", sans-serif;
 }
@@ -52,6 +59,7 @@
 
 .ContactForm {
     margin-left: 50px;
+    margin-top: 50px;
 }
 
 .ContactForm h3 {
@@ -61,31 +69,50 @@
     text-transform: capitalize;
 }
 
+.Expansionheaderrightsub {
+    display: inline;
+    color:  rgb(227, 32, 74);
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+}
+
 .ContactForm h4 {
     font-family: "Montserrat", sans-serif;
-    margin-top: 35px;
+    margin: 25px 0px;
+    font-weight: 600;
     text-align: left;
-    text-transform: capitalize;
+    font-size: 20px;
 }
 
 .label {
     font-family: "Montserrat", sans-serif;
+    font-size: 12px;
 }
 
 .Input {
     width: 100%;
     padding: 8px;
-    margin: 5px 0;
+    margin: 8px 0;
     box-sizing: border-box;
-    border: 1px solid #ccc;
+    border: none;
+    background: rgba(217,217,217,.3);
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.Input:focus {
+    border: none;
+    
 }
 
 .textarea {
-    width: calc(100% - 16px);
+    border: none;
+    background: rgba(217,217,217,.3);
+    outline: none;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    height: 130px;
     padding: 8px;
-    margin: 5px 0;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
 }
 
 .button {
@@ -103,17 +130,18 @@
 }
 
 .sendtext {
-    font-weight: 600;
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
+    font-weight: 700;
 }
 
 .formpara {
     font-style: normal;
     font-weight: 500;
-    font-size: .567em;
+    font-size: 10px;
     color: #363636;
     margin-bottom: 0;
     font-family: "Montserrat", sans-serif;
     margin: 0px 0px 1.5em 1.5em;
+    margin-left: 50px;
 }
