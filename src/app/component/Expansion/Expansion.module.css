@@ -115,7 +115,58 @@
     padding: 8px;
 }
 
-.button {
+.Input:focus{
+  border: 2px solid #c61a3c;
+
+}
+
+
+.textarea{
+    border: none;
+     /* border-bottom: 1px solid rgba(121, 121, 121, .2); */
+     background-color: #dee2e6;
+    outline: none;
+    font-size: 14px;
+    color: rgba(77, 75, 75, 0.993);
+    font-family: "Montserrat", sans-serif;
+    /* height: 33px; */
+}
+
+.textarea:focus{
+  border: 2px solid #c61a3c;
+
+}
+.Input option{
+ font-size: 12px;
+    color: rgba(77, 75, 75, 0.993);
+    font-family: "Montserrat", sans-serif;
+}
+.Formgroup{
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 15px; */
+    padding: 10px;
+    /* width: 50%; */
+}
+.Formgrouptextarea{
+      display: flex;
+    flex-direction: column;
+    /* margin-top: 15px; */
+ 
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+  
+}
+.label{
+    font-size: 13px;
+    color: rgba(68, 67, 67, 0.89);
+    font-family: "Montserrat", sans-serif;
+}
+
+.button{
     display: flex;
     align-items: center;
     margin-top: 10px;
@@ -141,7 +192,164 @@
     font-size: 10px;
     color: #363636;
     margin-bottom: 0;
-    font-family: "Montserrat", sans-serif;
-    margin: 0px 0px 1.5em 1.5em;
-    margin-left: 50px;
+     font-family: "Montserrat", sans-serif;
+         margin: 0px 0px 1.5em 1.5em;
 }
+
+/* dadd */
+
+
+.Rightside{
+ height: 100vh;
+
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  padding: 40px !important;
+}
+
+.FormContainer{
+  background: #fff;
+  width: 100%;
+  padding: 15px;
+}
+.ContactForm h2{
+        font-weight: 600;
+        font-size: 1.785em;
+    line-height: 123.5%;
+    letter-spacing: -.045em;
+    text-transform: capitalize;
+    font-family: "Montserrat", sans-serif;
+    color: #000;
+}
+.ContactForm h2 b{
+    background: linear-gradient(90deg, #e3204a, #fff, #e3204a, #fff);
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: bgMove 3s linear infinite reverse;
+    mix-blend-mode: normal;
+    font-family: "Montserrat", sans-serif;
+}
+.ContactForm h3 {
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    color: #000000;
+    margin: 0 0 0.5em 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+.Input {
+    border: none;
+    background: rgba(217, 217, 217, .3);
+    outline: none;
+    font-size: 14px;
+    color: rgba(77, 75, 75, 0.993);
+    font-family: "Montserrat", sans-serif;
+    height: 33px;
+}
+
+.Input:focus {
+    border: 2px solid #c61a3c;
+}
+
+
+.textarea {
+    border: none;
+    background: rgba(217, 217, 217, .3);
+    outline: none;
+    font-size: 14px;
+    color: rgba(77, 75, 75, 0.993);
+    font-family: "Montserrat", sans-serif;
+}
+
+.textarea:focus {
+    border: 2px solid #c61a3c;
+}
+
+.Input option {
+    font-size: 12px;
+    color: rgba(77, 75, 75, 0.993);
+    font-family: "Montserrat", sans-serif;
+}
+
+.Formgroup {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 50% !important;
+}
+
+.Formgrouptextarea {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.label {
+    font-size: 13px;
+    color: rgba(68, 67, 67, 0.89);
+    font-family: "Montserrat", sans-serif;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.sendIcon {
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 15px 15px;
+    color: #c61a3c!important;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+
+    margin-left: 5px;
+}
+.sendIcon2{
+       background-color: #c61a3c;
+    border-radius: 50%;
+    padding: 15px 15px;
+    color:  #fff !important;
+    margin-left: 5px;
+}
+.sendtext {
+    font-weight: 600;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+}
+.hovertext{
+    color: #c61a3c;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+}
+.sIcon{
+ font-size: 30px; 
+
+}
+.formpara {
+    font-style: normal;
+    font-weight: 500;
+    font-size: .567em;
+    color: #363636;
+    margin-bottom: 0;
+    font-family: "Montserrat", sans-serif;
+    margin: 0px 0px 1.5em 3.5em;
+}
+
+.formpara b{
+    color: #c61a3c;
+}
+
+
