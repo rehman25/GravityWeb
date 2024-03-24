@@ -1,0 +1,84 @@
+/* ServiceTechDevelopment upper section */
+
+.ServiceTechDevelopmentsection {
+    background-color: rgb(237, 238, 243);
+}
+
+.ServiceTechDevelopmentupper h1 {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.ServiceTechDevelopmentupper p {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-size: 12px;
+}
+
+.marquee_content {
+    white-space: nowrap;
+    animation: marquee 40s linear infinite;
+    display: flex;
+}
+
+.marquee_content div {
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 8px;
+    margin-top: 15px;
+    height: 82px;
+    padding: 0 20px;
+}
+
+.marquee_content div img {
+    object-fit: contain;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* ============================================================== */
+
+/* ServiceTechDevelopment down section */ 
+
+.ServiceTechDevelopmentdown h2{
+    font-family: "Montserrat", sans-serif;
+    margin: 50px 0px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+
+.Imageslider {
+    display: flex;
+}
+
+.Imageslider span {
+    font-family: "Montserrat", sans-serif;
+}
+
+.ImagesliderContent h4 {
+    font-family: "Montserrat", sans-serif;
+}
+
+.ImagesliderContent p {
+    font-family: "Montserrat", sans-serif;
+}
+
+
