@@ -11,9 +11,8 @@ const CurrentOpenings = () => {
                     Digital Gravity is always on the hunt for passionate, self-confident, enthusiastic, and creative individuals to
                     share their brilliance and expertise in digital transformation.
                 </p>
-                <span className={`${styles.applicationInfo}`} style={{display: "inline-block",textAlign: "center"}}>
-                    All applications should be made via&nbsp;
-                    <span className={`${styles.email}`}>careers@digitalgravity.ae</span>
+                <span className={`${styles.applicationInfo}`} style={{ display: "inline-block", textAlign: "center" }}>
+                    All applications should be made via <span className={`${styles.email}`} style={{ display: "inline" }}>careers@digitalgravity.ae</span>
                 </span>
                 <div className="row py-2">
                     <div className="col-md-6 mt-3">

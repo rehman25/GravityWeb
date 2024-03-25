@@ -61,11 +61,11 @@ const component = () => {
     const slides = [
         { image: Resturant, text: "Restaurant" },
         { image: RealEstate, text: "Real Estate" },
-        { image: Technology, text: "Technology" },
-        { image: BusinessConsulting, text: "Business Consulting" },
+        { image: Technology, text: "Technology"},
+        { image: BusinessConsulting, text: "Business Consulting"},
         { image: Education, text: "Education" },
         { image: Manufacturing, text: "Manufacturing" },
-        { image: HealthCare, text: "Health Care" },
+        { image: HealthCare, text: "Health Care"  },
         { image: Automotive, text: "Automotive" }
     ];
     return (
@@ -303,21 +303,41 @@ const component = () => {
                                 <h2>We help a diverse clientele build result-driven Web Development </h2>
                             </div>
                             <div className="col-lg-7 my-5">
-                                <Slider {...settings}>
-                                    {slides.map((slide, index) => (
-                                        <div key={index} className={`${styles.Imageslider}`}>
-                                            <div className={styles.SliderImg}>
-                                                <Image src={slide.image} alt={slide.text} width={300} height={200} />
+
+                                <div className={styles.SliderContainer}>
+                                {slides[currentSlide].image == slides[currentSlide].text ? (
+                                    <Slider {...settings}>
+                                        {slides.map((slide, index) => (
+                                            <div key={index} className={`${styles.Imageslider2}`}>
+                                                <div className={styles.SliderImg}>
+                                                    <Image src={slide.image} alt={slide.text} className={styles.SlideImage} />
+                                                </div>
+                                                <span>{slide.text}</span>
+                                                <div className={styles.border}></div>
                                             </div>
-                                            <span>{slide.text}</span>
-                                        </div>
-                                    ))}
-                                </Slider>
+                                        ))}
+                                    </Slider>
+                                 ) :(
+                                    <Slider {...settings}>
+                                        {slides.map((slide, index) => (
+                                            <div key={index} className={`${styles.Imageslider}`}>
+                                                <div className={styles.SliderImg}>
+                                                    <Image src={slide.image} alt={slide.text} className={styles.SlideImage} />
+                                                </div>
+                                                <span>{slide.text}</span>
+                                            </div>
+                                        ))}
+                                    </Slider>
+
+                               ) }
+                                </div>
+
                             </div>
                             <div className="col-lg-5 my-5">
                                 <div className={`${styles.ImagesliderContent}`}>
                                     <div className="SliderContent">
                                         <h4>{slides[currentSlide].text}</h4>
+
                                         {slides[currentSlide].text === "Restaurant" && (
                                             <p>Food businesses and restaurant owners know Digital Gravity for its branding services. We design their websites, establish a powerful social media presence, and bring them new customers consistently.</p>
                                         )}

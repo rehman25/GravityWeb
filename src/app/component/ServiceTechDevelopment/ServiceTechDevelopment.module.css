@@ -65,12 +65,26 @@
 }
 
 
+.SliderContainer{
+    background-color: 2px solid gray;
+}
+
 .Imageslider {
-    display: flex;
+    /* display: flerx; */
+    margin: 5px 0px;
+    padding: 10px;
+    /* border-bottom: 1px solid ; */
+    
+}
+.Imageslider2{
+    /* display: flerx; */
+    margin: 5px 0px;
+    padding: 10px;
 }
 
 .Imageslider span {
     font-family: "Montserrat", sans-serif;
+    font-weight: 600;
 }
 
 .ImagesliderContent h4 {
@@ -81,4 +95,20 @@
     font-family: "Montserrat", sans-serif;
 }
 
+.SlideImage{
+    width: 100%;
+    height: 100%;
+}
+
+/* .container{
+    border-bottom: 2px solid gray ;
+} */
+
+.border{
+    border-bottom: 2px solid red ;
+}
+
+.SliderContainer{
+    border-bottom: 2px solid  gray ; 
+}
 
