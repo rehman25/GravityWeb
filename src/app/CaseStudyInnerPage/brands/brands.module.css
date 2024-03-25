@@ -1,0 +1,38 @@
+.container{
+    background-color: #0c85ca;
+   
+}
+
+.row{
+    padding: 6em;
+    padding-bottom: 0em;
+}
+
+.letfImage{
+    width: 100%;
+    height: 100%;
+}
+
+.rigthImage{
+    width: 100%;
+    height: 70%;
+}
+
+.rigth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Para{
+    margin-top: 5em;
+}
+
+.Para p{
+    font-size: 1em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    margin: 0 0 1.5em 0;
+    color: #fff;
+    line-height: 1.5;
+}

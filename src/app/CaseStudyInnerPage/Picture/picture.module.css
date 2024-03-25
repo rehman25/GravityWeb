@@ -1,0 +1,65 @@
+.container{
+    padding: 3.5em;
+    padding-bottom: 2px;
+}
+
+.ImageLeft{
+    width: 100%;
+    height: auto;
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.left{
+       overflow: hidden;
+}
+.ImageLeft:hover{
+       -webkit-transform: scale(1.1);
+	transform: scale(1.1); 
+}
+
+.ImageRight{
+    width: 70%;
+    height: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.ImageRight:hover{
+    -webkit-transform: scale(1.1);
+	transform: scale(1.1); 
+}
+
+.right{
+    padding-left: 50px !important;
+    overflow: hidden;
+
+}
+
+.mid{
+    overflow: hidden;
+}
+.ImageMid{
+    width: 100%;
+    height: 40%;
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.ImageMid:hover{
+ -webkit-transform: scale(1.1);
+	transform: scale(1.1); 
+}

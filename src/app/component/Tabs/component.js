@@ -644,13 +644,13 @@ const Component = () => {
               </span>
               {hoverActiveClass ?
                 <span className={styles.caseLinkhover} onMouseLeave={handleHover}>
-                  <p>View Case Study</p>
+                    <a href="/CaseStudyInnerPage">View Case Study</a>
                   <div className={styles.CaseIConHover}>
                     <GoArrowDownRight className={styles.arrowDownIcon} />
                   </div>
                 </span>
                 : <span className={styles.caseLink} onMouseEnter={handleHover}>
-                  <p>View Case Study</p>
+                    <a href="/CaseStudyInnerPage">View Case Study</a>
                   <div className={styles.CaseICon}>
                     <GoArrowRight className={styles.arrowIcons} />
                   </div>
