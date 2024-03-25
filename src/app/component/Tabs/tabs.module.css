@@ -118,6 +118,19 @@
   
     animation: focus-in-contract 1s ease 0s 1 alternate none;
 }
+.caseLinkhover a{
+    text-decoration: none;
+
+       font-size: 12px;
+    padding: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0; 
+    color: #e3204a !important;
+    font-family: "Montserrat", sans-serif;
+  
+    animation: focus-in-contract 1s ease 0s 1 alternate none;
+}
 @keyframes focus-in-contract {
 			
 		0% {
@@ -131,6 +144,16 @@
 	}
 
 .caseLink p{
+       font-size: 12px;
+    padding: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0; 
+
+}
+.caseLink a{
+    color: black;
+    text-decoration: none;
        font-size: 12px;
     padding: 10px;
     font-weight: 600;
