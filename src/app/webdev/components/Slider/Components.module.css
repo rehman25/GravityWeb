@@ -43,7 +43,7 @@
 
 }
 .sliderCont{
-    padding: 25px;
+    /* padding: 25px; */
     z-index: 9999;
 }
 .cardcont{
@@ -173,7 +173,7 @@ z-index: 9999;
     align-items: center;
     justify-content: center;
     z-index: 9999;
-    margin-left: 15px;
+    /* margin-left: 15px; */
 }
 
 .slideArrow:hover{
@@ -245,4 +245,16 @@ z-index: 9999;
     align-items: center;
     flex-direction: column;
     padding: 30px;
+ }
+
+ @media screen and (max-width:992px) {
+     .arrows{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+     }
+      .arrows p{
+        display: none;
+      }
  }
