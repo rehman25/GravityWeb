@@ -15,7 +15,7 @@ function Workslidercomponent() {
             <section className={`${style.our__work__section}`}>
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col-1"></div>
+                        <div className="col-1 d-lg-block d-none"></div>
                         <div className='col-11'>
                             <Work />
                         </div>
@@ -42,26 +42,26 @@ class Work extends Component {
             lazyLoad: true,
             arrows: false,
             className: "",
-            // responsive: [
-            //     {
-            //         breakpoint: 1024,
-            //         settings: {
-            //             slidesToShow: 3,
-            //         }
-            //     },
-            //     {
-            //         breakpoint: 768,
-            //         settings: {
-            //             slidesToShow: 2,
-            //         }
-            //     },
-            //     {
-            //         breakpoint: 480,
-            //         settings: {
-            //             slidesToShow: 1,
-            //         }
-            //     },
-            // ]
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                },
+            ]
         };
         return (
             <div>
@@ -83,6 +83,9 @@ class Work extends Component {
                                             alt="Example Image"
                                             className={`${style.card_img}`}
                                         />
+                                        <span>
+                                            The dynamic marketing consultant entrusted us to transform their outdated website into a captivating online showcase. Our team delivered a visually appealing, user-friendly, and informative platform, elevating Deebaj's online presence to resonate effectively with their target audience.
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -106,6 +109,9 @@ class Work extends Component {
                                             alt="Example Image"
                                             className={`${style.card_img}`}
                                         />
+                                        <span>
+                                            The dynamic marketing consultant entrusted us to transform their outdated website into a captivating online showcase. Our team delivered a visually appealing, user-friendly, and informative platform, elevating Deebaj's online presence to resonate effectively with their target audience.
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -129,6 +135,9 @@ class Work extends Component {
                                             alt="Example Image"
                                             className={`${style.card_img}`}
                                         />
+                                        <span>
+                                            The dynamic marketing consultant entrusted us to transform their outdated website into a captivating online showcase. Our team delivered a visually appealing, user-friendly, and informative platform, elevating Deebaj's online presence to resonate effectively with their target audience.
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -152,6 +161,9 @@ class Work extends Component {
                                             alt="Example Image"
                                             className={`${style.card_img}`}
                                         />
+                                        <span>
+                                            The dynamic marketing consultant entrusted us to transform their outdated website into a captivating online showcase. Our team delivered a visually appealing, user-friendly, and informative platform, elevating Deebaj's online presence to resonate effectively with their target audience.
+                                        </span>
                                     </div>
                                 </div>
                             </div>

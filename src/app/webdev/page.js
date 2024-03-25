@@ -13,9 +13,6 @@ import { BsInstagram } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
-import { FaFacebookF } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa6";
 import Best from './components/Best/components'
 import Slider from './components/Slider/Components'
 import Highlights from './components/Highlights/components'
