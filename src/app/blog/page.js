@@ -7,12 +7,12 @@ import Tabsss from './components/Tabsss'
 
 const Page = () => {
     return (
-        <>
+        <div className={styles.blog}>
             <Cursor />
             <Header/>
             <Banner />
             <Tabsss />
-        </>
+        </div>
     )
 }
 

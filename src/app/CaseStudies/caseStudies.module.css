@@ -1,3 +1,7 @@
+.caseStudy{
+    width: 100%;
+    overflow: clip;
+}
 .heroSection {
     background-image: url(../assets/images/caseStudies/inner-banner.svg) !important;
     background-size: cover !important;
