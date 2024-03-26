@@ -10,7 +10,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import { MdArrowOutward } from "react-icons/md";
 
 
-const components = () => {
+const Components = () => {
   const [isBtnHover, setBtnHover] = useState(false)
   const [isBtnHover2, setBtnHover2] = useState(false)
   
@@ -171,4 +171,4 @@ const components = () => {
   )
 }
 
-export default components
+export default Components

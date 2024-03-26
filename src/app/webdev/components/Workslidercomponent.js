@@ -84,7 +84,7 @@ class Work extends Component {
                                             className={`${style.card_img}`}
                                         />
                                         <span>
-                                            The dynamic marketing consultant entrusted us to transform their outdated website into a captivating online showcase. Our team delivered a visually appealing, user-friendly, and informative platform, elevating Deebaj's online presence to resonate effectively with their target audience.
+                                            The dynamic marketing consultant entrusted us to transform their outdated website into a captivating online showcase. Our team delivered a visually appealing, {"user-friendly"}, and informative platform, elevating {"Deebaj's"} online presence to resonate effectively with their target audience.
                                         </span>
                                     </div>
                                 </div>
@@ -110,7 +110,7 @@ class Work extends Component {
                                             className={`${style.card_img}`}
                                         />
                                         <span>
-                                            The dynamic marketing consultant entrusted us to transform their outdated website into a captivating online showcase. Our team delivered a visually appealing, user-friendly, and informative platform, elevating Deebaj's online presence to resonate effectively with their target audience.
+                                            The dynamic marketing consultant entrusted us to transform their outdated website into a captivating online showcase. Our team delivered a visually appealing, {"user-friendly"}, and informative platform, elevating {"Deebaj's"} online presence to resonate effectively with their target audience.
                                         </span>
                                     </div>
                                 </div>
@@ -136,7 +136,7 @@ class Work extends Component {
                                             className={`${style.card_img}`}
                                         />
                                         <span>
-                                            The dynamic marketing consultant entrusted us to transform their outdated website into a captivating online showcase. Our team delivered a visually appealing, user-friendly, and informative platform, elevating Deebaj's online presence to resonate effectively with their target audience.
+                                            The dynamic marketing consultant entrusted us to transform their outdated website into a captivating online showcase. Our team delivered a visually appealing, {"user-friendly"}, and informative platform, elevating {"Deebaj's"} online presence to resonate effectively with their target audience.
                                         </span>
                                     </div>
                                 </div>
@@ -162,7 +162,7 @@ class Work extends Component {
                                             className={`${style.card_img}`}
                                         />
                                         <span>
-                                            The dynamic marketing consultant entrusted us to transform their outdated website into a captivating online showcase. Our team delivered a visually appealing, user-friendly, and informative platform, elevating Deebaj's online presence to resonate effectively with their target audience.
+                                            The dynamic marketing consultant entrusted us to transform their outdated website into a captivating online showcase. Our team delivered a visually appealing, {"user-friendly"}, and informative platform, elevating {"Deebaj's"} online presence to resonate effectively with their target audience.
                                         </span>
                                     </div>
                                 </div>

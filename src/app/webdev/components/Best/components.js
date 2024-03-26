@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 
 
-const components = () => {
+const Components = () => {
 
 
     const [active, setActive] = useState(false)
@@ -388,4 +388,4 @@ const components = () => {
     )
 }
 
-export default components
+export default Components
