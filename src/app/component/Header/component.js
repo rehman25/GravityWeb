@@ -1,9 +1,10 @@
 'use client'
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Link from 'next/link'
 import Image from 'next/image';
 import Style from './component.module.css'
-import Brandlogo from '../../../../public/Images/brand-logo.webp'
+import Brandlogo from '../../assets/images/employeessay/brand-logo.webp'
 import { FaPhoneAlt } from "react-icons/fa";
 import { RiWhatsappFill } from "react-icons/ri";
 import { ImCross } from "react-icons/im";
@@ -220,20 +221,20 @@ const Page = () => {
         </div>
         <div className={`col-lg-7 ${Style.MENU}`}>
           <ul className={Style.HeaderUl}>
-            <li><a href="/">HOME</a></li>
-            <li><a href="/about">ABOUT</a></li>
-            <li><a href="/Services" onMouseEnter={onHover}>SERVICES</a>
+            <li><Link href="/">HOME</Link></li>
+            <li><Link href="/about">ABOUT</Link></li>
+            <li><Link href="/Services" onMouseEnter={onHover}>SERVICES</Link>
               {
                 isTabs ?
                   <div className={`row ${Style.servicesTable}`} onMouseEnter={onHover}>
                     <div className={`col-md-4 ${Style.Tabs}`} >
                       <ul>
-                        <li className={Style.dropList} onMouseEnter={handleWebDev}><a href="">WEB DEVELOPMENT</a></li>
-                        <li className={Style.dropList} onMouseEnter={handleMobileDev}><a href="" >MOBILE APPLICATION DEVELOPMENT</a></li>
-                        <li className={Style.dropList} onMouseEnter={HandleMarketing}><a href="">DIGITAL MARKETING</a></li>
-                        <li className={Style.dropList} onMouseEnter={handleDesign}><a href="">UI/UX</a></li>
-                        <li className={Style.dropList} onMouseEnter={HandleEcommerce}><a href="">E-COMMERCE WEB DEVELOPMENT</a></li>
-                        <li className={Style.dropList} onMouseEnter={HandleBranding}><a href="">DIGITAL BRANDING & COMMUNICATION</a></li>
+                        <li className={Style.dropList} onMouseEnter={handleWebDev}><Link href="">WEB DEVELOPMENT</Link></li>
+                        <li className={Style.dropList} onMouseEnter={handleMobileDev}><Link href="" >MOBILE APPLICATION DEVELOPMENT</Link></li>
+                        <li className={Style.dropList} onMouseEnter={HandleMarketing}><Link href="">DIGITAL MARKETING</Link></li>
+                        <li className={Style.dropList} onMouseEnter={handleDesign}><Link href="">UI/UX</Link></li>
+                        <li className={Style.dropList} onMouseEnter={HandleEcommerce}><Link href="">E-COMMERCE WEB DEVELOPMENT</Link></li>
+                        <li className={Style.dropList} onMouseEnter={HandleBranding}><Link href="">DIGITAL BRANDING & COMMUNICATION</Link></li>
                       </ul>
                     </div>  
                     <div className={`col-md-8 ${Style.Down}`}>
@@ -250,19 +251,19 @@ const Page = () => {
                                 <div className={Style.ImageDiv}>
                                   <Image alt="Example" src={WordPress} className={Style.WordPress} />
                                 </div>
-                                <a href='/webdev'>WORD PRESS DEVELOPMENT</a>
+                                <Link href='/webdev'>WORD PRESS DEVELOPMENT</Link>
                               </div>
                               <div className={`col-4 ${Style.TabContent}`}>
                                 <div className={Style.ImageDiv}>
                                   <Image alt="Example" src={PHp} className={Style.WordPress} />
                                 </div>
-                                <a href='/webdev'>PHP DEVELOPMENT</a>
+                                <Link href='/webdev'>PHP DEVELOPMENT</Link>
                               </div>
                               <div className={`col-4 ${Style.TabContent}`}>
                                 <div className={Style.ImageDiv}>
                                   <Image alt="Example" src={CMS} className={Style.WordPress} />
                                 </div>
-                                <a href='/webdev'>CMS DEVELOPMENT</a>
+                                <Link href='/webdev'>CMS DEVELOPMENT</Link>
                               </div>
                             </div>
                             <div className={`col-12 mt-3 ${Style.ContentCol}`}>
@@ -270,19 +271,19 @@ const Page = () => {
                                 <div className={Style.ImageDiv}>
                                   <Image alt="Example" src={Laravel} className={Style.WordPress} />
                                 </div>
-                                <a href='/webdev'>LARAVEL DEVELOPMENT</a>
+                                <Link href='/webdev'>LARAVEL DEVELOPMENT</Link>
                               </div>
                               <div className={`col-4 ${Style.TabContent}`}>
                                 <div className={Style.ImageDiv}>
                                   <Image alt="Example" src={System} className={Style.WordPress} />
                                 </div>
-                                <a href='/webdev'>WEBSITE MAINTENANCE SERVICES</a>
+                                <Link href='/webdev'>WEBSITE MAINTENANCE SERVICES</Link>
                               </div>
                               <div className={`col-4 ${Style.TabContent}`}>
                                 <div className={Style.ImageDiv}>
                                   <Image alt="Example" src={System} className={Style.WordPress} />
                                 </div>
-                                <a href='/webdev'>WORD PRESS DEVELOPMENT</a>
+                                <Link href='/webdev'>WORD PRESS DEVELOPMENT</Link>
                               </div>
                             </div>
                           </div>
@@ -300,19 +301,19 @@ const Page = () => {
                                 <div className={Style.ImageDiv}>
                                   <Image alt="Example" src={Hybrid} className={Style.WordPress} />
                                 </div>
-                                <a href='/webdev'>HYBIRD APPS</a>
+                                <Link href='/webdev'>HYBIRD APPS</Link>
                               </div>
                               <div className={`col-4 ${Style.TabContent}`}>
                                 <div className={Style.ImageDiv}>
                                   <Image alt="Example" src={Android} className={Style.WordPress} />
                                 </div>
-                                <a href='/webdev'>ANDROID APP DEVELOPMENT</a>
+                                <Link href='/webdev'>ANDROID APP DEVELOPMENT</Link>
                               </div>
                               <div className={`col-4 ${Style.TabContent}`}>
                                 <div className={Style.ImageDiv}>
                                   <Image alt="Example" src={Ios} className={Style.WordPress} />
                                 </div>
-                                <a href='/webdev'>IOS APP DEVELOPMENT</a>
+                                <Link href='/webdev'>IOS APP DEVELOPMENT</Link>
                               </div>
                             </div>
                             <div className={`col-12 mt-3 ${Style.ContentCol}`}>
@@ -320,19 +321,19 @@ const Page = () => {
                                 <div className={Style.ImageDiv}>
                                   <Image alt="Example" src={ReactNative} className={Style.WordPress} />
                                 </div>
-                                <a href='/webdev'>REACT NATIVE APPS</a>
+                                <Link href='/webdev'>REACT NATIVE APPS</Link>
                               </div>
                               <div className={`col-4 ${Style.TabContent}`}>
                                 <div className={Style.ImageDiv}>
                                   <Image alt="Example" src={Flutter} className={Style.WordPress} />
                                 </div>
-                                <a href='/webdev'>FLUTTER APPS</a>
+                                <Link href='/webdev'>FLUTTER APPS</Link>
                               </div>
                               <div className={`col-4 ${Style.TabContent}`}>
                                 <div className={Style.ImageDiv}>
                                   <Image alt="Example" src={Progressive} className={Style.WordPress} />
                                 </div>
-                                <a href='/webdev'>PROGRESSIVE WEB APPS</a>
+                                <Link href='/webdev'>PROGRESSIVE WEB APPS</Link>
                               </div>
                             </div>
                           </div>
@@ -350,19 +351,19 @@ const Page = () => {
                                 <div className={Style.ImageDiv}>
                                   <Image alt="Example" src={PSD} className={Style.WordPress} />
                                 </div>
-                                <a href='/webdev'>PSD TO RESPONSIVE HTML</a>
+                                <Link href='/webdev'>PSD TO RESPONSIVE HTML</Link>
                               </div>
                               <div className={`col-4 ${Style.TabContent}`}>
                                 <div className={Style.ImageDiv}>
                                   <Image alt="Example" src={WorkShop} className={Style.WordPress} />
                                 </div>
-                                <a href='/webdev'>UX DESIGN WORKSHOP</a>
+                                <Link href='/webdev'>UX DESIGN WORKSHOP</Link>
                               </div>
                               <div className={`col-4 ${Style.TabContent}`}>
                                 <div className={Style.ImageDiv}>
                                   <Image alt="Example" src={ResWeb} className={Style.WordPress} />
                                 </div>
-                                <a href='/webdev'>RESPONSIVE WEB DESIGN</a>
+                                <Link href='/webdev'>RESPONSIVE WEB DESIGN</Link>
                               </div>
                             </div>
                             <div className={`col-12 mt-3 ${Style.ContentCol}`}>
@@ -370,19 +371,19 @@ const Page = () => {
                                 <div className={Style.ImageDiv}>
                                   <Image alt="Example" src={Uxdesign} className={Style.WordPress} />
                                 </div>
-                                <a href='/webdev'>UX DESIGN</a>
+                                <Link href='/webdev'>UX DESIGN</Link>
                               </div>
                               <div className={`col-4 ${Style.TabContent}`}>
                                 <div className={Style.ImageDiv}>
                                   <Image alt="Example" src={Landingpage} className={Style.WordPress} />
                                 </div>
-                                <a href='/webdev'>LANDING PAGE DESIGN</a>
+                                <Link href='/webdev'>LANDING PAGE DESIGN</Link>
                               </div>
                               <div className={`col-4 ${Style.TabContent}`}>
                                 <div className={Style.ImageDiv}>
                                   <Image alt="Example" src={Uxaudit} className={Style.WordPress} />
                                 </div>
-                                <a href='/webdev'>UX AUDIT</a>
+                                <Link href='/webdev'>UX AUDIT</Link>
                               </div>
                             </div>
                             <div className={`col-12 mt-3 ${Style.ContentCol}`}>
@@ -390,7 +391,7 @@ const Page = () => {
                                 <div className={Style.ImageDiv}>
                                   <Image alt="Example" src={GraphicDesign} className={Style.WordPress} />
                                 </div>
-                                <a href='/webdev'>GRAPHIC DESIGN</a>
+                                <Link href='/webdev'>GRAPHIC DESIGN</Link>
                               </div>
                             </div>
                           </div>
@@ -408,19 +409,19 @@ const Page = () => {
                                 <div className={Style.ImageDiv}>
                                   <Image alt="Example" src={SEO} className={Style.WordPress} />
                                 </div>
-                                <a href='/webdev'>SEARCH ENGINE OPTIMIZATION(SE0)</a>
+                                <Link href='/webdev'>SEARCH ENGINE OPTIMIZATION(SE0)</Link>
                               </div>
                               <div className={`col-4 ${Style.TabContent}`}>
                                 <div className={Style.ImageDiv}>
                                   <Image alt="Example" src={SMM} className={Style.WordPress} />
                                 </div>
-                                <a href='/webdev'>SOCIAL MEDIA MARKETING</a>
+                                <Link href='/webdev'>SOCIAL MEDIA MARKETING</Link>
                               </div>
                               <div className={`col-4 ${Style.TabContent}`}>
                                 <div className={Style.ImageDiv}>
                                   <Image alt="Example" src={PMM} className={Style.WordPress} />
                                 </div>
-                                <a href='/webdev'>PAID MEDIA MARKETING</a>
+                                <Link href='/webdev'>PAID MEDIA MARKETING</Link>
                               </div>
                             </div>
                             <div className={`col-12 mt-3 ${Style.ContentCol}`}>
@@ -428,19 +429,19 @@ const Page = () => {
                                 <div className={Style.ImageDiv}>
                                   <Image alt="Example" src={Email} className={Style.WordPress} />
                                 </div>
-                                <a href='/webdev'>EMAIL MARKETING</a>
+                                <Link href='/webdev'>EMAIL MARKETING</Link>
                               </div>
                               <div className={`col-4 ${Style.TabContent}`}>
                                 <div className={Style.ImageDiv}>
                                   <Image alt="Example" src={Influncer} className={Style.WordPress} />
                                 </div>
-                                <a href='/webdev'>INFLUENCER MARKETING</a>
+                                <Link href='/webdev'>INFLUENCER MARKETING</Link>
                               </div>
                               <div className={`col-4 ${Style.TabContent}`}>
                                 <div className={Style.ImageDiv}>
                                   <Image alt="Example" src={AppStore} className={Style.WordPress} />
                                 </div>
-                                <a href='/webdev'>APP STORE OPTIMIZATION</a>
+                                <Link href='/webdev'>APP STORE OPTIMIZATION</Link>
                               </div>
                             </div>
                           </div>
@@ -458,19 +459,19 @@ const Page = () => {
                                 <div className={Style.ImageDiv}>
                                   <Image alt="Example" src={Woo} className={Style.WordPress} />
                                 </div>
-                                <a href='/webdev'>WOO COMMERCE DEVELOPMENT</a>
+                                <Link href='/webdev'>WOO COMMERCE DEVELOPMENT</Link>
                               </div>
                               <div className={`col-4 ${Style.TabContent}`}>
                                 <div className={Style.ImageDiv}>
                                   <Image alt="Example" src={Mirakl} className={Style.WordPress} />
                                 </div>
-                                <a href='/webdev'>MIRAKL DEVELOPMENT</a>
+                                <Link href='/webdev'>MIRAKL DEVELOPMENT</Link>
                               </div>
                               <div className={`col-4 ${Style.TabContent}`}>
                                 <div className={Style.ImageDiv}>
                                   <Image alt="Example" src={Magento} className={Style.WordPress} />
                                 </div>
-                                <a href='/webdev'>MAGENTO ECOMMERCE DEVELOPMENT</a>
+                                <Link href='/webdev'>MAGENTO ECOMMERCE DEVELOPMENT</Link>
                               </div>
                             </div>
                             <div className={`col-12 mt-3 ${Style.ContentCol}`}>
@@ -478,19 +479,19 @@ const Page = () => {
                                 <div className={Style.ImageDiv}>
                                   <Image alt="Example" src={Big} className={Style.WordPress} />
                                 </div>
-                                <a href='/webdev'>BIG ECOMMERCE DEVELOPMENT</a>
+                                <Link href='/webdev'>BIG ECOMMERCE DEVELOPMENT</Link>
                               </div>
                               <div className={`col-4 ${Style.TabContent}`}>
                                 <div className={Style.ImageDiv}>
                                   <Image alt="Example" src={Shopify} className={Style.WordPress} />
                                 </div>
-                                <a href='/webdev'>SHOPIFY ECOMMERCE DEVELOPMENT</a>
+                                <Link href='/webdev'>SHOPIFY ECOMMERCE DEVELOPMENT</Link>
                               </div>
                               <div className={`col-4 ${Style.TabContent}`}>
                                 <div className={Style.ImageDiv}>
                                   <Image alt="Example" src={Shopify} className={Style.WordPress} />
                                 </div>
-                                <a href='/webdev'>SHOPIFY PLUS ECOMMERCE DEVELOPMENT</a>
+                                <Link href='/webdev'>SHOPIFY PLUS ECOMMERCE DEVELOPMENT</Link>
                               </div>
                             </div>
                           </div>
@@ -508,19 +509,19 @@ const Page = () => {
                                 <div className={Style.ImageDiv}>
                                   <Image alt="Example" src={Company} className={Style.WordPress} />
                                 </div>
-                                <a href='/webdev'>COMPANY PROFILE & BROUCHER DESIGN</a>
+                                <Link href='/webdev'>COMPANY PROFILE & BROUCHER DESIGN</Link>
                               </div>
                               <div className={`col-4 ${Style.TabContent}`}>
                                 <div className={Style.ImageDiv}>
                                   <Image alt="Example" src={Bcard} className={Style.WordPress} />
                                 </div>
-                                <a href='/webdev'>BUSINESS CARD DESIGN</a>
+                                <Link href='/webdev'>BUSINESS CARD DESIGN</Link>
                               </div>
                               <div className={`col-4 ${Style.TabContent}`}>
                                 <div className={Style.ImageDiv}>
                                   <Image alt="Example" src={Corporate} className={Style.WordPress} />
                                 </div>
-                                <a href='/webdev'>CORPORATE DESIGN</a>
+                                <Link href='/webdev'>CORPORATE DESIGN</Link>
                               </div>
                             </div>
                             <div className={`col-12 mt-3 ${Style.ContentCol}`}>
@@ -528,13 +529,13 @@ const Page = () => {
                                 <div className={Style.ImageDiv}>
                                   <Image alt="Example" src={packaging} className={Style.WordPress} />
                                 </div>
-                                <a href='/webdev'>PACKAGING DESIGN</a>
+                                <Link href='/webdev'>PACKAGING DESIGN</Link>
                               </div>
                               <div className={`col-4 ${Style.TabContent}`}>
                                 <div className={Style.ImageDiv}>
                                   <Image alt="Example" src={LogoD} className={Style.WordPress} />
                                 </div>
-                                <a href='/webdev'>LOGO DESIGN</a>
+                                <Link href='/webdev'>LOGO DESIGN</Link>
                               </div>
 
                             </div>
@@ -550,9 +551,9 @@ const Page = () => {
                   </div> : ""
               }
             </li>
-            <li><a href="/CaseStudies">CASE STUDIES</a></li>
-            <li><a href="/careers">CAREERS</a></li>
-            <li><a href="/blog">BLOG</a></li>
+            <li><Link href="/CaseStudies">CASE STUDIES</Link></li>
+            <li><Link href="/careers">CAREERS</Link></li>
+            <li><Link href="/blog">BLOG</Link></li>
           </ul>
         </div>
         <div className={`col-lg-3 ${Style.Expert}`}>
@@ -580,15 +581,6 @@ const Page = () => {
           </ul>
         </div>
         <div className={`col-4 ${Style.ExpertResponsive}`}>
-          {/*  <div className={Style.ExpertBtn} onClick={handleContactForm}>
-            <span>Speak to an Expert</span>
-          </div>
-          <div className={Style.ExpertWhatsapp}>
-            <RiWhatsappFill />
-          </div>
-          <div className={Style.ExpertPhone}>
-            <FaPhoneAlt />
-          </div> */}
           <div className={Style.ExpertBtn2} >
             {isMenu ? <ImCross className={Style.ManuIcon2} onClick={handleMenu} /> : <HiOutlineMenuAlt4 onClick={handleMenu} className={Style.ManuIcon} />}
             {isMenu ?
@@ -601,120 +593,121 @@ const Page = () => {
                   </div>
                   <div className={`col-12 ${Style.MenuListing}`}>
                     <ul className={Style.listing}>
-                      <li><a href="">HOME</a></li>
-                      <li><a href="">ABOUT</a></li>
-                      <li className={Style.listTabv}><a href="" style={textStyle}>SERVICES</a><button type="button" className={Style.Arcadian} onClick={handleToggle}> {isCollapsed ? <FaPlus /> : <FaMinus />} </button></li>
+                      <li><Link href="/">HOME</Link></li>
+                      <li><Link href="/about">ABOUT</Link></li>
+                      <li className={Style.listTabv}><Link href="/Services" style={textStyle}>SERVICES</Link><button type="button" className={Style.Arcadian} onClick={handleToggle}> {isCollapsed ? <FaPlus /> : <FaMinus />} </button></li>
                       <div className={`collapse ${isCollapsed ? '' : 'show'}`}>
                         <ul className={Style.listing}>
-                          <li className={Style.listTabv}><a href="" style={ActiveInnerWeb}>WEB DEVELOPMENT</a><button type="button" className={Style.Arcadian} onClick={handleInnerToggle}> {isInnerCollapsed ? <MdKeyboardArrowDown /> : <MdKeyboardArrowUp />} </button></li>
+                          <li className={Style.listTabv}><Link href="" style={ActiveInnerWeb}>WEB DEVELOPMENT</Link><button type="button" className={Style.Arcadian} onClick={handleInnerToggle}> {isInnerCollapsed ? <MdKeyboardArrowDown /> : <MdKeyboardArrowUp />} </button></li>
                           <div className={`collapse ${isInnerCollapsed ? '' : 'show'}`}>
                             <ul className={Style.listing}>
-                              <li className={Style.listTabv}><a href="/webdev">WordPress Development</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">Php Development</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">CMS Development</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">Laravel Development</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">Website Maintaince Services</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">Whatsapp Integration</a></li>
+                              <li className={Style.listTabv}><Link href="/webdev">WordPress Development</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Php Development</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">CMS Development</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Laravel Development</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Website Maintaince Services</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Whatsapp Integration</Link></li>
                             </ul>
                           </div>
-                          <li className={Style.listTabv}><a href="" style={ActiveMobile}>MOBILE APPLICATION DEVELOPMENT</a><button type="button" className={Style.Arcadian} onClick={handleMobileToggle}> {isMobileCollapsed ? <MdKeyboardArrowDown /> : <MdKeyboardArrowUp />} </button></li>
+                          <li className={Style.listTabv}><Link href="" style={ActiveMobile}>MOBILE APPLICATION DEVELOPMENT</Link><button type="button" className={Style.Arcadian} onClick={handleMobileToggle}> {isMobileCollapsed ? <MdKeyboardArrowDown /> : <MdKeyboardArrowUp />} </button></li>
                           <div className={`collapse ${isMobileCollapsed ? '' : 'show'}`}>
                             <ul className={Style.listing}>
-                              <li className={Style.listTabv}><a href="/webdev">Hybrid Apps</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">Android App Development</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">IOS App Development</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">React Native Apps</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">Flutter Apps</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">Progressive Web Apps</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">VIDEO ANIMATION</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">IT RESOURCE</a></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Hybrid Apps</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Android App Development</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">IOS App Development</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">React Native Apps</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Flutter Apps</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Progressive Web Apps</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">VIDEO ANIMATION</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">IT RESOURCE</Link></li>
                             </ul>
                           </div>
-                          <li className={Style.listTabv}><a href="" style={ActiveDigital}>DIGITAL MARKETING</a><button type="button" className={Style.Arcadian} onClick={handleDigitalToggle}> {isDigitalCollapsed ? <MdKeyboardArrowDown /> : <MdKeyboardArrowUp />} </button></li>
+                          <li className={Style.listTabv}><Link href="" style={ActiveDigital}>DIGITAL MARKETING</Link><button type="button" className={Style.Arcadian} onClick={handleDigitalToggle}> {isDigitalCollapsed ? <MdKeyboardArrowDown /> : <MdKeyboardArrowUp />} </button></li>
                           <div className={`collapse ${isDigitalCollapsed ? '' : 'show'}`}>
                             <ul className={Style.listing}>
-                              <li className={Style.listTabv}><a href="/webdev">Search Engine Optimization(SEO) </a></li>
-                              <li className={Style.listTabv}><a href="/webdev">Social Media Marketing (SMM)</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">Paid Media Marketing(PMM)</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">Email Marketing</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">Influencer Marketing</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">App Store Optimization(ASO)</a></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Search Engine Optimization(SEO) </Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Social Media Marketing (SMM)</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Paid Media Marketing(PMM)</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Email Marketing</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Influencer Marketing</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">App Store Optimization(ASO)</Link></li>
                             </ul>
                           </div>
-                          <li className={Style.listTabv}><a href="" style={ActiveUX}>UI/UX DESIGN</a><button type="button" className={Style.Arcadian} onClick={HandleUxToggle}> {isUxCollapsed ? <MdKeyboardArrowDown /> : <MdKeyboardArrowUp />}</button></li>
+                          <li className={Style.listTabv}><Link href="" style={ActiveUX}>UI/UX DESIGN</Link><button type="button" className={Style.Arcadian} onClick={HandleUxToggle}> {isUxCollapsed ? <MdKeyboardArrowDown /> : <MdKeyboardArrowUp />}</button></li>
                           <div className={`collapse ${isUxCollapsed ? '' : 'show'}`}>
                             <ul className={Style.listing}>
-                              <li className={Style.listTabv}><a href="/webdev">PSD To Responsive HTML </a></li>
-                              <li className={Style.listTabv}><a href="/webdev">UX Design Workshop</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">Responsive Web Design</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">UX Design</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">Landing Page Design</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">UX Audit</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">Graphic Design</a></li>
+                              <li className={Style.listTabv}><Link href="/webdev">PSD To Responsive HTML </Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">UX Design Workshop</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Responsive Web Design</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">UX Design</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Landing Page Design</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">UX Audit</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Graphic Design</Link></li>
                             </ul>
                           </div>
-                          <li className={Style.listTabv}><a href="" style={ActiveEcommerce}>E-COMMERCE WEB DEVELOPMENT</a><button type="button" className={Style.Arcadian} onClick={HandleEcommerceToggle}> {isEcommerceWebCollapsed ? <MdKeyboardArrowDown /> : <MdKeyboardArrowUp />} </button></li>
+                          <li className={Style.listTabv}><Link href="" style={ActiveEcommerce}>E-COMMERCE WEB DEVELOPMENT</Link><button type="button" className={Style.Arcadian} onClick={HandleEcommerceToggle}> {isEcommerceWebCollapsed ? <MdKeyboardArrowDown /> : <MdKeyboardArrowUp />} </button></li>
                           <div className={`collapse ${isEcommerceWebCollapsed ? '' : 'show'}`}>
                             <ul className={Style.listing}>
-                              <li className={Style.listTabv}><a href="/webdev">Woo Commerce Development </a></li>
-                              <li className={Style.listTabv}><a href="/webdev">Mirakl Development</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">Magento Ecommerce Development</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">Big Commerce Development</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">Shopify Ecommerce Development</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">Shopify Plus Ecommerce Development</a></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Woo Commerce Development </Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Mirakl Development</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Magento Ecommerce Development</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Big Commerce Development</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Shopify Ecommerce Development</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Shopify Plus Ecommerce Development</Link></li>
                             </ul>
                           </div>
-                          <li className={Style.listTabv}><a href="" style={ActiveBranding}>DIGITAL BRANDING & COMMUNICATION</a><button type="button" className={Style.Arcadian} onClick={HandleBrandingToggle}> {isBrandingCollapsed ? <MdKeyboardArrowDown /> : <MdKeyboardArrowUp />} </button></li>
+                          <li className={Style.listTabv}><Link href="" style={ActiveBranding}>DIGITAL BRANDING & COMMUNICATION</Link><button type="button" className={Style.Arcadian} onClick={HandleBrandingToggle}> {isBrandingCollapsed ? <MdKeyboardArrowDown /> : <MdKeyboardArrowUp />} </button></li>
                           <div className={`collapse ${isBrandingCollapsed ? '' : 'show'}`}>
                             <ul className={Style.listing}>
-                              <li className={Style.listTabv}><a href="/webdev">Company Profile & Broucher Design </a></li>
-                              <li className={Style.listTabv}><a href="/webdev">Business Card Design</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">Corporate Identity Design</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">Packaging Designs</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">Logo Design</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">DIGITAL BRANDING & COMMUNICATION</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">VIDEO ANIMATION</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">IT RESOURCE</a></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Company Profile & Broucher Design </Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Business Card Design</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Corporate Identity Design</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Packaging Designs</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Logo Design</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">DIGITAL BRANDING & COMMUNICATION</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">VIDEO ANIMATION</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">IT RESOURCE</Link></li>
                             </ul>
                           </div>
-                          <li className={Style.listTabv}><a href="" style={ActiveVedio}>VIDEO ANIMATION</a><button type="button" className={Style.Arcadian} onClick={HandleVedioToggle}> {isVedioCollapsed ? <MdKeyboardArrowDown /> : <MdKeyboardArrowUp />} </button></li>
+                          <li className={Style.listTabv}><Link href="" style={ActiveVedio}>VIDEO ANIMATION</Link><button type="button" className={Style.Arcadian} onClick={HandleVedioToggle}> {isVedioCollapsed ? <MdKeyboardArrowDown /> : <MdKeyboardArrowUp />} </button></li>
                           <div className={`collapse ${isVedioCollapsed ? '' : 'show'}`}>
                             <ul className={Style.listing}>
-                              <li className={Style.listTabv}><a href="/webdev">Explainer Video Production </a></li>
-                              <li className={Style.listTabv}><a href="/webdev">Product Demo Animation</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">Video Game Trailer</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">3D Architectual Walkthroughs</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">Medical Animation Studio</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">Character Animation Video</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">Whiteboard Animation Video</a></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Explainer Video Production </Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Product Demo Animation</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Video Game Trailer</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">3D Architectual Walkthroughs</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Medical Animation Studio</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Character Animation Video</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Whiteboard Animation Video</Link></li>
                             </ul>
                           </div>
-                          <li className={Style.listTabv}><a href="" style={ActiveResource}>IT RESOURCE</a><button type="button" className={Style.Arcadian} onClick={HandleResourceToggle}> {isResourceCollapsed ? <MdKeyboardArrowDown /> : <MdKeyboardArrowUp />}</button></li>
+                          <li className={Style.listTabv}><Link href="" style={ActiveResource}>IT RESOURCE</Link><button type="button" className={Style.Arcadian} onClick={HandleResourceToggle}> {isResourceCollapsed ? <MdKeyboardArrowDown /> : <MdKeyboardArrowUp />}</button></li>
                           <div className={`collapse ${isResourceCollapsed ? '' : 'show'}`}>
                             <ul className={Style.listing}>
-                              <li className={Style.listTabv}><a href="/webdev">Hire Mobile App Developer </a></li>
-                              <li className={Style.listTabv}><a href="/webdev">Hire Scrums Master in Dubai</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">Hire Aws Resources In Dubai</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">Hire QA Resources In Dubai</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">Hire Nodejs Developer In Dubai</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">Hire Azure Developer In Dubai</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">Hire Reactjs Developer In Dubai</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">Hire React Native Developer In Dubai</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">Hire Sharepoint Developer In Dubai</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">Hire Dynamics 365 Developer In Dubai</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">Hire Project Managers In Dubai</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">Hire Dot Net Developer In Dubai</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">Hire RPA In Dubai</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">3D Google Maps Integration</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">MarTech Consulting</a></li>
-                              <li className={Style.listTabv}><a href="/webdev">Digital Cloud Transformation</a></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Hire Mobile App Developer </Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Hire Scrums Master in Dubai</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Hire Aws Resources In Dubai</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Hire QA Resources In Dubai</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Hire Nodejs Developer In Dubai</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Hire Azure Developer In Dubai</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Hire Reactjs Developer In Dubai</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Hire React Native Developer In Dubai</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Hire Sharepoint Developer In Dubai</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Hire Dynamics 365 Developer In Dubai</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Hire Project Managers In Dubai</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Hire Dot Net Developer In Dubai</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Hire RPA In Dubai</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">3D Google Maps Integration</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">MarTech Consulting</Link></li>
+                              <li className={Style.listTabv}><Link href="/webdev">Digital Cloud Transformation</Link></li>
 
                             </ul>
                           </div>
                         </ul>
                       </div>
-                      <li><a href="">CASE STUDIES</a></li>
-                      <li><a href="">BLOG</a></li>
+                      <li><Link href="/CaseStudies">CASE STUDIES</Link></li>
+                      <li><Link href="/careers">CAREER</Link></li>
+                      <li><Link href="/blog">BLOG</Link></li>
                     </ul>
                   </div>
                 </div>

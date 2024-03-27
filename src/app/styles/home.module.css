@@ -3,7 +3,7 @@
     overflow-x: clip;
 }
 .heroSection {
-    background-image: url(../assets/images/banner/her.jpg) !important;
+    background-image: url(../assets/images/banner/bannner.jpg) !important;
     background-size: cover !important;
     height: 700px;
     width: 100%;
@@ -213,6 +213,9 @@
     font-family: "Montserrat", sans-serif;
     transition: .25s ease-in-out;
 }
+.servicesListBox{
+    display: none;
+}
 
 /* ================================= */
 @keyframes moveTopToBottom {
@@ -235,6 +238,29 @@
     .homeTabs .TabPanel .TabImage {
         height: auto;
         width: auto;
+    }
+    .homeTabmainBox {
+        display: none;
+    }
+    .servicesListBox{
+        display: block;
+        padding: 50px 0;
+    }
+    .servicesListBox h5{
+        font-size: 30px;
+        font-weight: 900;
+    }
+    .servicesListBox ul{
+        padding: 0;
+    }
+    .servicesListBox ul li{
+        font-size: 18px;
+        padding: 5px 0;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+    }
+    .servicesListBox ul li a{
+        font-weight: 100;
+        color: black;
     }
 }
 
@@ -275,5 +301,8 @@
     }
     .heroRightSide span{
         font-size: 30px;
+    }
+    .servicesListBox ul li{
+        font-size: 15px;
     }
 }

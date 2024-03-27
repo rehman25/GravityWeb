@@ -14,9 +14,7 @@ const components = () => {
       <div className={`container`}>
         <div className="row">
           <div className={`p-0 col-lg-6 ${styles.leftContainer}`}>
-            <div className={styles.heading}>
               <Text text="Awards" animation="fade-right" className={styles.Text} />
-            </div>
             <div className={styles.leftHeading}>
               <h2>Digital Gravity, a
                 Synonym of Quality, Trust and Distinction</h2>

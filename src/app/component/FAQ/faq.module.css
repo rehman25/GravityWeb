@@ -24,8 +24,9 @@
 }
 
 .box span {
-    padding: 30px 0;
+    padding: 6px 0;
     font-weight: 600;
+    font-size: 11px;
 }
 
 .box .iconsBox {
@@ -81,5 +82,26 @@
     100% {
         transform: rotateY(0);
         transform-origin: left;
+    }
+}
+
+@media screen and (max-width:992px){
+    .box {
+        margin: 0 10px;
+    }
+}
+@media screen and (max-width:480px){
+    .box {
+        margin: 0 0px;
+        border-radius: 0;
+    }
+    .bgColor {
+        background: #E3E3E3;
+        padding: 70px 19px;
+    }
+    .box .iconsBox {
+        position: relative;
+        left: 0;
+        bottom: -20%;
     }
 }

@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react'
-// import NoSSR from 'react-no-ssr';
+import Link from 'next/link'
 import style from './styles/home.module.css'
 import Image from 'next/image';
 import Button from './component/buttons/index';
@@ -29,9 +29,14 @@ import Footer from './component/Footer/component'
 import Worth__Read from './component/Work-Read/index'
 import Award from './component/Awards/components'
 import Social from './component/SocialJoin/component'
+import ReactPlayer from "react-player";
+// import videosrc from './assets/videos/home.mp4'
+
 
 const Page = () => {
   const [isActive, setActive] = useState("Web_Dev")
+  // let videosrc = "./assets/videos/home.mp4";
+
   return (
     <div className={style.home}>
       <Cursor />
@@ -495,6 +500,26 @@ const Page = () => {
                   </>
                 </Tabs>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* AFTER BREAKPOINT 992 SHOW THIS SECTION */}
+      <section className={`${style.servicesListBox}`}>
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-12">
+              <ul>
+                <h5>Services</h5>
+                <li><Link href={""}>Web Development</Link></li>
+                <li><Link href={""}>Mobile Application Development</Link></li>
+                <li><Link href={""}>Digital Marketing</Link></li>
+                <li><Link href={""}>Digital Branding & Communication</Link></li>
+                <li><Link href={""}>Ecommerce Web Development</Link></li>
+                <li><Link href={""}>UI/UX Design</Link></li>
+                <li><Link href={""}>Video Animation</Link></li>
+                <li><Link href={""}>IT Resource Outsourcing</Link></li>
+              </ul>
             </div>
           </div>
         </div>
