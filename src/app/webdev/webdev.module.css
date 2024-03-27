@@ -466,9 +466,21 @@ border-top: 1px solid #80808057;
         font-size: 16px;
         color: white;
     }
+    .dash{
+        display: none;
+    }
+    .DashContainer {
+        display: none;
+    }
+    .addressContainer{
+        width: auto !important;
+    }
+    .addressContainer ul{
+        padding: 0;
+    }
 }
 
-@media screen and (max-width:380px){
+@media screen and (max-width:480px){
     .rightContainer{
         display: flex;
         flex-direction: column;
@@ -481,4 +493,17 @@ border-top: 1px solid #80808057;
         color: white;
     }
 
+    .dash{
+        display: none;
+    }
+    .DashContainer {
+        display: none;
+    }
+    .addressContainer{
+        width: auto !important;
+    }
+    .addressContainer ul{
+        padding: 0;
+    }
+    
 }

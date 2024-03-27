@@ -7,7 +7,7 @@ import Header from '../component/Header/component'
 import Cursor from '../component/cursor/cursor'
 import Testimonials from '../component/Testimonials/index'
 import ServiceTechDevelopment from '../component/ServiceTechDevelopment/Component'
-import Expansion from '../component/Expansion/Component'
+import Expansion from '../component/Expansion/component'
 import InnerFooter from '../component/InnerFooter/component'
 import { BsInstagram } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
