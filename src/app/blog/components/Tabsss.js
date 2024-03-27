@@ -17,7 +17,7 @@ const Tabsss = () => {
               <div>
                 <Tabs style={{ }}>
                   <TabList id={`${style.TabList}`}>
-                    <Tab>All</Tab>
+                  <Tab style={{ backgroundColor: '#E3204A', color: '#f2f2f2' }}>All</Tab>
                     <Tab>Branding</Tab>
                     <Tab>UI/UX</Tab>
                     <Tab>Development</Tab>

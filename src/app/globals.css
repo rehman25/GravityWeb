@@ -162,6 +162,23 @@ span {
 .testimonials .slick-slide {
     margin: 0 20px; /* Adjust margins as needed */
 }
+/* ====================================== */
+.devTech .slick-dots{
+    display: flex !important;
+    justify-content: center;
+}
+.devTech .slick-dots li button{
+    width: 100px;
+    background: rgb(219, 216, 216);
+    height: 0;
+    color: transparent;
+}
+.devTech .slick-dots li.slick-active button{
+    background: #e3204a;
+}
+.devTech .slick-dots li button::before{
+    display: none;
+}
 /* ==================================================== */
 @media screen and (max-width:992px){
     .Expertise___bg .react-tabs__tab-panel--selected{
