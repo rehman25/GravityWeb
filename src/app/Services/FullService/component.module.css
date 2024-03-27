@@ -1,5 +1,5 @@
 .container{
-    /* padding: 30px; */
+    padding: 0px 40px;
     margin-top: 50px;
 }
 
@@ -8,7 +8,16 @@
     padding: 20px;
 }
 
+.boxrow{
+    display: flex;
+    flex-wrap: wrap;
+}
+.boxrowRes{
+    display: none;
+}
+
 .heading{
+     font-family: "Montserrat", sans-serif;
     color: #363636;
     font-weight: 600;
     letter-spacing: -.035em;
@@ -17,13 +26,24 @@
     animation: 0.5s ease-out 0s 1 normal forwards running anim;
 }
 
-.heading span{
+.heading b{
     color: #c61a3c;
        font-weight: 600;
     letter-spacing: -.035em;
     text-transform: capitalize;
+     font-family: "Montserrat", sans-serif;
     line-height: 1.22;
     animation: 0.5s ease-out 0s 1 normal forwards running anim;
+}
+
+.heading b{
+    background: linear-gradient(90deg, #e3204a, #fff, #e3204a, #fff);
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: bgMove 3s linear infinite reverse;
+    mix-blend-mode: normal;
 }
 
 .card{
@@ -90,6 +110,12 @@ color: #363636;
 
     
 }
+
+.boxres{
+     /* height: 170px; */
+         /* background-color: white; */
+    /* box-shadow: 0px 10px 15px -3px rgba(112, 112, 112, 0.1); */
+}
 .box:hover{
         background-color: white;
     box-shadow: 0px 10px 15px -3px rgba(112, 112, 112, 0.1);
@@ -107,14 +133,45 @@ color: #363636;
 		}
 	}
 
+
+
+
+.Arrowres{
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
 @media screen and (max-width:992px) {
-    
+    .cardcontent span{
+        font-size: 14px;
+    }
+    .cardcontent p{
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width:786px) {
     
 }
 
-@media screen and (max-width:500px) {
-    
+@media screen and (max-width:567px) {
+    .box{
+        box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+        height: 250px;
+    }
+    .boxrow{
+        display: none;
+    }
+    .boxrowRes{
+        display: block;
+        box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    }
 }

@@ -40,7 +40,7 @@
 }
 .casestudyAll{
     width: 100%;
-    height: 80vh;
+    height:100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -56,7 +56,7 @@
 }
 .conceptexecute{
      width: 100%;
-    height: 60vh;
+    height:100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -204,5 +204,18 @@
 }
 
 
+@media screen and (max-width: 768px) {
+    .concepthead{
+    
+    font-size: 3em;
+}
+}
 
 
+@media screen and (max-width: 400px){
+ .concepthead{
+    
+    font-size: 1em;
+ 
+}
+}

@@ -188,7 +188,7 @@ const Component = () => {
       {tab ?
         <>
           <div className={`row ${styles.casesrow}`}>
-            <div className={`col-lg-5 p-2`}>
+            <div className={`col-lg-5 col-md-5 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={AllCaseImages} className={styles.casestudyAll} />
               </div>
@@ -212,7 +212,7 @@ const Component = () => {
                   </span>}
               </div>
             </div>
-            <div className={`col-lg-5 p-2`}>
+            <div className={`col-lg-5 col-md-5 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web2} className={styles.casestudyAll} />
               </div>
@@ -239,7 +239,7 @@ const Component = () => {
             </div>
           </div>
           <div className={`row ${styles.casesrow}`}>
-            <div className={`col-lg-5 p-2`}>
+            <div className={`col-lg-5 col-md-5 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web3} className={styles.casestudyAll} />
               </div>
@@ -263,7 +263,7 @@ const Component = () => {
                   </span>}
               </div>
             </div>
-            <div className={`col-lg-5 p-2`}>
+            <div className={`col-lg-5 col-md-5 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web4} className={styles.casestudyAll} />
               </div>
@@ -291,7 +291,7 @@ const Component = () => {
 
           </div>
           <div className={`row ${styles.casesrow}`}>
-            <div className={`col-lg-5 p-2`}>
+            <div className={`col-lg-5 col-md-5 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web5} className={styles.casestudyAll} />
               </div>
@@ -324,7 +324,7 @@ const Component = () => {
             </div>
           </div>
           <div className={`row ${styles.casesrow}`}>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web6} className={styles.conceptexecute} />
               </div>
@@ -348,7 +348,7 @@ const Component = () => {
                   </span>}
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web7} className={styles.conceptexecute} />
               </div>
@@ -373,7 +373,7 @@ const Component = () => {
 
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web8} className={styles.conceptexecute} />
               </div>
@@ -400,7 +400,7 @@ const Component = () => {
             </div>
           </div>
           <div className={`row ${styles.casesrow}`}>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web9} className={styles.conceptexecute} />
               </div>
@@ -424,7 +424,7 @@ const Component = () => {
                   </span>}
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web10} className={styles.conceptexecute} />
               </div>
@@ -449,7 +449,7 @@ const Component = () => {
 
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web11} className={styles.conceptexecute} />
               </div>
@@ -476,7 +476,7 @@ const Component = () => {
             </div>
           </div>
           <div className={`row ${styles.casesrow}`}>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web12} className={styles.conceptexecute} />
               </div>
@@ -500,7 +500,7 @@ const Component = () => {
                   </span>}
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web13} className={styles.conceptexecute} />
               </div>
@@ -525,7 +525,7 @@ const Component = () => {
 
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web14} className={styles.conceptexecute} />
               </div>
@@ -552,7 +552,7 @@ const Component = () => {
             </div>
           </div>
           <div className={`row ${styles.casesrow}`}>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web15} className={styles.conceptexecute} />
               </div>
@@ -576,7 +576,7 @@ const Component = () => {
                   </span>}
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web16} className={styles.conceptexecute} />
               </div>
@@ -601,7 +601,7 @@ const Component = () => {
 
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}> 
+            <div className={`col-lg-4 col-md-4 p-2`}> 
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web17} className={styles.conceptexecute} />
               </div>
@@ -633,7 +633,7 @@ const Component = () => {
       {isWeb ?
         <>
         <div className={`row ${styles.casesrow}`}>
-          <div className={`col-lg-5 p-2`}>
+          <div className={`col-lg-5  p-2`}>
             <div className={styles.imgdiv}>
               <Image alt="Example" src={AllCaseImages} className={styles.casestudyAll} />
             </div>
@@ -657,7 +657,7 @@ const Component = () => {
                 </span>}
             </div>
           </div>
-          <div className={`col-lg-5 p-2`}>
+          <div className={`col-lg-5 col-md-5 p-2`}>
             <div className={styles.imgdiv}>
              <Image alt="Example" src={web2} className={styles.casestudyAll} />
              </div>
@@ -684,7 +684,7 @@ const Component = () => {
           </div>
         </div>
         <div className={`row ${styles.casesrow}`}>
-          <div className={`col-lg-5 p-2`}>
+          <div className={`col-lg-5 col-md-5 p-2`}>
             <div className={styles.imgdiv}>
               <Image alt="Example" src={web3} className={styles.casestudyAll} />
             </div>
@@ -708,7 +708,7 @@ const Component = () => {
                 </span>}
             </div>
           </div>
-          <div className={`col-lg-5 p-2`}>
+          <div className={`col-lg-5 col-md-5 p-2`}>
             <div className={styles.imgdiv}>
              <Image alt="Example" src={web4} className={styles.casestudyAll} />
              </div>
@@ -736,7 +736,7 @@ const Component = () => {
          
         </div>
         <div className={`row ${styles.casesrow}`}>
-          <div className={`col-lg-5 p-2`}>
+          <div className={`col-lg-5 col-md-5 p-2`}>
             <div className={styles.imgdiv}>
               <Image alt="Example" src={web5} className={styles.casestudyAll} />
             </div>
@@ -769,7 +769,7 @@ const Component = () => {
             </div>
           </div>
           <div className={`row ${styles.casesrow}`}>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web6} className={styles.conceptexecute} />
               </div>
@@ -793,7 +793,7 @@ const Component = () => {
                   </span>}
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web7} className={styles.conceptexecute} />
               </div>
@@ -818,7 +818,7 @@ const Component = () => {
 
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web8} className={styles.conceptexecute} />
               </div>
@@ -845,7 +845,7 @@ const Component = () => {
             </div>
           </div>
           <div className={`row ${styles.casesrow}`}>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web9} className={styles.conceptexecute} />
               </div>
@@ -869,7 +869,7 @@ const Component = () => {
                   </span>}
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web10} className={styles.conceptexecute} />
               </div>
@@ -894,7 +894,7 @@ const Component = () => {
 
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web11} className={styles.conceptexecute} />
               </div>
@@ -921,7 +921,7 @@ const Component = () => {
             </div>
           </div>
           <div className={`row ${styles.casesrow}`}>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web12} className={styles.conceptexecute} />
               </div>
@@ -945,7 +945,7 @@ const Component = () => {
                   </span>}
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web13} className={styles.conceptexecute} />
               </div>
@@ -970,7 +970,7 @@ const Component = () => {
 
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web14} className={styles.conceptexecute} />
               </div>
@@ -997,7 +997,7 @@ const Component = () => {
             </div>
           </div>
           <div className={`row ${styles.casesrow}`}>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web15} className={styles.conceptexecute} />
               </div>
@@ -1021,7 +1021,7 @@ const Component = () => {
                   </span>}
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web16} className={styles.conceptexecute} />
               </div>
@@ -1046,7 +1046,7 @@ const Component = () => {
 
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web17} className={styles.conceptexecute} />
               </div>
@@ -1073,7 +1073,7 @@ const Component = () => {
             </div>
           </div>
           <div className={`row ${styles.casesrow}`}>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web18} className={styles.conceptexecute} />
               </div>
@@ -1097,7 +1097,7 @@ const Component = () => {
                   </span>}
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web19} className={styles.conceptexecute} />
               </div>
@@ -1122,7 +1122,7 @@ const Component = () => {
 
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web21} className={styles.conceptexecute} />
               </div>
@@ -1149,7 +1149,7 @@ const Component = () => {
             </div>
           </div>
           <div className={`row ${styles.casesrow}`}>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web22} className={styles.conceptexecute} />
               </div>
@@ -1173,7 +1173,7 @@ const Component = () => {
                   </span>}
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web23} className={styles.conceptexecute} />
               </div>
@@ -1198,7 +1198,7 @@ const Component = () => {
 
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web24} className={styles.conceptexecute} />
               </div>
@@ -1225,7 +1225,7 @@ const Component = () => {
             </div>
           </div>
           <div className={`row ${styles.casesrow}`}>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web25} className={styles.conceptexecute} />
               </div>
@@ -1249,7 +1249,7 @@ const Component = () => {
                   </span>}
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web26} className={styles.conceptexecute} />
               </div>
@@ -1274,7 +1274,7 @@ const Component = () => {
 
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web27} className={styles.conceptexecute} />
               </div>
@@ -1301,7 +1301,7 @@ const Component = () => {
             </div>
           </div>
           <div className={`row ${styles.casesrow}`}>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web28} className={styles.conceptexecute} />
               </div>
@@ -1325,7 +1325,7 @@ const Component = () => {
                   </span>}
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web29} className={styles.conceptexecute} />
               </div>
@@ -1350,7 +1350,7 @@ const Component = () => {
 
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web30} className={styles.conceptexecute} />
               </div>
@@ -1377,7 +1377,7 @@ const Component = () => {
             </div>
           </div>
           <div className={`row ${styles.casesrow}`}>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web31} className={styles.conceptexecute} />
               </div>
@@ -1401,7 +1401,7 @@ const Component = () => {
                   </span>}
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web32} className={styles.conceptexecute} />
               </div>
@@ -1426,7 +1426,7 @@ const Component = () => {
 
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web33} className={styles.conceptexecute} />
               </div>
@@ -1453,7 +1453,7 @@ const Component = () => {
             </div>
           </div>
           <div className={`row ${styles.casesrow}`}>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web34} className={styles.conceptexecute} />
               </div>
@@ -1477,7 +1477,7 @@ const Component = () => {
                   </span>}
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web35} className={styles.conceptexecute} />
               </div>
@@ -1502,7 +1502,7 @@ const Component = () => {
 
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web36} className={styles.conceptexecute} />
               </div>
@@ -1529,7 +1529,7 @@ const Component = () => {
             </div>
           </div>
           <div className={`row ${styles.casesrow}`}>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web37} className={styles.conceptexecute} />
               </div>
@@ -1553,7 +1553,7 @@ const Component = () => {
                   </span>}
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web38} className={styles.conceptexecute} />
               </div>
@@ -1578,7 +1578,7 @@ const Component = () => {
 
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web39} className={styles.conceptexecute} />
               </div>
@@ -1605,7 +1605,7 @@ const Component = () => {
             </div>
           </div>
           <div className={`row ${styles.casesrow}`}>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web40} className={styles.conceptexecute} />
               </div>
@@ -1629,7 +1629,7 @@ const Component = () => {
                   </span>}
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web41} className={styles.conceptexecute} />
               </div>
@@ -1654,7 +1654,7 @@ const Component = () => {
 
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web42} className={styles.conceptexecute} />
               </div>
@@ -1691,7 +1691,7 @@ const Component = () => {
             </div>
           </div>
         <div className={`row ${styles.casesrow}`}>
-          <div className={`col-lg-4 p-2`}>
+          <div className={`col-lg-4 col-md-4 p-2`}>
             <div className={styles.imgdiv}>
               <Image alt="Example" src={mobile1} className={styles.conceptexecute} />
             </div>
@@ -1715,7 +1715,7 @@ const Component = () => {
                 </span>}
             </div>
           </div>
-          <div className={`col-lg-4 p-2`}>
+          <div className={`col-lg-4 col-md-4 p-2`}>
             <div className={styles.imgdiv}>
               <Image alt="Example" src={mobile2} className={styles.conceptexecute} />
             </div>
@@ -1740,7 +1740,7 @@ const Component = () => {
 
             </div>
           </div>
-          <div className={`col-lg-4 p-2`}>
+          <div className={`col-lg-4 col-md-4 p-2`}>
             <div className={styles.imgdiv}>
               <Image alt="Example" src={mobile3} className={styles.conceptexecute} />
             </div>
@@ -1767,7 +1767,7 @@ const Component = () => {
           </div>
         </div>
         <div className={`row ${styles.casesrow}`}>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={mobile4} className={styles.conceptexecute} />
               </div>
@@ -1791,7 +1791,7 @@ const Component = () => {
                   </span>}
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={mobile5} className={styles.conceptexecute} />
               </div>
@@ -1816,7 +1816,7 @@ const Component = () => {
 
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={mobile6} className={styles.conceptexecute} />
               </div>
@@ -1843,7 +1843,7 @@ const Component = () => {
             </div>
           </div>
           <div className={`row ${styles.casesrow}`}>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={mobile7} className={styles.conceptexecute} />
               </div>
@@ -1867,7 +1867,7 @@ const Component = () => {
                   </span>}
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={mobile8} className={styles.conceptexecute} />
               </div>
@@ -1892,7 +1892,7 @@ const Component = () => {
 
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={mobile9} className={styles.conceptexecute} />
               </div>
@@ -1923,7 +1923,7 @@ const Component = () => {
       {isSEO ?
         <>
        <div className={`row ${styles.casesrow}`}>
-          <div className={`col-lg-5 p-2`}>
+          <div className={`col-lg-5 col-md-5 p-2`}>
             <div className={styles.imgdiv}>
                 <Image alt="Example" src={seo1} className={styles.casestudyAll} />
             </div>
@@ -1947,7 +1947,7 @@ const Component = () => {
                 </span>}
             </div>
           </div>
-          <div className={`col-lg-5 p-2`}>
+          <div className={`col-lg-5 col-md-5 p-2`}>
             <div className={styles.imgdiv}>
                 <Image alt="Example" src={seo2} className={styles.casestudyAll} />
              </div>
@@ -1980,7 +1980,7 @@ const Component = () => {
             </div>
           </div>
           <div className={`row ${styles.casesrow}`}>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={seo3} className={styles.conceptexecute} />
               </div>
@@ -2004,7 +2004,7 @@ const Component = () => {
                   </span>}
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={seo4} className={styles.conceptexecute} />
               </div>
@@ -2029,7 +2029,7 @@ const Component = () => {
 
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={seo5} className={styles.conceptexecute} />
               </div>
@@ -2056,7 +2056,7 @@ const Component = () => {
             </div>
           </div>
           <div className={`row ${styles.casesrow}`}>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={seo6} className={styles.conceptexecute} />
               </div>
@@ -2080,7 +2080,7 @@ const Component = () => {
                   </span>}
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={seo7} className={styles.conceptexecute} />
               </div>
@@ -2105,7 +2105,7 @@ const Component = () => {
 
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={seo8} className={styles.conceptexecute} />
               </div>
@@ -2132,7 +2132,7 @@ const Component = () => {
             </div>
           </div>
           <div className={`row ${styles.casesrow}`}>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={seo9} className={styles.conceptexecute} />
               </div>
@@ -2156,7 +2156,7 @@ const Component = () => {
                   </span>}
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={seo10} className={styles.conceptexecute} />
               </div>
@@ -2181,7 +2181,7 @@ const Component = () => {
 
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={seo11} className={styles.conceptexecute} />
               </div>
@@ -2218,7 +2218,7 @@ const Component = () => {
           </div>
         </div>
         <div className={`row ${styles.casesrow}`}>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={AllCaseImages} className={styles.conceptexecute} />
               </div>
@@ -2242,7 +2242,7 @@ const Component = () => {
                   </span>}
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web2} className={styles.conceptexecute} />
               </div>
@@ -2267,7 +2267,7 @@ const Component = () => {
 
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web2} className={styles.conceptexecute} />
               </div>
@@ -2303,7 +2303,7 @@ const Component = () => {
             </div>
           </div>
           <div className={`row ${styles.casesrow}`}>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={AllCaseImages} className={styles.conceptexecute} />
               </div>
@@ -2327,7 +2327,7 @@ const Component = () => {
                   </span>}
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web2} className={styles.conceptexecute} />
               </div>
@@ -2352,7 +2352,7 @@ const Component = () => {
 
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web2} className={styles.conceptexecute} />
               </div>
@@ -2388,7 +2388,7 @@ const Component = () => {
             </div>
           </div>
           <div className={`row ${styles.casesrow}`}>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={AllCaseImages} className={styles.conceptexecute} />
               </div>
@@ -2412,7 +2412,7 @@ const Component = () => {
                   </span>}
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web2} className={styles.conceptexecute} />
               </div>
@@ -2437,7 +2437,7 @@ const Component = () => {
 
               </div>
             </div>
-            <div className={`col-lg-4 p-2`}>
+            <div className={`col-lg-4 col-md-4 p-2`}>
               <div className={styles.imgdiv}>
                 <Image alt="Example" src={web2} className={styles.conceptexecute} />
               </div>
