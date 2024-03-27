@@ -44,7 +44,8 @@ const component = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
 
     var settings = {
-        dots: false,
+        dots: true,
+        centerMode: true,
         infinite: true,
         speed: 500,
         slidesToShow: 3,
@@ -55,19 +56,28 @@ const component = () => {
         arrows: true,
         prevArrow: <FaArrowLeft />,
         nextArrow: <FaArrowRight />,
+        className: "devTech",
         beforeChange: (current, next) => setCurrentSlide(next)
     };
 
     const slides = [
         { image: Resturant, text: "Restaurant" },
         { image: RealEstate, text: "Real Estate" },
-        { image: Technology, text: "Technology"},
-        { image: BusinessConsulting, text: "Business Consulting"},
+        { image: Technology, text: "Technology" },
+        { image: BusinessConsulting, text: "Business Consulting" },
         { image: Education, text: "Education" },
         { image: Manufacturing, text: "Manufacturing" },
-        { image: HealthCare, text: "Health Care"  },
+        { image: HealthCare, text: "Health Care" },
         { image: Automotive, text: "Automotive" }
     ];
+
+    const nextSlide = () => {
+        setCurrentSlide(currentSlide === slides.length - 1 ? 0 : currentSlide + 1);
+    };
+
+    const prevSlide = () => {
+        setCurrentSlide(currentSlide === 0 ? slides.length - 1 : currentSlide - 1);
+    };
     return (
         <>
             <section style={{ overflowX: "clip", marginTop: "50px" }}>
@@ -298,18 +308,17 @@ const component = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="row mt-5">
+
+                        <div className="row mt-2">
                             <div className={`${styles.ServiceTechDevelopmentdown}`}>
                                 <h2>We help a diverse clientele build result-driven Web Development </h2>
                             </div>
-                            <div className="col-lg-7 my-5">
-
+                            <div className="col-lg-7 mb-5">
                                 <div className={styles.SliderContainer}>
-                                {slides[currentSlide].image == slides[currentSlide].text ? (
                                     <Slider {...settings}>
                                         {slides.map((slide, index) => (
                                             <div key={index} className={`${styles.Imageslider2}`}>
-                                                <div className={styles.SliderImg}>
+                                                <div className={styles.SliderImg} >
                                                     <Image src={slide.image} alt={slide.text} className={styles.SlideImage} />
                                                 </div>
                                                 <span>{slide.text}</span>
@@ -317,23 +326,10 @@ const component = () => {
                                             </div>
                                         ))}
                                     </Slider>
-                                 ) :(
-                                    <Slider {...settings}>
-                                        {slides.map((slide, index) => (
-                                            <div key={index} className={`${styles.Imageslider}`}>
-                                                <div className={styles.SliderImg}>
-                                                    <Image src={slide.image} alt={slide.text} className={styles.SlideImage} />
-                                                </div>
-                                                <span>{slide.text}</span>
-                                            </div>
-                                        ))}
-                                    </Slider>
-
-                               ) }
                                 </div>
-
                             </div>
-                            <div className="col-lg-5 my-5">
+
+                            <div className="col-lg-5 mb-5 mt-2">
                                 <div className={`${styles.ImagesliderContent}`}>
                                     <div className="SliderContent">
                                         <h4>{slides[currentSlide].text}</h4>
@@ -363,8 +359,12 @@ const component = () => {
                                             <p>Our team is responsible for website maintenance, support, and search engine optimization of some of the leading healthcare providers in Dubai including Capital Health Screening Service. </p>
                                         )}
                                         <div className={styles.ArrowIcons}>
-                                            <FaArrowLeft className={styles.LeftArrow} />
-                                            <FaArrowRight className={styles.RightArrow} />
+                                            <span onClick={prevSlide}>
+                                                <FaArrowLeft className={styles.LeftArrow} />
+                                            </span>
+                                            <span onClick={nextSlide}>
+                                                <FaArrowRight className={styles.RightArrow} />
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
