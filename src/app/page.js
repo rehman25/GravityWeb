@@ -33,7 +33,7 @@ import Social from './component/SocialJoin/component'
 const Page = () => {
   const [isActive, setActive] = useState("Web_Dev")
   return (
-    <>
+    <div className={style.home}>
       <Cursor />
       <Header />
       <section>
@@ -506,7 +506,7 @@ const Page = () => {
       <Worth__Read />
       <Social />
       <Footer />
-    </>
+    </div>
   )
 }
 

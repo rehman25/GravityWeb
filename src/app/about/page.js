@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from './about.module.css'
 import Aboutbanner from './components/Aboutbanner';
 import Bannerdown from './components/Bannerdown';
 import AboutCarts from './components/AboutCarts';
@@ -13,7 +14,7 @@ import Footer from '../component/Footer/component'
 
 const Page = () => {
   return (
-    <>
+    <div className={styles.about}>
       <Cursor />
       <Header/>
       <Aboutbanner />
@@ -25,7 +26,7 @@ const Page = () => {
       <Worth__Read />
       <Social />
       <Footer />
-    </>
+    </div>
   );
 };
 

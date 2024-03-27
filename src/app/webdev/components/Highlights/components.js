@@ -40,23 +40,23 @@ const components = () => {
     return (
         <div className={`container ${styles.container}`}>
             <div className={`row ${styles.row}`}>
-                <div className={`col-lg-5 ${styles.left}`}>
+                <div className={`col-lg-6 ${styles.left}`}>
                     <h2>Elevate Your Web Experience With Our Seamless Process</h2>
                     <p>Our process involves in-depth business analysis, documenting specifications, creating wireframes, and obtaining your approval before moving forward. Our seasoned web experts guide you through every step of the journey, right till the end, ensuring your website aligns with your brand’s objectives. Your vision deserves nothing less than perfection, and that's exactly what our process is designed to achieve.</p>
                 </div>
-                <div className={`col-lg-7  ${styles.right}`}>
+                <div className={`col-lg-6 ${styles.right}`}>
                     <div className={styles.hightbox}>
                         <h4>Key Highlights Our Work In Numbers.</h4>
                         <div className={`row ${styles.box}`}>
-                            <div className={`col-4 ${styles.boxe1}`}>
+                            <div className={`col-4 p-0 ${styles.boxe1}`}>
                                 <p>Happy Clients</p>
                                 <h2>265+</h2>
                             </div>
-                            <div className={`col-4 ${styles.boxe2}`}>
+                            <div className={`col-4 p-0 ${styles.boxe2}`}>
                                 <p>Projects Completed</p>
                                 <h2>265+</h2>
                             </div>
-                            <div className={`col-4 ${styles.boxe3}`}>
+                            <div className={`col-4 p-0 ${styles.boxe3}`}>
                                 <p>Years of experience</p>
                                 <h2>265+</h2>
                             </div>
@@ -66,7 +66,7 @@ const components = () => {
                 </div>
             </div>
             <div className={`row mt-5 ${styles.row2}`}>
-                <div className={styles.col} onMouseEnter={HandlePlanning} onMouseLeave={HoverLeave}>
+                <div className={`col-lg-3 col-md-4  ${styles.col}`} onMouseEnter={HandlePlanning} onMouseLeave={HoverLeave}>
                     <div className={isPlanning ? styles.cardHover :styles.card}>
                         <div className={styles.CardHead}>
                             <span className={isPlanning ? styles.cardImageHover :styles.cardImage}>
@@ -86,7 +86,7 @@ const components = () => {
 
                     </div>
                 </div>
-                <div className={styles.col} onMouseEnter={HandleDevelopment} onMouseLeave={HoverLeave}>
+                <div className={`col-lg-3 col-md-4 ${styles.col}`}  onMouseEnter={HandleDevelopment} onMouseLeave={HoverLeave}>
                     <div className={isDevelopment ? styles.cardHover : styles.card}>
                         <div className={styles.CardHead}>
                             <span className={isDevelopment ? styles.cardImageHover : styles.cardImage}>
@@ -106,7 +106,7 @@ const components = () => {
 
                     </div>
                 </div>
-                <div className={styles.col} onMouseEnter={HandleTesting} onMouseLeave={HoverLeave}>
+                <div className={`col-lg-3 col-md-4 ${styles.col}`} onMouseEnter={HandleTesting} onMouseLeave={HoverLeave}>
                     <div className={isTesting ? styles.cardHover : styles.card}>
                         <div className={styles.CardHead}>
                             <span className={isTesting ? styles.cardImageHover : styles.cardImage}>
@@ -126,7 +126,7 @@ const components = () => {
 
                     </div>
                 </div>
-                <div className={styles.col} onMouseEnter={HandleDeployement} onMouseLeave={HoverLeave}>
+                <div className={`col-lg-3 col-md-4 ${styles.col}`} onMouseEnter={HandleDeployement} onMouseLeave={HoverLeave}>
                     <div className={isDeployement ? styles.cardHover : styles.card}>
                         <div className={styles.CardHead}>
                             <span className={isDeployement ? styles.cardImageHover : styles.cardImage}>

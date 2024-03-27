@@ -11,7 +11,7 @@ import Tabs from '../component/Tabs/component'
 const Page = () => {
 
     return (
-        <>
+        <div className={styles.caseStudy}>
             <Cursor />
             <Header />
             <section>
@@ -34,7 +34,7 @@ const Page = () => {
             <Tabs  />
 
             <Footer />
-        </>
+        </div>
     )
 }
 

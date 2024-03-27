@@ -308,45 +308,57 @@
 
 /* ========================================================= */
 
-@media only screen and (max-width: 1326px) {
-    .specialWord {
-        font-size: 20px;
-        padding: 2px;
-    }
-
-    .careersbannertext h4 {
-        padding: 40px;
-    }
-}
-
 @media only screen and (max-width: 1024px) {
-    .specialWord {
-        font-size: 18px;
-        padding: 1px;
+   
+    .leftourculture h5 {
+        font-size: 70px;
+        padding: 15px;
+    }
+    
+    .leftourculture h2 {
+        font-size: 30px;
     }
 
-    .careersbannertext h4 {
-        padding: 30px;
+    .highlightedWord {
+        font-size: 30px;
     }
+
+    .EmployeesProgressImage {
+        object-fit: contain;
+        height: auto;
+    }
+    
 }
 
 @media screen and (max-width:992px) {
     .Employeessaysection {
         padding: 10px;
     }
+
+    .leftourculture {
+        height: auto;
+    }
+
+    .EmployeesProgressImage {
+        object-fit: contain;
+        height: auto;
+    }
+
+    .imageColumn img {
+        height: auto;
+        object-fit: contain;
+    }
+
 }
 
 @media only screen and (max-width: 768px) {
     .specialWord {
-        font-size: 16px;
-        padding: 1px;
+        font-size: 20px;
     }
 
     .careersbannertext h4 {
-        padding: 20px;
+        font-size: 18px;
     }
-
-    /* Additional adjustments for elements other than .careersbannertext h4 */
 
     .mainhead {
         font-size: 20px;
@@ -374,6 +386,11 @@
         font-size: 30px;
         padding: 20px;
     }
+
+    .highlightedWord {
+        font-size: 25px;
+    }
+    
 }
 
 @media only screen and (max-width: 480px) {
@@ -419,6 +436,32 @@
     .Employeeone p {
         font-size: 8px;
     }
+
+    .EmployeesProgressImage {
+        height: auto;
+        object-fit: contain;
+    }
+
+    .imageColumn img {
+        height: auto;
+    }
+
+    .specialWord {
+        font-size: 20px;
+    }
+
+    .careersbannertext h4 {
+        font-size: 20px;
+    }
+
+    .highlightedWord {
+        font-size: 20px;
+    }
+
+    .applyButton {
+        font-size: 12px;
+    }
+
 }
 
 @media only screen and (max-width: 360px) {
@@ -429,10 +472,6 @@
 
     .specialWord {
         font-size: 20px;
-    }
-
-    .careersbannertext {
-        height: 80px;
     }
 
     .careersbannertext h4 {

@@ -14,7 +14,7 @@ import Cursor from '../component/cursor/cursor';
 const Page = () => {
 
     return (
-        <>
+        <div className={styles.services}>
             <Cursor />
             <Header />
             <div className={`container-fluid ${styles.headerContainer}`}>
@@ -68,7 +68,7 @@ const Page = () => {
             </div>
             <FullService />
             <Footer />
-        </>
+        </div>
     )
 }
 

@@ -12,12 +12,21 @@ import { MdArrowOutward } from "react-icons/md";
 
 const components = () => {
   const [isBtnHover, setBtnHover] = useState(false)
+  const [isBtnHover2, setBtnHover2] = useState(false)
+  
 
   const handleHover = () => {
     setBtnHover(true)
   }
   const LeaveMouse = () => {
     setBtnHover(false)
+  }
+
+  const handleHover2 = () => {
+    setBtnHover2(true)
+  }
+  const LeaveMouse2 = () => {
+    setBtnHover2(false)
   }
 
 
@@ -31,8 +40,8 @@ const components = () => {
                 Cities Across <span className={`${styles.Expansionheadersub}`}>USA, GCC Region & Asia</span></h3>
               <Image src={Map} alt='example' />
               <div className={`${styles.CitiesInfo}`}>
-                <div className={`${styles.USAIH5}`}>
-                  <div className="icon-name">
+                <div className={`col-4 ${styles.USAIH5}`}>
+                  <div className={isBtnHover2 ? styles.iconName2 : styles.iconName} onMouseEnter={handleHover2} onMouseLeave={LeaveMouse2}>
                     <Image src={USAIcon} alt='example' />
                     <h5> USA </h5>
                   </div>
@@ -41,8 +50,8 @@ const components = () => {
                     <p>832 via Palermo, San Ramon, CA, 94583, USA </p>
                   </div>
                 </div>
-                <div className={`${styles.UAEIH5}`}>
-                  <div className="icon-name">
+                <div className={`col-4 ${styles.UAEIH5}`}>
+                  <div className={isBtnHover2 ? styles.iconName2 : styles.iconName} onMouseEnter={handleHover2} onMouseLeave={LeaveMouse2}>
                     <Image src={UAEIcon} alt='example' />
                     <h5> UAE </h5>
                   </div>
@@ -51,16 +60,16 @@ const components = () => {
                     <p>Office M-13, The Curve Building, Sheikh Zayed Road, Dubai, UAE  </p>
                   </div>
                 </div>
-                <div className={`${styles.PAKISTANIH5}`}>
-                  <div className="icon-name">
-                    <Image src={PAKISTANIcon} alt='example' />
+                <div className={`col-4 ${styles.PAKISTANIH5}`}>
+                  <div className={isBtnHover2 ? styles.iconName2 : styles.iconName} onMouseEnter={handleHover2} onMouseLeave={LeaveMouse2}>
+                    <Image src={PAKISTANIcon} alt='example'/>
                     <h5> Pakistan </h5>
                   </div>
                   <div className={`${styles.PAKISTANContent}`}>
                     <span>+92 335 549 2225</span>
                     <p>Office Nos: 101, 102 & 103, NASTP Sierra, Shahrah-e-Faisal Rd, Faisal Cantonment, Karachi, Pakistan </p>
                   </div>
-                </div>
+                </div> 
               </div>
             </div>
           </div>

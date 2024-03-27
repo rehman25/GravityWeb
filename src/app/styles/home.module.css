@@ -1,3 +1,7 @@
+.home{
+    width: 100%;
+    overflow-x: clip;
+}
 .heroSection {
     background-image: url(../assets/images/banner/her.jpg) !important;
     background-size: cover !important;

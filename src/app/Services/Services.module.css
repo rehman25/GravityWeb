@@ -1,3 +1,7 @@
+.services{
+    width: 100%;
+    overflow: clip;
+}
 .headerContainer{
     background-image: url('../assets/images/service/serviceshero.jpeg');
 }

@@ -25,33 +25,107 @@
 .Expansionsectionleft img {
     width: 100%;
     height: auto;
-    margin-top: 35px;
 }
 
 .CitiesInfo {
     display: flex;
+    /* align-items: center; */
+   
 }
 
-    .USAIH5,
+    /* .USAIH5,
     .UAEIH5,
     .PAKISTANIH5 {
     flex: 1;
     font-family: "Montserrat", sans-serif;
+} */
+
+.USAIH5{
+    margin: 5px;
+    padding: 10px;
+}
+
+.UAEIH5{
+    margin: 5px;
+    padding: 10px;
+
+
+}
+
+.PAKISTANIH5{
+    margin: 5px;
+    padding: 10px;
+
 }
 
 .USAIH5 img,
 .UAEIH5 img,
 .PAKISTANIH5 img {
-  width: 50px; 
+  width: 62px; 
   height: 50px; 
 }
 
-.USAContent,
-.UAEContent,
-.PAKISTANContent {
+.PAKISTANIH5 img {
+    position: relative;
+    top: 7px;
+    right: 5px;
+}
+
+.USAContent span{
+  font-size: .725em;
+  color: #000;
+  font-weight: 600;
+  text-align: center;
     margin-top: 10px;
     font-family: "Montserrat", sans-serif;
 }
+
+.USAContent p{
+  font-size: .725em;
+  color: #000;
+  font-weight: 600;
+  text-align: center;
+    margin-top: 10px;
+    font-family: "Montserrat", sans-serif;
+
+    margin-top: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.PAKISTANContent  span{
+    font-size: .725em;
+  color: #000;
+  font-weight: 600;
+  text-align: center;
+    margin-top: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+.UAEContent span{
+    font-size: .725em;
+  color: #000;
+  font-weight: 600;
+  text-align: center;
+    margin-top: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+.UAEContent p{
+ font-size: .725em;
+  color: #000;
+  font-weight: 600;
+  text-align: center;
+    margin-top: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.PAKISTANContent p{
+   font-size: .725em;
+  color: #000;
+  font-weight: 600;
+  text-align: center;
+    margin-top: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
 
 /* ======================================================================= */
 
@@ -352,4 +426,28 @@
     color: #c61a3c;
 }
 
+.iconName{
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 2px solid gray;
+    padding: 5px;
+}
 
+.iconName h5{
+    margin: 0px;
+}
+
+.iconName2{
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 2px solid #c61a3c;
+    padding: 5px;
+}
+
+.iconName2 img{
+    color: #c61a3c;
+}
+.iconName2 h5{
+    color: #c61a3c;
+    margin: 0px;
+}

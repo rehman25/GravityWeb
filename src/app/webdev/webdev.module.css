@@ -1,6 +1,6 @@
 .headerContainer {
     background-image: url('../assets/images/webdev/hero.webp');
-    height: 100vh;
+    /* height: 100vh; */
 
 }
 
@@ -21,7 +21,7 @@
 .servicero {
     display: flex;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .leftside {
