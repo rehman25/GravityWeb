@@ -5,20 +5,22 @@
 .heroSection {
     background-image: url(../assets/images/caseStudies/inner-banner.svg) !important;
     background-size: cover !important;
-    height: 50vh;
+    /* height: 50vh; */
     width: 100%;
     /* background-blend-mode: overlay !important; */
     background: #000000bd;
-    position: relative;
+    /* position: relative; */
     display: flex;
     /* align-items: center; */
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .header{
     display: flex;
-    justify-content:space-around;
     align-items: flex-end;
+    padding: 50px;
+
+
 }
 .heroLeftSide {
     display: flex;
@@ -30,14 +32,14 @@
    padding: 40px;
     /* padding: 25px; */
 }
-.left{
+/* .left{
     display: flex;
     justify-content: center;
 }
 .right{
     display: flex;
     justify-content: center;
-}
+} */
 
 .heroRightSide p{
      color: #fff;
@@ -67,12 +69,66 @@
     font-weight: 700;
 }
 
-.heroLeftSide h2 span {
-    font-size: 1.5em;
+.heroLeftSide h2 b {
+    font-size: 1.2em;
     line-height: 1.22;
     letter-spacing: -.045em;
     text-transform: capitalize;
     color: #e3204a;
-    font-weight: 700;
+    font-weight: 700 !important;
 }
 
+
+
+@media screen and (max-width: 992px) {
+ 
+    .header{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .heroSection{
+        height: 60vh;
+    }
+    .heroLeftSide p{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    align-items: center;
+}
+.heroLeftSide {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    /* align-items: end; */
+}
+.heroRightSide{
+   /* padding: 40px; */
+    /* padding: 25px; */
+    padding: 0px;
+}
+.heroRightSide p{
+     color: #fff;
+    font-size: .750em;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+}
+}
+
+
+@media screen and (max-width: 400px) {
+    .heroSection{
+        height: 80vh;
+    }
+
+    .heroLeftSide h2 b{
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .heroSection{
+        height: 90vh;
+    }
+}

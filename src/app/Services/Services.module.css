@@ -28,6 +28,7 @@
     justify-content: center;
     z-index: 99;
     padding: 25px;
+    padding-left: 100px;
 
 }
 .divline{
@@ -79,19 +80,20 @@
 .Rightside{
  /* height: 100vh; */
 
-  z-index: 9999;
+  /* z-index: 9999; */
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 14px;
+  /* margin-top: 50px; */
 }
 
 .FormContainer{
   background: #fff;
   /* height: 90vh; */
-  width: 90%;
+  width: 80%;
   padding: 30px;
-  margin-top: 42px;
+  margin-top: 50px;
 
 
 
@@ -146,7 +148,7 @@
 }
 .label{
     font-size: 12px;
-    color: rgba(121, 121, 121, .2);
+    color: rgba(22, 22, 22, 0.877);
     font-family: "Montserrat", sans-serif;
 }
 
@@ -171,5 +173,42 @@
 }
 
 @media screen and (max-width: 992px) {
-    
+   .servicero{
+    padding-top: 55px;
+   }
+   .leftside{
+    padding-left:40px;
+   }
+   .Heading{
+    font-size: 1.5em;
+   }
+   .FormContainer{
+    margin-top: 0px;
+   }
+   .iconsdiv{
+    top: 58%;
+    left: 4%;
+   }
+   .ContactForm p{
+    font-size: 10px;
+   }
+   .label{
+    font-size: 10px;
+   }
+}
+
+
+@media screen and (max-width: 576px) {
+    .iconsdiv{
+        display: none;
+    }
+    .FormContainer{
+        padding: 15px;
+    }
+    .Heading{
+    font-size: 1em;
+   }
+   .leftside{
+    padding-left:30px;
+   }
 }
