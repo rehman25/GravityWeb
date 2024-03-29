@@ -26,6 +26,7 @@ a {
 }
 a{
     text-decoration: none !important;
+    color: black;
 }
 button {
     font-family: "Monctserrat", sans-serif;
@@ -161,23 +162,25 @@ span {
 .testimonials .slick-slide {
     margin: 0 20px; /* Adjust margins as needed */
 }
+/* ====================================== */
+.devTech .slick-dots{
+    display: flex !important;
+    justify-content: center;
+}
+.devTech .slick-dots li button{
+    width: 100px;
+    background: rgb(219, 216, 216);
+    height: 0;
+    color: transparent;
+}
+.devTech .slick-dots li.slick-active button{
+    background: #e3204a;
+}
+.devTech .slick-dots li button::before{
+    display: none;
+}
 /* ==================================================== */
 @media screen and (max-width:992px){
-    .hometabsSection .react-tabs {
-        flex-direction: column;
-    }
-    .hometabsSection .react-tabs .react-tabs__tab-list {
-        flex-direction: row;
-        border-left: none;
-        padding-left: 0;
-        height: auto;
-        overflow-x: unset;
-        padding: 0;
-        white-space: nowrap;
-    }
-    .hometabsSection .react-tabs .react-tabs__tab-panel--selected {
-        width: auto;
-    }
     .Expertise___bg .react-tabs__tab-panel--selected{
         width: 100%;
     }

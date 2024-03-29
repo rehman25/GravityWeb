@@ -53,9 +53,9 @@
 
 /* ============================================================== */
 
-/* ServiceTechDevelopment down section */ 
+/* ServiceTechDevelopment down section */
 
-.ServiceTechDevelopmentdown h2{
+.ServiceTechDevelopmentdown h2 {
     font-family: "Montserrat", sans-serif;
     margin: 50px 0px;
     text-align: center;
@@ -64,20 +64,13 @@
     text-transform: capitalize;
 }
 
-
-.SliderContainer{
-    background-color: 2px solid gray;
-}
-
 .Imageslider {
     /* display: flerx; */
     margin: 5px 0px;
     padding: 10px;
-    /* border-bottom: 1px solid ; */
-    
 }
-.Imageslider2{
-    /* display: flerx; */
+
+.Imageslider2 {
     margin: 5px 0px;
     padding: 10px;
 }
@@ -87,28 +80,50 @@
     font-weight: 600;
 }
 
+.ImagesliderContent {
+    margin: 0px 50px;
+}
+
 .ImagesliderContent h4 {
     font-family: "Montserrat", sans-serif;
 }
 
 .ImagesliderContent p {
     font-family: "Montserrat", sans-serif;
+    font-size: 14px;
 }
 
-.SlideImage{
+.SlideImage {
     width: 100%;
     height: 100%;
 }
 
-/* .container{
-    border-bottom: 2px solid gray ;
-} */
-
-.border{
-    border-bottom: 2px solid red ;
+.ArrowIcons {
+    display: flex;
+    align-items: center;
 }
 
-.SliderContainer{
-    border-bottom: 2px solid  gray ; 
+.ArrowIcons span {
+    margin: 5px;
+    background-color: #c61a3c;
+    border-radius: 50%;
+    padding: 15px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
+.ArrowIcons span:hover {
+    background-color: #E4496B;
+}
+
+.LeftArrow {
+    color: #fff;
+}
+
+.RightArrow {
+    color: #fff;
+}

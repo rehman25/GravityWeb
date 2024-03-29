@@ -3,9 +3,9 @@ import styles from './about.module.css'
 import Aboutbanner from './components/Aboutbanner';
 import Bannerdown from './components/Bannerdown';
 import AboutCarts from './components/AboutCarts';
-import About_subheading from '../about/components/about_subheading'
+import About_subheading from './components/about_subheading'
 import AboutSlider from './components/AboutSlider';
-import Expertise from "../about/components/Expertise";
+import Expertise from "./components/Expertise";
 import Cursor from "../component/cursor/cursor";
 import Header from "../component/Header/component"
 import Worth__Read from '../component/Work-Read/index'

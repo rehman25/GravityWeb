@@ -4,6 +4,7 @@ import Cursor from '../component/cursor/cursor'
 import Header from '../component/Header/component'
 import Banner from './components/Banner'
 import Tabsss from './components/Tabsss'
+import Footer from '../component/Footer/component';
 
 const Page = () => {
     return (
@@ -12,6 +13,7 @@ const Page = () => {
             <Header/>
             <Banner />
             <Tabsss />
+            <Footer />
         </div>
     )
 }

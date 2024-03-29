@@ -68,9 +68,7 @@ const About_subheading = () => {
                 </div>
                 <div className={`${styles.marquee_container}`}>
                   <div
-                    className={`${styles.marquee_content}`}
-                    class="marquee-content"
-                  >
+                    className={`${styles.marquee_content}`}>
                     <div>
                       <Image
                         src={one}

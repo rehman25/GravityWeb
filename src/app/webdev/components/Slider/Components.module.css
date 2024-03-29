@@ -257,4 +257,76 @@ z-index: 9999;
       .arrows p{
         display: none;
       }
+      .slidercontent{
+    width: 12em;
+    height: 12em;
+ } 
+ .sliderPara{
+    font-size: 1em;
+ }
+ .showdiv span{
+    font-size: 1em;
+ }
+ }
+
+
+  @media screen and (max-width:768px) {
+    
+      .slidercontent{
+    width: 10em;
+    height: 10em;
+ } 
+ .sliderPara{
+    font-size: 1em;
+ }
+ .card h2{
+    font-size: .725em;
+}
+.ContentConatiner{
+    padding: 5px;
+}
+
+
+ }
+
+
+   @media screen and (max-width:567px) {
+     
+      .slidercontent{
+    width: 5em;
+    height: 5em;
+ } 
+ .sliderPara{
+    font-size: .725em;
+ }
+ .card p{
+    font-size: .575em;
+
+}
+
+.card{
+    padding: .4375em;
+   
+}
+ .card h2{
+    font-size: .575em;
+}
+
+ }
+
+    @media screen and (max-width:400px) {
+     
+      .slidercontent{
+    width: 3em;
+    height: 3em;
+ } 
+ .sliderPara{
+    font-size: .575em;
+ }
+  .card h2{
+    font-size: .5em;
+}
+ .showdiv span{
+    font-size: .575em;
+ }
  }

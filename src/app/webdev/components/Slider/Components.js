@@ -57,13 +57,13 @@ const Components = () => {
     
   
     var settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 2,
         slidesToScroll: 2,
         autoplay: true, // Autoplay slides
-        autoplaySpeed: 1000, // Autoplay speed in milliseconds
+        autoplaySpeed: 3000, // Autoplay speed in milliseconds
         pauseOnHover: true, // Pause autoplay on hover
         arrows: true, // Show navigation arrows
         prevArrow: <MdOutlineArrowBackIos />, // Custom previous arrow component
