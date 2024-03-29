@@ -530,3 +530,29 @@ border-top: 1px solid #80808057;
     }
     
 }
+
+
+@media screen and (max-width:400px){
+.FormContainer{
+  width:100%;
+}
+.iconsdiv{
+    display: none;
+}
+.headerContainer{
+        padding: 50px 0px;
+}
+
+
+}
+
+
+
+
+@media screen and (max-width:300px){
+.button{
+    flex-direction: column;
+}
+
+
+}
