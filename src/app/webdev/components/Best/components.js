@@ -384,22 +384,22 @@ const Components = () => {
                 </div>
             </div>
             <div className={`row  ${styles.secRowRes}`}>
-                <div className="col-lg-5 col-md-5 col-sm-5">
+                <div className="col-lg-12 col-md-12 col-sm-12">
                     <ul onMouseEnter={handleWordpress} >
                         <li className={isWordpress ? styles.active : styles.list}> {isWordpress ? <span className={styles.dash}><b>___</b></span> : ""} Wordpress Development</li>
                         {isWordpress ?
-                            <div>
+                            <div className={styles.MobileResDiv}>
                                 <ul onMouseEnter={handleCTD} onMouseLeave={HandleMouseLeave} className={styles.ul}>
-                                     <li className={isCTD ? styles.ChlidActive : styles.chlidlist}>Custom Theme Development</li>
+                                    <li className={isCTD ? styles.MobileChlidActive : styles.Mobilechlidlist}>Custom Theme Development</li>
                                 </ul>
                                 <ul onMouseEnter={handlePI} onMouseLeave={HandleMouseLeave} className={styles.ul}>
-                                     <li className={isPI ? styles.ChlidActive : styles.chlidlist}>Plugin Integration</li>
+                                    <li className={isPI ? styles.MobileChlidActive : styles.Mobilechlidlist}>Plugin Integration</li>
                                 </ul>
                                 <ul onMouseEnter={handlePO} onMouseLeave={HandleMouseLeave} className={styles.ul}>
-                                   <li className={isPO ? styles.ChlidActive : styles.chlidlist}>Performance Optimization</li>
+                                    <li className={isPO ? styles.MobileChlidActive : styles.Mobilechlidlist}>Performance Optimization</li>
                                 </ul>
                                 <ul onMouseEnter={handleSI} onMouseLeave={HandleMouseLeave} className={styles.ul}>
-                                  <li className={isSI ? styles.ChlidActive : styles.chlidlist}>Security Implementation</li>
+                                    <li className={isSI ? styles.MobileChlidActive : styles.Mobilechlidlist}>Security Implementation</li>
                                 </ul>
                             </div>
                             : ""}
@@ -407,18 +407,18 @@ const Components = () => {
                     <ul onMouseEnter={handlePhp} >
                         <li className={isPhp ? styles.active : styles.list}> {isPhp ? <span className={styles.dash}><b>___</b></span> : ""} PHP Development</li>
                         {isPhp ?
-                            <div>
+                            <div className={styles.MobileResDiv}>
                                 <ul onMouseEnter={handleOPP} onMouseLeave={HandleMouseLeave} className={styles.ul}>
-                                    <li className={isOOP ? styles.ChlidActive : styles.chlidlist}> Object-Oriented Programming</li>
+                                    <li className={isOOP ? styles.MobileChlidActive : styles.Mobilechlidlist}> Object-Oriented Programming</li>
                                 </ul>
                                 <ul onMouseEnter={handleDB} onMouseLeave={HandleMouseLeave} className={styles.ul}>
-                                    <li className={isDB ? styles.ChlidActive : styles.chlidlist}> Database Integration</li>
+                                    <li className={isDB ? styles.MobileChlidActive : styles.Mobilechlidlist}> Database Integration</li>
                                 </ul>
                                 <ul onMouseEnter={handleAD} onMouseLeave={HandleMouseLeave} className={styles.ul}>
-                                    <li className={isAD ? styles.ChlidActive : styles.chlidlist}> Api Development</li>
+                                    <li className={isAD ? styles.MobileChlidActive : styles.Mobilechlidlist}> Api Development</li>
                                 </ul>
                                 <ul onMouseEnter={handleFx} onMouseLeave={HandleMouseLeave} className={styles.ul}>
-                                    <li className={isFx ? styles.ChlidActive : styles.chlidlist}> Frameword Expertise</li>
+                                    <li className={isFx ? styles.MobileChlidActive : styles.Mobilechlidlist}> Frameword Expertise</li>
                                 </ul>
                             </div>
                             : ""}
@@ -426,18 +426,18 @@ const Components = () => {
                     <ul onMouseEnter={handleCMS} >
                         <li className={CMS ? styles.active : styles.list}> {CMS ? <span className={styles.dash}><b>___</b></span> : ""} CMS Development</li>
                         {CMS ?
-                            <div>
+                            <div className={styles.MobileResDiv}>
                                 <ul onMouseEnter={handleCMD} onMouseLeave={HandleMouseLeave} className={styles.ul}>
-                                     <li className={isCMD ? styles.ChlidActive : styles.chlidlist}>Custom Module Development</li>
+                                    <li className={isCMD ? styles.MobileChlidActive : styles.Mobilechlidlist}>Custom Module Development</li>
                                 </ul>
                                 <ul onMouseEnter={handleURM} onMouseLeave={HandleMouseLeave} className={styles.ul}>
-                                      <li className={isURM ? styles.ChlidActive : styles.chlidlist}> User Roll Management</li>
+                                    <li className={isURM ? styles.MobileChlidActive : styles.Mobilechlidlist}> User Roll Management</li>
                                 </ul>
                                 <ul onMouseEnter={handleRD} onMouseLeave={HandleMouseLeave} className={styles.ul}>
-                                     <li className={isRD ? styles.ChlidActive : styles.chlidlist}>Responsive Design</li>
+                                    <li className={isRD ? styles.MobileChlidActive : styles.Mobilechlidlist}>Responsive Design</li>
                                 </ul>
                                 <ul onMouseEnter={handleWA} onMouseLeave={HandleMouseLeave} className={styles.ul}>
-                                     <li className={isWA ? styles.ChlidActive : styles.chlidlist}>WorkFlow Automation</li>
+                                    <li className={isWA ? styles.MobileChlidActive : styles.Mobilechlidlist}>WorkFlow Automation</li>
                                 </ul>
                             </div>
                             : ""}
@@ -445,21 +445,21 @@ const Components = () => {
                     <ul onMouseEnter={handleLaravel} >
                         <li className={isLaravel ? styles.active : styles.list}> {isLaravel ? <span className={styles.dash}><b>___</b></span> : ""} Laravel Development</li>
                         {isLaravel ?
-                            <div>
+                            <div className={styles.MobileResDiv}>
                                 <ul onMouseEnter={handleMA} onMouseLeave={HandleMouseLeave} className={styles.ul}>
-                                    <li className={isMA ? styles.ChlidActive : styles.chlidlist}>MVC Architecture</li>
+                                    <li className={isMA ? styles.MobileChlidActive : styles.Mobilechlidlist}>MVC Architecture</li>
                                 </ul>
                                 <ul onMouseEnter={handleEO} onMouseLeave={HandleMouseLeave} className={styles.ul}>
 
-                                    <li className={isEO ? styles.ChlidActive : styles.chlidlist}> Eloquent ORM</li>
+                                    <li className={isEO ? styles.MobileChlidActive : styles.Mobilechlidlist}> Eloquent ORM</li>
                                 </ul>
                                 <ul onMouseEnter={handleRAD} onMouseLeave={HandleMouseLeave} className={styles.ul}>
 
-                                    <li className={isRAD ? styles.ChlidActive : styles.chlidlist}>Restfull Api Development</li>
+                                    <li className={isRAD ? styles.MobileChlidActive : styles.Mobilechlidlist}>Restfull Api Development</li>
                                 </ul>
                                 <ul onMouseEnter={handleSP} onMouseLeave={HandleMouseLeave} className={styles.ul}>
 
-                                    <li className={isSP ? styles.ChlidActive : styles.chlidlist}>Scalibility Planning</li>
+                                    <li className={isSP ? styles.MobileChlidActive : styles.Mobilechlidlist}>Scalibility Planning</li>
                                 </ul>
                             </div>
                             : ""}
@@ -467,18 +467,18 @@ const Components = () => {
                     <ul onMouseEnter={handleActive} >
                         <li className={active ? styles.active : styles.list}> {active ? <span className={styles.dash}><b>___</b></span> : ""}Website Maintenance</li>
                         {active ?
-                            <div>
+                            <div className={styles.MobileResDiv}>
                                 <ul onMouseEnter={handleOPP} onMouseLeave={HandleMouseLeave} className={styles.ul}>
-                                    <li className={isOOP ? styles.ChlidActive : styles.chlidlist}> Object-Oriented Programming</li>
+                                    <li className={isOOP ? styles.MobileChlidActive : styles.Mobilechlidlist}> Object-Oriented Programming</li>
                                 </ul>
                                 <ul onMouseEnter={handleDB} onMouseLeave={HandleMouseLeave} className={styles.ul}>
-                                    <li className={isDB ? styles.ChlidActive : styles.chlidlist}> Database Integration</li>
+                                    <li className={isDB ? styles.MobileChlidActive : styles.Mobilechlidlist}> Database Integration</li>
                                 </ul>
                                 <ul onMouseEnter={handleAD} onMouseLeave={HandleMouseLeave} className={styles.ul}>
-                                    <li className={isAD ? styles.ChlidActive : styles.chlidlist}> Api Development</li>
+                                    <li className={isAD ? styles.MobileChlidActive : styles.Mobilechlidlist}> Api Development</li>
                                 </ul>
                                 <ul onMouseEnter={handleFx} onMouseLeave={HandleMouseLeave} className={styles.ul}>
-                                    <li className={isFx ? styles.ChlidActive : styles.chlidlist}> Frameword Expertise</li>
+                                    <li className={isFx ? styles.MobileChlidActive : styles.Mobilechlidlist}> Frameword Expertise</li>
                                 </ul>
                             </div>
                             : ""}
@@ -486,18 +486,18 @@ const Components = () => {
                     <ul onMouseEnter={handleWhatsapp} >
                         <li className={isWhatsapp ? styles.active : styles.list}> {isWhatsapp ? <span className={styles.dash}><b>___</b></span> : ""}Whats App Integration</li>
                         {isWhatsapp ?
-                            <div>
+                            <div className={styles.MobileResDiv}>
                                 <ul onMouseEnter={handleOPP} onMouseLeave={HandleMouseLeave} className={styles.ul}>
-                                    <li className={isOOP ? styles.ChlidActive : styles.chlidlist}> Object-Oriented Programming</li>
+                                    <li className={isOOP ? styles.MobileChlidActive : styles.Mobilechlidlist}> Object-Oriented Programming</li>
                                 </ul>
                                 <ul onMouseEnter={handleDB} onMouseLeave={HandleMouseLeave} className={styles.ul}>
-                                    <li className={isDB ? styles.ChlidActive : styles.chlidlist}> Database Integration</li>
+                                    <li className={isDB ? styles.MobileChlidActive : styles.Mobilechlidlist}> Database Integration</li>
                                 </ul>
                                 <ul onMouseEnter={handleAD} onMouseLeave={HandleMouseLeave} className={styles.ul}>
-                                    <li className={isAD ? styles.ChlidActive : styles.chlidlist}> Api Development</li>
+                                    <li className={isAD ? styles.MobileChlidActive : styles.Mobilechlidlist}> Api Development</li>
                                 </ul>
                                 <ul onMouseEnter={handleFx} onMouseLeave={HandleMouseLeave} className={styles.ul}>
-                                    <li className={isFx ? styles.ChlidActive : styles.chlidlist}> Frameword Expertise</li>
+                                    <li className={isFx ? styles.MobileChlidActive : styles.Mobilechlidlist}> Frameword Expertise</li>
                                 </ul>
                             </div>
                             : ""}
