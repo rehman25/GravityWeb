@@ -28,7 +28,7 @@
 .leftside {
     display: flex;
     align-items: flex-end;
-    z-index: 99;
+    z-index: 9;
     padding-left: 25px;
 }
 
@@ -99,7 +99,7 @@
 .Rightside {
     /* height: 100vh; */
 
-    z-index: 999;
+    z-index: 9;
     display: flex;
     align-items: center;
     padding: 14px;
