@@ -40,7 +40,7 @@ import HealthCare from "../../assets/images/ServicTechDevelopment/service-develo
 import Automotive from "../../assets/images/ServicTechDevelopment/service-development1.webp"
 
 
-const component = () => {
+const Components = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
 
     var settings = {
@@ -378,6 +378,6 @@ const component = () => {
 };
 
 
-export default component;
+export default Components;
 
 

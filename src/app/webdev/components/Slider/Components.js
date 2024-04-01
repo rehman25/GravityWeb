@@ -57,13 +57,13 @@ const Components = () => {
     
   
     var settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 2,
         slidesToScroll: 2,
         autoplay: true, // Autoplay slides
-        autoplaySpeed: 1000, // Autoplay speed in milliseconds
+        autoplaySpeed: 3000, // Autoplay speed in milliseconds
         pauseOnHover: true, // Pause autoplay on hover
         arrows: true, // Show navigation arrows
         prevArrow: <MdOutlineArrowBackIos />, // Custom previous arrow component
@@ -121,9 +121,9 @@ const Components = () => {
                 
            <div className={`col-lg-6 first-letter: ${styles.cardcont}`}>
                    <div className={styles.card}>
-                        <h2> Elevate Your Digital Presence With Digital Gravity: Dubai's Premier Web Development Agency</h2>
-                        <p> At Digital Gravity, we don't just build websites; we craft digital experiences that leave a lasting impression. As a leading web development agency in Dubai, we have successfully designed and developed over 300 websites, catering to diverse industries both locally and globally.</p>
-                        <p>From front-end developers to back-end engineers, our talent is the heartbeat of our success. We thrive on executing complex web projects while embracing out-of-the-box business models.</p>
+                        <h2> Elevate Your Digital Presence With Digital Gravity: {"Dubai's"} Premier Web Development Agency</h2>
+                        <p> At Digital Gravity, we {"don't"} just build websites; we craft digital experiences that leave a lasting impression. As a leading web development agency in Dubai, we have successfully designed and developed over 300 websites, catering to diverse industries both locally and globally.</p>
+                        <p>From front-end developers to back-end engineers, our talent is the heartbeat of our success. We thrive on executing complex web projects while embracing {"out-of-the-box"} business models.</p>
                         <p>Our web team boasts expertise in a range of languages and frameworks, including PHP, Java, Python, JavaScript, C#, C++, Ruby, Codeigniter, and Laravel.</p>
                         <p>From real estate, healthcare, restaurants, and delivery services, to auto repair, SaaS, entertainment, education, and fashion. We gravitate to collaborating with any industry.</p>
                         {slider[currentSlider].ID == "1" && ( 

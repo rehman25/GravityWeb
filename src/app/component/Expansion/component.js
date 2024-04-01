@@ -10,7 +10,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import { MdArrowOutward } from "react-icons/md";
 
 
-const components = () => {
+const Components = () => {
   const [isBtnHover, setBtnHover] = useState(false)
   const [isBtnHover2, setBtnHover2] = useState(false)
   
@@ -40,17 +40,17 @@ const components = () => {
                 Cities Across <span className={`${styles.Expansionheadersub}`}>USA, GCC Region & Asia</span></h3>
               <Image src={Map} alt='example' />
               <div className={`${styles.CitiesInfo}`}>
-                <div className={`col-4 ${styles.USAIH5}`}>
+                <div className={`col-lg-4 ${styles.USAIH5} ${styles.USAIH5Box}`}>
                   <div className={isBtnHover2 ? styles.iconName2 : styles.iconName} onMouseEnter={handleHover2} onMouseLeave={LeaveMouse2}>
                     <Image src={USAIcon} alt='example' />
                     <h5> USA </h5>
                   </div>
-                  <div className={`${styles.USAContent}`}>
+                  <div className={`${styles.USAContent} ${styles.USAIH5Box}`}>
                     <span>+191 038 40703</span>
                     <p>832 via Palermo, San Ramon, CA, 94583, USA </p>
                   </div>
                 </div>
-                <div className={`col-4 ${styles.UAEIH5}`}>
+                <div className={`col-lg-4 ${styles.UAEIH5} ${styles.USAIH5Box}`}>
                   <div className={isBtnHover2 ? styles.iconName2 : styles.iconName} onMouseEnter={handleHover2} onMouseLeave={LeaveMouse2}>
                     <Image src={UAEIcon} alt='example' />
                     <h5> UAE </h5>
@@ -60,7 +60,7 @@ const components = () => {
                     <p>Office M-13, The Curve Building, Sheikh Zayed Road, Dubai, UAE  </p>
                   </div>
                 </div>
-                <div className={`col-4 ${styles.PAKISTANIH5}`}>
+                <div className={`col-lg-4 ${styles.PAKISTANIH5} ${styles.USAIH5Box}`}>
                   <div className={isBtnHover2 ? styles.iconName2 : styles.iconName} onMouseEnter={handleHover2} onMouseLeave={LeaveMouse2}>
                     <Image src={PAKISTANIcon} alt='example'/>
                     <h5> Pakistan </h5>
@@ -171,4 +171,4 @@ const components = () => {
   )
 }
 
-export default components
+export default Components

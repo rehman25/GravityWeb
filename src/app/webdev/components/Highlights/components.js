@@ -11,7 +11,7 @@ import Arrow from '../../../assets/images/webdev/highlights/card-arrow.svg'
 import { BiSolidRightArrow } from "react-icons/bi";
 
 
-const components = () => {
+const Components = () => {
     const [isPlanning , setPlanning ] = useState(false)
     const [isDevelopment , setDevelopment] = useState(false)
     const [isTesting, setTesting] = useState(false)
@@ -42,7 +42,7 @@ const components = () => {
             <div className={`row ${styles.row}`}>
                 <div className={`col-lg-6 ${styles.left}`}>
                     <h2>Elevate Your Web Experience With Our Seamless Process</h2>
-                    <p>Our process involves in-depth business analysis, documenting specifications, creating wireframes, and obtaining your approval before moving forward. Our seasoned web experts guide you through every step of the journey, right till the end, ensuring your website aligns with your brand’s objectives. Your vision deserves nothing less than perfection, and that's exactly what our process is designed to achieve.</p>
+                    <p>Our process involves {"in-depth"} business analysis, documenting specifications, creating wireframes, and obtaining your approval before moving forward. Our seasoned web experts guide you through every step of the journey, right till the end, ensuring your website aligns with your {"brand’s"} objectives. Your vision deserves nothing less than perfection, and {"that's"} exactly what our process is designed to achieve.</p>
                 </div>
                 <div className={`col-lg-6 ${styles.right}`}>
                     <div className={styles.hightbox}>
@@ -149,4 +149,4 @@ const components = () => {
     )
 }
 
-export default components
+export default Components

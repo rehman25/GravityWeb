@@ -2,15 +2,12 @@
     padding: 0px;
     margin: 0px;
     height: 100vh;
-    background-image: url('../../assets/images//home//sec-bg.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url('../../assets/images//home//sec-bg.webp') !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
     background-position: center;
-}
-
-.Text {
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px #fff;
+    background-blend-mode: overlay;
+    background: #00000033;
 }
 
 .leftHeading {
@@ -86,8 +83,18 @@
     .leftHeading {
         padding: 20px 0px;
     }
-
-    .rightContainer {
-        display: none;
+}
+@media screen and (max-width:480px) {
+    .bgColor {
+        padding: 20px;
+    }
+    .picture img{
+        height: auto;
+    }
+    .leftHeading h2 {
+        font-size: 1.20em;
+    }
+    .leftHeading p {
+        font-size: 0.65em;
     }
 }

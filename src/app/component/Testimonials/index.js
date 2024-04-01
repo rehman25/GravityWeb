@@ -71,7 +71,7 @@ class Test extends Component {
                     <div className={`${styles.TestimonialCards}`}>
                         <div className={`${styles.Content}`}>
                             <h4>Elevating the Terra Nexus Website Experience</h4>
-                            <span>I just wanted to thank you for the time and effort spent on the Terra Nexus website. The website received so much positive feedback from everyone who used it, from the design to its functionality. I wanted to personally highlight Shaor's efforts and unwavering support during some of the difficult times we faced during the implementation stage. Shaor was always available, reassuring and ready to help, despite the many challenges we faced.  From a project management perspective and client interface, Shaor made a positive impact on the whole experience so just wanted to highlight this to you. <br /><br /> Thank you once again.</span>
+                            <span>I just wanted to thank you for the time and effort spent on the Terra Nexus website. The website received so much positive feedback from everyone who used it, from the design to its functionality. I wanted to personally highlight {"Shaor's"} efforts and unwavering support during some of the difficult times we faced during the implementation stage. Shaor was always available, reassuring and ready to help, despite the many challenges we faced.  From a project management perspective and client interface, Shaor made a positive impact on the whole experience so just wanted to highlight this to you. <br /><br /> Thank you once again.</span>
 
                         </div>
                         <div className={`${styles.ratings}`}>
@@ -82,7 +82,7 @@ class Test extends Component {
                     </div>
                     <div className={`${styles.TestimonialCards}`}>
                         <div className={`${styles.Content}`}>
-                            <h4>Powering the Success of EMDAD's Website Launch</h4>
+                            <h4>Powering the Success of {"EMDAD's"} Website Launch</h4>
                             <span>I am writing to express our appreciation to Digital Gravity and its team for their efforts that contributed to the success of the EMDAD website at its launch. A special thanks to Aashir for showing leadership and resilience each step of the way, attending to our requirements, providing us with the website within the desired time frame, and for his continued support. We look forward to a continuous collaboration with Digital Gravity in the future.</span>
 
                         </div>
@@ -107,7 +107,7 @@ class Test extends Component {
                     <div className={`${styles.TestimonialCards}`}>
                         <div className={`${styles.Content}`}>
                             <h4>Smooth Sailing</h4>
-                            <span>A big thanks to wasi, the project manager at deep water marine's website. The website is developed very nicely and as per my expectations.</span>
+                            <span>A big thanks to wasi, the project manager at deep water {"marine's"} website. The website is developed very nicely and as per my expectations.</span>
 
                         </div>
                         <div className={`${styles.ratings}`}>

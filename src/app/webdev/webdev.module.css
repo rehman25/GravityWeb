@@ -1,6 +1,7 @@
 .headerContainer {
     background-image: url('../assets/images/webdev/hero.webp');
     /* height: 100vh; */
+    padding: 50px;
 
 }
 
@@ -8,7 +9,7 @@
     content: "";
     position: absolute;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     top: 0;
     left: 0;
     background: linear-gradient(224deg, #19062c 0, rgba(27, 3, 57, .46) 100%);
@@ -28,7 +29,9 @@
     display: flex;
     align-items: flex-end;
     z-index: 99;
+    padding-left: 25px;
 }
+
 .divline {
     border-bottom: 2px solid #fff;
     width: 35px;
@@ -82,7 +85,8 @@
     color: #fff;
     font-family: "Montserrat", sans-serif;
 }
-.Heading{
+
+.Heading {
     font-size: 1.97em;
     line-height: 1.22;
     letter-spacing: -.045em;
@@ -92,20 +96,22 @@
     font-weight: 700;
 }
 
-.Rightside{
- height: 100vh;
+.Rightside {
+    /* height: 100vh; */
 
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  padding: 14px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    padding-top: 100px;
 }
 
-.FormContainer{
-  background: #fff;
-  width: 90%;
-  padding: 30px;
+.FormContainer {
+    background: #fff;
+    width: 90%;
+    padding: 30px;
 }
+
 .ContactForm h3 {
     font-weight: 500;
     font-family: "Montserrat", sans-serif;
@@ -204,38 +210,43 @@
 }
 
 /* OUR WORK CSS STARTS FROM HERH =======================] */
-.our__work__section{
+.our__work__section {
     background: black;
     padding: 80px 0;
 }
-.cardMainBox p{
+
+.cardMainBox p {
     font-size: .85em;
     font-weight: 600;
     color: white;
     padding: 0;
     margin: 0;
 }
-.cardbox{
+
+.cardbox {
     perspective: 500px;
     margin: 20px 0;
 }
 
-.card{
+.card {
     position: relative;
     width: 300px;
     height: 400px;
     background: #de254d;
     transform-style: preserve-3d;
     transition: 0.25s ease;
-    cursor : pointer;
+    cursor: pointer;
 }
-.card_front img{
+
+.card_front img {
     object-fit: contain;
     width: 100%;
 }
-.card_front , .card_back{
+
+.card_front,
+.card_back {
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     backface-visibility: hidden;
     font-size: 40px;
@@ -244,36 +255,42 @@
     display: flex;
     align-items: center;
 }
-.card_front{
+
+.card_front {
     overflow: hidden;
     height: 400px;
 }
-.card_back{
+
+.card_back {
     transform: rotateY(180deg);
     width: inherit;
     overflow: hidden;
 }
-.card_back .inner_card_back{
+
+.card_back .inner_card_back {
     display: flex;
     flex-direction: column;
     align-items: flex-start !important;
 }
-.card_back img{
+
+.card_back img {
     height: 50px;
     width: 150px;
     margin-bottom: 10px;
     margin-left: 10px;
 }
 
-.cardbox:hover .card{
+.cardbox:hover .card {
     transform: rotateY(180deg);
 }
-.card_back .inner_card_back span{
+
+.card_back .inner_card_back span {
     color: white;
-font-size: 13px;
-padding: 22px 35px;
-border-top: 1px solid #80808057;
+    font-size: 13px;
+    padding: 22px 35px;
+    border-top: 1px solid #80808057;
 }
+
 /* ///////Footer/////////// */
 .leftContainer {
     background-color: #e3204a;
@@ -304,6 +321,7 @@ border-top: 1px solid #80808057;
     z-index: 1;
     padding: 10px;
 }
+
 .letsbuild {
     color: white;
     margin-right: 150px;
@@ -386,9 +404,9 @@ border-top: 1px solid #80808057;
 }
 
 
-.Input1{
+.Input1 {
     border: none;
-     background-color:rgba(77, 75, 75, 0.993);
+    background-color: rgba(77, 75, 75, 0.993);
     outline: none;
     font-size: 15px;
     color: rgba(255, 255, 255, 0.993);
@@ -396,84 +414,135 @@ border-top: 1px solid #80808057;
     height: 33px;
 }
 
-.Input1:focus{
-  border: 2px solid #c61a3c;
+.Input1:focus {
+    border: 2px solid #c61a3c;
 }
 
 
-.textarea:focus{
-  border: 2px solid #c61a3c;
+.textarea:focus {
+    border: 2px solid #c61a3c;
 }
 
-.Formgroup1{
+.Formgroup1 {
     display: flex;
     flex-direction: column;
     padding: 10px;
     width: 50%;
 }
-.Formgrouptextarea1{
-      display: flex;
+
+.Formgrouptextarea1 {
+    display: flex;
     flex-direction: column;
 }
 
-.row1{
+.row1 {
     display: flex;
     flex-direction: row;
 }
-.label1{
+
+.label1 {
     font-size: 13px;
-    color:  #dee2e6;
+    color: #dee2e6;
     font-family: "Montserrat", sans-serif;
 }
-.sendtext1{
+
+.sendtext1 {
     font-weight: 600;
     font-size: 25px;
-     font-family: "Montserrat", sans-serif;
-     color:  #dee2e6;
+    font-family: "Montserrat", sans-serif;
+    color: #dee2e6;
 
 }
-.button1{
+
+.button1 {
     display: flex;
     align-items: center;
     margin-top: 30px;
 }
+
 @media screen and (max-width:992px) {
+    .Rightside {
+        padding-top: 0px;
+    }
+
     .heading {
         left: 0px;
     }
+
     .leftContainer {
         align-items: unset;
         padding: 150px 0 10px 40px;
     }
+
     .rightContainer {
         padding: 50px 28px 0px 28px;
     }
-}   
 
-@media screen and (max-width:768px){
+    .ContactForm h3 {
+        font-size: 12px;
+    }
+
+    .label {
+        font-size: 10px;
+    }
+
+    .Input {
+        height: 25px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .Heading {
+        font-size: 1.5em;
+    }
+
+    .headingpara {
+        font-size: 12px;
+    }
+
     .heading {
         text-align: center;
         font-size: 3em;
     }
-    .button1{
+
+    .button1 {
         display: flex;
         align-items: center;
         margin-top: 20px;
     }
+
     .footerPara {
         margin: 0px;
         padding: 0px;
         font-size: 16px;
         color: white;
     }
+
+    .dash {
+        display: none;
+    }
+
+    .DashContainer {
+        display: none;
+    }
+
+    .addressContainer {
+        width: auto !important;
+    }
+
+    .addressContainer ul {
+        padding: 0;
+    }
+
 }
 
-@media screen and (max-width:380px){
-    .rightContainer{
+@media screen and (max-width:480px) {
+    .rightContainer {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
+
     .footerPara {
         margin: 0px;
         padding: 0px;
@@ -481,4 +550,44 @@ border-top: 1px solid #80808057;
         color: white;
     }
 
+    .dash {
+        display: none;
+    }
+
+    .DashContainer {
+        display: none;
+    }
+
+    .addressContainer {
+        width: auto !important;
+    }
+
+    .addressContainer ul {
+        padding: 0;
+    }
+
+}
+
+
+@media screen and (max-width:400px) {
+    .FormContainer {
+        width: 100%;
+    }
+
+    .iconsdiv {
+        display: none;
+    }
+
+    .headerContainer {
+        padding: 50px 0px;
+    }
+}
+
+
+
+
+@media screen and (max-width:300px) {
+    .button {
+        flex-direction: column;
+    }
 }

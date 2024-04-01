@@ -451,3 +451,119 @@
     color: #c61a3c;
     margin: 0px;
 }
+
+/* For screens smaller than 992px (tablets and below) */
+@media (max-width: 992px) {
+    .Expansionsectionleft {
+      padding: 20px;
+    }
+  
+    .CitiesInfo {
+      flex-direction: column;
+    }
+  
+    .col-4 {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .Rightside {
+      padding: 20px;
+    }
+  
+    .ContactForm {
+      margin-left: 0;
+      margin-top: 0;
+    }
+    .USAIH5Box{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+  }
+  
+  /* For screens smaller than 576px (phones) */
+  @media (max-width: 575px) {
+    .Expansionsectionleft h3 {
+      font-size: 1.5rem;
+    }
+  
+    .USAContent span,
+    .USAContent p,
+    .UAEContent span,
+    .UAEContent p,
+    .PAKISTANContent span,
+    .PAKISTANContent p {
+      font-size: 12px;
+    }
+  
+    .ContactForm h2 {
+      font-size: 1.2rem;
+    }
+    .CitiesInfo {
+    
+        flex-direction: column;
+         display: flex;
+      align-items: center;
+      }
+      .USAIH5Box{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+  }
+
+  /* For screens smaller than 480px */
+@media (max-width: 480px) {
+    .Expansionsectionleft h3 {
+      font-size: 1.2rem;
+    }
+  
+    .CitiesInfo {
+    
+      flex-direction: column;
+       display: flex;
+    align-items: center;
+    }
+  
+    .col-4 {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .Rightside {
+      padding: 15px;
+    }
+  
+    .ContactForm {
+      margin-left: 0;
+      margin-top: 0;
+    }
+  
+    .ContactForm h2 {
+      font-size: 1rem;
+    }
+  
+    .Formgroup,
+    .Formgrouptextarea {
+      width: 100%;
+    }
+    .USAIH5Box{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+  }
+  
+  
+  /* For screens larger than 1200px */
+  @media (min-width: 1200px) {
+    /* Add your specific styles for larger screens if needed */
+  }
+  

@@ -10,10 +10,10 @@ const TermsConditionContent = () => {
                     <p className={`${styles.TermsConditionpara}`}>
                         The following terminology applies to these Terms and Conditions,
                         Privacy Statement and Disclaimer Notice and any or all Agreements:
-                        “Client”, “You” and “Your” refers to you, the person accessing this
-                        website and accepting the Company’s terms and conditions. “The
-                        Company”, “Ourselves”, “We” and 'Us', refers to our Company.
-                        “Party”, “Parties”, or “Us”, refers to both the Client and
+                        {"“Client”"}, {"“You”"} and “Your” refers to you, the person accessing this
+                        website and accepting the {"Company’s"} terms and conditions. “The
+                        {"Company”, “Ourselves”, “We” and 'Us', refers to our Company."}
+                        {"“Party”"}, {"“Parties”, or “Us”, refers to both the Client and"}
                         ourselves, or either the Client or ourselves. All terms refer to
                         the offer, acceptance and consideration of payment necessary to
                         undertake the process of our assistance to the Client in the most
@@ -55,7 +55,7 @@ const TermsConditionContent = () => {
                     <p className={`${styles.TermsConditionpara}`}>
                         The information on Digital Gravity’s web site is provided on an “as is” basis. To the fullest extent permitted by law, this Company: <br /><br />
 
-                        ● Excludes all representations and warranties relating to this website and its contents or which is or may be provided by any affiliates or any other third party, including in relation to any inaccuracies or omissions in this website and/or the Company’s literature; and <br /><br />
+                        ● Excludes all representations and warranties relating to this website and its contents or which is or may be provided by any affiliates or any other third party, including in relation to any inaccuracies or omissions in this website and/or the {"Company’s"} literature; and <br /><br />
 
                         ● Excludes all liability for damages arising out of or in connection with your use of this website. This includes, without limitation, direct loss, loss of business or profits (whether or not the loss of such profits was foreseeable, arose in the normal course of things or you have advised this Company of the possibility of such potential loss), damage caused to your computer, computer software, systems and programs and the data thereon or any other direct or indirect, consequential and incidental damages. <br /><br />
 
@@ -69,7 +69,7 @@ const TermsConditionContent = () => {
 
                     <h5 className={`${styles.TermsConditionheading}`}>LOG FILES</h5>
                     <p className={`${styles.TermsConditionpara}`}>
-                        We use IP addresses to analyze trends, administer the site, track user’s movement, and gather broad demographic information for aggregate use. IP addresses are not linked to personally identifiable information. Additionally, for systems administration, detecting usage patterns and troubleshooting purposes, our web servers automatically log standard access information including browser type, access times/open mail, URL requested, and referral URL. This information is not shared with third parties and is used only within this Company on a need-to-know basis. Any individually identifiable information related to this data will never be used in any way different to that stated above without your explicit permission.
+                        We use IP addresses to analyze trends, administer the site, track {"user’s"} movement, and gather broad demographic information for aggregate use. IP addresses are not linked to personally identifiable information. Additionally, for systems administration, detecting usage patterns and troubleshooting purposes, our web servers automatically log standard access information including browser type, access times/open mail, URL requested, and referral URL. This information is not shared with third parties and is used only within this Company on a need-to-know basis. Any individually identifiable information related to this data will never be used in any way different to that stated above without your explicit permission.
                     </p>
 
                     <h5 className={`${styles.TermsConditionheading}`}>COOKIES</h5>
@@ -85,7 +85,7 @@ const TermsConditionContent = () => {
 
                     <h5 className={`${styles.TermsConditionheading}`}>COPYRIGHT NOTICE</h5>
                     <p className={`${styles.TermsConditionpara}`}>
-                        Copyright and other relevant intellectual property rights exist on all text relating to the Company’s services and the full content of this website.
+                        Copyright and other relevant intellectual property rights exist on all text relating to the {"Company’s"} services and the full content of this website.
                     </p>
 
                     <h5 className={`${styles.TermsConditionheading}`}>NOTIFICATION OF CHANGES</h5>
