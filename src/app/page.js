@@ -29,7 +29,7 @@ import Footer from './component/Footer/component'
 import Worth__Read from './component/Work-Read/index'
 import Award from './component/Awards/components'
 import Social from './component/SocialJoin/component'
-import ReactPlayer from "react-player";
+// import ReactPlayer from "react-player";
 // import videosrc from './assets/videos/home.mp4'
 
 

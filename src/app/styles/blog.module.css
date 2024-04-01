@@ -164,6 +164,15 @@
   .blogTabBox {
     width: 45% !important;
   }
+  #TabList {
+    flex-wrap: wrap;
+    justify-content: center; 
+  }
+
+  #TabList li {
+    width: 100%; 
+    margin: 5px; 
+  }
 }
 
 @media screen and (max-width: 768px) {
