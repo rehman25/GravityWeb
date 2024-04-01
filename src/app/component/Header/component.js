@@ -560,6 +560,71 @@ const Page = () => {
           <div className={Style.ExpertBtn} onClick={handleContactForm}>
             <span>Speak to an Expert</span>
           </div>
+          {iscontactForm ?
+            <div className={`${'row'} ${Style.FormRow}`}>
+              <div className={`col-12 ${Style.contactForm}`}>
+                <div className={`col-12 ${Style.Cross}`}>
+                  <span className={Style.CrosDiv} onClick={handleContactForm}>
+                    <ImCross className={Style.CrossIcon} />
+                  </span>
+                </div>
+                <div className={`col-12 ${Style.contactForm}`}>
+                  <h1>Speak to an Expert</h1>
+                  <form action="">
+                    <div className="row">
+                      <div className={`col-4 ${Style.InputBox}`}>
+                        <label htmlFor=""> Full Name*</label>
+                        <input type="text" name="name" id="" className={Style.ContactInput} />
+                      </div>
+                      <div className={`col-4 ${Style.InputBox}`}>
+                        <label htmlFor="">Company*</label>
+                        <input type="text" name="" id="" className={Style.ContactInput} />
+                      </div>
+                      <div className={`col-4 ${Style.InputBox}`}>
+                        <label htmlFor="">Email*</label>
+                        <input type="text" name="" id="" className={Style.ContactInput} />
+                      </div>
+                    </div>
+                    <div className="row mt-4">
+                      <div className={`col-4 ${Style.InputBox}`}>
+                        <label htmlFor="">Email*</label>
+                        <input type="text" name="" id="" className={Style.ContactInput} />
+                      </div>
+                      <div className={`col-4 ${Style.InputBox}`}>
+                        <label htmlFor="">Insterested</label>
+                        <select name="" id="" className={Style.ContactInput}>
+                          <option value="">{`I'm`} interested in</option>
+                          <option value="">Corporate Identity / Branding</option>
+                          <option value="">Company Profile / Brochure /E-Magazine</option>
+                          <option value="">6000-9000 AED</option>
+                        </select>
+                      </div>
+                      <div className={`col-4 ${Style.InputBox}`}>
+                        <label htmlFor="">Budget</label>
+                        <select name="" id="" className={Style.ContactInput}>
+                          <option value="">Budget</option>
+                          <option value="">0-3000 AED</option>
+                          <option value="">3000-6000 AED</option>
+                          <option value="">6000-9000 AED</option>
+                        </select>
+
+                      </div>
+                    </div>
+                    <div className="row mt-4">
+                      <div className="col-12">
+                        <textarea name="" id="" cols="118" rows="15" className={Style.ContactInput} placeholder='Message' />
+                      </div>
+                    </div>
+                    <div className="row mt-4">
+                      <div className="col-12">
+                        <button className={Style.submitbtn}>Submit</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div> : ""
+          }
           <div className={Style.ExpertWhatsapp}>
             <RiWhatsappFill />
           </div>
@@ -717,7 +782,7 @@ const Page = () => {
         </div>
       </div>
 
-
+      {/*
       {iscontactForm ?
         <div className={`${'row'} ${Style.FormRow}`}>
           <div className={`col-12 ${Style.contactForm}`}>
@@ -782,7 +847,7 @@ const Page = () => {
             </div>
           </div>
         </div> : ""
-      }
+      } */}
      
     </div>
   )
