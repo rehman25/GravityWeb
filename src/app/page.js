@@ -30,21 +30,31 @@ import Worth__Read from './component/Work-Read/index'
 import Award from './component/Awards/components'
 import Social from './component/SocialJoin/component'
 import ReactPlayer from "react-player";
-// import videosrc from './assets/videos/home.mp4'
+// import videosrc from './assets/videos/'
 
 
 const Page = () => {
   const [isActive, setActive] = useState("Web_Dev")
-  // let videosrc = "./assets/videos/home.mp4";
+  let videosrc = "./assets/videos/home.mp4";
 
   return (
     <div className={style.home}>
       <Cursor />
       <Header />
       <section>
-        <div className={`${style.heroSection} container-fluid`}>
-          <div className="row mt-5" style={{ width: "100%" }}>
-            <div className='col-lg-12' style={{ position: "relative" }}>
+        <div className={`${style.heroSection} container-fluid p-0`}>
+          {/*  */}
+          <div className="row mt-5 mx-0 p-0" style={{ width: "100%" }}>
+            <div className={`col-lg-12 p-0 ${style.videoBox}`}>
+              <ReactPlayer url="https://dg-demo.logomish.com/videos/home.mp4"
+                width={"100"} height={"80"}
+                onReady onStart onPlay loop
+                style={{
+                  position: "absolute",
+                  top: "0"
+                }}
+              />
+
               <div className={`${style.heroRightSide}`}>
                 <span className={`${style.heroHeadOne}`}>CONNECTING BRANDS</span>
                 <span className={`${style.heroHeadTwo}`}>WITH GLOBAL</span>
@@ -59,6 +69,7 @@ const Page = () => {
                   <span><FaYoutube /></span>
                 </ul>
               </div>
+
             </div>
             <div className='col-lg-12 mt-5' >
               <div className="col-lg-6">
