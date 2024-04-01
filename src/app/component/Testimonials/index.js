@@ -10,10 +10,10 @@ import Image from 'next/image';
 const Testimonials = () => {
     return (
         <>
-                <div className={`container-fluid mt-3 pb-5`}>
+                <div className={`container-fluid mt-5 pb-5`}>
                     <div className="row">
                         <div className={`${styles.testimonialheader}`}>
-                            <h1>Testimonial</h1>
+                            <h1>Testimonials</h1>
                             <p>What Our <span className={`${styles.testimonialheadersub}`}> Clients </span> are saying about us</p>
                         </div>
                         <div className='col-12 mt-5'>
