@@ -72,7 +72,7 @@
 
 }
 .HeaderUl li:hover{
-   border-bottom: 2px solid #e3204a;
+   /* border-bottom: 2px solid #e3204a; */
 }
 .HeaderUl li a:hover{
    color: #e3204a;
