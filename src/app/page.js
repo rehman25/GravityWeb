@@ -49,10 +49,6 @@ const Page = () => {
               <ReactPlayer url="https://dg-demo.logomish.com/videos/home.mp4"
                   width={"100"} height={"80"}
                  playing controls
-                  style={{
-                    position: "absolute",
-                    top: "0", 
-                  }}
                 />
              </div>
               <div className={`${style.heroRightSide}`}>
