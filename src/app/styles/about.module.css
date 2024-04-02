@@ -211,7 +211,7 @@
 /* MASONRY LAYOUT CSS Section ============================ */
 
 .grid__wrapper {
-  animation: duplicateItem 5s infinite linear;
+  animation: duplicateItem 50s infinite linear;
 }
 
 @keyframes duplicateItem {
