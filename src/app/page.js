@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useState , useEffect } from 'react'
 import Link from 'next/link'
 import style from './styles/home.module.css'
 import Image from 'next/image';
@@ -30,15 +30,31 @@ import Worth__Read from './component/Work-Read/index'
 import Award from './component/Awards/components'
 import Social from './component/SocialJoin/component'
 import ReactPlayer from "react-player";
+
 // import videosrc from './assets/videos/'
 
 
 const Page = () => {
+  const [isScroll , setScroll] = useState(false)
+  useEffect(() => {
+    const handleScroll = () => {
+      setScroll(true)
+      console.log('Scrolled!');
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
   const [isActive, setActive] = useState("Web_Dev")
   let videosrc = "./assets/videos/home.mp4";
 
   return (
-    <div className={style.home}>
+    <div className={isScroll ? style.home : style.home}>
       <Cursor />
       <Header />
       <section>
