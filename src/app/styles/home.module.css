@@ -2,23 +2,47 @@
     width: 100%;
     overflow-x: clip;
 }
-.heroSection {
-    background-image: url(../assets/images/banner/bannner.jpg) !important;
-    background-size: cover !important;
-    height: 700px;
-    width: 100%;
-    background-blend-mode: overlay !important;
-    background: #000000bd;
+
+.videoBox{
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 759px;
+    width: 100%;
+}
+/* .heroSection:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0 0 0 / 42%);
+    background-blend-mode: overlay;
+} */
+.videoFrame::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgb(0 0 0 / 42%); */
+    background-blend-mode: overlay;
+}
+.videoFrame > div {
+    position: absolute;
+    top: 0;
+    height: 100%
 }
 
 .heroRightSide {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    z-index: 999;
+    position: relative;
+    height: inherit;
+    justify-content: center;
+    padding-right: 20px;
 }
 
 .heroRightSide span {
@@ -37,6 +61,11 @@
 }
 .heroLeftSide{
     padding-left: 100px;
+    position: absolute;
+    top: 82px;
+    display: flex;
+    height: inherit;
+    align-items: center;
 }
 .heroLeftSide p{
     font-weight: 400;
@@ -50,6 +79,11 @@
     position: absolute;
     left: 10px;
     top: 0;
+    display: flex;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
 }
 
 .heroSectionIcons ul {
@@ -227,6 +261,11 @@
     }
 }
 
+@media screen and (max-width:1350px){
+    .videoBox{
+        height: 600px;
+    }
+}
 @media screen and (max-width:992px){
     .heroRightSide span {
         font-size: 40px;
@@ -265,17 +304,51 @@
 }
 
 @media screen and (max-width:768px){
+    .videoBox{
+        height: 700px;
+        background: linear-gradient(to right, #5672A1, #2B1E47); /* Example gradient from orange to pink */
+    }
+    .videoFrame{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 700px;
+        position: absolute;
+        left: 20px;
+        width: 100%;
+    }
+    .videoFrame video{
+        width: 45% !important;
+        height: auto !important;
+    }
+    .videoFrame > div {
+        position: absolute;
+        top: auto !important;
+        height: auto !important;
+    }
     .heroRightSide {
         align-items: center;
     }
     .heroRightSide span {
         text-align: center;
+        font-size: 28px;
+        line-height: 30px;
     }
     .heroSectionIcons{
         display: none;
     }
     .heroLeftSide{
         padding-left: 0;
+    }
+    .heroLeftSide div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .heroLeftSide p{
+        text-align: center;
+        margin-top: 40px;
     }
     .homeTabmainBox {
         padding: 40px 20px;
@@ -296,13 +369,18 @@
 }
 
 @media screen and (max-width:480px){
-    .heroSection{
-        height: 500px;
-    }
     .heroRightSide span{
         font-size: 30px;
     }
     .servicesListBox ul li{
         font-size: 15px;
+    }
+    .videoFrame video{
+        width: 80% !important;
+        height: auto !important;
+    }
+    .heroRightSide span {
+        font-size: 22px;
+        line-height: 22px;
     }
 }

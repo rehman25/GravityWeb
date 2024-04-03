@@ -24,7 +24,7 @@ const AboutCarts = () => {
                                         <div className="col-sm-12">
                                             <div className={`${style.cartBox1}`}>
                                                 <h2 className={`${style.cartTitle}`}>We Are Different</h2>
-                                                <p className={`${style.cartDescription}`}>Our creative expertise and approach take off from where others left for greater outcomes.</p>
+                                                <p className={`${style.cartDescription}`}>Our creative expertise and approach take off from where others left for greater outcome.</p>
                                             </div>
                                         </div>
                                         <div className="col-sm-12">

@@ -29,22 +29,28 @@ import Footer from './component/Footer/component'
 import Worth__Read from './component/Work-Read/index'
 import Award from './component/Awards/components'
 import Social from './component/SocialJoin/component'
-// import ReactPlayer from "react-player";
-// import videosrc from './assets/videos/home.mp4'
+import ReactPlayer from "react-player";
+// import videosrc from './assets/videos/'
 
 
 const Page = () => {
   const [isActive, setActive] = useState("Web_Dev")
-  // let videosrc = "./assets/videos/home.mp4";
+  let videosrc = "./assets/videos/home.mp4";
 
   return (
     <div className={style.home}>
       <Cursor />
       <Header />
       <section>
-        <div className={`${style.heroSection} container-fluid`}>
-          <div className="row mt-5" style={{ width: "100%" }}>
-            <div className='col-lg-12' style={{ position: "relative" }}>
+        <div className={`${style.heroSection} container-fluid p-0`}>
+          <div className="row mt-5 mx-0 p-0" style={{ width: "100%" }}>
+            <div className={`col-lg-12 p-0 ${style.videoBox}`}>
+             <div className={`${style.videoFrame}`}>
+              <ReactPlayer url="https://dg-demo.logomish.com/videos/home.mp4"
+                  width={"100"} height={"80"}
+                 playing controls
+                />
+             </div>
               <div className={`${style.heroRightSide}`}>
                 <span className={`${style.heroHeadOne}`}>CONNECTING BRANDS</span>
                 <span className={`${style.heroHeadTwo}`}>WITH GLOBAL</span>
@@ -59,10 +65,8 @@ const Page = () => {
                   <span><FaYoutube /></span>
                 </ul>
               </div>
-            </div>
-            <div className='col-lg-12 mt-5' >
-              <div className="col-lg-6">
-                <div className={`${style.heroLeftSide}`}>
+              <div className={`${style.heroLeftSide} col-lg-6 mt-5`}>
+                <div>
                   <p>
                     You have an idea, we have the talent and resources to turn it into a reality.
                     Digital Gravity is a globally recognized digital agency elevating brands through
@@ -72,6 +76,7 @@ const Page = () => {
                 </div>
               </div>
             </div>
+        
           </div>
         </div>
       </section>

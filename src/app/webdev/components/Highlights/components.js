@@ -48,7 +48,7 @@ const Components = () => {
                     <div className={styles.hightbox}>
                         <h4>Key Highlights Our Work In Numbers.</h4>
                         <div className={`row ${styles.box}`}>
-                            <div className={`col-4 p-0 ${styles.boxe1}`}>
+                            <div className={`col-4  p-0 ${styles.boxe1}`}>
                                 <p>Happy Clients</p>
                                 <h2>265+</h2>
                             </div>
@@ -56,7 +56,7 @@ const Components = () => {
                                 <p>Projects Completed</p>
                                 <h2>265+</h2>
                             </div>
-                            <div className={`col-4 p-0 ${styles.boxe3}`}>
+                            <div className={`col-4p-0 ${styles.boxe3}`}>
                                 <p>Years of experience</p>
                                 <h2>265+</h2>
                             </div>
@@ -66,7 +66,7 @@ const Components = () => {
                 </div>
             </div>
             <div className={`row mt-5 ${styles.row2}`}>
-                <div className={`col-lg-3 col-md-4  ${styles.col}`} onMouseEnter={HandlePlanning} onMouseLeave={HoverLeave}>
+                <div className={`col-lg-3 col-md-4 col-sm-4  ${styles.col}`} onMouseEnter={HandlePlanning} onMouseLeave={HoverLeave}>
                     <div className={isPlanning ? styles.cardHover :styles.card}>
                         <div className={styles.CardHead}>
                             <span className={isPlanning ? styles.cardImageHover :styles.cardImage}>
@@ -86,7 +86,7 @@ const Components = () => {
 
                     </div>
                 </div>
-                <div className={`col-lg-3 col-md-4 ${styles.col}`}  onMouseEnter={HandleDevelopment} onMouseLeave={HoverLeave}>
+                <div className={`col-lg-3 col-md-4 col-sm-4 ${styles.col}`}  onMouseEnter={HandleDevelopment} onMouseLeave={HoverLeave}>
                     <div className={isDevelopment ? styles.cardHover : styles.card}>
                         <div className={styles.CardHead}>
                             <span className={isDevelopment ? styles.cardImageHover : styles.cardImage}>
@@ -106,7 +106,7 @@ const Components = () => {
 
                     </div>
                 </div>
-                <div className={`col-lg-3 col-md-4 ${styles.col}`} onMouseEnter={HandleTesting} onMouseLeave={HoverLeave}>
+                <div className={`col-lg-3 col-md-4 col-sm-4 ${styles.col}`} onMouseEnter={HandleTesting} onMouseLeave={HoverLeave}>
                     <div className={isTesting ? styles.cardHover : styles.card}>
                         <div className={styles.CardHead}>
                             <span className={isTesting ? styles.cardImageHover : styles.cardImage}>
@@ -126,7 +126,7 @@ const Components = () => {
 
                     </div>
                 </div>
-                <div className={`col-lg-3 col-md-4 ${styles.col}`} onMouseEnter={HandleDeployement} onMouseLeave={HoverLeave}>
+                <div className={`col-lg-3 col-md-4 col-sm-4 ${styles.col}`} onMouseEnter={HandleDeployement} onMouseLeave={HoverLeave}>
                     <div className={isDeployement ? styles.cardHover : styles.card}>
                         <div className={styles.CardHead}>
                             <span className={isDeployement ? styles.cardImageHover : styles.cardImage}>

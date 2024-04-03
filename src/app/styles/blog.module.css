@@ -53,9 +53,12 @@
   font-size: 16px;
 }
 
-.banneraboutsection .bannertextrightside span {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
+.bannertextrightside span {
+  font-size: 16px;
+  font-family: Montserrat,sans-serif;
+  font-weight: 400;
+  color: #fff;
+  line-height: 1.5;
 }
 
 #TabList {
@@ -137,10 +140,10 @@
 
 @media screen and (max-width: 1024px) {
   .bannertextleftside {
-    margin: 30px;
+    margin: 20px;
   }
   .bannertextleftside h1 {
-    font-size: 30px;
+    font-size: 25px;
   }
   .bannertextrightside {
     padding: 30px;
@@ -160,6 +163,15 @@
   }
   .blogTabBox {
     width: 45% !important;
+  }
+  #TabList {
+    flex-wrap: wrap;
+    justify-content: center; 
+  }
+
+  #TabList li {
+    width: 100%; 
+    margin: 5px; 
   }
 }
 

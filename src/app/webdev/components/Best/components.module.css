@@ -66,6 +66,18 @@
     margin-left: 10px;
 }
 
+.MobileChlidActive{
+     /* color: #c61a3c; */
+    display: flex;
+    align-items: center;
+    /* border-bottom: 1px solid lightslategrey; */
+     font-family: "Montserrat", sans-serif;
+     font-weight: 500;
+     font-size: 14px;
+     padding: 5px 0px;
+       color: #c61a3c;
+    /* margin-left: 10px; */
+}
 .ul{
     display: flex;
     align-items: center;
@@ -110,6 +122,15 @@
      font-family: "Montserrat", sans-serif;
       font-weight: 600;
       font-size: 20px;
+        padding: 5px 0px;
+}
+.Mobilechlidlist{
+        display: flex;
+    align-items: center;
+    /* border-bottom: 1px solid lightslategrey; */
+     font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      font-size: 14px;
         padding: 5px 0px;
 }
 
