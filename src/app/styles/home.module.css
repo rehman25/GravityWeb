@@ -66,6 +66,7 @@
     display: flex;
     height: inherit;
     align-items: center;
+    z-index: 999;
 }
 .heroLeftSide p{
     font-weight: 400;

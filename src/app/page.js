@@ -1,5 +1,7 @@
 'use client'
 import React, { useState } from 'react'
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import Link from 'next/link'
 import style from './styles/home.module.css'
 import Image from 'next/image';
@@ -30,12 +32,17 @@ import Worth__Read from './component/Work-Read/index'
 import Award from './component/Awards/components'
 import Social from './component/SocialJoin/component'
 import ReactPlayer from "react-player";
+
 // import videosrc from './assets/videos/'
 
 
 const Page = () => {
   const [isActive, setActive] = useState("Web_Dev")
   let videosrc = "./assets/videos/home.mp4";
+  const boxVariant = {
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+    hidden: { opacity: 0, scale: 0 }
+  };
 
   return (
     <div className={style.home}>
@@ -46,9 +53,15 @@ const Page = () => {
           <div className="row mt-5 mx-0 p-0" style={{ width: "100%" }}>
             <div className={`col-lg-12 p-0 ${style.videoBox}`}>
              <div className={`${style.videoFrame}`}>
-              <ReactPlayer url="https://dg-demo.logomish.com/videos/home.mp4"
+              <ReactPlayer 
+                  url="https://dg-demo.logomish.com/videos/home.mp4"
                   width={"100"} height={"80"}
-                 playing controls
+                  playing="playing"
+                  preload="true"
+                  autoplay="true" 
+                  muted="true"
+                  loop="true"
+                  playsInline={true}
                 />
              </div>
               <div className={`${style.heroRightSide}`}>
