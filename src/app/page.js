@@ -1,7 +1,7 @@
 'use client'
-import React, { useState } from 'react'
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import React, { useState , useEffect } from 'react'
+// import { motion, useAnimation } from "framer-motion";
+// import { useInView } from "react-intersection-observer";
 import Link from 'next/link'
 import style from './styles/home.module.css'
 import Image from 'next/image';
@@ -37,6 +37,21 @@ import ReactPlayer from "react-player";
 
 
 const Page = () => {
+  const [isScroll , setScroll] = useState(false)
+  useEffect(() => {
+    const handleScroll = () => {
+      setScroll(true)
+      console.log('Scrolled!');
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
   const [isActive, setActive] = useState("Web_Dev")
   let videosrc = "./assets/videos/home.mp4";
   const boxVariant = {
@@ -45,7 +60,7 @@ const Page = () => {
   };
 
   return (
-    <div className={style.home}>
+    <div className={isScroll ? style.home : style.home}>
       <Cursor />
       <Header />
       <section>
