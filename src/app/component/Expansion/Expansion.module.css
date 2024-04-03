@@ -422,8 +422,30 @@
     margin: 0px 0px 1.5em 3.5em;
 }
 
-.formpara b{
+.formpara .Career{
     color: #c61a3c;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+}
+
+.formpara .Career::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    display: block;
+    height: 2px;
+    left: 60%;
+    position: absolute;
+    width: 0;
+    background-color: transparent;
+    transition: width 0.5s ease 0s, left 0.5s ease 0s;
+}  
+
+.formpara .Career:hover::after {
+    background-color: #363636;
+    width: 100%; 
+    left: 0; 
 }
 
 .iconName{

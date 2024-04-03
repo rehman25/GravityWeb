@@ -346,11 +346,11 @@ const Components = () => {
                                         {slides[currentSlide].text === "Business Consulting" && (
                                             <p>We evaluate our level of success based on your satisfaction. With our creative services, we have helped several Business Consulting services in Dubai reach new heights and grow their client base.</p>
                                         )}
-                                        {slides[currentSlide].text === "Education" && (
-                                            <p>Our expert web developers have designed beautiful education websites, mobile apps, and eLearning portals for our clients. Our clients’ substantial growth through these channels reflects the quality of our work. </p>
+                                        {slides[currentSlide].text === "Manufacturing" && (
+                                            <p>Many of our clients come from the manufacturing industry.Besides web support, all of them require assistance in the marketing of their products and services.</p>
                                         )}
-                                        {slides[currentSlide].text === "Manufactuing" && (
-                                            <p> Many of our clients come from the manufacturing industry. Besides web support, all of them require assistance in the marketing of their products and services.   </p>
+                                        {slides[currentSlide].text === "Education" && (
+                                            <p>Our expert web developers have designed beautiful education websites, mobile apps, and eLearning portals for our clients. Our clients’ substantial growth through these channels reflects the quality of our work.</p>
                                         )}
                                         {slides[currentSlide].text === "Health Care" && (
                                             <p>Our team is responsible for website maintenance, support, and search engine optimization of some of the leading healthcare providers in Dubai including Capital Health Screening Service. </p>

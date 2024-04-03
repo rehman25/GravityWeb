@@ -117,54 +117,11 @@ const Components = () => {
                   </div>
 
                   <p className={styles.formpara}>if you have any RFP requirement please share with us at <b> discover@digitalgravity.ae</b> and if you are looking for a career related enquiry please check our 
-                    <b>Career</b>section.</p>
+                    <b className={styles.Career}> Career</b> section.</p>
                 </div>
               </form>
             </div>
           </div>
-          {/*   <div className={`col-lg-6 mt-5 p-5 ${styles.Expansionsectionright}`}>
-            <div className={styles.FormContainer}>
-              <form action="" className={styles.ContactForm}>
-                <h3>Got an Idea? <br />  <span className={`${styles.Expansionheaderrightsub}`}> Let’s get started </span> </h3>
-                <h4> Fill out the Form </h4>
-                <div className={`row ${styles.row}`}>
-                  <div className={`${styles.Formgroup} col-md-6`}>
-                    <label htmlFor="" className={styles.label}>Your Name*</label>
-                    <input type="text" className={` ${styles.Input}`} id="exampleInputEmail1" aria-describedby="emailHelp" placeholder='Enter Your Name' />
-                  </div>
-                  <div className={`${styles.Formgroup} col-md-6`}>
-                    <label htmlFor="" className={styles.label}>Your Email*</label>
-                    <input type="text" className={` ${styles.Input}`} id="exampleInputEmail1" aria-describedby="emailHelp" placeholder='Enter Your Email' />
-                  </div>
-                </div>
-                <div className={`row ${styles.row}`}>
-                  <div className={`${styles.Formgroup} col-md-6`}>
-                    <label htmlFor="" className={styles.label}>Your Phone Number*</label>
-                    <input type="text" className={` ${styles.Input}`} id="exampleInputEmail1" aria-describedby="emailHelp" placeholder='Enter Your phone number' />
-                  </div>
-                  <div className={`${styles.Formgroup} col-md-6`}>
-                    <label htmlFor="" className={styles.label}>Budget</label>
-                    <select name="" id="" className={` ${styles.Input}`}>
-                      <option value="">Budget</option>
-                      <option value="">3000 AED - 6000 AED</option>
-                      <option value="">6000 AED - 8000 AED</option>
-                    </select>
-                  </div>
-                </div>
-                <div className={styles.Formgrouptextarea}>
-                  <label htmlFor="" className={styles.label}>Your Message</label>
-                  <textarea name="" id="" cols="60" rows="5" className={styles.textarea} placeholder='Type Here' />
-                </div>
-                <div className={styles.button}>
-                  <span className={styles.sendtext}>Send</span>
-                  <span className={styles.sendIcon}>
-                    <FaArrowRight className={styles.sIcon} />
-                  </span>
-                  <p className={styles.formpara}>if you have any RFP requirement please share with us at discover@digitalgravity.ae and if you are looking for a career related enquiry please check our Career section.</p>
-                </div>
-              </form>
-            </div>
-          </div> */}
         </div>
       </div >
     </section >
