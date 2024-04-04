@@ -7,14 +7,11 @@
 
 }
 
-<<<<<<< HEAD
-=======
 
 .heroSection {
     background-blend-mode: overlay !important;
     background:rgba(0, 0, 0, 0.158) !important;
 }
->>>>>>> 5a796d2ea7b347614c1cf5842ec4bfed36723854
 .videoBox{
     position: relative;
     height: 759px;

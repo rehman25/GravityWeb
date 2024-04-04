@@ -15,9 +15,9 @@ const Tabsss = () => {
           <div className="row p-0">
             <div className="col-lg-12 p-0">
               <div>
-                <Tabs style={{ }}>
+                <Tabs style={{}}>
                   <TabList id={`${style.TabList}`}>
-                  <Tab style={{ backgroundColor: '#E3204A', color: '#f2f2f2' }}>All</Tab>
+                    <Tab style={{ backgroundColor: '#E3204A', color: '#f2f2f2' }}>All</Tab>
                     <Tab>Branding</Tab>
                     <Tab>UI/UX</Tab>
                     <Tab>Development</Tab>
@@ -26,1043 +26,1063 @@ const Tabsss = () => {
                   </TabList>
                   <>
                     <TabPanel className={`${style.TabPanel}`}>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
+                      </div>
                     </TabPanel>
                     <TabPanel className={`${style.TabPanel}`}>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
+                      </div>
                     </TabPanel>
                     <TabPanel className={`${style.TabPanel}`}>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
+                      </div>
                     </TabPanel>
                     <TabPanel className={`${style.TabPanel}`}>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
+                      </div>
                     </TabPanel>
                     <TabPanel className={`${style.TabPanel}`}>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
+                      </div>
                     </TabPanel>
                     <TabPanel className={`${style.TabPanel}`}>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
-                        <div className={`col-3 ${style.blogTabBox}`}>
-                          <Image
-                            src={img}
-                            alt="Example Image"
-                          />
-                          <div>
-                            <div className={`${style.blogTabsDesBox}`}>
-                              <h6>PPC</h6>
-                              <span>March 15, 2024</span>
-                            </div>
-                            <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
-                            <p>
-                              It is a cut-throat industry where engaging your audience and
-                              pursuing them to convert is more challenging than ever.
-                              However, there is a strategy that can give you the desired
-                              returns of your efforts and that is remarketing.
-                            </p>
+                      </div>
+                      <div className={`col-3 ${style.blogTabBox}`}>
+                        <Image
+                          src={img}
+                          alt="Example Image"
+                        />
+                        <div>
+                          <div className={`${style.blogTabsDesBox}`}>
+                            <h6>PPC</h6>
+                            <span>March 15, 2024</span>
                           </div>
+                          <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                          <p>
+                            It is a cut-throat industry where engaging your audience and
+                            pursuing them to convert is more challenging than ever.
+                            However, there is a strategy that can give you the desired
+                            returns of your efforts and that is remarketing.
+                          </p>
                         </div>
+                      </div>
                     </TabPanel>
+
+                    <div className={`col-12 ${style.blogTabBoxSlider}`}>
+                      <Image
+                        src={img}
+                        alt="Example Image"
+                      />
+                      <div>
+                        <div className={`${style.blogTabsDesBox}`}>
+                          <h6>PPC</h6>
+                          <span>March 15, 2024</span>
+                        </div>
+                        <div className={`${style.overFlow}`}>The Power Of Remarketing In PPC Advertising</div>
+                        <p>
+                          It is a cut-throat industry where engaging your audience and
+                          pursuing them to convert is more challenging than ever.
+                          However, there is a strategy that can give you the desired
+                          returns of your efforts and that is remarketing.
+                        </p>
+                      </div>
+                    </div>
                   </>
                 </Tabs>
               </div>

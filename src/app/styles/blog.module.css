@@ -136,6 +136,54 @@
 
 .blogTabBox {
   width: 29% !important;
+} 
+
+.blogTabBoxSlider {
+  box-shadow: -2px -2px 10px gray;
+  margin: 15px;
+  border-radius: 5px;
+}
+
+.blogTabBoxSlider img {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.blogTabBoxSlider .blogTabsDesBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.blogTabBoxSlider .blogTabsDesBox h6 {
+  font-weight: 600;
+  font-size: .95em;
+}
+
+.blogTabBoxSlider .blogTabsDesBox span {
+  font-weight: 600;
+  font-size: .85em;
+}
+
+.blogTabBoxSlider .overFlow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: .80em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  padding: 6px 9px;
+}
+
+.blogTabBoxSlider p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: .80em;
+  font-family: "Montserrat", sans-serif;
+  padding: 0px 7px 20px 10px;
 }
 
 @media screen and (max-width: 1024px) {
