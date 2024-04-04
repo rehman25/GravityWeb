@@ -6,7 +6,6 @@
 .read__box {
     padding: 0 20px;
     position: relative;
-    /* border-bottom: 2px solid red; */
 }
 .read__box .read__img{
     width: 100%;
@@ -14,7 +13,6 @@
     object-fit: cover;
 }
 .read__box h5::after{
-    /* bottom: 37px; */
     content: "";
     position: absolute;
     height: 2px;
@@ -22,14 +20,6 @@
     width: 100%;
     background: #e3204a;
 }
-/* .read__box div:after{
-    bottom: 37px;
-    content: "";
-    position: absolute;
-    height: 4px;
-    width: 100%;
-    background: red;
-} */
 .read__box div{
     display: flex;
     margin-top: 20px;
@@ -50,5 +40,31 @@
     line-height: 1.3;
     font-family: "Montserrat", sans-serif;
 }
+ .info__hand{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ .info__hand img{
+    height: 15px;
+    width: 15px;
+    animation: moveLeftToRight 2s linear infinite; /* Adjust duration and timing function as needed */
+}
+ .info__hand span{
+    margin-top: 10px;
+    font-size: 0.75em;
+    color: gray;
+}
 
+@keyframes moveLeftToRight {
+    0% {
+      transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(1%);
+    }
+    100% {
+      transform: translateX(200%);
+    }
+  }
 

@@ -33,34 +33,12 @@ import Award from './component/Awards/components'
 import Social from './component/SocialJoin/component'
 import ReactPlayer from "react-player";
 
-// import videosrc from './assets/videos/'
-
-
 const Page = () => {
-  const [isScroll , setScroll] = useState(false)
-  useEffect(() => {
-    const handleScroll = () => {
-      setScroll(true)
-      console.log('Scrolled!');
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-
   const [isActive, setActive] = useState("Web_Dev")
-  let videosrc = "./assets/videos/home.mp4";
-  const boxVariant = {
-    visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
-    hidden: { opacity: 0, scale: 0 }
-  };
+ 
 
   return (
-    <div className={isScroll ? style.home : style.home}>
+    <div className={`${style.home}`}>
       <Cursor />
       <Header />
       <section>
