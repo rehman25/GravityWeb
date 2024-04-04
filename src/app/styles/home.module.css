@@ -1,8 +1,20 @@
 .home{
     width: 100%;
     overflow-x: clip;
+    scroll-behavior: smooth;
+
+
+
 }
 
+<<<<<<< HEAD
+=======
+
+.heroSection {
+    background-blend-mode: overlay !important;
+    background:rgba(0, 0, 0, 0.158) !important;
+}
+>>>>>>> 5a796d2ea7b347614c1cf5842ec4bfed36723854
 .videoBox{
     position: relative;
     height: 759px;
@@ -66,6 +78,7 @@
     display: flex;
     height: inherit;
     align-items: center;
+    z-index: 999;
 }
 .heroLeftSide p{
     font-weight: 400;

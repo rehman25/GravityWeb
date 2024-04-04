@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
+
 /* body,section{
     overflow-x: clip;
 } */
@@ -178,6 +179,11 @@ span {
 }
 .devTech .slick-dots li button::before{
     display: none;
+}
+
+/* FAQS SLIDER CSS =============== */
+.faqs_slider .slick-slide{
+    padding: 0 30px;
 }
 /* ==================================================== */
 @media screen and (max-width:992px){
