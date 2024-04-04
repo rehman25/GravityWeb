@@ -11,12 +11,12 @@ const Text = ({
 }) => {
     useEffect(() => {
         AOS.init({
-              duration: 1000
+              duration: 2000
         });
     }, []);
     return (
         <>
-            <h5 className={`${style.h5} ${className}`} data-aos={animation} >{text}</h5>
+            <h3 className={`${style.h5} ${className}`} data-aos={animation} >{text}</h3>
         </>
     )
 }

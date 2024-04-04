@@ -1,7 +1,6 @@
 .bgColor {
     padding: 0px;
     margin: 0px;
-    height: 100vh;
     background-image: url('../../assets/images//home//sec-bg.webp') !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -9,28 +8,48 @@
     background-blend-mode: overlay;
     background: #00000033;
 }
+.container{
+    padding: 20px;
+    height: 100vh;
+}
+
+.Text{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
+.leftContainer{
+    height: 100vh;
+
+}
 
 .leftHeading {
-    padding: 60px;
+    
+    padding: 30px 30px;
 }
 
 .leftHeading h2 {
+    
     color: #fff;
     letter-spacing: -.03em;
     animation: 0.5s ease-out 0s 1 normal forwards running anim;
-    font-weight: 500;
-    font-size: 1.75em;
-    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+    font-family: "Montserrat", sans-serif;
     color: #fff;
-    margin: 0 0 0.5em 0;
+    /* margin: 0 0 0.5em 0; */
     line-height: 1;
 }
 
+.leftHeading h2 p{
+    font-weight: 600;
+}
+
 .leftHeading p {
-    font-size: 1em;
-    font-family: Montserrat, sans-serif;
+    font-size: 1.25sem;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
-    margin: 0 0 1.5em 0;
+    /* margin: 0 0 1.5em 0; */
     color: #fff;
     line-height: 1.5;
 }
@@ -38,19 +57,22 @@
 .rightContainer {
     display: flex;
     align-items: flex-end;
+    height: 100vh;
+    padding: 100px 0px !important;
 }
 
 .imagecontainer {
     display: flex;
+ 
 }
 
 .picture {
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
     background-color: #fff;
-    padding: 20px;
+    padding: 15px;
     margin: 1px;
-    animation: fade-in-top 1s ease 0s 1 normal none
+    /* animation: fade-in-top 1s ease 0s 1 normal none */
 }
 
 @keyframes fade-in-top {
@@ -69,19 +91,43 @@
 
 .slideImg {
     width: 100%;
-    height: 10vh;
+    height: 100px;
 }
+
 
 
 
 @media screen and (max-width:992px) {
     .bgColor {
-        height: auto;
         padding: 40px;
     }
 
     .leftHeading {
         padding: 20px 0px;
+    }
+    .leftContainer{
+       height: 0vh;     
+    }
+    .rightContainer{
+        height: 100vh;
+        padding: 50px 0px !important;
+
+    }
+}
+@media screen and (max-width:767px) {
+    .bgColor {
+        padding: 40px;
+    }
+
+    .leftHeading {
+        padding: 20px 0px;
+    }
+    .leftContainer{
+       height: 50vh;     
+    }
+    .rightContainer{
+        height: 50vh;
+        padding: 0px !important;
     }
 }
 @media screen and (max-width:480px) {
@@ -89,12 +135,28 @@
         padding: 20px;
     }
     .picture img{
-        height: auto;
+        height: 50px;
+    }
+    
+    .leftHeading {
+        padding: 0px;
     }
     .leftHeading h2 {
         font-size: 1.20em;
     }
     .leftHeading p {
         font-size: 0.65em;
+    }
+       .leftContainer{
+       height: 25vh;     
+       padding: 0px;
+    }
+    .rightContainer{
+        height: 25vh;
+        padding: 0px !important;
+    }
+    .container{
+        height: 50vh;
+        padding: 0px;
     }
 }
