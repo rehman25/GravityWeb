@@ -19,6 +19,7 @@
     margin: 0;
     letter-spacing: .625em;
     font-weight: 500;
+    font-family: "Montserrat", sans-serif;
 }
 
 .heading span {
@@ -26,6 +27,7 @@
     margin: 0;
     font-size: 3em;
     font-weight: 200;
+    font-family: "Montserrat", sans-serif;
 }
 
 .socialIcon {
@@ -40,6 +42,7 @@
 
 .socialrow {
     display: flex;
+    flex-direction: column;
     width: 100%;
 }
 
@@ -53,8 +56,19 @@
     background-size: cover;
     background-repeat: no-repeat;
     padding: 10px;
-    height: 200px;
+    height: 225px;
+    width: 20%;
 }
+
+.bgBox1{
+    height: 225px;
+    width: 40%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+}
+
 
 .Youtube {
     background-image: url('../../assets/images/home/social-img-youtube.webp');

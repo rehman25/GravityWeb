@@ -210,6 +210,9 @@ const Page = () => {
   const ActiveResource = {
     color: isResourceCollapsed ? 'black' : 'red',
   }
+
+
+  
   return (
 
     <div className={`container-fluid ${Style.Container}`} onMouseLeave={offHover}>
