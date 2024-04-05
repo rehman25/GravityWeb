@@ -11,6 +11,7 @@ import four from '../../assets/images/blog/blog4.webp'
 import five from '../../assets/images/blog/blog5.webp'
 import Image from 'next/image';
 import Text from '../text';
+import hand_direction_img from '../../assets/images/icons/drag-img.svg'
 
 
 const index = () => {
@@ -21,8 +22,16 @@ const index = () => {
                     <div className="row">
                         <div className="col-lg-12">
                             <div>
-                            <Text text="Worth a read" className="mb-5" animation="fade-right" />
+                                <Text text="Worth a read" className="mb-5" animation="fade-right" />
+
                                 <WorthRead />
+                                <div className={`${style.info__hand}`}>
+                                    <Image
+                                        src={hand_direction_img}
+                                        alt="Example Image"
+                                    />
+                                    <span>Drag to see more</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -37,7 +46,7 @@ export default index
 class WorthRead extends Component {
     render() {
         const settings = {
-            dots: false,
+            dots: true,
             infinite: true,
             autoplay: true,
             autoplaySpeed: 3000,
@@ -47,26 +56,26 @@ class WorthRead extends Component {
             slidesToScroll: 1,
             lazyLoad: true,
             arrows: false,
-            className: "",
+            className: "worth_read",
             responsive: [
                 {
-                  breakpoint: 1024,
-                  settings: {
-                    slidesToShow: 3,
-                  }
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                    }
                 },
                 {
                     breakpoint: 768,
                     settings: {
-                      slidesToShow: 2,
+                        slidesToShow: 2,
                     }
-                  },
-                  {
+                },
+                {
                     breakpoint: 480,
                     settings: {
-                      slidesToShow: 1,
+                        slidesToShow: 1,
                     }
-                  },
+                },
             ]
         };
         return (

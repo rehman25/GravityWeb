@@ -2,11 +2,7 @@
     width: 100%;
     overflow-x: clip;
     scroll-behavior: smooth;
-
-
-
 }
-
 
 .heroSection {
     background-blend-mode: overlay !important;
@@ -17,16 +13,7 @@
     height: 759px;
     width: 100%;
 }
-/* .heroSection:after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgb(0 0 0 / 42%);
-    background-blend-mode: overlay;
-} */
+
 .videoFrame::after{
     content: "";
     position: absolute;
@@ -34,7 +21,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    /* background: rgb(0 0 0 / 42%); */
     background-blend-mode: overlay;
 }
 .videoFrame > div {

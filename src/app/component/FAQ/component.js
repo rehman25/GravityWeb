@@ -10,128 +10,12 @@ import style from './faq.module.css'
 
 
 const component = () => {
-    const [hoverDirectionOne, setHoverDirectionOne] = useState(null);
-    const [hoverDirectionTwo, setHoverDirectionTwo] = useState(null);
-    const [hoverDirectionThree, setHoverDirectionThree] = useState(null);
-    const [hoverDirectionFour, setHoverDirectionFour] = useState(null);
-    const handleMouseEnterOne = (event) => {
-        const boxRect = event.target.getBoundingClientRect();
-        const { clientX, clientY } = event;
-        const isComingFromLeft = clientX < boxRect.left + boxRect.width / 2;
-        const isComingFromTop = clientY < boxRect.top + boxRect.height / 2;
-        let direction = '';
-        if (isComingFromLeft) {
-            direction += 'left';
-        } else {
-            direction += 'right';
-        }
-        if (isComingFromTop) {
-            direction += 'top';
-        } else {
-            direction += 'bottom';
-        }
-        setHoverDirectionOne(direction);
-    };
-    const handleMouseLeaveOne = () => {
-        setHoverDirectionOne(null);
-    };
-    const handleMouseEnterTwo = (event) => {
-        const boxRect = event.target.getBoundingClientRect();
-        const { clientX, clientY } = event;
-        const isComingFromLeft = clientX < boxRect.left + boxRect.width / 2;
-        const isComingFromTop = clientY < boxRect.top + boxRect.height / 2;
-        let direction = '';
-        if (isComingFromLeft) {
-            direction += 'left';
-        } else {
-            direction += 'right';
-        }
-        if (isComingFromTop) {
-            direction += 'top';
-        } else {
-            direction += 'bottom';
-        }
-        setHoverDirectionTwo(direction);
-    };
-    const handleMouseLeaveTwo = () => {
-        setHoverDirectionTwo(null);
-    };
-    const handleMouseEnterThree = (event) => {
-        const boxRect = event.target.getBoundingClientRect();
-        const { clientX, clientY } = event;
-        const isComingFromLeft = clientX < boxRect.left + boxRect.width / 2;
-        const isComingFromTop = clientY < boxRect.top + boxRect.height / 2;
-        let direction = '';
-        if (isComingFromLeft) {
-            direction += 'left';
-        } else {
-            direction += 'right';
-        }
-        if (isComingFromTop) {
-            direction += 'top';
-        } else {
-            direction += 'bottom';
-        }
-        setHoverDirectionThree(direction);
-    };
-    const handleMouseLeaveThree = () => {
-        setHoverDirectionThree(null);
-    };
-    const handleMouseEnterFour = (event) => {
-        const boxRect = event.target.getBoundingClientRect();
-        const { clientX, clientY } = event;
-        const isComingFromLeft = clientX < boxRect.left + boxRect.width / 2;
-        const isComingFromTop = clientY < boxRect.top + boxRect.height / 2;
-        let direction = '';
-        if (isComingFromLeft) {
-            direction += 'left';
-        } else {
-            direction += 'right';
-        }
-        if (isComingFromTop) {
-            direction += 'top';
-        } else {
-            direction += 'bottom';
-        }
-        setHoverDirectionFour(direction);
-    };
-    const handleMouseLeaveFour = () => {
-        setHoverDirectionFour(null);
-    };
-
     return (
         <>
             <section className={`${style.bgColor}`}>
                 <div className="container-fliud">
                     <div className="row justify-content-between">
                         <Text text="FAQ" animation="fade-right" />
-                        {/* 
-                        
-                        <div className="col-2 p-0 mt-2">
-                            <div className={`${style.box}`}>
-                                <h5>5</h5>
-                                <span>
-                                    What are the average charges that a website design
-                                    agency in Dubai asks for responsive web design services?
-                                </span>
-                                <div className={`${style.iconsBox}`}><CiCirclePlus /></div>
-                                <div className={`${style.hoverContent}`}
-                                    id={
-                                        hoverDirection == "lefttop" ? style.leftTop :
-                                            hoverDirection == "righttop" ? style.rightTop :
-                                                hoverDirection == "rightbottom" ? style.rightbottom : ""
-                                    }
-                                >
-                                    <h6>5</h6>
-                                    <p>
-                                        When designing your website, most expert web designers
-                                        in Dubai will make sure that your site is mobile-friendly anyway.
-                                        Responsive web design may cost between 7346 AED to 73,460 AED,
-                                        based on the designer’s experience and your project.
-                                    </p>
-                                </div>
-                            </div>
-                        </div> */}
                         <div className=''>
                             <Work />
                         </div>
@@ -145,17 +29,21 @@ const component = () => {
 export default component
 
 class Work extends Component {
+
     constructor(props) {
         super(props);
         this.state = {
-            hoverDirectionOne: null,
-            hoverDirectionTwo: null,
-            hoverDirectionThree: null,
-            hoverDirectionFour: null,
-            hoverDirectionFive: null
+            hoverDirections: {
+                box1: null,
+                box2: null,
+                box3: null,
+                box4: null,
+                box5: null,
+                // Add more boxes as needed
+            }
         };
     }
-    handleMouseEnterOne = (event) => {
+    handleMouseEnter = (boxName, event) => {
         const boxRect = event.target.getBoundingClientRect();
         const { clientX, clientY } = event;
         const isComingFromLeft = clientX < boxRect.left + boxRect.width / 2;
@@ -171,94 +59,20 @@ class Work extends Component {
         } else {
             direction += 'bottom';
         }
-        this.setState({ hoverDirectionOne: direction });
+        this.setState(prevState => ({
+            hoverDirections: {
+                ...prevState.hoverDirections,
+                [boxName]: direction
+            }
+        }));
     };
-    handleMouseLeaveOne = () => {
-        this.setState({ hoverDirectionOne: null });
-    };
-    handleMouseEnterTwo = (event) => {
-        const boxRect = event.target.getBoundingClientRect();
-        const { clientX, clientY } = event;
-        const isComingFromLeft = clientX < boxRect.left + boxRect.width / 2;
-        const isComingFromTop = clientY < boxRect.top + boxRect.height / 2;
-        let direction = '';
-        if (isComingFromLeft) {
-            direction += 'left';
-        } else {
-            direction += 'right';
-        }
-        if (isComingFromTop) {
-            direction += 'top';
-        } else {
-            direction += 'bottom';
-        }
-        this.setState({ hoverDirectionTwo: direction });
-    };
-    handleMouseLeaveTwo = () => {
-        this.setState({ hoverDirectionTwo: null });
-    };
-    handleMouseEnterThree = (event) => {
-        const boxRect = event.target.getBoundingClientRect();
-        const { clientX, clientY } = event;
-        const isComingFromLeft = clientX < boxRect.left + boxRect.width / 2;
-        const isComingFromTop = clientY < boxRect.top + boxRect.height / 2;
-        let direction = '';
-        if (isComingFromLeft) {
-            direction += 'left';
-        } else {
-            direction += 'right';
-        }
-        if (isComingFromTop) {
-            direction += 'top';
-        } else {
-            direction += 'bottom';
-        }
-        this.setState({ hoverDirectionThree: direction });
-    };
-    handleMouseLeaveThree = () => {
-        this.setState({ hoverDirectionThree: null });
-    };
-    handleMouseEnterFour = (event) => {
-        const boxRect = event.target.getBoundingClientRect();
-        const { clientX, clientY } = event;
-        const isComingFromLeft = clientX < boxRect.left + boxRect.width / 2;
-        const isComingFromTop = clientY < boxRect.top + boxRect.height / 2;
-        let direction = '';
-        if (isComingFromLeft) {
-            direction += 'left';
-        } else {
-            direction += 'right';
-        }
-        if (isComingFromTop) {
-            direction += 'top';
-        } else {
-            direction += 'bottom';
-        }
-        this.setState({ hoverDirectionFour: direction });
-    };
-    handleMouseLeaveFour = () => {
-        this.setState({ hoverDirectionFour: null });
-    };
-    handleMouseEnterFive = (event) => {
-        const boxRect = event.target.getBoundingClientRect();
-        const { clientX, clientY } = event;
-        const isComingFromLeft = clientX < boxRect.left + boxRect.width / 2;
-        const isComingFromTop = clientY < boxRect.top + boxRect.height / 2;
-        let direction = '';
-        if (isComingFromLeft) {
-            direction += 'left';
-        } else {
-            direction += 'right';
-        }
-        if (isComingFromTop) {
-            direction += 'top';
-        } else {
-            direction += 'bottom';
-        }
-        this.setState({ hoverDirectionFive: direction });
-    };
-    handleMouseLeaveFive = () => {
-        this.setState({ hoverDirectionFive: null });
+    handleMouseLeave = (boxName) => {
+        this.setState(prevState => ({
+            hoverDirections: {
+                ...prevState.hoverDirections,
+                [boxName]: null
+            }
+        }));
     };
 
     render() {
@@ -276,31 +90,39 @@ class Work extends Component {
             className: "faqs_slider",
             responsive: [
                 {
-                    breakpoint: 575,
+                    breakpoint: 1150,
+                    settings: {
+                        slidesToShow: 3,
+                    },
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                    },
+                    breakpoint: 768,
                     settings: {
                         slidesToShow: 1,
                     }
                 },
             ]
         };
-        const { hoverDirectionOne, hoverDirectionTwo, hoverDirectionThree, hoverDirectionFour, hoverDirectionFive } = this.state;
+        const { hoverDirections } = this.state;
         return (
             <div>
                 <Slider {...settings}>
                     <div className="col-2 p-0 mt-2">
                         <div className={`${style.box}`}
-                            onMouseEnter={(event) => this.handleMouseEnterOne(event)}
-                            onMouseLeave={() => this.handleMouseLeaveOne()}
+                             onMouseEnter={(event) => this.handleMouseEnter('box1', event)}
+                             onMouseLeave={() => this.handleMouseLeave('box1')}
                         >
                             <h5>1</h5>
                             <span>I need web design services for my enterprise website. Can you help? </span>
                             <div className={`${style.iconsBox}`}><CiCirclePlus /></div>
                             <div className={`${style.hoverContent}`}
                                 id={
-                                    hoverDirectionOne == "lefttop" ? style.leftTop :
-                                    hoverDirectionOne == "righttop" ? style.rightTop :
-                                    hoverDirectionOne == "rightbottom" ? style.rightbottom :
-                                    hoverDirectionOne == "leftbottom" ? style.rightbottom : ""
+                                    hoverDirections.box1 == "lefttop" ? style.leftTop :
+                                    hoverDirections.box1 == "righttop" ? style.rightTop :
+                                    hoverDirections.box1 == "rightbottom" ? style.rightbottom :
+                                    hoverDirections.box1 == "leftbottom" ? style.rightbottom : ""
                                 }
                             >
                                 <h6>1</h6>
@@ -317,18 +139,18 @@ class Work extends Component {
                     </div>
                     <div className="col-md-2 p-0 mt-2">
                         <div className={`${style.box}`}
-                         onMouseEnter={(event) => this.handleMouseEnterTwo(event)}
-                         onMouseLeave={() => this.handleMouseLeaveTwo()}>
+                             onMouseEnter={(event) => this.handleMouseEnter('box2', event)}
+                             onMouseLeave={() => this.handleMouseLeave('box2')}>
                             <h5>2</h5>
                             <span>How much does it cost to hire web designer in Dubai? </span>
                             <div className={`${style.iconsBox}`}><CiCirclePlus /></div>
                             <div className={`${style.hoverContent}`}
-                             id={
-                                hoverDirectionTwo == "lefttop" ? style.leftTop :
-                                hoverDirectionTwo == "righttop" ? style.rightTop :
-                                hoverDirectionTwo == "rightbottom" ? style.rightbottom :
-                                hoverDirectionTwo == "leftbottom" ? style.rightbottom : ""
-                            }
+                                id={
+                                    hoverDirections.box2 == "lefttop" ? style.leftTop :
+                                    hoverDirections.box2 == "righttop" ? style.rightTop :
+                                    hoverDirections.box2 == "rightbottom" ? style.rightbottom :
+                                    hoverDirections.box2 == "leftbottom" ? style.rightbottom : ""
+                                }
                             >
                                 <h6>2</h6>
                                 <p>
@@ -343,18 +165,18 @@ class Work extends Component {
                     </div>
                     <div className="col-md-2 p-0 mt-2">
                         <div className={`${style.box}`}
-                        onMouseEnter={(event) => this.handleMouseEnterThree(event)}
-                        onMouseLeave={() => this.handleMouseLeaveThree()}>
+                            onMouseEnter={(event) => this.handleMouseEnter('box3', event)}
+                            onMouseLeave={() => this.handleMouseLeave('box3')}>
                             <h5>3</h5>
                             <span>How can I choose a great web design agency in Dubai?</span>
                             <div className={`${style.iconsBox}`}><CiCirclePlus /></div>
                             <div className={`${style.hoverContent}`}
-                            id={
-                                hoverDirectionThree == "lefttop" ? style.leftTop :
-                                hoverDirectionThree == "righttop" ? style.rightTop :
-                                hoverDirectionThree == "rightbottom" ? style.rightbottom : 
-                                hoverDirectionThree == "leftbottom" ? style.rightbottom : ""
-                            }
+                                id={
+                                    hoverDirections.box3 == "lefttop" ? style.leftTop :
+                                    hoverDirections.box3 == "righttop" ? style.rightTop :
+                                    hoverDirections.box3 == "rightbottom" ? style.rightbottom :
+                                    hoverDirections.box3 == "leftbottom" ? style.rightbottom : ""
+                                }
                             >
                                 <h6>3</h6>
                                 <p>
@@ -368,17 +190,17 @@ class Work extends Component {
                     </div>
                     <div className="col-md-2 p-0 mt-2">
                         <div className={`${style.box}`}
-                         onMouseEnter={(event) => this.handleMouseEnterFour(event)}
-                         onMouseLeave={() => this.handleMouseLeaveFour()}>
+                           onMouseEnter={(event) => this.handleMouseEnter('bo4', event)}
+                           onMouseLeave={() => this.handleMouseLeave('box4')}>
                             <h5>4</h5>
                             <span>Is responsive web design important? </span>
                             <div className={`${style.iconsBox}`}><CiCirclePlus /></div>
                             <div className={`${style.hoverContent}`}
                                 id={
-                                    hoverDirectionFour == "lefttop" ? style.leftTop :
-                                    hoverDirectionFour == "righttop" ? style.rightTop :
-                                    hoverDirectionFour == "rightbottom" ? style.rightbottom :
-                                    hoverDirectionFour == "leftbottom" ? style.rightbottom : ""
+                                    hoverDirections.box4 == "lefttop" ? style.leftTop :
+                                    hoverDirections.box4 == "righttop" ? style.rightTop :
+                                    hoverDirections.box4 == "rightbottom" ? style.rightbottom :
+                                    hoverDirections.box4 == "leftbottom" ? style.rightbottom : ""
                                 }
                             >
                                 <h6>4</h6>
@@ -395,9 +217,8 @@ class Work extends Component {
                     </div>
                     <div className="col-md-2 p-0 mt-2">
                         <div className={`${style.box}`}
-                         onMouseEnter={(event) => this.handleMouseEnterFive(event)}
-                         onMouseLeave={() => this.handleMouseLeaveFive()}
-                        >
+                           onMouseEnter={(event) => this.handleMouseEnter('box5', event)}
+                           onMouseLeave={() => this.handleMouseLeave('box5')}>
                             <h5>5</h5>
                             <span>
                                 What are the average charges that a website design
@@ -405,12 +226,12 @@ class Work extends Component {
                             </span>
                             <div className={`${style.iconsBox}`}><CiCirclePlus /></div>
                             <div className={`${style.hoverContent}`}
-                            id={
-                                hoverDirectionFive == "lefttop" ? style.leftTop :
-                                hoverDirectionFive == "righttop" ? style.rightTop :
-                                hoverDirectionFive == "rightbottom" ? style.rightbottom :
-                                hoverDirectionFive == "leftbottom" ? style.rightbottom : ""
-                            }>
+                                id={
+                                    hoverDirections.box5 == "lefttop" ? style.leftTop :
+                                    hoverDirections.box5 == "righttop" ? style.rightTop :
+                                    hoverDirections.box5 == "rightbottom" ? style.rightbottom :
+                                    hoverDirections.box5 == "leftbottom" ? style.rightbottom : ""
+                                }>
                                 <h6>5</h6>
                                 <p>
                                     When designing your website, most expert web designers
