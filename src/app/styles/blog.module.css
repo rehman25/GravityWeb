@@ -174,7 +174,7 @@
   font-size: .80em;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  padding: 6px 9px;
+  padding: 0px 9px;
 }
 
 .blogTabBoxSlider p {
@@ -185,6 +185,8 @@
   font-family: "Montserrat", sans-serif;
   padding: 0px 7px 20px 10px;
 }
+
+
 
 @media screen and (max-width: 1024px) {
   .bannertextleftside {

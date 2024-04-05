@@ -6,6 +6,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import style from '../../styles/blog.module.css';
 import img from '../../assets/images/tabs/Leveraging.jpg'
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 const Tabsss = () => {
   return (
