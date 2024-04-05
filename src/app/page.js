@@ -1,5 +1,5 @@
 'use client'
-import React, { useState , useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 // import { motion, useAnimation } from "framer-motion";
 // import { useInView } from "react-intersection-observer";
 import Link from 'next/link'
@@ -37,7 +37,7 @@ import ReactPlayer from "react-player";
 
 
 const Page = () => {
-  const [isScroll , setScroll] = useState(false)
+  const [isScroll, setScroll] = useState(false)
   useEffect(() => {
     const handleScroll = () => {
       setScroll(true)
@@ -67,18 +67,18 @@ const Page = () => {
         <div className={`${style.heroSection} container-fluid p-0`}>
           <div className="row mt-5 mx-0 p-0" style={{ width: "100%" }}>
             <div className={`col-lg-12 p-0 ${style.videoBox}`}>
-             <div className={`${style.videoFrame}`}>
-              <ReactPlayer 
+              <div className={`${style.videoFrame}`}>
+                <ReactPlayer
                   url="https://dg-demo.logomish.com/videos/home.mp4"
                   width={"100"} height={"80"}
                   playing="playing"
                   preload="true"
-                  autoplay="true" 
+                  autoplay="true"
                   muted="true"
                   loop="true"
                   playsInline={true}
                 />
-             </div>
+              </div>
               <div className={`${style.heroRightSide}`}>
                 <span className={`${style.heroHeadOne}`}>CONNECTING BRANDS</span>
                 <span className={`${style.heroHeadTwo}`}>WITH GLOBAL</span>
@@ -104,7 +104,7 @@ const Page = () => {
                 </div>
               </div>
             </div>
-        
+
           </div>
         </div>
       </section>

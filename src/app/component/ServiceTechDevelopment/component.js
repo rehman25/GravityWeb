@@ -44,20 +44,20 @@ const Components = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
 
     var settings = {
-        dots: true,
-        centerMode: true,
+        // dots: true,
+        // centerMode: true,
         infinite: true,
         speed: 500,
         slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
+        slidesToScroll: 3,
+        // autoplay: true,
         autoplaySpeed: 3000,
         pauseOnHover: true,
-        arrows: true,
+        arrows: false,
         prevArrow: <FaArrowLeft />,
         nextArrow: <FaArrowRight />,
         className: "devTech",
-        beforeChange: (current, next) => setCurrentSlide(next)
+        beforeChange: (current, next) => setCurrentSlide(next, current)
     };
 
     const slides = [
@@ -70,9 +70,21 @@ const Components = () => {
         { image: HealthCare, text: "Health Care" },
         { image: Automotive, text: "Automotive" }
     ];
+  
+
+    // useEffect(() => {
+       
+    // }, [])
+    
+
+    
+
+    
 
     const nextSlide = () => {
         setCurrentSlide(currentSlide === slides.length - 1 ? 0 : currentSlide + 1);
+        
+
     };
 
     const prevSlide = () => {
@@ -82,7 +94,7 @@ const Components = () => {
         <>
             <section style={{ overflowX: "clip", marginTop: "50px" }}>
                 <div className={`${styles.ServiceTechDevelopmentsection}`}>
-                    <div className="container">
+                    <div className="container-fluid">
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className={`${styles.ServiceTechDevelopmentupper}`}>
@@ -313,19 +325,20 @@ const Components = () => {
                             <div className={`${styles.ServiceTechDevelopmentdown}`}>
                                 <h2>We help a diverse clientele build result-driven Web Development </h2>
                             </div>
-                            <div className="col-lg-7 mb-5">
+                            <div className="col-lg-7   mb-5">
                                 <div className={styles.SliderContainer}>
-                                    <Slider {...settings}>
-                                        {slides.map((slide, index) => (
-                                            <div key={index} className={`${styles.Imageslider2}`}>
-                                                <div className={styles.SliderImg} >
-                                                    <Image src={slide.image} alt={slide.text} className={styles.SlideImage} />
+                                    <div className={styles.border}>
+                                        <Slider {...settings}>
+                                            {slides.map((slide, index) => (
+                                                <div key={index} className={`${ styles.Imageslider2   }`}>
+                                                    <div className={styles.SliderImg} >
+                                                        <Image src={slide.image} alt={slide.text} className={styles.SlideImage} />
+                                                    </div>
+                                                    <span>{slide.text}</span>
                                                 </div>
-                                                <span>{slide.text}</span>
-                                                <div className={styles.border}></div>
-                                            </div>
-                                        ))}
-                                    </Slider>
+                                            ))}
+                                        </Slider>
+                                    </div>
                                 </div>
                             </div>
 
@@ -349,7 +362,7 @@ const Components = () => {
                                         {slides[currentSlide].text === "Education" && (
                                             <p>Our expert web developers have designed beautiful education websites, mobile apps, and eLearning portals for our clients. Our clients’ substantial growth through these channels reflects the quality of our work. </p>
                                         )}
-                                        {slides[currentSlide].text === "Manufactuing" && (
+                                        {slides[currentSlide].text === "Manufacturing" && (
                                             <p> Many of our clients come from the manufacturing industry. Besides web support, all of them require assistance in the marketing of their products and services.   </p>
                                         )}
                                         {slides[currentSlide].text === "Health Care" && (
