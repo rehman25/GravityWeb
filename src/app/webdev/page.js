@@ -6,7 +6,7 @@ import WorkRead from "./components/Work-Read/index";
 import Header from '../component/Header/component'
 import Cursor from '../component/cursor/cursor'
 import Testimonials from '../component/Testimonials/index'
-import ServiceTechDevelopment from '../component/ServiceTechDevelopment/Component'
+import ServiceTechDevelopment from '../component/ServiceTechDevelopment/Components'
 import Expansion from '../component/Expansion/component'
 import InnerFooter from '../component/InnerFooter/component'
 import { BsInstagram } from "react-icons/bs";
