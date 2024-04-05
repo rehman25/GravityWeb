@@ -33,7 +33,7 @@ function component() {
                     <div className="row">
                             <div className="col-1"></div>
                             <div className='col-11'>
-                                <Text text="Our Work" className="mb-5" animation="fade-right" />
+                                <Text text="Our Work" id={"check"} className="mb-5" animation="fade-right" />
                                 <Work />
                             </div>
                     </div>
