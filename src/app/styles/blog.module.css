@@ -55,7 +55,7 @@
 
 .bannertextrightside span {
   font-size: 16px;
-  font-family: Montserrat,sans-serif;
+  font-family: Montserrat, sans-serif;
   font-weight: 400;
   color: #fff;
   line-height: 1.5;
@@ -138,13 +138,75 @@
   width: 29% !important;
 }
 
+.blogTabBoxSlider {
+  box-shadow: -2px -2px 10px gray;
+  margin: 15px;
+  border-radius: 5px;
+}
+
+.blogTabBoxSlider img {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.blogTabBoxSlider .blogTabsDesBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.blogTabBoxSlider .blogTabsDesBox h6 {
+  font-weight: 600;
+  font-size: .95em;
+}
+
+.blogTabBoxSlider .blogTabsDesBox span {
+  font-weight: 600;
+  font-size: .85em;
+}
+
+.blogTabBoxSlider .overFlow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: .80em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  padding: 0px 9px;
+}
+
+.blogTabBoxSlider p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: .80em;
+  font-family: "Montserrat", sans-serif;
+  padding: 0px 7px 20px 10px;
+}
+
+.blogtabarrowicons {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  margin: 5px 0px;
+}
+
+.Leftarrow {
+  margin: 0px 35px;
+}
+
+
 @media screen and (max-width: 1024px) {
   .bannertextleftside {
     margin: 20px;
   }
+
   .bannertextleftside h1 {
     font-size: 25px;
   }
+
   .bannertextrightside {
     padding: 30px;
     font-size: 14px;
@@ -155,23 +217,27 @@
   .bannertextleftside {
     margin: 20px;
   }
+
   .bannertextleftside h1 {
     font-size: 25px;
   }
+
   .bannertextrightside {
     padding: 20px;
   }
+
   .blogTabBox {
     width: 45% !important;
   }
+
   #TabList {
     flex-wrap: wrap;
-    justify-content: center; 
+    justify-content: center;
   }
 
   #TabList li {
-    width: 100%; 
-    margin: 5px; 
+    width: 100%;
+    margin: 5px;
   }
 }
 
@@ -179,33 +245,40 @@
   .bannertextleftside {
     margin: 10px;
   }
+
   .bannertextleftside h1 {
     font-size: 20px;
   }
+
   .bannertextrightside {
     padding: 10px;
     font-size: 12px;
   }
+
   .TabPanel {
     flex-wrap: wrap;
   }
 }
 
-@media screen and(max-width:575px){
+@media screen and(max-width:575px) {
   .blogTabBox {
     width: 45% !important;
   }
 }
+
 @media screen and (max-width: 480px) {
   .bannertextleftside {
     margin: 5px;
   }
+
   .bannertextleftside h1 {
     font-size: 18px;
   }
+
   .bannertextrightside {
     font-size: 10px;
   }
+
   .blogTabBox {
     width: 75% !important;
   }
@@ -215,9 +288,11 @@
   .bannertextleftside {
     margin: 3px;
   }
+
   .bannertextleftside h1 {
     font-size: 16px;
   }
+
   .bannertextrightside {
     padding: 3px;
     font-size: 8px;
