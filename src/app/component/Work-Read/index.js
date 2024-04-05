@@ -57,6 +57,7 @@ class WorthRead extends Component {
             lazyLoad: true,
             arrows: false,
             className: "worth_read",
+            draggable: true,
             responsive: [
                 {
                     breakpoint: 1024,

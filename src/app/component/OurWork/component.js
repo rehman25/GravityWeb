@@ -1,5 +1,4 @@
-'use client'
-import React, { Component, useEffect, useState } from 'react'
+import React, { Component } from 'react'
 import style from './ourwork.module.css'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -27,17 +26,6 @@ import Button from '../buttons';
 
 
 function component() {
-    const [scrollPosition, setScrollPosition] = useState(0);
-    useEffect(() => {
-        const handleScroll = () => {
-          setScrollPosition(window.scrollY);
-        };
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-          window.removeEventListener('scroll', handleScroll);
-        };
-      }, []);
-
     return (
         <>
             <section className={`${style.our__work__section}`}>
@@ -45,8 +33,7 @@ function component() {
                     <div className="row">
                             <div className="col-1"></div>
                             <div className='col-11'>
-                                {/* <Text text="Our Work" id={"check"} className="mb-5" animation="fade-right" /> */}
-                                <h5 style={{ transform: `translateX(${scrollPosition}px)` }}>OUR WORK</h5>
+                                <Text text="Our Work" className="mb-5" animation="fade-right" />
                                 <Work />
                             </div>
                     </div>

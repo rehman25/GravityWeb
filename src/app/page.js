@@ -35,6 +35,19 @@ import ReactPlayer from "react-player";
 
 const Page = () => {
   const [isActive, setActive] = useState("Web_Dev")
+  const [activeIndex, setActiveIndex] = useState(0); // State to track the active index
+  const handleListItemClick = (index) => {
+    setActiveIndex(index);
+    scrollToListItem(index); // Scroll to the clicked list item
+  };
+  // Function to scroll to the selected list item
+  const scrollToListItem = (index) => {
+    const listItem = document.getElementById(`item-${index}`);
+    if (listItem) {
+      listItem.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  };
+
   return (
     <div className={`${style.home}`}>
       <Cursor />
@@ -540,6 +553,27 @@ const Page = () => {
       <Worth__Read />
       <Social />
       <Footer />
+      <div className="container">
+        {/* Left-side UL list */}
+        <ul className="list">
+          {[...Array(20)].map((_, index) => (
+            <li
+              key={index}
+              id={`item-${index}`}
+              className={index === activeIndex ? 'active' : ''}
+              onClick={() => handleListItemClick(index)}
+            >
+              List Item {index + 1}
+            </li>
+          ))}
+        </ul>
+        {/* Right-side section */}
+        <div className="content">
+          {/* Content corresponding to the active list item */}
+          <h2>Content for List Item {activeIndex + 1}</h2>
+          <p>This is the content for the selected list item.</p>
+        </div>
+      </div>
     </div>
   )
 }

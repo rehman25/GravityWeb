@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Awards.module.css'
-import Text from '../text/index'
+import Text from '../text'
 import Image from 'next/image'
 import firstImg from '../../assets/images/home/award-bagde-1.svg'
 import SecondImg from '../../assets/images/home/award-bagde-2.svg'
@@ -14,7 +14,7 @@ const components = () => {
       <div className={`container-fluid ${styles.container}`}>
         <div className="row">
           <div className={`p-0 col-lg-6 ${styles.leftContainer}`}>
-            <Text text="Awards" animation="fade-left" className={styles.Text} />
+            <Text text="Awards" animation="fade-right" className={styles.Text} />
             <div className={styles.leftHeading}>
               <h2>Digital Gravity, a <br /> <p>Synonym of Quality, Trust and Distinction</p>
                 </h2>
