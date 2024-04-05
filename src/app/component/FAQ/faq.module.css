@@ -73,15 +73,15 @@
 
 #leftTop {
     opacity: 1;
-    animation: shutter-in-left 1s linear 0s 1 normal none;
+    animation: shutter-in-left 0.50s linear 0s 1 normal none;
 }
 #rightTop {
     opacity: 1;
-    animation: shutter-in-right 1s linear 0s 1 normal none;
+    animation: shutter-in-right 0.50s linear 0s 1 normal none;
 }
 #rightbottom {
     opacity: 1;
-    animation: shutter-in-bottom 1s linear 0s 1 normal none;
+    animation: shutter-in-bottom 0.50s linear 0s 1 normal;
 }
 
 @keyframes shutter-in-right {

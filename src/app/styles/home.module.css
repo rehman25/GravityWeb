@@ -2,12 +2,12 @@
     width: 100%;
     overflow-x: clip;
     scroll-behavior: smooth;
-
-
-
 }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 99d9993ce04bb952e3eefffa9d6b53dc04a9c381
 .heroSection {
     background-blend-mode: overlay !important;
     background:rgba(0, 0, 0, 0.158) !important;
@@ -17,16 +17,7 @@
     height: 759px;
     width: 100%;
 }
-/* .heroSection:after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgb(0 0 0 / 42%);
-    background-blend-mode: overlay;
-} */
+
 .videoFrame::after{
     content: "";
     position: absolute;
@@ -34,7 +25,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    /* background: rgb(0 0 0 / 42%); */
     background-blend-mode: overlay;
 }
 .videoFrame > div {

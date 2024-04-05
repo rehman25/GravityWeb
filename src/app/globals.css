@@ -115,6 +115,21 @@ span {
     background: #e3204a;
 }
 
+/* WORTH READ SLIDER CSS ========== */
+.worth_read .slick-dots{
+    display: flex !important;
+    justify-content: center;
+}
+.worth_read .slick-dots li button{
+    width: 130px;
+    background: rgb(219, 216, 216);
+    height: 4px;
+    color: transparent;
+}
+.worth_read .slick-dots li.slick-active button{
+    background: #e3204a;
+}
+
 /* EXPERTISE GLOBAL CSS ================== */
 .Expertise___bg .react-tabs__tab--selected{
     background: #d40834;
