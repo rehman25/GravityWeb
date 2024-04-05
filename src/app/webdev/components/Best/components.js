@@ -13,7 +13,7 @@ const Components = () => {
     const [active, setActive] = useState(false)
     const [isPhp, setPhp] = useState(false)
     const [isLaravel, setLaravel] = useState(false)
-    const [isWordpress, setWordpress] = useState(false)
+    const [isWordpress, setWordpress] = useState(true)
     const [CMS, setCMS] = useState(false)
     const [isWhatsapp, setWhatsapp] = useState(false)
     const [isWorpressChild, setisWorpressChild] = useState(false)

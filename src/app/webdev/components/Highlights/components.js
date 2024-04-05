@@ -56,7 +56,7 @@ const Components = () => {
                                 <p>Projects Completed</p>
                                 <h2>265+</h2>
                             </div>
-                            <div className={`col-4p-0 ${styles.boxe3}`}>
+                            <div className={`col-4 p-0 ${styles.boxe3}`}>
                                 <p>Years of experience</p>
                                 <h2>265+</h2>
                             </div>
