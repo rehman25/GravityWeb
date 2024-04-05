@@ -1,15 +1,22 @@
 /* ABOUT Banner Section  */
-
-.banneraboutsection {
+.section{
+  width: 100%;
   background-image: url("../assets/images/banner/inner-banner.svg");
   background-color: rgb(54, 54, 54);
   padding: 5px;
   color: rgb(255, 255, 255);
+
+}
+.banneraboutsection {
+  /* background-image: url("../assets/images/banner/inner-banner.svg");
+  background-color: rgb(54, 54, 54);
+  padding: 5px;
+  color: rgb(255, 255, 255); */
 }
 
 .bannertextleftside {
   position: relative;
-  margin: 50px 50px;
+  /* margin: 50px 50px; */
 }
 
 .borderdesign {
@@ -46,6 +53,8 @@
   margin-top: 50px;
   padding: 50px;
   font-size: 16px;
+  display: flex;
+  justify-content: end ;
 }
 
 .banneraboutsection .bannertextrightside span {
@@ -240,6 +249,7 @@
 .grid__wrapper .twoBox span {
   font-size: 1em;
   font-weight: 600;
+  font-family: "Montserrat", sans-serif;
 }
 
 .grid__wrapper .twoBox img {
@@ -308,11 +318,13 @@
 
 .Expertise___tabs__box #Expertise___tabs__list li {
   padding: 40px 20px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .Expertise___tabs__box #Expertise___tabs__list li span {
   color: white;
   margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .Expertise__TabPanel {
@@ -333,6 +345,7 @@
   padding: 15px 5px;
   color: #fff;
   margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* ================================== */

@@ -5,8 +5,8 @@ import styles from "../../styles/about.module.css";
 const Aboutbanner = () => {
   return (
     <>
-      <section>
-        <div className={`${styles.banneraboutsection} `}>
+      <section className={styles.section}>
+        <div className={`container ${styles.banneraboutsection} `}>
           <div className={`row mt-5 ${styles.bannertex}`}>
             <div className="col-md-6">
               <div className={`${styles.bannertextleftside}`}>

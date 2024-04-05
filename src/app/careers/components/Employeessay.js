@@ -17,7 +17,7 @@ function Employeessay() {
     return (
         <>
             <section className={`${styles.Employeessaysection}`}>
-                <div className="container-fluid">
+                <div className="container">
                     <div className="row">
                         <div className="col-lg-8">
                             <div className={`${styles.Employeessaysectionleft}`}>
@@ -91,7 +91,8 @@ const PrevArrow = (props) => {
     return (
         
         <div className="slick-arrow slick-prev" onClick={onClick}>
-            <FaArrowLeft />
+            <FaArrowRight />
+
         </div>
     );
 };
@@ -100,7 +101,7 @@ const NextArrow = (props) => {
     const { onClick } = props;
     return (
         <div className="slick-arrow slick-next" onClick={onClick}>
-            <FaArrowRight />
+             <FaArrowLeft />
         </div>
     );
 };
