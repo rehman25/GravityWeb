@@ -6,7 +6,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import style from '../../styles/blog.module.css';
 import img from '../../assets/images/tabs/Leveraging.jpg'
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import { IoIosArrowForward, IoIosArrowBack   } from "react-icons/io";
 
 const Tabsss = () => {
   return (
@@ -1082,6 +1082,14 @@ const Tabsss = () => {
                           However, there is a strategy that can give you the desired
                           returns of your efforts and that is remarketing.
                         </p>
+                      </div>
+                    </div>
+                    <div className={`col-12 ${style.blogtabarrowicons}`}>
+                      <div className={`${style.Leftarrow}`}>
+                        <IoIosArrowBack  />
+                      </div>
+                      <div className={`${style.Rightarrow}`}>
+                        <IoIosArrowForward />
                       </div>
                     </div>
                   </>

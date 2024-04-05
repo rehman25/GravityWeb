@@ -68,14 +68,28 @@
     /* display: flerx; */
     margin: 5px 0px;
     padding: 10px;
+     margin: 5px 0px;
+    padding: 10px;
+    max-width: 200px;
+    /* width: 250px; */
+    height: 200px;
+    /* border-bottom: 3px solid gray; */
 }
 
 .Imageslider2 {
     margin: 5px 0px;
     padding: 10px;
-
+      width: 250px;
+    height: 230px;
+    /* border-bottom: 2px solid #c61a3c; */
+    position: relative;
+    top: 5px;
 }
-
+.Imageslider2 span{
+       font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+}
 .Imageslider span {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
@@ -128,3 +142,7 @@
 .RightArrow {
     color: #fff;
 }
+
+/* .border{
+    border-bottom:4px solid gray ;
+} */
