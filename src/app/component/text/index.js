@@ -16,15 +16,16 @@ const Text = ({
     const handleScroll = () => {
       const newPosition = window.scrollY;
       setScrollPosition(newPosition);
-      setHeadingPosition(Math.min(Math.max(newPosition, 150), 400));
+      // Calculate heading position within the range (300 - 600)
+      setHeadingPosition(Math.min(Math.max(newPosition, 0), 0));
     };
 
     window.addEventListener('scroll', handleScroll);
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
   useEffect(() => {
     AOS.init({
       duration: 1000
@@ -34,7 +35,7 @@ const Text = ({
   return (
     <>
     {/* style={{ transform: `translateX(${headingPosition - 300}px)` }} */}
-      <h5 className={`${style.h5} ${className}`} id={id} data-aos={animation}>{text}</h5>
+      <h5 className={`${style.h5} ${className}`} id={id} style={{ transform: `translateX(${scrollPosition - 100}px)` }}>{text}</h5>
     </>
   )
 }
