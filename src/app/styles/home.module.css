@@ -3,11 +3,6 @@
     overflow-x: clip;
     scroll-behavior: smooth;
 }
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 99d9993ce04bb952e3eefffa9d6b53dc04a9c381
 .heroSection {
     background-blend-mode: overlay !important;
     background:rgba(0, 0, 0, 0.158) !important;
