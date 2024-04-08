@@ -14,16 +14,16 @@ const page = () => {
       <span data-aos="fade-right" className={styles.heading}>Design.Build.Launch</span>
       <div className={`row ${styles.row}`}>
         <div className={`col-lg-6 ${styles.leftContainer}`}>
-          <h2 className={styles.letsbuild}>{`let's`} build <br />
-            <p className={styles.something}>something awesome</p>
+          <h2 data-aos="fade-right" className={styles.letsbuild}>{`let's`} build <br />
+            <p data-aos="fade-right" className={styles.something}>something awesome</p>
           </h2>
-          <h2 className={styles.footerPara}>Reach out to our team and {`we'll`} get back to you within a day.</h2>
+          <h2 data-aos="fade-right" className={styles.footerPara}>Reach out to our team and {`we'll`} get back to you within a day.</h2>
           <div className={`row ${styles.innnerRow}`}>
             <div className={styles.DashContainer}>
-              <span className={styles.dash}>____</span>
+              <span data-aos="fade-right" className={styles.dash}>____</span>
             </div>
             <div className={styles.addressContainer}>
-              <ul>
+              <ul data-aos="fade-right">
                 <li className={styles.address}>Office M-13, The Curve Building, Sheikh Zayed Road, Dubai, UAE</li>
                 <li className={styles.address}>discover@digitalgravity.ae</li>
                 <li className={styles.address}>+971 4 242 1375</li>

@@ -73,6 +73,8 @@
 }
 .HeaderUl li:hover{
    /* border-bottom: 2px solid #e3204a; */
+   cursor: pointer;
+
 }
 .HeaderUl li a:hover{
    color: #e3204a;
@@ -514,10 +516,15 @@
     font-family: "Montserrat", sans-serif;
 
 }
-.TabContent a:hover{
-    border-bottom: 2px solid #fff;
+
+.linkdiv div:hover{
+    border-bottom: 4px solid white;
     animation: flip-in-ver-left 1s linear 0s 1 normal none;
 }
+/* .TabContent a:hover{
+    border-bottom: 2px solid #fff;
+    animation: flip-in-ver-left 1s linear 0s 1 normal none;
+} */
 @keyframes flip-in-ver-left {
 			
 		0% {

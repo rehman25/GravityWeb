@@ -254,7 +254,11 @@ const Page = () => {
                                 <div className={Style.ImageDiv}>
                                   <Image alt="Example" src={WordPress} className={Style.WordPress} />
                                 </div>
-                                <Link href='/webdev'>WORD PRESS DEVELOPMENT</Link>
+                                <div classNam={Style.linkdiv}>
+                                   <Link href='/webdev'>WORD PRESS DEVELOPMENT</Link>
+                                    <div></div>
+                                </div>
+                        
                               </div>
                               <div className={`col-4 ${Style.TabContent}`}>
                                 <div className={Style.ImageDiv}>
