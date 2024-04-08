@@ -1,5 +1,5 @@
 "use client"
-import React, { Component } from 'react'
+import React, { Component, useEffect } from 'react'
 import styles from '../../styles/careers.module.css'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -10,10 +10,17 @@ import Employeetwo from '../../assets/images/employeessay/emp2.jpg'
 import Employeethree from '../../assets/images/employeessay/emp3.jpg'
 import EmployeeFour from '../../assets/images/employeessay/emp4.jpg'
 import Button from '../../component/buttons/index';
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'; // Import arrow icons
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'; 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 function Employeessay() {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000
+        });
+    }, []);
     return (
         <>
             <section className={`${styles.Employeessaysection}`}>
@@ -21,7 +28,7 @@ function Employeessay() {
                     <div className="row">
                         <div className="col-lg-8">
                             <div className={`${styles.Employeessaysectionleft}`}>
-                                <h4>What Our Happy <span> Employees Say</span></h4>
+                                <h4 data-aos={"fade-right"}>What Our Happy <span> Employees Say</span></h4>
                                 <Image src={EmployeeProgress} alt="Employee" className={`${styles.EmployeesProgressImage}`} />
                             </div>
                         </div>

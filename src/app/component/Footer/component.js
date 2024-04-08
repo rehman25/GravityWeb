@@ -1,4 +1,5 @@
-import React from 'react'
+'use client'
+import React, { useEffect } from 'react'
 import styles from './Footer.module.css'
 import { GoDash } from "react-icons/go";
 import { FaXTwitter } from "react-icons/fa6";
@@ -6,9 +7,16 @@ import { FaFacebookF } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const page = () => {
+  useEffect(() => {
+    AOS.init({
+        duration: 1000
+    });
+}, []);
   return (
     <div className={`'container' ${styles.Container}`}>
       <span data-aos="fade-right" className={styles.heading}>Design.Build.Launch</span>
@@ -22,7 +30,7 @@ const page = () => {
             <div className={styles.DashContainer}>
               <span className={styles.dash}>____</span>
             </div>
-            <div className={styles.addressContainer}>
+            <div className={styles.addressContainer} data-aos="fade-right">
               <ul>
                 <li className={styles.address}>Office M-13, The Curve Building, Sheikh Zayed Road, Dubai, UAE</li>
                 <li className={styles.address}>discover@digitalgravity.ae</li>

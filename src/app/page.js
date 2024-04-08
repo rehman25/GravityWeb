@@ -36,18 +36,6 @@ import ReactPlayer from "react-player";
 const Page = () => {
   const [isActive, setActive] = useState("Web_Dev")
   const [activeIndex, setActiveIndex] = useState(0); // State to track the active index
-  const handleListItemClick = (index) => {
-    setActiveIndex(index);
-    scrollToListItem(index); // Scroll to the clicked list item
-  };
-  // Function to scroll to the selected list item
-  const scrollToListItem = (index) => {
-    const listItem = document.getElementById(`item-${index}`);
-    if (listItem) {
-      listItem.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    }
-  };
-
   return (
     <div className={`${style.home}`}>
       <Cursor />
