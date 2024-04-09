@@ -4,7 +4,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "../../component/ServiceTechDevelopment/ServiceTechDevelopment.module.css";
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import Image from "next/image";
 import one from "../../assets/images/ServicTechDevelopment/technology-icon-1.svg";
@@ -70,16 +69,7 @@ const Components = () => {
         { image: HealthCare, text: "Health Care" },
         { image: Automotive, text: "Automotive" }
     ];
-  
 
-    // useEffect(() => {
-       
-    // }, [])
-    
-
-    
-
-    
 
     const nextSlide = () => {
         setCurrentSlide(currentSlide === slides.length - 1 ? 0 : currentSlide + 1);
@@ -359,7 +349,7 @@ const Components = () => {
                                         {slides[currentSlide].text === "Business Consulting" && (
                                             <p>We evaluate our level of success based on your satisfaction. With our creative services, we have helped several Business Consulting services in Dubai reach new heights and grow their client base.</p>
                                         )}
-                                        {slides[currentSlide].text === "Manufacturing" && (
+                                        {slides[currentSlide].text === "Education" && (
                                             <p>Many of our clients come from the manufacturing industry.Besides web support, all of them require assistance in the marketing of their products and services.</p>
                                         )}
                                         {slides[currentSlide].text === "Manufacturing" && (
