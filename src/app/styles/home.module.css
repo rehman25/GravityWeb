@@ -125,6 +125,64 @@
 .homeTabmainBox {
     padding: 40px 80px;
 }
+.homeTabmainBox .tabsFlexBox{
+    display: flex;
+}
+.homeTabmainBox .tabsFlexBox ul.tabslist{
+    width: 40%;
+    padding: 50px 10px;
+    height: 250px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-left: 1px solid #a7acb1;
+}
+.homeTabmainBox .tabsFlexBox ul.tabslist::-webkit-scrollbar {
+    width: 0;
+}
+.homeTabmainBox .tabsFlexBox ul.tabslist li{
+    line-height: 50px;
+    transition: 1s;
+}
+.homeTabmainBox .tabsFlexBox ul.tabslist li a{
+    display: block;
+    color:  rgb(179, 167, 167);
+    font-weight: 300;
+    font-size: 21px;
+    transition: 1s;
+}
+
+
+.homeTabmainBox .tabsFlexBox .tab_Panel{
+    width: 60%;
+}
+.homeTabmainBox .tabsFlexBox .tab_Panel img{
+    width: 100%;
+    height: 60%;
+    object-fit: contain;
+}
+.homeTabmainBox .tabsFlexBox .tab_Panel p{
+    font-size: .7em;
+    color: #fff;
+    font-weight: 300;
+}
+.homeTabmainBox .tabsFlexBox .tab_Panel ul.service_item__list_wrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.homeTabmainBox .tabsFlexBox .tab_Panel ul.service_item__list_wrapper li{
+    width: 33.33%;
+    padding: 0 1.5em 0 0;
+    margin-bottom: .25em;
+    list-style: disc;
+    display: list-item;
+    color: white;
+}
+.homeTabmainBox .tabsFlexBox .tab_Panel ul.service_item__list_wrapper li a{
+    color: rgba(255, 255, 255, .5);
+    font-size: .875em;
+    transition: .25s ease-in-out;
+}
 
 #webDevBg {
     background-image: url(../assets/images/tabs/webdevelopment-bg.webp);
@@ -176,9 +234,8 @@
 .mouseBox {
     position: absolute;
     z-index: 99999;
-    /* background: red; */
     left: -58px;
-    top: 200px;
+    top: 95px;
 }
 
 .mouseBox .mouse {
@@ -214,37 +271,7 @@
     font-family: "Montserrat", sans-serif;
 }
 
-.homeTabs .TabPanel .TabImage {
-    height: 100%;
-    width: 100%;
-    display: block;
-    object-fit: contain;
-}
 
-.homeTabs .TabPanel p {
-    font-size: .7em;
-    color: #fff;
-    font-weight: 300;
-    font-family: "Montserrat", sans-serif;
-}
-
-.homeTabs .TabPanel .service_item__list_wrapper {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.homeTabs .TabPanel .service_item__list_wrapper li {
-    width: 33.33%;
-    color: white;
-}
-
-.homeTabs .TabPanel .service_item__list_wrapper li a {
-    color: rgba(255, 255, 255, .5);
-    font-size: .6em;
-    font-family: "Montserrat", sans-serif;
-    transition: .25s ease-in-out;
-}
 .servicesListBox{
     display: none;
 }
@@ -265,19 +292,12 @@
     }
 }
 @media screen and (max-width:992px){
+    .homeTabmainBox{
+        display: none;
+    }
     .heroRightSide span {
         font-size: 40px;
         line-height: 40px;
-    }
-    .homeTabs .TabListBox {
-        width: auto;
-    }
-    .homeTabs .TabPanel .TabImage {
-        height: auto;
-        width: auto;
-    }
-    .homeTabmainBox {
-        display: none;
     }
     .servicesListBox{
         display: block;
@@ -350,19 +370,6 @@
     }
     .homeTabmainBox {
         padding: 40px 20px;
-    }
-}
-
-@media screen and (max-width:680px){
-    .homeTabs .TabPanel .TabImage {
-        width: 100%;
-    }
-    .homeTabs .TabPanel .service_item__list_wrapper {
-        margin: 0;
-        padding: 0;
-    }
-    .homeTabs .TabPanel .service_item__list_wrapper li {
-        width: 100%;
     }
 }
 

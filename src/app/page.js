@@ -1,7 +1,5 @@
 'use client'
-import React, { useState, useEffect } from 'react'
-// import { motion, useAnimation } from "framer-motion";
-// import { useInView } from "react-intersection-observer";
+import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link'
 import style from './styles/home.module.css'
 import Image from 'next/image';
@@ -35,7 +33,6 @@ import ReactPlayer from "react-player";
 
 const Page = () => {
   const [isActive, setActive] = useState("Web_Dev")
-  const [activeIndex, setActiveIndex] = useState(0); // State to track the active index
   return (
     <div className={`${style.home}`}>
       <Cursor />
@@ -85,7 +82,414 @@ const Page = () => {
           </div>
         </div>
       </section>
+
       <section className={`${style.homeTabmainBox}`}
+        id={`${isActive == "Web_Dev" ? style.webDevBg :
+          isActive == "Mobile_Application" ? style.mobileBg :
+            isActive == "Digital_Marketing" ? style.digiBg :
+              isActive == "Digital_Branding" ? style.Digital_BranBg :
+                isActive == "Ecommerce_Web" ? style.Ecommerce_WebBg :
+                  isActive == "UI/UX" ? style.UIUXbg :
+                    isActive == "Video_Animation" ? style.Video_Animationbg :
+                      isActive == "IT_Resource" ? style.IT_ResourceBg : ""
+          }`}
+      >
+        <div className="container-fluid" style={{position: "relative"}}> 
+          <div className={`${style.mouseBox}`}>
+            <div className={`${style.mouse}`}></div>
+            <h6></h6>
+            <span>Scroll</span>
+          </div>
+          <div className="row">
+            <div className="col-lg-12">
+              <div className={`${style.tabsFlexBox}`}>
+                <ul className={`${style.tabslist}`}>
+                  <li onMouseEnter={() => { setActive("Web_Dev") }}><a href="" style={{ color : isActive === "Web_Dev" ? "white" : "rgb(179, 167, 167)", }}>Web Development</a></li>
+                  <li onMouseEnter={() => { setActive("Mobile_Application") }}><a href="" style={{ color : isActive === "Mobile_Application" ? "white" : "rgb(179, 167, 167)", }}>Mobile Application Development</a></li>
+                  <li onMouseEnter={() => { setActive("Digital_Marketing") }}><a href="" style={{ color : isActive === "Digital_Marketing" ? "white" : "rgb(179, 167, 167)", }}>Digital Marketing</a></li>
+                  <li onMouseEnter={() => { setActive("Digital_Branding") }}><a href="" style={{ color : isActive === "Digital_Branding" ? "white" : "rgb(179, 167, 167)", }}>Digital Branding & Communication</a></li>
+                  <li onMouseEnter={() => { setActive("Ecommerce_Web") }}><a href="" style={{ color : isActive === "Ecommerce_Web" ? "white" : "rgb(179, 167, 167)", }}>Ecommerce Web Development</a></li>
+                  <li onMouseEnter={() => { setActive("UI/UX") }}><a href="" style={{ color : isActive === "UI/UX" ? "white" : "rgb(179, 167, 167)", }}>UI/UX Design</a></li>
+                  <li onMouseEnter={() => { setActive("Video_Animation") }}><a href="" style={{ color : isActive === "Video_Animation" ? "white" : "rgb(179, 167, 167)", }}>Video Animation</a></li>
+                  <li onMouseEnter={() => { setActive("IT_Resource") }}><a href="" style={{ color : isActive === "IT_Resource" ? "white" : "rgb(179, 167, 167)", }}>Resource Outsourcing</a></li>
+                </ul>
+                <div className={`${style.tab_Panel}`} style={{ display: isActive === "Web_Dev" ? "block" : "none", }}>
+                  <Image
+                    src={webDevImg}
+                    alt="Example Image"
+                    className={`${style.TabImage}`}
+                  />
+                  <div>
+                    <p>
+                      Get an edge over your competitors and boost your profitability
+                      with magnetic web experiences. Digital Gravity is the choice of the UAE’s
+                      leading brands for website design and web development services in Dubai.
+                      Whether it’s custom web development or WordPress web development,
+                      we make sure you get the best of both worlds in the form of a responsive,
+                      secure, and high-performance website.
+                    </p>
+                    <p className='mt-3'> You can receive services in the following categories of Web Development:</p>
+                    <div>
+                      <ul className={`${style.service_item__list_wrapper}`}>
+                        <li><a href="">Wordpress Development </a></li>
+                        <li><a href="">Sharepoint Development </a></li>
+                        <li><a href="">Enterprise Development </a> </li>
+                        <li><a href=""> Sitecore Development </a></li>
+                        <li><a href="">PHP Development </a></li>
+                        <li><a href="">Joomla Development </a></li>
+                        <li><a href="">ASP.NET Development </a></li>
+                        <li> <a href="">CMS Development </a></li>
+                        <li><a href="">Drupal Development </a></li>
+                        <li><a href="">Ibexa DXP </a></li>
+                        <li><a href="">Laravel Development </a></li>
+                        <li><a href="">Python Web App Development </a></li>
+                        <li><a href=""> Angularjs Development </a> </li>
+                        <li><a href=""> Website Maintenance Services </a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div className={`${style.tab_Panel}`} style={{ display: isActive === "Mobile_Application" ? "block" : "none", }}>
+                  <Image
+                    src={mobileImg}
+                    alt="Example Image"
+                    className={`${style.TabImage}`}
+                  />
+                  <div>
+                    <p>
+                      Leverage the power of mobile solutions and create a personalised marketing
+                      channel for your audience. Digital Gravity offers comprehensive mobile
+                      app development services for iOS and Android devices. In the form of native
+                      and cross-platform applications, we carve out interfaces that win hearts
+                      and accelerate your growth.
+                    </p>
+                    <p className='mt-3'> Innovative & Ingenious Mobile App Development Solutions in Dubai</p>
+                    <div>
+                      <ul className={`${style.service_item__list_wrapper}`}>
+                        <li><a href="">Hybrid Apps </a> </li>
+                        <li><a href="">Android App Development </a></li>
+                        <li><a href="">IOS App Development </a></li>
+                        <li><a href="">React Native Apps </a></li>
+                        <li><a href="">Flutter Apps </a></li>
+                        <li><a href="">Progressive Web Apps </a></li>
+                        <li><a href="">Ruby on Rails (ROR) Development </a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div className={`${style.tab_Panel}`} style={{ display: isActive === "Digital_Marketing" ? "block" : "none", }}>
+                  <Image
+                    src={digiMarketImg}
+                    alt="Example Image"
+                    className={`${style.TabImage}`}
+                  />
+                  <div>
+                    <p>
+                      Climb the ladder of success by accumulating more leads and sales with our
+                      digital marketing services. We will help you achieve a substantial ROI in a
+                      little time with search engine optimization, social media marketing,
+                      and Google Ads with our tried and tested strategies.
+                    </p>
+                    <p className='mt-3'>Communicable & Captivating Digital Marketing Services</p>
+                    <div>
+                      <ul className={`${style.service_item__list_wrapper}`}>
+                        <li><a>Social Media Marketing (SMM) </a></li>
+                        <li><a>Social Media Optimization (SMO) </a></li>
+                        <li><a>Pay Per Click (PPC)</a></li>
+                        <li><a>Search Engine Optimization (SEO) </a></li>
+                        <li><a>Conversion Rate Optimization (CRO) </a></li>
+                        <li><a>Email Marketing </a></li>
+                        <li><a>Content Marketing </a></li>
+                        <li><a>Online Reputation Management (ORM) </a></li>
+                        <li><a>App Store Optimization (ASO) </a></li>
+                        <li><a>Public Relation (PR) </a></li>
+                        <li><a>Online Translation Services </a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div className={`${style.tab_Panel}`} style={{ display: isActive === "Digital_Branding" ? "block" : "none", }}>
+                  <Image
+                    src={digiBranfingImg}
+                    alt="Example Image"
+                    className={`${style.TabImage}`}
+                  />
+                  <div>
+                    <p>
+                      Promote your business to the masses and build a strong reputation in the
+                      market with our branding and communication services. Now you can focus
+                      on meeting the bottom line while we get your branding message across
+                      to the target audience. We have a knack for crafting memorable brand
+                      stories that win you lifelong customers and boost engagement for your brand.
+                    </p>
+                    <p className='mt-3'> Creative Branding & Communication Agency for Curious Minds.</p>
+                    <div>
+                      <ul className={`${style.service_item__list_wrapper}`}>
+                        <li> <a>
+                          Company Profile &amp; Brochure Design </a>
+                        </li>
+                        <li>
+                          <a>
+                            Business Card Design </a>
+                        </li>
+                        <li>
+                          <a>
+                            Corporate Identity Design </a>
+                        </li>
+                        <li>
+                          <a>
+                            Packaging Designs </a>
+                        </li>
+                        <li>
+                          <a>
+                            Logo Design </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div className={`${style.tab_Panel}`} style={{ display: isActive === "Ecommerce_Web" ? "block" : "none", }}>
+                  <Image
+                    src={EcommerceImg}
+                    alt="Example Image"
+                    className={`${style.TabImage}`}
+                  />
+                  <div>
+                    <p>
+                      Robust, sales-driven, and intuitive eCommerce solutions for online
+                      businesses yearning to scale in a competitive digital landscape.
+                      Digital Gravity is recognized as the top eCommerce web development
+                      company in Dubai with a team of tech-savvy professionals, who can
+                      integrate both simple and complex features into your online store.
+                    </p>
+                    <p className='mt-3'>You can receive services in the following categories of Ecommerce Web Development:</p>
+                    <div>
+                      <ul className={`${style.service_item__list_wrapper}`}>
+                        <li>
+                          <a>
+                            Woo Commerce Development </a>
+                        </li>
+                        <li>
+                          <a>
+                            Mirakl Development </a>
+                        </li>
+                        <li>
+                          <a>
+                            Magento Ecommerce Development </a>
+                        </li>
+                        <li>
+                          <a>
+                            Big Commerce Development </a>
+                        </li>
+                        <li>
+                          <a>
+                            Shopify Ecommerce Development </a>
+                        </li>
+                        <li>
+                          <a>
+                            Shopify Plus Ecommerce Developments </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div className={`${style.tab_Panel}`} style={{ display: isActive === "UI/UX" ? "block" : "none", }}>
+                  <Image
+                    src={UIUXImg}
+                    alt="Example Image"
+                    className={`${style.TabImage}`}
+                  />
+                  <div>
+                    <p>
+                      Get bespoke user experiences that meet all your design needs.
+                      We take pride in crafting stunning user interfaces that make it
+                      fun for your audience to interact with your brand and come back
+                      in the future for more. Whether it’s a mobile app or a website,
+                      Digital Gravity’s team of UX/UI designers is the best you can hire for
+                      UX/UI design services in Dubai.
+                    </p>
+                    <p className='mt-3'> A Creative UI/UX Design Agency in Dubai with Business Centric Approach</p>
+                    <div>
+                      <ul className={`${style.service_item__list_wrapper}`}>
+                        <li>
+                          <a>
+                            PSD To Responsive HTML </a>
+                        </li>
+                        <li>
+                          <a>
+                            UX Design Workshop </a>
+                        </li>
+                        <li>
+                          <a>
+                            Responsive Web Design </a>
+                        </li>
+                        <li>
+                          <a>
+                            UX Design </a>
+                        </li>
+                        <li>
+                          <a>
+                            Landing Page Design </a>
+                        </li>
+                        <li>
+                          <a>
+                            UX Audit </a>
+                        </li>
+                        <li>
+                          <a>
+                            Graphic Design </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div className={`${style.tab_Panel}`} style={{ display: isActive === "Video_Animation" ? "block" : "none", }}>
+                  <Image
+                    src={VideoImg}
+                    alt="Example Image"
+                    className={`${style.TabImage}`}
+                  />
+                  <div>
+                    <p>
+                      Create bewitching videos for your brand and enthral your
+                      prospective customers. Digital Gravity is the best video
+                      production company in Dubai you can choose to make yourself
+                      look and sound awesome. We create everything you need from
+                      explainer videos to sales videos, product videos, branding videos,
+                      and a lot more in exactly the way you envisioned them.
+                    </p>
+                    <p className='mt-3'>  Compelling, Aesthetically Appealing & Immersive Video Animation.</p>
+                    <div>
+                      <ul className={`${style.service_item__list_wrapper}`}>
+                        <li>
+                          <a>
+                            Explanier Video Production </a>
+                        </li>
+                        <li>
+                          <a>
+                            Product Demo Animation </a>
+                        </li>
+                        <li>
+                          <a>
+                            Video Game Trailer </a>
+                        </li>
+                        <li>
+                          <a>
+                            3D Architectural Walkthroughs </a>
+                        </li>
+                        <li>
+                          <a>
+                            Medical Animation Studio </a>
+                        </li>
+                        <li>
+                          <a>
+                            Character Animation Video </a>
+                        </li>
+                        <li>
+                          <a>
+                            Whiteboard Animation Video </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div className={`${style.tab_Panel}`} style={{ display: isActive === "IT_Resource" ? "block" : "none", }}>
+                  <Image
+                    src={IT_ResourcesImg}
+                    alt="Example Image"
+                    className={`${style.TabImage}`}
+                  />
+                  <div>
+                    <p>
+                      We are an IT outsourcing company in Dubai to offer an
+                      extended range of services including End User Support,
+                      Application Investment, Cloud & Infrastructure expertise.
+                      On-demand IT staff outsourcing solution Dubai specialises
+                      exclusively for digital transformation with Custom Software
+                      Development, Software Testing & QA, Cloud Computing, Mobile
+                      & Web Development, Maintenance & Support, Blockchain Consulting,
+                      Data Science, Internet of Things, UI/UX Design, MVP Development,
+                      Nearshore/Offshore Software Development.
+                    </p>
+                    <p className='mt-3'> Cost-effective and Comprehensive IT Outsourcing Company</p>
+                    <div>
+                      <ul className={`${style.service_item__list_wrapper}`}>
+                        <li>
+                          <a>
+                            Hire Mobile App Developer </a>
+                        </li>
+                        <li>
+                          <a>
+                            Hire Scrum Master in Dubai </a>
+                        </li>
+                        <li>
+                          <a>
+                            Hire AWS Resources in Dubai </a>
+                        </li>
+                        <li>
+                          <a>
+                            Hire QA Resources in Dubai </a>
+                        </li>
+                        <li>
+                          <a>
+                            Hire Node.js Developer in Dubai </a>
+                        </li>
+                        <li>
+                          <a>
+                            Hire Azure Developer in Dubai </a>
+                        </li>
+                        <li>
+                          <a>
+                            Hire React JS Developers in Dubai </a>
+                        </li>
+                        <li>
+                          <a>
+                            Hire React Native Developers in Dubai </a>
+                        </li>
+                        <li>
+                          <a>
+                            Hire Sharepoint Developers in Dubai </a>
+                        </li>
+                        <li>
+                          <a>
+                            Hire Dynamics 365 Developers in Dubai </a>
+                        </li>
+                        <li>
+                          <a>
+                            Hire Project Managers in Dubai </a>
+                        </li>
+                        <li>
+                          <a>
+                            Hire Dot Net Developers in Dubai </a>
+                        </li>
+                        <li>
+                          <a>
+                            Hire RPA in Dubai </a>
+                        </li>
+                        <li>
+                          <a>
+                            3D Google Maps Integration </a>
+                        </li>
+                        <li>
+                          <a>
+                            MarTech Consulting </a>
+                        </li>
+                        <li>
+                          <a>
+                            Digital Cloud Transformation Solutions </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      {/* <section className={`${style.homeTabmainBox}`}
         id={`${isActive == "Web_Dev" ? style.webDevBg :
           isActive == "Mobile_Application" ? style.mobileBg :
             isActive == "Digital_Marketing" ? style.digiBg :
@@ -109,411 +513,24 @@ const Page = () => {
                       <span>Scroll</span>
                     </div>
                     <Text text="Services" animation="fade-right" />
+                    
                     <TabList id={`${style.TabList}`}>
-                      <Tab onClick={() => { setActive("Web_Dev") }}>Web Development</Tab>
-                      <Tab onClick={() => { setActive("Mobile_Application") }}>Mobile Application Development</Tab>
-                      <Tab onClick={() => { setActive("Digital_Marketing") }}>Digital Marketing</Tab>
-                      <Tab onClick={() => { setActive("Digital_Branding") }}>Digital Branding & Communication</Tab>
-                      <Tab onClick={() => { setActive("Ecommerce_Web") }}>Ecommerce Web Development</Tab>
-                      <Tab onClick={() => { setActive("UI/UX") }}>UI/UX Design</Tab>
-                      <Tab onClick={() => { setActive("Video_Animation") }}>Video Animation</Tab>
-                      <Tab onClick={() => { setActive("IT_Resource") }}>IT Resource Outsourcing</Tab>
+                      <Tab onMouseEnter={() => { setActive("Web_Dev") }}>Web Development</Tab>
+                      <Tab onMouseEnter={() => { setActive("Mobile_Application") }}>Mobile Application Development</Tab>
+                      <Tab onMouseEnter={() => { setActive("Digital_Marketing") }}>Digital Marketing</Tab>
+                      <Tab onMouseEnter={() => { setActive("Digital_Branding") }}>Digital Branding & Communication</Tab>
+                      <Tab onMouseEnter={() => { setActive("Ecommerce_Web") }}>Ecommerce Web Development</Tab>
+                      <Tab onMouseEnter={() => { setActive("UI/UX") }}>UI/UX Design</Tab>
+                      <Tab onMouseEnter={() => { setActive("Video_Animation") }}>Video Animation</Tab>
+                      <Tab onMouseEnter={() => { setActive("IT_Resource") }}>IT Resource Outsourcing</Tab>
                     </TabList>
                   </div>
-                  <>
-                    <TabPanel className={`${style.TabPanel}`}>
-                      <div>
-                        {/* <img src={webDevImg} alt="" /> */}
-                        <Image
-                          src={webDevImg} // Path to your image file in the public directory
-                          alt="Example Image"
-                          className={`${style.TabImage}`} // Set the className here
-                        />
-                        <div>
-                          <p>
-                            Get an edge over your competitors and boost your profitability
-                            with magnetic web experiences. Digital Gravity is the choice of the UAE’s
-                            leading brands for website design and web development services in Dubai.
-                            Whether it’s custom web development or WordPress web development,
-                            we make sure you get the best of both worlds in the form of a responsive,
-                            secure, and high-performance website.
-                          </p>
-                          <p className='mt-3'> You can receive services in the following categories of Web Development:</p>
-                          <div>
-                            <ul className={`${style.service_item__list_wrapper}`}>
-                              <li><a href="">Wordpress Development </a></li>
-                              <li><a href="">Sharepoint Development </a></li>
-                              <li><a href="">Enterprise Development </a> </li>
-                              <li><a href=""> Sitecore Development </a></li>
-                              <li><a href="">PHP Development </a></li>
-                              <li><a href="">Joomla Development </a></li>
-                              <li><a href="">ASP.NET Development </a></li>
-                              <li> <a href="">CMS Development </a></li>
-                              <li><a href="">Drupal Development </a></li>
-                              <li><a href="">Ibexa DXP </a></li>
-                              <li><a href="">Laravel Development </a></li>
-                              <li><a href="">Python Web App Development </a></li>
-                              <li><a href=""> Angularjs Development </a> </li>
-                              <li><a href=""> Website Maintenance Services </a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </TabPanel>
-                    <TabPanel className={`${style.TabPanel}`}>
-                      <div>
-                        <Image
-                          src={mobileImg}
-                          alt="Example Image"
-                          className={`${style.TabImage}`}
-                        />
-                        <div>
-                          <p>
-                            Leverage the power of mobile solutions and create a personalised marketing
-                            channel for your audience. Digital Gravity offers comprehensive mobile
-                            app development services for iOS and Android devices. In the form of native
-                            and cross-platform applications, we carve out interfaces that win hearts
-                            and accelerate your growth.
-                          </p>
-                          <p className='mt-3'> Innovative & Ingenious Mobile App Development Solutions in Dubai</p>
-                          <div>
-                            <ul className={`${style.service_item__list_wrapper}`}>
-                              <li><a href="">Hybrid Apps </a> </li>
-                              <li><a href="">Android App Development </a></li>
-                              <li><a href="">IOS App Development </a></li>
-                              <li><a href="">React Native Apps </a></li>
-                              <li><a href="">Flutter Apps </a></li>
-                              <li><a href="">Progressive Web Apps </a></li>
-                              <li><a href="">Ruby on Rails (ROR) Development </a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </TabPanel>
-                    <TabPanel className={`${style.TabPanel}`}>
-                      <div>
-                        <Image
-                          src={digiMarketImg}
-                          alt="Example Image"
-                          className={`${style.TabImage}`}
-                        />
-                        <div>
-                          <p>
-                            Climb the ladder of success by accumulating more leads and sales with our
-                            digital marketing services. We will help you achieve a substantial ROI in a
-                            little time with search engine optimization, social media marketing,
-                            and Google Ads with our tried and tested strategies.
-                          </p>
-                          <p className='mt-3'>Communicable & Captivating Digital Marketing Services</p>
-                          <div>
-                            <ul className={`${style.service_item__list_wrapper}`}>
-                              <li><a>Social Media Marketing (SMM) </a></li>
-                              <li><a>Social Media Optimization (SMO) </a></li>
-                              <li><a>Pay Per Click (PPC)</a></li>
-                              <li><a>Search Engine Optimization (SEO) </a></li>
-                              <li><a>Conversion Rate Optimization (CRO) </a></li>
-                              <li><a>Email Marketing </a></li>
-                              <li><a>Content Marketing </a></li>
-                              <li><a>Online Reputation Management (ORM) </a></li>
-                              <li><a>App Store Optimization (ASO) </a></li>
-                              <li><a>Public Relation (PR) </a></li>
-                              <li><a>Online Translation Services </a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </TabPanel>
-                    <TabPanel className={`${style.TabPanel}`}>
-                      <div>
-                        <Image
-                          src={digiBranfingImg}
-                          alt="Example Image"
-                          className={`${style.TabImage}`}
-                        />
-                        <div>
-                          <p>
-                            Promote your business to the masses and build a strong reputation in the
-                            market with our branding and communication services. Now you can focus
-                            on meeting the bottom line while we get your branding message across
-                            to the target audience. We have a knack for crafting memorable brand
-                            stories that win you lifelong customers and boost engagement for your brand.
-                          </p>
-                          <p className='mt-3'> Creative Branding & Communication Agency for Curious Minds.</p>
-                          <div>
-                            <ul className={`${style.service_item__list_wrapper}`}>
-                              <li> <a>
-                                Company Profile &amp; Brochure Design </a>
-                              </li>
-                              <li>
-                                <a>
-                                  Business Card Design </a>
-                              </li>
-                              <li>
-                                <a>
-                                  Corporate Identity Design </a>
-                              </li>
-                              <li>
-                                <a>
-                                  Packaging Designs </a>
-                              </li>
-                              <li>
-                                <a>
-                                  Logo Design </a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </TabPanel>
-                    <TabPanel className={`${style.TabPanel}`}>
-                      <div>
-                        <Image
-                          src={EcommerceImg}
-                          alt="Example Image"
-                          className={`${style.TabImage}`}
-                        />
-                        <div>
-                          <p>
-                            Robust, sales-driven, and intuitive eCommerce solutions for online
-                            businesses yearning to scale in a competitive digital landscape.
-                            Digital Gravity is recognized as the top eCommerce web development
-                            company in Dubai with a team of tech-savvy professionals, who can
-                            integrate both simple and complex features into your online store.
-                          </p>
-                          <p className='mt-3'>You can receive services in the following categories of Ecommerce Web Development:</p>
-                          <div>
-                            <ul className={`${style.service_item__list_wrapper}`}>
-                              <li>
-                                <a>
-                                  Woo Commerce Development </a>
-                              </li>
-                              <li>
-                                <a>
-                                  Mirakl Development </a>
-                              </li>
-                              <li>
-                                <a>
-                                  Magento Ecommerce Development </a>
-                              </li>
-                              <li>
-                                <a>
-                                  Big Commerce Development </a>
-                              </li>
-                              <li>
-                                <a>
-                                  Shopify Ecommerce Development </a>
-                              </li>
-                              <li>
-                                <a>
-                                  Shopify Plus Ecommerce Developments </a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </TabPanel>
-                    <TabPanel className={`${style.TabPanel}`}>
-                      <div>
-                        <Image
-                          src={UIUXImg}
-                          alt="Example Image"
-                          className={`${style.TabImage}`}
-                        />
-                        <div>
-                          <p>
-                            Get bespoke user experiences that meet all your design needs.
-                            We take pride in crafting stunning user interfaces that make it
-                            fun for your audience to interact with your brand and come back
-                            in the future for more. Whether it’s a mobile app or a website,
-                            Digital Gravity’s team of UX/UI designers is the best you can hire for
-                            UX/UI design services in Dubai.
-                          </p>
-                          <p className='mt-3'> A Creative UI/UX Design Agency in Dubai with Business Centric Approach</p>
-                          <div>
-                            <ul className={`${style.service_item__list_wrapper}`}>
-                              <li>
-                                <a>
-                                  PSD To Responsive HTML </a>
-                              </li>
-                              <li>
-                                <a>
-                                  UX Design Workshop </a>
-                              </li>
-                              <li>
-                                <a>
-                                  Responsive Web Design </a>
-                              </li>
-                              <li>
-                                <a>
-                                  UX Design </a>
-                              </li>
-                              <li>
-                                <a>
-                                  Landing Page Design </a>
-                              </li>
-                              <li>
-                                <a>
-                                  UX Audit </a>
-                              </li>
-                              <li>
-                                <a>
-                                  Graphic Design </a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </TabPanel>
-                    <TabPanel className={`${style.TabPanel}`}>
-                      <div>
-                        <Image
-                          src={VideoImg}
-                          alt="Example Image"
-                          className={`${style.TabImage}`}
-                        />
-                        <div>
-                          <p>
-                            Create bewitching videos for your brand and enthral your
-                            prospective customers. Digital Gravity is the best video
-                            production company in Dubai you can choose to make yourself
-                            look and sound awesome. We create everything you need from
-                            explainer videos to sales videos, product videos, branding videos,
-                            and a lot more in exactly the way you envisioned them.
-                          </p>
-                          <p className='mt-3'>  Compelling, Aesthetically Appealing & Immersive Video Animation.</p>
-                          <div>
-                            <ul className={`${style.service_item__list_wrapper}`}>
-                              <li>
-                                <a>
-                                  Explanier Video Production </a>
-                              </li>
-                              <li>
-                                <a>
-                                  Product Demo Animation </a>
-                              </li>
-                              <li>
-                                <a>
-                                  Video Game Trailer </a>
-                              </li>
-                              <li>
-                                <a>
-                                  3D Architectural Walkthroughs </a>
-                              </li>
-                              <li>
-                                <a>
-                                  Medical Animation Studio </a>
-                              </li>
-                              <li>
-                                <a>
-                                  Character Animation Video </a>
-                              </li>
-                              <li>
-                                <a>
-                                  Whiteboard Animation Video </a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </TabPanel>
-                    <TabPanel className={`${style.TabPanel}`}>
-                      <div>
-                        <Image
-                          src={IT_ResourcesImg}
-                          alt="Example Image"
-                          className={`${style.TabImage}`}
-                        />
-                        <div>
-                          <p>
-                            We are an IT outsourcing company in Dubai to offer an
-                            extended range of services including End User Support,
-                            Application Investment, Cloud & Infrastructure expertise.
-                            On-demand IT staff outsourcing solution Dubai specialises
-                            exclusively for digital transformation with Custom Software
-                            Development, Software Testing & QA, Cloud Computing, Mobile
-                            & Web Development, Maintenance & Support, Blockchain Consulting,
-                            Data Science, Internet of Things, UI/UX Design, MVP Development,
-                            Nearshore/Offshore Software Development.
-                          </p>
-                          <p className='mt-3'> Cost-effective and Comprehensive IT Outsourcing Company</p>
-                          <div>
-                            <ul className={`${style.service_item__list_wrapper}`}>
-                              <li>
-                                <a>
-                                  Hire Mobile App Developer </a>
-                              </li>
-                              <li>
-                                <a>
-                                  Hire Scrum Master in Dubai </a>
-                              </li>
-                              <li>
-                                <a>
-                                  Hire AWS Resources in Dubai </a>
-                              </li>
-                              <li>
-                                <a>
-                                  Hire QA Resources in Dubai </a>
-                              </li>
-                              <li>
-                                <a>
-                                  Hire Node.js Developer in Dubai </a>
-                              </li>
-                              <li>
-                                <a>
-                                  Hire Azure Developer in Dubai </a>
-                              </li>
-                              <li>
-                                <a>
-                                  Hire React JS Developers in Dubai </a>
-                              </li>
-                              <li>
-                                <a>
-                                  Hire React Native Developers in Dubai </a>
-                              </li>
-                              <li>
-                                <a>
-                                  Hire Sharepoint Developers in Dubai </a>
-                              </li>
-                              <li>
-                                <a>
-                                  Hire Dynamics 365 Developers in Dubai </a>
-                              </li>
-                              <li>
-                                <a>
-                                  Hire Project Managers in Dubai </a>
-                              </li>
-                              <li>
-                                <a>
-                                  Hire Dot Net Developers in Dubai </a>
-                              </li>
-                              <li>
-                                <a>
-                                  Hire RPA in Dubai </a>
-                              </li>
-                              <li>
-                                <a>
-                                  3D Google Maps Integration </a>
-                              </li>
-                              <li>
-                                <a>
-                                  MarTech Consulting </a>
-                              </li>
-                              <li>
-                                <a>
-                                  Digital Cloud Transformation Solutions </a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </TabPanel>
-                  </>
                 </Tabs>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* AFTER BREAKPOINT 992 SHOW THIS SECTION */}
       <section className={`${style.servicesListBox}`}>
         <div className="container-fluid">
