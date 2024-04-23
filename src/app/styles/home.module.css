@@ -147,10 +147,14 @@
     display: block;
     color:  rgb(179, 167, 167);
     font-weight: 300;
-    font-size: 21px;
+    font-size: 18px;
     transition: 1s;
 }
-
+.active{
+    color: white !important;
+    font-size: 23px !important;
+    transition: 1s;
+}
 
 .homeTabmainBox .tabsFlexBox .tab_Panel{
     width: 60%;
@@ -275,7 +279,6 @@
 .servicesListBox{
     display: none;
 }
-
 /* ================================= */
 @keyframes moveTopToBottom {
     0% {

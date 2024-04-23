@@ -30,9 +30,15 @@ import Worth__Read from './component/Work-Read/index'
 import Award from './component/Awards/components'
 import Social from './component/SocialJoin/component'
 import ReactPlayer from "react-player";
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
 const Page = () => {
-  const [isActive, setActive] = useState("Web_Dev")
+  const [isActive, setActive] = useState('Web_Dev');
+  const setIsActive = (tab) => {
+    setActive(tab);
+  };
   return (
     <div className={`${style.home}`}>
       <Cursor />
@@ -103,15 +109,15 @@ const Page = () => {
           <div className="row">
             <div className="col-lg-12">
               <div className={`${style.tabsFlexBox}`}>
-                <ul className={`${style.tabslist}`}>
-                  <li onMouseEnter={() => { setActive("Web_Dev") }}><a href="" style={{ color : isActive === "Web_Dev" ? "white" : "rgb(179, 167, 167)", }}>Web Development</a></li>
-                  <li onMouseEnter={() => { setActive("Mobile_Application") }}><a href="" style={{ color : isActive === "Mobile_Application" ? "white" : "rgb(179, 167, 167)", }}>Mobile Application Development</a></li>
-                  <li onMouseEnter={() => { setActive("Digital_Marketing") }}><a href="" style={{ color : isActive === "Digital_Marketing" ? "white" : "rgb(179, 167, 167)", }}>Digital Marketing</a></li>
-                  <li onMouseEnter={() => { setActive("Digital_Branding") }}><a href="" style={{ color : isActive === "Digital_Branding" ? "white" : "rgb(179, 167, 167)", }}>Digital Branding & Communication</a></li>
-                  <li onMouseEnter={() => { setActive("Ecommerce_Web") }}><a href="" style={{ color : isActive === "Ecommerce_Web" ? "white" : "rgb(179, 167, 167)", }}>Ecommerce Web Development</a></li>
-                  <li onMouseEnter={() => { setActive("UI/UX") }}><a href="" style={{ color : isActive === "UI/UX" ? "white" : "rgb(179, 167, 167)", }}>UI/UX Design</a></li>
-                  <li onMouseEnter={() => { setActive("Video_Animation") }}><a href="" style={{ color : isActive === "Video_Animation" ? "white" : "rgb(179, 167, 167)", }}>Video Animation</a></li>
-                  <li onMouseEnter={() => { setActive("IT_Resource") }}><a href="" style={{ color : isActive === "IT_Resource" ? "white" : "rgb(179, 167, 167)", }}>Resource Outsourcing</a></li>
+                <ul className={`${style.tabslist}`} onMouseEnter={() => { setIsActive(null) }}>
+                  <li onMouseEnter={() => { setIsActive("Web_Dev") }}><a href="" className={isActive == "Web_dev" ? `${style.active}` : ""}>Web Development</a></li>
+                  <li onMouseEnter={() => { setIsActive("Mobile_Application") }}><a href="" className={isActive == "Mobile_Application" ? `${style.active}` : ""}>Mobile Application Development</a></li>
+                  <li onMouseEnter={() => { setIsActive("Digital_Marketing") }}><a href="" className={isActive == "Digital_Marketing" ? `${style.active}` : ""}>Digital Marketing</a></li>
+                  <li onMouseEnter={() => { setIsActive("Digital_Branding") }}><a href=""  className={isActive == "Digital_Branding" ? `${style.active}` : ""}>Digital Branding & Communication</a></li>
+                  <li onMouseEnter={() => { setIsActive("Ecommerce_Web") }}><a href="" className={isActive == "Ecommerce_Web" ? `${style.active}` : ""}>Ecommerce Web Development</a></li>
+                  <li onMouseEnter={() => { setIsActive("UI/UX") }}><a href="" className={isActive == "UI/UX" ? `${style.active}` : ""}>UI/UX Design</a></li>
+                  <li onMouseEnter={() => { setIsActive("Video_Animation") }}><a href="" className={isActive == "Video_Animation" ? `${style.active}` : ""}>Video Animation</a></li>
+                  <li onMouseEnter={() => { setIsActive("IT_Resource") }}><a href="" className={isActive == "IT_Resource" ? `${style.active}` : ""}>Resource Outsourcing</a></li>
                 </ul>
                 <div className={`${style.tab_Panel}`} style={{ display: isActive === "Web_Dev" ? "block" : "none", }}>
                   <Image
@@ -487,50 +493,8 @@ const Page = () => {
           </div>
         </div>
       </section>
+   
 
-
-      {/* <section className={`${style.homeTabmainBox}`}
-        id={`${isActive == "Web_Dev" ? style.webDevBg :
-          isActive == "Mobile_Application" ? style.mobileBg :
-            isActive == "Digital_Marketing" ? style.digiBg :
-              isActive == "Digital_Branding" ? style.Digital_BranBg :
-                isActive == "Ecommerce_Web" ? style.Ecommerce_WebBg :
-                  isActive == "UI/UX" ? style.UIUXbg :
-                    isActive == "Video_Animation" ? style.Video_Animationbg :
-                      isActive == "IT_Resource" ? style.IT_ResourceBg : ""
-          }`}
-
-      >
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-lg-12">
-              <div className={`${style.homeTabs} hometabsSection`}>
-                <Tabs style={{ width: "100%" }}>
-                  <div className={`${style.TabListBox}`}>
-                    <div className={`${style.mouseBox}`}>
-                      <div className={`${style.mouse}`}></div>
-                      <h6></h6>
-                      <span>Scroll</span>
-                    </div>
-                    <Text text="Services" animation="fade-right" />
-                    
-                    <TabList id={`${style.TabList}`}>
-                      <Tab onMouseEnter={() => { setActive("Web_Dev") }}>Web Development</Tab>
-                      <Tab onMouseEnter={() => { setActive("Mobile_Application") }}>Mobile Application Development</Tab>
-                      <Tab onMouseEnter={() => { setActive("Digital_Marketing") }}>Digital Marketing</Tab>
-                      <Tab onMouseEnter={() => { setActive("Digital_Branding") }}>Digital Branding & Communication</Tab>
-                      <Tab onMouseEnter={() => { setActive("Ecommerce_Web") }}>Ecommerce Web Development</Tab>
-                      <Tab onMouseEnter={() => { setActive("UI/UX") }}>UI/UX Design</Tab>
-                      <Tab onMouseEnter={() => { setActive("Video_Animation") }}>Video Animation</Tab>
-                      <Tab onMouseEnter={() => { setActive("IT_Resource") }}>IT Resource Outsourcing</Tab>
-                    </TabList>
-                  </div>
-                </Tabs>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
       {/* AFTER BREAKPOINT 992 SHOW THIS SECTION */}
       <section className={`${style.servicesListBox}`}>
         <div className="container-fluid">
