@@ -42,64 +42,108 @@ svg {
 span {
     cursor: pointer;
 }
-
-/* HOME TABS SOME STYLE ================================= */
-.hometabsSection .react-tabs {
-    display: flex;
-}
-
-.hometabsSection .react-tabs .react-tabs__tab-list {
-    display: flex;
-    flex-direction: column;
-    border-bottom: none;
-    border-left: 1px solid white;
-    padding-left: 20px;
-    height: 230px;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    padding: 75px 10px;
-}
-
-.hometabsSection .react-tabs .react-tabs__tab-list::-webkit-scrollbar {
-    width: 0;
-}
-
-.hometabsSection .react-tabs .react-tabs__tab-list::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-.hometabsSection .react-tabs .react-tabs__tab-list::-webkit-scrollbar-thumb {
-    background: transparent;
-}
-
-.hometabsSection .react-tabs .react-tabs__tab-list .react-tabs__tab--selected {
-    background: transparent;
-    border-color: transparent;
-    color: white !important;
-    font-size: 25px;
-    font-weight: 600;
-    border-radius: 0;
-    border: 0;
-    outline: none;
-}
-.hometabsSection .react-tabs .react-tabs__tab-panel--selected {
-    width: 55%;
-}
-
-.hometabsSection .react-tabs .react-tabs__tab-list .react-tabs__tab{
-    font-weight: 600;
-    font-size: 18px;
-    color: #c7c0c096;
-}
-.hometabsSection .react-tabs .react-tabs__tab-list .react-tabs__tab:focus:after {
-    background: transparent;
-}
-
+html {
+    scroll-behavior: smooth;
+  }
 .slick-slide:focus{
     outline: none;
 }
-
-
+.pin-up {
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+  }
+  .content-wrap{
+    position:relative;
+    width: 333px;
+    height: 222px;
+    border-radius: 4px;
+    background-color: limegreen;
+    margin-right: 111px;
+    margin-top: -10px;
+  }
+  
+  .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    background-color: limegreen;
+    border-radius: 4px;
+    font-size: 30px;
+    color: white;
+  }
+  
+  
+  
+  .sideline {
+    position: absolute;
+    top: calc(50vh - 111px - 7px);
+    left: calc(50vw + 0px);
+    height: 222px;
+    width: 3px;
+    background-color: orange;
+  
+    transform: scaleY(0);
+    transform-origin: top center;
+    z-index: 1;
+  }
+  
+  
+  
+  .text-wrap {
+    height: 100vh;
+    width: 333px;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    background-color: green;
+  }
+  
+  .text {
+    font-size: 30px;
+    width: 100px;
+    height: 50px;
+    text-transform: uppercase;
+    color: white;
+  }
+  
+  
+  
+  .below {
+    height: 100vh;
+  
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color: white;
+  }
+  
+  .below span {
+    color: green;
+    font-size: 30px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-50vh);
+  }
+  
+  
+  
+  .footer {
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color: lightgrey;
+  }
 /* ========================= BRANDING */
 .branding .slick-dots{
     display: flex !important;
