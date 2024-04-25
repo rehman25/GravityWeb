@@ -67,18 +67,6 @@ import seo9 from '../../assets/images/casestudytabs/seo/img-33.webp'
 import seo10 from '../../assets/images/casestudytabs/seo/img-34.webp'
 import seo11 from '../../assets/images/casestudytabs/seo/img-35.webp'
 
-
-
-
-
-
-
-
-
-
-
-
-
 const Component = () => {
   const [tab, setTab] = useState(true)
   const [isWeb, setWeb] = useState(false)
