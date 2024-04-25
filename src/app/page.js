@@ -12,6 +12,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { CiLinkedin } from "react-icons/ci";
 import { FaYoutube } from "react-icons/fa6";
+import { Tab, Tabs,  TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import Header from './component/Header/component'
 import webDevImg from './assets/images/web/web-development.webp'
@@ -517,7 +518,7 @@ const Page = () => {
           </div>
         </div>
       </section>
-      <OurWork />
+      <OurWork/>
       <Branding />
       <Award />
       <FAQ />
