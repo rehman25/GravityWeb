@@ -2,7 +2,7 @@
 .section{
   width: 100%;
   background-image: url("../assets/images/banner/inner-banner.svg");
-  background-color: rgb(54, 54, 54);
+  background-color: #161414;
   padding: 5px;
   color: rgb(255, 255, 255);
 
@@ -88,7 +88,7 @@
   margin-right: 20px;
   font-size: 75px;
   font-weight: bolder;
-  -webkit-text-stroke: 1px #e3204a;
+  -webkit-text-stroke: 1px #9E9E9F;
   text-shadow: 0 0 0 0;
 }
 

@@ -1,6 +1,7 @@
 .caseStudy{
     width: 100%;
     overflow: clip;
+    background: #161414;
 }
 .heroSection {
     background-image: url(../assets/images/caseStudies/inner-banner.svg) !important;
@@ -13,6 +14,7 @@
     display: flex;
     /* align-items: center; */
     /* justify-content: center; */
+    
 }
 
 .header{

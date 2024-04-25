@@ -21,6 +21,7 @@ import sevenLogo from '../../assets/images/our-work/shurooq-logo.svg'
 import eight from '../../assets/images/our-work/our-work-8.webp'
 import eightLogo from '../../assets/images/our-work/suzuki-logo.svg'
 import Button from '../buttons';
+import Tabs from '../../component/Tabs/component'
 
 
 
@@ -35,6 +36,7 @@ function component() {
                             <div className='col-11'>
                                 <Text text="Our Work" className="mb-5" animation="fade-right" />
                                 <Work />
+                                <Tabs/>
                             </div>
                     </div>
                 </div>
