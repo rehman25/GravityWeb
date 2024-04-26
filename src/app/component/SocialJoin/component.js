@@ -8,7 +8,7 @@ import { FaLinkedin } from "react-icons/fa6";
 
 const component = () => {
   return (
-    <section style={{ background: "#F8F8F8" }}>
+    <section style={{ background: "#161414" }}>
       <div className={`container ${styles.container}`}>
         <div className="row">
           <div className="col-lg-12">

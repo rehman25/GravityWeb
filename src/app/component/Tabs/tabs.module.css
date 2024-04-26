@@ -79,6 +79,7 @@
 .casename p{
     margin: 0px;
     font-family: "Montserrat", sans-serif;
+    color: #fff;
 
 }
 .caseHeading{
@@ -91,7 +92,7 @@
 .casepara{
     font-size: 12px;
     font-weight: 400;
-    color: gray;
+    color: #fff;
 }
 
 .caseLink{
@@ -149,6 +150,7 @@
     font-weight: 600;
     letter-spacing: 1px;
     margin: 0; 
+    color: #fff;
 
 }
 .caseLink a{
@@ -200,7 +202,7 @@
     font-weight: 700;
     z-index: 1;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px #e3204a;
+    -webkit-text-stroke: 1px #9E9E9F;
 }
 
 
