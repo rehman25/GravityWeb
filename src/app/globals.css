@@ -48,102 +48,7 @@ html {
 .slick-slide:focus{
     outline: none;
 }
-.pin-up {
-    /* height: 100vh; */
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: green;
-  }
-  .content-wrap{
-    position:relative;
-    width: 333px;
-    height: 222px;
-    border-radius: 4px;
-    background-color: limegreen;
-    margin-right: 111px;
-    margin-top: -10px;
-  }
-  
-  .content {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position:absolute;
-    background-color: limegreen;
-    border-radius: 4px;
-    font-size: 30px;
-    color: white;
-  }
-  
-  
-  
-  .sideline {
-    position: absolute;
-    top: calc(50vh - 111px - 7px);
-    left: calc(50vw + 0px);
-    height: 222px;
-    width: 3px;
-    background-color: orange;
-  
-    transform: scaleY(0);
-    transform-origin: top center;
-    z-index: 1;
-  }
-  
-  
-  
-  .text-wrap {
-    height: 100vh;
-    width: 333px;
-    display: flex;
-    
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    
-    background-color: green;
-  }
-  
-  .text {
-    font-size: 30px;
-    width: 100px;
-    height: 50px;
-    text-transform: uppercase;
-    color: white;
-  }
-  
-  
-  
-  .below {
-    height: 100vh;
-  
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    background-color: white;
-  }
-  
-  .below span {
-    color: green;
-    font-size: 30px;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-50vh);
-  }
-  
-  
-  
-  .footer {
-    height: 5vh;
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    background-color: lightgrey;
-  }
+
 /* ========================= BRANDING */
 .branding .slick-dots{
     display: flex !important;
@@ -244,7 +149,38 @@ html {
 .faqs_slider .slick-slide{
     padding: 0 30px;
 }
+
+/* PORTFOLIO WORK SECTION CSS ===================== */
+.port__box ul .react-tabs__tab--selected{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color:  rgb(227, 32, 74) !important;
+    color: rgb(227, 32, 74);
+    background: transparent;
+}
+.port__box ul li:focus{
+    outline: none;
+    border-color:  rgb(227, 32, 74) !important;
+}
+
+ .react-tabs__tab{
+    border-bottom: 3px solid transparent !important;
+}
 /* ==================================================== */
+@keyframes scale-up-center {
+			
+    0% {
+        transform:scale(.2);
+    }
+    100% {
+        transform:scale(1);
+    }
+}
+.portfolio_images img{
+    object-fit: cover;
+    animation: scale-up-center 0.2s linear 0s 1 normal none;
+}
 @media screen and (max-width:992px){
     .Expertise___bg .react-tabs__tab-panel--selected{
         width: 100%;
