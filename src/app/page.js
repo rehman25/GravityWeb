@@ -7,6 +7,7 @@ import Button from './component/buttons/index';
 import Text from './component/text/index';
 import OurWork from './component/OurWork/component'
 import Portfolio from './component/Portfolio/index'
+import Packages from './component/Packages/index'
 import Cursor from './component/cursor/cursor'
 import { FaFacebookF } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
@@ -522,6 +523,7 @@ const Page = () => {
       {/* <OurWork/> */}
       <Portfolio />
       {/* <Branding /> */}
+      <Packages />
       <Award />
       <FAQ />
       <Worth__Read />

@@ -1,0 +1,156 @@
+.Headerspackages {
+    text-align: center;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.Headerspackages h1 {
+    color: #000000;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 56px;
+}
+
+.Headerspackages p {
+    color: #000000;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.CustomTabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.CustomTabs li {
+    border-radius: 0;
+    /* border: none; */
+}
+
+.Tab {
+    flex: 1;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    color: #c1202f;
+    border: 1px solid black;
+    transition: background-color 1s, color 1s;
+    font-weight: 600;
+}
+
+.Tab:focus {
+    outline: none;
+    background-color: #C1202F;
+    color: #FFFFFF;
+}
+
+.Tab.active {
+    background-color: #C1202F;
+    color: #FFFFFF;
+}
+
+.Tab+.Tab {
+    margin-left: 10px;
+}
+
+.PackagesCards {
+    margin: 20px 20px;
+    border: 1px solid #ccc;
+    color: #333;
+    border-radius: 20px;
+    box-shadow: 0px 0px 17px 0px #C1202F;
+}
+
+.PackagesCards h2 {
+    color: #C1202F;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 15px 15px;
+}
+
+.PackagesCards h3 {
+    color: #C1202F;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 25px 15px;
+}
+
+.myList {
+    padding: 5px;
+}
+
+.myList li {
+    border-bottom: 1px solid #ccc;
+}
+
+.myList svg {
+    font-size: 35px;
+    color: #C1202F;
+}
+.PackagesCards ul{
+    height: 250px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin: 5px 10px;
+}
+.PackagesCards ul::-webkit-scrollbar-track {
+    background-color: lightgrey;
+}
+
+.PackagesCards ul::-webkit-scrollbar {
+    width: 4px;
+    background-color: #F5F5F5;
+}
+
+.PackagesCards ul::-webkit-scrollbar-thumb {
+    background-color: #C1202F;
+}
+.PackagesCards ul li {
+    color: #747474;
+    font-family: "Montserrat", Sans-serif;
+}
+
+.PackagesCards .PackagesCardsContact {
+    color: #747474;
+    font-family: "Montserrat", Sans-serif;
+    margin-left: 15px;
+    margin-top: 35px;
+}
+
+.PackagesCards p {
+    color: #C1202F;
+    font-family: "Montserrat", Sans-serif;
+    margin-left: 15px;
+    margin-bottom: 30px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.PackagesCards .PackagesCardSupport {
+    color: #747474;
+    font-family: "Montserrat", Sans-serif;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.PackagesCards button {
+    display: block;
+    margin: 15px auto;
+    padding: 10px 30px;
+    border-radius: 25px;
+    background-color: #C1202F;
+    color: #FFFFFF;
+}
+
+.PackagesCards button:hover {
+    background-color: #FFFFFF;
+    color: #C1202F;
+    border: 1px solid black;
+}
+

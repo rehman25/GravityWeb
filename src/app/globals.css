@@ -148,6 +148,12 @@ html {
 /* FAQS SLIDER CSS =============== */
 .faqs_slider .slick-slide{
     padding: 0 30px;
+} 
+
+/* OurPackages ============================*/
+.OurPackages ul li.react-tabs__tab--selected{
+    background: #c1202f;
+    color: #FFFFFF;
 }
 
 /* PORTFOLIO WORK SECTION CSS ===================== */
