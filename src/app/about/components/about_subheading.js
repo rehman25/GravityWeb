@@ -273,7 +273,7 @@ const About_subheading = () => {
                     className={`${styles.marquee_content}`}>
                     <div>
                       <Image
-                        src={one}
+                        src={twentythree}
                         alt="Example Image"
                         width={50} // Adjust width as needed
                         height={50} // Adjust height as needed
@@ -282,7 +282,7 @@ const About_subheading = () => {
                     </div>
                     <div>
                       <Image
-                        src={two}
+                        src={twentyfour}
                         alt="Example Image"
                         width={50} // Adjust width as needed
                         height={50} // Adjust height as needed
@@ -291,7 +291,7 @@ const About_subheading = () => {
                     </div>
                     <div>
                       <Image
-                        src={three}
+                        src={twentyfive}
                         alt="Example Image"
                         width={50} // Adjust width as needed
                         height={50} // Adjust height as needed
@@ -299,16 +299,7 @@ const About_subheading = () => {
                     </div>
                     <div>
                       <Image
-                        src={four}
-                        alt="Example Image"
-                        width={50} // Adjust width as needed
-                        height={50} // Adjust height as needed
-                        className={`${styles.imgAnimated}`}
-                      />
-                    </div>
-                    <div>
-                      <Image
-                        src={five}
+                        src={twentysix}
                         alt="Example Image"
                         width={50} // Adjust width as needed
                         height={50} // Adjust height as needed
@@ -317,7 +308,7 @@ const About_subheading = () => {
                     </div>
                     <div>
                       <Image
-                        src={six}
+                        src={twentyseven}
                         alt="Example Image"
                         width={50} // Adjust width as needed
                         height={50} // Adjust height as needed
@@ -326,7 +317,7 @@ const About_subheading = () => {
                     </div>
                     <div>
                       <Image
-                        src={seven}
+                        src={twentyeight}
                         alt="Example Image"
                         width={50} // Adjust width as needed
                         height={50} // Adjust height as needed
@@ -335,7 +326,7 @@ const About_subheading = () => {
                     </div>
                     <div>
                       <Image
-                        src={eight}
+                        src={twentynine}
                         alt="Example Image"
                         width={50} // Adjust width as needed
                         height={50} // Adjust height as needed
@@ -344,7 +335,7 @@ const About_subheading = () => {
                     </div>
                     <div>
                       <Image
-                        src={nine}
+                        src={thirty}
                         alt="Example Image"
                         width={50} // Adjust width as needed
                         height={50} // Adjust height as needed
@@ -353,7 +344,7 @@ const About_subheading = () => {
                     </div>
                     <div>
                       <Image
-                        src={ten}
+                        src={thirtyone}
                         alt="Example Image"
                         width={50} // Adjust width as needed
                         height={50} // Adjust height as needed
@@ -362,7 +353,7 @@ const About_subheading = () => {
                     </div>
                     <div>
                       <Image
-                        src={eleven}
+                        src={thirtytwo}
                         alt="Example Image"
                         width={50} // Adjust width as needed
                         height={50} // Adjust height as needed
@@ -371,7 +362,7 @@ const About_subheading = () => {
                     </div>
                     <div>
                       <Image
-                        src={twelve}
+                        src={thirtythree}
                         alt="Example Image"
                         width={50} // Adjust width as needed
                         height={50} // Adjust height as needed
@@ -380,7 +371,7 @@ const About_subheading = () => {
                     </div>
                     <div>
                       <Image
-                        src={thirteen}
+                        src={thirtyfour}
                         alt="Example Image"
                         width={50} // Adjust width as needed
                         height={50} // Adjust height as needed
@@ -389,7 +380,7 @@ const About_subheading = () => {
                     </div>
                     <div>
                       <Image
-                        src={fourteen}
+                        src={thirtyfive}
                         alt="Example Image"
                         width={50} // Adjust width as needed
                         height={50} // Adjust height as needed
@@ -398,7 +389,7 @@ const About_subheading = () => {
                     </div>
                     <div>
                       <Image
-                        src={fifteen}
+                        src={thirtysix}
                         alt="Example Image"
                         width={50} // Adjust width as needed
                         height={50} // Adjust height as needed
@@ -407,7 +398,7 @@ const About_subheading = () => {
                     </div>
                     <div>
                       <Image
-                        src={sixteen}
+                        src={thirtyseven}
                         alt="Example Image"
                         width={50} // Adjust width as needed
                         height={50} // Adjust height as needed
@@ -416,7 +407,7 @@ const About_subheading = () => {
                     </div>
                     <div>
                       <Image
-                        src={seventeen}
+                        src={thirtyeight}
                         alt="Example Image"
                         width={50} // Adjust width as needed
                         height={50} // Adjust height as needed
@@ -425,7 +416,7 @@ const About_subheading = () => {
                     </div>
                     <div>
                       <Image
-                        src={eighteen}
+                        src={thirtynine}
                         alt="Example Image"
                         width={50} // Adjust width as needed
                         height={50} // Adjust height as needed
@@ -434,7 +425,7 @@ const About_subheading = () => {
                     </div>
                     <div>
                       <Image
-                        src={ninteen}
+                        src={fourty}
                         alt="Example Image"
                         width={50} // Adjust width as needed
                         height={50} // Adjust height as needed
@@ -443,7 +434,7 @@ const About_subheading = () => {
                     </div>
                     <div>
                       <Image
-                        src={twenty}
+                        src={fourtyone}
                         alt="Example Image"
                         width={50} // Adjust width as needed
                         height={50} // Adjust height as needed
@@ -452,7 +443,7 @@ const About_subheading = () => {
                     </div>
                     <div>
                       <Image
-                        src={twentyone}
+                        src={fourtytwo}
                         alt="Example Image"
                         width={50} // Adjust width as needed
                         height={50} // Adjust height as needed
@@ -461,7 +452,16 @@ const About_subheading = () => {
                     </div>
                     <div>
                       <Image
-                        src={twentytwo}
+                        src={fourtythree}
+                        alt="Example Image"
+                        width={50} // Adjust width as needed
+                        height={50} // Adjust height as needed
+                        className={`${styles.imgAnimated}`}
+                      />
+                    </div>
+                    <div>
+                      <Image
+                        src={fourtyfour}
                         alt="Example Image"
                         width={50} // Adjust width as needed
                         height={50} // Adjust height as needed
