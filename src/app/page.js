@@ -108,7 +108,7 @@ const Page = () => {
           <div className={`${style.mouseBox}`}>
             <div className={`${style.mouse}`}></div>
             <h6></h6>
-            <span>Scroll</span>
+           
           </div>
           <div className="row">
             <div className="col-lg-12">

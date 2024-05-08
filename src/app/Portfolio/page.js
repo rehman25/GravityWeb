@@ -28,9 +28,9 @@ const page = ({page}) => {
         <>
             
         {
-            page == "home" ? null : <><Cursor /> <Header /></>            
+            page == "home" ? null : <><Cursor /> <Header /> <Aboutbanner/></>            
         }
-        <Aboutbanner/>
+       
             <section className={`${style.port__section}`}>
                 <div className="container-fluid">
                     <div className="row">
