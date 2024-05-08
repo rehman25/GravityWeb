@@ -71,4 +71,7 @@
         font-size: 25px;
         line-height: normal;
     }
+    .more__btn{
+        width: 50%;
+    }
 }
