@@ -6,7 +6,7 @@ import Image from 'next/image';
 import Button from './component/buttons/index';
 import Text from './component/text/index';
 import OurWork from './component/OurWork/component'
-import Portfolio from './component/Portfolio/index'
+import Portfolio from './Portfolio/page'
 import Packages from './component/Packages/index'
 import Cursor from './component/cursor/cursor'
 import { FaFacebookF } from "react-icons/fa6";
@@ -523,7 +523,7 @@ const Page = () => {
       {/* <OurWork/> */}
       {/* <OurWork/> */}
       {/* <OurWork/> */}
-      <Portfolio />
+      <Portfolio page="home"/>
       {/* <Branding /> */}
       <Packages />
       <Award />

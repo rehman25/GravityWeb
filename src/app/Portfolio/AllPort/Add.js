@@ -1,9 +1,12 @@
 import React, { useState, useCallback } from 'react'
 import Gallery from "react-photo-gallery";
+import Link from 'next/link'
 import Carousel, { Modal, ModalGateway } from "react-images";
+import style from '../portfolio.module.css'
 
-const index = ({photos}) => {
-    console.log("photos",photos)
+
+
+const Add = ({photos,showMore}) => {
     const [currentImage, setCurrentImage] = useState(0);
     const [viewerIsOpen, setViewerIsOpen] = useState(false);
     const openLightbox = useCallback((event, { photo, index }) => {
@@ -37,9 +40,12 @@ const index = ({photos}) => {
                         </Modal>
                     ) : null}
                 </ModalGateway>
+                {
+                    showMore  ? <Link href="/Portfolio" className={`${style.more__btn}`}>Show More</Link>: null
+                }
             </div>
         </>
     )
 }
 
-export default index
+export default Add

@@ -226,6 +226,7 @@ const Page = () => {
           <ul className={Style.HeaderUl}>
             <li><Link href="/">HOME</Link></li>
             <li><Link href="/about">ABOUT</Link></li>
+            <li><Link href="/Portfolio">Portfolio</Link></li>
             <li><Link href="/Services" onMouseEnter={onHover}>SERVICES</Link>
               {
                 isTabs ?

@@ -1,0 +1,74 @@
+.port__section{
+    text-align: center;
+    padding: 70px 0;
+    background-color: #161614;
+}
+.port__box h5{
+    color: #e3204a;
+    font-family: "Montserrat", Sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+.port__box h4{
+    color: white;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 56px;
+}
+.port__box p{
+    color: white;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.port__box ul{
+    border-bottom: 0;
+}
+
+.port__box ul li{
+    font-family: "Montserrat", Sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    bottom: 0 !important;
+    color: white;
+}
+
+.port__box ul{
+    margin-bottom: 50px;
+}
+
+.more__btn{
+    margin: 15px auto;
+    padding: 10px 40px;
+    border-radius: 25px;
+    background-color: #C1202F;
+    color: #FFFFFF;
+    margin-top: 40px;
+    width: 20%;
+}
+
+@media screen and (max-width:992px){
+    .port__box h4{
+        font-size: 30px;
+        line-height: normal;
+    }
+    .port__box p{
+        color: #000000;
+        font-family: "Montserrat", Sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+    }    
+}
+
+@media screen and (max-width:480px){
+    .port__box h5{
+        font-size: 14px;
+    }
+    .port__box h4{
+        font-size: 25px;
+        line-height: normal;
+    }
+}
