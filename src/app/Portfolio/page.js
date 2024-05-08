@@ -95,10 +95,9 @@ const page = ({page}) => {
                     </div>
                 </div>
             </section>
-            <Footer />
             {
-            page == "home" ? null : <><Footer /></>            
-        }
+                page == "home" ? null : <><Footer /></>            
+            }
         </>
     )
 }
