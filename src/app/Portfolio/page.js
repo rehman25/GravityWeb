@@ -18,6 +18,7 @@ import { photos as IllustrationImagesone  } from './SomeImageFiles/IllustrationI
 import Cursor from '../component/cursor/cursor'
 import Header from '../component/Header/component'
 import Footer from '../component/Footer/component'
+import Aboutbanner from '../about/components/Aboutbanner'
 
 
 
@@ -29,6 +30,7 @@ const page = ({page}) => {
         {
             page == "home" ? null : <><Cursor /> <Header /></>            
         }
+        <Aboutbanner/>
             <section className={`${style.port__section}`}>
                 <div className="container-fluid">
                     <div className="row">
