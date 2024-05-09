@@ -53,7 +53,7 @@ const page = () => {
                                 <li className={styles.address}><FaXTwitter className={styles.FooterIcon} /> <FaFacebookF className={styles.FooterIcon} /> <FaInstagram className={styles.FooterIcon} /> <FaYoutube className={styles.FooterIcon} /> <FaLinkedin className={styles.FooterIcon} /> </li>
                                 <li><a href="">Privacy Policy</a> </li>
                                 <li><a href="">Terms & Conditions</a> </li>
-                                <li><a href="">© 2024 Digital Gravity. All Rights Reserved.</a></li>
+                                <li><a href="">© 2024 Digital Mobix. All Rights Reserved.</a></li>
                             </ul>
                         </div>
                 </div>

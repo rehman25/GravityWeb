@@ -14,7 +14,7 @@ const AboutCarts = () => {
                         <div className='col-lg-6 mt-5 p-0'>
                             <div className={`${style.LeftCart}`}>
                                 <h3>We Pilot You to Take on the Digital Landscape</h3>
-                                <p>At Digital Gravity, we have leading industry professionals and state-of-the-art technology to ensure your business and brands lifts up on the digital front. Our approach is highly strategic and carefully executed to transform your business the way you want, guaranteeing incredible results and maximum profit.</p>
+                                <p>At Digital Mobix, we have leading industry professionals and state-of-the-art technology to ensure your business and brands lifts up on the digital front. Our approach is highly strategic and carefully executed to transform your business the way you want, guaranteeing incredible results and maximum profit.</p>
                             </div>
                         </div>
                         <div className='col-lg-6 p-0'>

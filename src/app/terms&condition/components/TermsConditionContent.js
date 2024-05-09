@@ -53,13 +53,13 @@ const TermsConditionContent = () => {
 
                     <h5 className={`${styles.TermsConditionheading}`}>EXCLUSIONS AND LIMITATIONS</h5>
                     <p className={`${styles.TermsConditionpara}`}>
-                        The information on Digital Gravity’s web site is provided on an “as is” basis. To the fullest extent permitted by law, this Company: <br /><br />
+                        The information on Digital Mobix web site is provided on an “as is” basis. To the fullest extent permitted by law, this Company: <br /><br />
 
                         ● Excludes all representations and warranties relating to this website and its contents or which is or may be provided by any affiliates or any other third party, including in relation to any inaccuracies or omissions in this website and/or the {"Company’s"} literature; and <br /><br />
 
                         ● Excludes all liability for damages arising out of or in connection with your use of this website. This includes, without limitation, direct loss, loss of business or profits (whether or not the loss of such profits was foreseeable, arose in the normal course of things or you have advised this Company of the possibility of such potential loss), damage caused to your computer, computer software, systems and programs and the data thereon or any other direct or indirect, consequential and incidental damages. <br /><br />
 
-                        Digital Gravity does not however exclude liability for death or personal injury caused by its negligence. The above exclusions and limitations apply only to the extent permitted by law. None of your statutory rights as a consumer are affected.
+                        Digital Mobix does not however exclude liability for death or personal injury caused by its negligence. The above exclusions and limitations apply only to the extent permitted by law. None of your statutory rights as a consumer are affected.
                     </p>
 
                     <h5 className={`${styles.TermsConditionheading}`}>AVAILABILITY</h5>

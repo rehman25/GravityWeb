@@ -49,7 +49,7 @@ const Page = () => {
       <Header />
       <section>
         <div className={`${style.heroSection} container-fluid p-0`}>
-          <div className="row mt-5 mx-0 p-0" style={{ width: "100%" }}>
+          <div className="row  mx-0 p-0" style={{ width: "100%" }}>
             <div className={`col-lg-12 p-0 ${style.videoBox}`}>
               <div className={`${style.videoFrame}`}>
                 <ReactPlayer
@@ -81,7 +81,7 @@ const Page = () => {
                 <div>
                   <p>
                     You have an idea, we have the talent and resources to turn it into a reality.
-                    Digital Gravity is a globally recognized digital agency elevating brands through
+                    Digital Mobix is a globally recognized digital agency elevating brands through
                     ground-breaking user experience and disruptive digital products.
                   </p>
                   <Button text="Let's Talk" />
@@ -133,7 +133,7 @@ const Page = () => {
                   <div>
                     <p>
                       Get an edge over your competitors and boost your profitability
-                      with magnetic web experiences. Digital Gravity is the choice of the UAE’s
+                      with magnetic web experiences. Digital Mobix is the choice of the UAE’s
                       leading brands for website design and web development services in Dubai.
                       Whether it’s custom web development or WordPress web development,
                       we make sure you get the best of both worlds in the form of a responsive,
@@ -169,7 +169,7 @@ const Page = () => {
                   <div>
                     <p>
                       Leverage the power of mobile solutions and create a personalised marketing
-                      channel for your audience. Digital Gravity offers comprehensive mobile
+                      channel for your audience. Digital Mobix offers comprehensive mobile
                       app development services for iOS and Android devices. In the form of native
                       and cross-platform applications, we carve out interfaces that win hearts
                       and accelerate your growth.
@@ -269,7 +269,7 @@ const Page = () => {
                     <p>
                       Robust, sales-driven, and intuitive eCommerce solutions for online
                       businesses yearning to scale in a competitive digital landscape.
-                      Digital Gravity is recognized as the top eCommerce web development
+                      Digital Mobix is recognized as the top eCommerce web development
                       company in Dubai with a team of tech-savvy professionals, who can
                       integrate both simple and complex features into your online store.
                     </p>
@@ -316,7 +316,7 @@ const Page = () => {
                       We take pride in crafting stunning user interfaces that make it
                       fun for your audience to interact with your brand and come back
                       in the future for more. Whether it’s a mobile app or a website,
-                      Digital Gravity’s team of UX/UI designers is the best you can hire for
+                      Digital Mobix’s team of UX/UI designers is the best you can hire for
                       UX/UI design services in Dubai.
                     </p>
                     <p className='mt-3'> A Creative UI/UX Design Agency in Dubai with Business Centric Approach</p>
@@ -363,7 +363,7 @@ const Page = () => {
                   <div>
                     <p>
                       Create bewitching videos for your brand and enthral your
-                      prospective customers. Digital Gravity is the best video
+                      prospective customers. Digital Mobix is the best video
                       production company in Dubai you can choose to make yourself
                       look and sound awesome. We create everything you need from
                       explainer videos to sales videos, product videos, branding videos,

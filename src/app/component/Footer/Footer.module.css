@@ -1,36 +1,40 @@
 .leftContainer {
-    background-color: #e3204a;
+    background-color: #363636;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 150px 0 10px 0;
+    padding: 180px 0 10px 0;
+    width: 50%;
 }
 
 .rightContainer {
-    background-color: #363636;
+    background-color: #e3204a;
     display: flex;
     align-items: center;
-    padding: 150px 10px 10px 20px;
+    padding: 180px 10px 10px 20px;
+    width: 50%;
 }
 
 .heading {
     position: absolute;
-    left: 250px;
+    left: 220px;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px #b9b9ba;
     text-transform: capitalize;
     word-break: break-word;
-    font-size: 4.7em;
+    font-size: 5.4em;
     font-family: sans-serif;
     font-weight: 700;
     z-index: 1;
-    padding: 20px;
+    padding: 40px;
 }
 
 .letsbuild {
     color: white;
     margin: 0px;
+    font-size: 2.7em;
+    font-weight: 400;
 }
 
 .something {

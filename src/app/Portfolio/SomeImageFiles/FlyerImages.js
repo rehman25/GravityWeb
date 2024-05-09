@@ -21,4 +21,24 @@ export const photos = [
         width: 4,
         height: 3,
     },
+    {
+        src: "https://dg-demo.logomish.com/portfolio/flyerdesign/1(17).webp",
+        width: 4,
+        height: 3,
+    },
+    {
+        src: "https://dg-demo.logomish.com/portfolio/flyerdesign/1(18).webp",
+        width: 4,
+        height: 3,
+    },
+    {
+        src: "https://dg-demo.logomish.com/portfolio/flyerdesign/1(19).webp",
+        width: 4,
+        height: 3,
+    },
+    {
+        src: "https://dg-demo.logomish.com/portfolio/flyerdesign/1(20).webp",
+        width: 4,
+        height: 3,
+    },
 ];

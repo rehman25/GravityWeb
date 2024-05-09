@@ -338,10 +338,10 @@ const Components = () => {
                                         <h4>{slides[currentSlide].text}</h4>
 
                                         {slides[currentSlide].text === "Restaurant" && (
-                                            <p>Food businesses and restaurant owners know Digital Gravity for its branding services. We design their websites, establish a powerful social media presence, and bring them new customers consistently.</p>
+                                            <p>Food businesses and restaurant owners know Digital Mobix for its branding services. We design their websites, establish a powerful social media presence, and bring them new customers consistently.</p>
                                         )}
                                         {slides[currentSlide].text === "Real Estate" && (
-                                            <p>From website development to content marketing, Digital Gravity is the go-to company of famed Real Estate companies in the UAE. We take care of the techie details while they focus on the bottom line.</p>
+                                            <p>From website development to content marketing, Digital Mobix is the go-to company of famed Real Estate companies in the UAE. We take care of the techie details while they focus on the bottom line.</p>
                                         )}
                                         {slides[currentSlide].text === "Technology" && (
                                             <p>As a full-service digital agency, we love working with IT start-ups. Numerous IT service providers have hired us to top off the exciting web and mobile projects, while some of them use our creative services to enhance digital visibility. </p>

@@ -25,7 +25,7 @@ const Page = () => {
                         </div>
                         <div className={`col-lg-6 col-md-12 ${styles.right}`}>
                             <div className={`${styles.heroRightSide}`}>
-                                <p>Digital Gravity takes pride in highly successful projects for amazing clients. We are fully-integrated agency to bag case studies covering digital marketing, advertising, design& development, packaging, PR and much more; all from a single dedicated team.</p>
+                                <p>Digital Mobix takes pride in highly successful projects for amazing clients. We are fully-integrated agency to bag case studies covering digital marketing, advertising, design& development, packaging, PR and much more; all from a single dedicated team.</p>
                             </div>
                         </div>
                     </div>

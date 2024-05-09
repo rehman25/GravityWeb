@@ -46,8 +46,8 @@ const Components = () => {
                     <h5> USA </h5>
                   </div>
                   <div className={`${styles.USAContent} ${styles.USAIH5Box}`}>
-                    <span>+191 038 40703</span>
-                    <p>832 via Palermo, San Ramon, CA, 94583, USA </p>
+                    <span>+191 xxx xxxx</span>
+                    <p>832 xxxx Palermo, San Ramon, CA, xxxxx, USA </p>
                   </div>
                 </div>
                 <div className={`col-lg-4 ${styles.UAEIH5} ${styles.USAIH5Box}`}>
@@ -56,8 +56,8 @@ const Components = () => {
                     <h5> UAE </h5>
                   </div>
                   <div className={`${styles.UAEContent}`}>
-                    <span>+971 4 242 1375 <br /> +971 4 242 1375</span>
-                    <p>Office M-13, The Curve Building, Sheikh Zayed Road, Dubai, UAE  </p>
+                    <span>+971 x xxx xxxx <br /> +971 x xxx xxxx</span>
+                    <p>Office x-xxx, xxxxxxxxxxxxxxxxxx  </p>
                   </div>
                 </div>
                 <div className={`col-lg-4 ${styles.PAKISTANIH5} ${styles.USAIH5Box}`}>
@@ -66,8 +66,8 @@ const Components = () => {
                     <h5> Pakistan </h5>
                   </div>
                   <div className={`${styles.PAKISTANContent}`}>
-                    <span>+92 335 549 2225</span>
-                    <p>Office Nos: 101, 102 & 103, NASTP Sierra, Shahrah-e-Faisal Rd, Faisal Cantonment, Karachi, Pakistan </p>
+                    <span>+92 xxx xxx xxxx</span>
+                    <p>Office Nos: xxx, xxx & xxxx, xxxxxxxxxxxxxxxxxxx, Karachi, Pakistan </p>
                   </div>
                 </div> 
               </div>

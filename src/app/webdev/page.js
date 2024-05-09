@@ -54,8 +54,8 @@ const Page = () => {
                   </span>
                 </div>
               </div>
-              <div className={`col-lg-6 ${styles.Rightside}`}>
-                <div className={styles.FormContainer}>
+              <div className={`col-lg-12 ${styles.Rightside}`}>
+                {/* <div className={styles.FormContainer}>
                   <form action="" className={styles.ContactForm}>
                     <h3>Speak to an Expert</h3>
                     <div className={`row ${styles.row}`}>
@@ -124,12 +124,12 @@ const Page = () => {
                       </span>
                       <p className={styles.formpara}>
                         if you have any RFP requirement please share with us at
-                        discover@digitalgravity.ae and if you are looking for a
+                        discover@digitalmobix.ae and if you are looking for a
                         career related enquiry please check our Career section.
                       </p>
                     </div>
                   </form>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -137,9 +137,9 @@ const Page = () => {
         <Best />
         <Slider />
         <Highlights />
-        <Workslidercomponent />
-        <Testimonials />
-        <ServiceTechDevelopment />
+        {/* <Workslidercomponent /> */}
+        {/* <Testimonials /> */}
+        {/* <ServiceTechDevelopment /> */}
         <FAQ />
         <WorkRead />
         <Expansion />
@@ -162,14 +162,14 @@ const Page = () => {
                   <div className={styles.addressContainer}>
                     <ul>
                       <li className={styles.address}>
-                        Office M-13, The Curve Building, Sheikh Zayed Road,
+                        Office X-X, XXXXXXXXXXX, XXXX XXXXXX XXXXXX,
                         Dubai, UAE
                       </li>
                       <li className={styles.address}>
-                        discover@digitalgravity.ae
+                        discover@digitalmobix.ae
                       </li>
-                      <li className={styles.address}>+971 4 242 1375</li>
-                      <li className={styles.address}>+971 4 242 1375</li>
+                      <li className={styles.address}>+XXX X XXX XXXX</li>
+                      <li className={styles.address}>+XXX X XXX XXXX</li>
                     </ul>
                   </div>
                 </div>

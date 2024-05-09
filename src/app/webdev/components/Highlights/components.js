@@ -77,12 +77,12 @@ const Components = () => {
                             </span>
                         </div>
                         <h2>Planning</h2>
-                        <ul>
+                        {/* <ul>
                             <li><BiSolidRightArrow className={isPlanning ? styles.ELementHover : styles.ELement} /> &nbsp;Business analysis</li>
                             <li><BiSolidRightArrow className={isPlanning ? styles.ELementHover : styles.ELement} /> &nbsp;Business analysis</li>
                             <li><BiSolidRightArrow className={isPlanning ? styles.ELementHover : styles.ELement} /> &nbsp;Business analysis</li>
                             <li><BiSolidRightArrow className={isPlanning ? styles.ELementHover : styles.ELement} /> &nbsp;Business analysis</li>
-                        </ul>
+                        </ul> */}
 
                     </div>
                 </div>
@@ -97,12 +97,12 @@ const Components = () => {
                             </span>
                         </div>
                         <h2>Development</h2>
-                        <ul>
+                        {/* <ul>
                             <li><BiSolidRightArrow className={isDevelopment ? styles.ELementHover : styles.ELement} /> &nbsp;Business analysis</li>
                             <li><BiSolidRightArrow className={isDevelopment ? styles.ELementHover : styles.ELement} /> &nbsp;Business analysis</li>
                             <li><BiSolidRightArrow className={isDevelopment ? styles.ELementHover : styles.ELement} /> &nbsp;Business analysis</li>
                             <li><BiSolidRightArrow className={isDevelopment ? styles.ELementHover : styles.ELement} /> &nbsp;Business analysis</li>
-                        </ul>
+                        </ul> */}
 
                     </div>
                 </div>
@@ -117,12 +117,12 @@ const Components = () => {
                             </span>
                         </div>
                         <h2>Testing</h2>
-                        <ul>
+                        {/* <ul>
                             <li><BiSolidRightArrow className={isTesting ? styles.ELementHover : styles.ELement} /> &nbsp;Business analysis</li>
                             <li><BiSolidRightArrow className={isTesting ? styles.ELementHover : styles.ELement} /> &nbsp;Business analysis</li>
                             <li><BiSolidRightArrow className={isTesting ? styles.ELementHover : styles.ELement} /> &nbsp;Business analysis</li>
                             <li><BiSolidRightArrow className={isTesting ? styles.ELementHover : styles.ELement} /> &nbsp;Business analysis</li>
-                        </ul>
+                        </ul> */}
 
                     </div>
                 </div>
@@ -135,12 +135,12 @@ const Components = () => {
                            
                         </div>
                         <h2>Deployement</h2>
-                        <ul>
+                        {/* <ul>
                             <li><BiSolidRightArrow className={isDeployement ? styles.ELementHover : styles.ELement} /> &nbsp;Business analysis</li>
                             <li><BiSolidRightArrow className={isDeployement ? styles.ELementHover : styles.ELement} /> &nbsp;Business analysis</li>
                             <li><BiSolidRightArrow className={isDeployement ? styles.ELementHover : styles.ELement} /> &nbsp;Business analysis</li>
                             <li><BiSolidRightArrow className={isDeployement ? styles.ELementHover : styles.ELement} /> &nbsp;Business analysis</li>
-                        </ul>
+                        </ul> */}
 
                     </div>
                 </div>

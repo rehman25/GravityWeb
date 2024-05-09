@@ -112,7 +112,7 @@ function Expertise() {
                           A steady stream of insights assists you in making
                           informed business decisions. Whether you are an
                           e-commerce business or a corporate firm, a data-savvy
-                          tech firm or a blockchain start-up, Digital Gravity’s
+                          tech firm or a blockchain start-up, Digital Mobix
                           analytics services and solutions will help your
                           organization grow and stay ahead of the competition.
                         </p>
@@ -127,7 +127,7 @@ function Expertise() {
                         <p>
                           We enjoy scaling businesses with on-point messaging,
                           memorable campaigns, beautiful UI designs, and
-                          professional branding. Digital Gravity is Dubai’s
+                          professional branding. Digital Mobix is Dubai’s
                           leading digital marketing agency, helping local and
                           international businesses achieve record-breaking
                           results with SEO, PPC & social media. We propel
@@ -148,7 +148,7 @@ function Expertise() {
                           to photo editing, custom design work, interface
                           design, packaging design, and basically everything in
                           the creative design space, we perform all the work in
-                          a meticulous manner. Digital Gravity has a rich pool
+                          a meticulous manner. Digital Mobix has a rich pool
                           of resources in the design space, helping our clients
                           make an impressive impression on their target
                           audience.
@@ -180,7 +180,7 @@ function Expertise() {
                         <p>
                           Capitalize on the unprecedented opportunities being
                           offered to create your online business and sell from
-                          the comfort of your home. Digital Gravity offers
+                          the comfort of your home. Digital Mobix offers
                           end-to-end Digital Commerce services including
                           e-commerce store development and marketing of your
                           store. We have hands-on experience building successful
@@ -215,7 +215,7 @@ function Expertise() {
                         />
                         <p>
                           As one of the leading mobile app development companies
-                          in Dubai, Digital Gravity has a team of expert iOS,
+                          in Dubai, Digital Mobix has a team of expert iOS,
                           Android, and cross-platform app developers. We create
                           stunning mobile interfaces with a wide range of
                           functionalities for all clients coming from various
@@ -248,7 +248,7 @@ function Expertise() {
                           alt="Example Image"
                         />
                         <p>
-                          Digital Gravity is proud of its IT talent. In an era
+                          Digital Mobix is proud of its IT talent. In an era
                           in which trustworthy and talented IT resources are
                           hard to find, we connect you with qualified resources
                           in the design, development, and digital marketing

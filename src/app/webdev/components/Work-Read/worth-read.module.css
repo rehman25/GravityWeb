@@ -1,6 +1,6 @@
 
 .bgColor{
-    background-color: #FFFFFF;
+    background-color: #161414;
     padding: 40px 0;
 }
 .read__box {
@@ -44,7 +44,7 @@
 .read__box div p{
     font-size: .6em;
     width: 65%;
-    color: #282828;
+    color: #c1c1c1;
     font-weight: 500;
     line-height: 1.3;
 }

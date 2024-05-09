@@ -83,7 +83,7 @@ class Test extends Component {
                     <div className={`${styles.TestimonialCards}`}>
                         <div className={`${styles.Content}`}>
                             <h4>Powering the Success of {"EMDAD's"} Website Launch</h4>
-                            <span>I am writing to express our appreciation to Digital Gravity and its team for their efforts that contributed to the success of the EMDAD website at its launch. A special thanks to Aashir for showing leadership and resilience each step of the way, attending to our requirements, providing us with the website within the desired time frame, and for his continued support. We look forward to a continuous collaboration with Digital Gravity in the future.</span>
+                            <span>I am writing to express our appreciation to Digital Mobix and its team for their efforts that contributed to the success of the EMDAD website at its launch. A special thanks to Aashir for showing leadership and resilience each step of the way, attending to our requirements, providing us with the website within the desired time frame, and for his continued support. We look forward to a continuous collaboration with Digital Mobix in the future.</span>
 
                         </div>
                         <div className={`${styles.ratings}`}>

@@ -330,7 +330,7 @@
 .ManuIcon2{
      color: #e3204a;
     font-size: 28px;
-    z-index: 9999!important;
+    z-index: 9999 !important;
     font-size: 900;
 
 }
@@ -563,7 +563,7 @@
     .responsiveRow{
         display: block !important;
         display: flex !important;
-        z-index: 99 !important;
+        z-index: 9999 !important;
     }
     .servicesTable{
         display: none;

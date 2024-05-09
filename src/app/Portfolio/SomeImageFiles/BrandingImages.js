@@ -21,4 +21,24 @@ export const photos = [
         width: 4,
         height: 3,
     },
+    {
+        src: "https://dg-demo.logomish.com/portfolio/branding/1(5).webp",
+        width: 4,
+        height: 3,
+    },
+    {
+        src: "https://dg-demo.logomish.com/portfolio/branding/1(6).webp",
+        width: 4,
+        height: 3,
+    },
+    {
+        src: "https://dg-demo.logomish.com/portfolio/branding/1(7).webp",
+        width: 4,
+        height: 3,
+    },
+    {
+        src: "https://dg-demo.logomish.com/portfolio/branding/1(9).webp",
+        width: 4,
+        height: 3,
+    },
 ];

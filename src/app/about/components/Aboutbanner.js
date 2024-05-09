@@ -22,7 +22,7 @@ const Aboutbanner = () => {
             <div className="col-md-6">
               <div className={`${styles.bannertextrightside}`}>
                 <span>
-                  Digital Gravity is an accomplished digital transformation
+                  Digital Mobix is an accomplished digital transformation
                   company in Dubai with a progressive perspective. We offer
                   scalable web and mobile solutions coupled with digital
                   marketing services under one roof — without silos or handoffs.

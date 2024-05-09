@@ -23,7 +23,7 @@ const TermsConditionBanner = () => {
             <div className="col-md-6 mt-5">
               <div className={`${styles.termconbannrightside}`}>
                 <span>
-                  At Digital Gravity, we have leading industry professionals and state-of-the-art technology to ensure your business and brands lifts up on the digital front
+                  At Digital Mobix, we have leading industry professionals and state-of-the-art technology to ensure your business and brands lifts up on the digital front
                 </span>
               </div>
             </div>

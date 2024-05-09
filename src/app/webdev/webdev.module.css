@@ -87,13 +87,14 @@
 }
 
 .Heading {
-    font-size: 1.97em;
+    font-size: 2.1em;
     line-height: 1.22;
     letter-spacing: -.045em;
     text-transform: capitalize;
     color: #fff;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
+    padding-top: 50px;
 }
 
 .Rightside {
@@ -103,7 +104,7 @@
     display: flex;
     align-items: center;
     padding: 14px;
-    padding-top: 100px;
+    /* padding-top: 100px; */
 }
 
 .FormContainer {
@@ -293,7 +294,7 @@
 
 /* ///////Footer/////////// */
 .leftContainer {
-    background-color: #e3204a;
+    background-color: #363636;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -301,7 +302,7 @@
 }
 
 .rightContainer {
-    background-color: #363636;
+    background-color: #e3204a;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -406,7 +407,7 @@
 
 .Input1 {
     border: none;
-    background-color: rgba(77, 75, 75, 0.993);
+    /* background-color: rgba(77, 75, 75, 0.993); */
     outline: none;
     font-size: 15px;
     color: rgba(255, 255, 255, 0.993);

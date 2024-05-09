@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Link from 'next/link'
 import Image from 'next/image';
 import Style from './component.module.css'
-import Brandlogo from '../../assets/images/employeessay/brand-logo.webp'
+import Brandlogo from '../../assets/images/employeessay/brand-logo.png'
 import { FaPhoneAlt } from "react-icons/fa";
 import { RiWhatsappFill } from "react-icons/ri";
 import { ImCross } from "react-icons/im";
@@ -668,6 +668,7 @@ const Page = () => {
                     <ul className={Style.listing}>
                       <li><Link href="/">HOME</Link></li>
                       <li><Link href="/about">ABOUT</Link></li>
+                      <li><Link href="/Portfolio">PORTFOLIO</Link></li>
                       <li className={Style.listTabv}><Link href="/Services" style={textStyle}>SERVICES</Link><button type="button" className={Style.Arcadian} onClick={handleToggle}> {isCollapsed ? <FaPlus /> : <FaMinus />} </button></li>
                       <div className={`collapse ${isCollapsed ? '' : 'show'}`}>
                         <ul className={Style.listing}>

@@ -23,7 +23,7 @@ const Banner = () => {
                         <div className="col-md-6">
                             <div className={`${styles.bannertextrightside}`}>
                                 <span>
-                                    At Digital Gravity, we have leading industry professionals 
+                                    At Digital Mobix, we have leading industry professionals 
                                     and state-of-the-art technology to ensure your business 
                                     and brands lift up on the digital front.
                                 </span>

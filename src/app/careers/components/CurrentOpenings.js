@@ -16,7 +16,7 @@ const CurrentOpenings = () => {
             <div className={`container py-5 ${styles.careersContainer}`}>
                 <h2 className={`text-center mb-3 ${styles.mainhead}`}>Current Openings</h2>
                 <p className={`text-center mb-3 ${styles.description}`}>
-                    Digital Gravity is always on the hunt for passionate, self-confident, enthusiastic, and creative individuals to
+                    Digital Mobix is always on the hunt for passionate, self-confident, enthusiastic, and creative individuals to
                     share their brilliance and expertise in digital transformation.
                 </p>
                 <span className={`${styles.applicationInfo}`} style={{ display: "inline-block", textAlign: "center" }}>

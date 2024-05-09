@@ -32,10 +32,10 @@ const page = () => {
             </div>
             <div className={styles.addressContainer} data-aos="fade-right">
               <ul>
-                <li className={styles.address}>Office M-13, The Curve Building, Sheikh Zayed Road, Dubai, UAE</li>
-                <li className={styles.address}>discover@digitalgravity.ae</li>
-                <li className={styles.address}>+971 4 242 1375</li>
-                <li className={styles.address}>+971 4 242 1375</li>
+                <li className={styles.address}>XXXXXXXXXXXXXXXXXXXXX xxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxx</li>
+                <li className={styles.address}>discover@digitalmobix.ae</li>
+                <li className={styles.address}>+971 X XXX XXXX</li>
+                <li className={styles.address}>+971 X XXX XXXX</li>
                 <li className={styles.address}><FaXTwitter className={styles.FooterIcon} /> <FaFacebookF className={styles.FooterIcon} /> <FaInstagram className={styles.FooterIcon} /> <FaYoutube className={styles.FooterIcon} /> <FaLinkedin className={styles.FooterIcon} /> </li>
               </ul>
 
