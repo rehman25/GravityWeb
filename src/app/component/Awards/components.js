@@ -85,7 +85,7 @@ const components = () => {
                         <div className={styles.FormContainer}>
                             <form action="" className={styles.ContactForm}>
                                 <h3>Speak to an Expert</h3>
-                                <p>if you have any RFP requirement please share with us at discover@digitalgravity.ae and if you are looking for a career related enquiry please check our Career section.</p>
+                                <p>if you have any RFP requirement please share with us at discover@digitalmobix.ae and if you are looking for a career related enquiry please check our Career section.</p>
                                 <div className={styles.Formgroup}>
                                     <label htmlFor="" className={styles.label}>Your Name</label>
                                     <input type="text" className={` ${styles.Input}`} id="exampleInputEmail1" aria-describedby="emailHelp" />

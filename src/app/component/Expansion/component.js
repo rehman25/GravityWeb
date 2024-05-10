@@ -116,7 +116,7 @@ const Components = () => {
                     </span>}
                   </div>
 
-                  <p className={styles.formpara}>if you have any RFP requirement please share with us at <b> discover@digitalgravity.ae</b> and if you are looking for a career related enquiry please check our 
+                  <p className={styles.formpara}>if you have any RFP requirement please share with us at <b> discover@digitalmobix.ae</b> and if you are looking for a career related enquiry please check our 
                     <b className={styles.Career}> Career</b> section.</p>
                 </div>
               </form>

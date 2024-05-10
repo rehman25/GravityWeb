@@ -20,7 +20,7 @@ const CurrentOpenings = () => {
                     share their brilliance and expertise in digital transformation.
                 </p>
                 <span className={`${styles.applicationInfo}`} style={{ display: "inline-block", textAlign: "center" }}>
-                    All applications should be made via <span className={`${styles.email}`} style={{ display: "inline" }}>careers@digitalgravity.ae</span>
+                    All applications should be made via <span className={`${styles.email}`} style={{ display: "inline" }}>careers@digitalmobix.ae</span>
                 </span>
                 <div className="row py-2">
                     <div className="col-md-6 mt-3" data-aos={"fade-up"}>
