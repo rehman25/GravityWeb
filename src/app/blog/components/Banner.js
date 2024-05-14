@@ -28,7 +28,7 @@ const Banner = () => {
                                     and brands lift up on the digital front.
                                 </span>
                             </div>
-                        </div>
+                        </div> 
                     </div>
                 </div>
             </section>
