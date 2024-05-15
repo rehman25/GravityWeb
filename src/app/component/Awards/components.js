@@ -69,14 +69,14 @@ const components = () => {
                 </div> */}
                 <div className={`row ${styles.servicero}`}>
                     <div className={`col-lg-6  ${styles.leftside}`}>
-                        <div className={styles.iconsdiv}>
+                        {/* <div className={styles.iconsdiv}>
                             <BsInstagram className={styles.HeadIcon} />
                             <div className={styles.divline}></div>
                             <FaXTwitter className={styles.HeadIcon} />
                             <div className={styles.divline}></div>
                             <FaLinkedin className={styles.HeadIcon} />
                             <div className={styles.divtext}>SOCIALIZE</div>
-                        </div>
+                        </div> */}
                         <div>
                             <span className={styles.Heading}>Our Digital Services Create Lovely Projects & Deliver Memorable Experiences</span>
                         </div>
